@@ -4384,7 +4384,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Owl">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Solr"/>
         <rdfs:comment xml:lang="en">Superclass for formats used for OWL</rdfs:comment>
         <rdfs:label xml:lang="en">OWL</rdfs:label>
     </owl:Class>
