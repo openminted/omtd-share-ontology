@@ -440,24 +440,8 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Aligner">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Annotator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/Alignment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that detects and annotates equivalence relations between items (corpora, texts, paragraphs, sentences, phrases, words) in two languages</rdfs:comment>
         <rdfs:label xml:lang="en">Aligner</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Alignment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Alignment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:comment xml:lang="en">Establishment of translational equivalences between structural units (words, sentences etc.) of a text in a given language and a text with similar meaning in other language(s)</rdfs:comment>
-        <rdfs:label xml:lang="en">Alignment</rdfs:label>
     </owl:Class>
     
 
@@ -495,25 +479,10 @@
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Analysis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Analysis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label>Analysis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Analyzer -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Analyzer">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ComponentType"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/Analysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that is used for analyzing an input text in order to extract specific features/information (e.g. word list), or to produce statements over the whole text (e.g. classify it by topic)</rdfs:comment>
         <rdfs:label xml:lang="en">Analyzer</rdfs:label>
         <skos:altLabel xml:lang="en">Extractor</skos:altLabel>
@@ -585,27 +554,6 @@
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/AnnotationOfQuestionTopics -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfQuestionTopics">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of attaching tags to the segment of a question that functions as the topic of that question</rdfs:comment>
-        <rdfs:label xml:lang="en">Annotation of question topics</rdfs:label>
-        <skos:altLabel xml:lang="en">Annotation of question topical targets</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/AnnotationOfTextualEntailment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfTextualEntailment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of annotating textual entailments, most usually indicating whether a text entails or contradicts a hypothesis sentence or does neither.</rdfs:comment>
-        <rdfs:label xml:lang="en">Annotation of Textual Entailment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/AnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationType">
@@ -645,12 +593,6 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotatorOfSemanticRoleLabels">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticRoleLabelling"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that annotates the tokens of a text with Semantic Role labels</rdfs:comment>
         <rdfs:label xml:lang="en">Annotator of semantic role labels</rdfs:label>
     </owl:Class>
@@ -954,16 +896,6 @@
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/CertaintyLevelLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/CertaintyLevelLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of adding to statements in a text annotations that indicate the level of certainty of the author vis-a-vis the statement</rdfs:comment>
-        <rdfs:label xml:lang="en">Certainty Level Labelling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Chat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Chat">
@@ -1078,26 +1010,10 @@
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/CoReferenceAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/CoReferenceAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of attaching tags to a text unit and linking it to other text units that refer to the same entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Co-reference annotation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/CoReferenceAnnotator -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/CoReferenceAnnotator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Annotator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/CoReferenceAnnotation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that annotates tokens of a text with coreference labels, marking expressions that refer to the same entity in the text</rdfs:comment>
         <rdfs:label xml:lang="en">Co-reference annotator</rdfs:label>
     </owl:Class>
@@ -2210,25 +2126,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/EmotionGeneration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EmotionGeneration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Generation"/>
-        <rdfs:label xml:lang="en">Emotion Generation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/EmotionLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EmotionLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The process/act of adding labels of emotions to a facial expression or text</rdfs:comment>
-        <rdfs:label xml:lang="en">Emotion labelling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/EmotionRecognizer -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EmotionRecognizer">
@@ -2254,16 +2151,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <dc:source xml:lang="en">adapted from Wikipedia (https://en.wikipedia.org/wiki/Ensemble_learning)</dc:source>
         <rdfs:comment xml:lang="en">Any method that uses multiple learning algorithms in an attempt to improve predictive performance not obtainable otherwise with any of the constituent learning algorithms.</rdfs:comment>
         <rdfs:label xml:lang="en">Ensemble Method</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/EntityMentionLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EntityMentionLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of attaching tags to all the mentions of an entity in a text linking them together with the entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Entity Mention labelling</rdfs:label>
     </owl:Class>
     
 
@@ -2362,17 +2249,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A component that tries to extract information related to incidents referred to in a text</rdfs:comment>
         <rdfs:label xml:lang="en">Event extractor</rdfs:label>
         <skos:comment xml:lang="en">could also be an annotator</skos:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/EventsLabeling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EventsLabeling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The process/act of marking events in a text.</rdfs:comment>
-        <rdfs:label xml:lang="en">Event Labelling</rdfs:label>
-        <skos:altLabel xml:lang="en">Annotation of events</skos:altLabel>
     </owl:Class>
     
 
@@ -2542,17 +2418,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/FrameSemanticParsing -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FrameSemanticParsing">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Parsing"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of recognising and labelling in a text predicate argument structures and the semantic roles of the constituents, in accordance to the frame semantics theory.</rdfs:comment>
-        <rdfs:label xml:lang="en">Frame-semantic parsing</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Funding -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Funding">
@@ -2660,25 +2525,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Generation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Generation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Generation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Generator -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Generator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Processor"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/Generation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that generates (semi-)automatically natural language texts (based on non-linguistic data, keywords, logical forms, knowledge bases...)</rdfs:comment>
         <rdfs:label xml:lang="en">Generator</rdfs:label>
     </owl:Class>
@@ -3881,16 +3731,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/NamedEntitiesLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NamedEntitiesLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of locating and labelling units in a text with a set of predefined categories, such as persons, organizations, locations, time expressions, monetary values, quantity units etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">Named Entities Labelling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/NamedEntitityRecognizer -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NamedEntitityRecognizer">
@@ -3942,15 +3782,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A subtask of information extraction that seeks to locate and classify named entities in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Named Entity Recognition</rdfs:label>
         <skos:comment xml:lang="en">can also be annotation</skos:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Generation"/>
-        <rdfs:label xml:lang="en">Natural Language Generation</rdfs:label>
     </owl:Class>
     
 
@@ -4104,15 +3935,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:label xml:lang="en">Operation</rdfs:label>
         <skos:altLabel xml:lang="en">Function</skos:altLabel>
         <skos:altLabel xml:lang="en">Task</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Operationsnottobeused -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Operationsnottobeused">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>OperationsNotToBeUsed</rdfs:label>
     </owl:Class>
     
 
@@ -4376,15 +4198,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/PhraseAlignment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PhraseAlignment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Alignment"/>
-        <rdfs:label xml:lang="en">Phrase Alignment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/PhysicoChemicalProperty -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PhysicoChemicalProperty">
@@ -4460,16 +4273,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A feature that distinguishes between positive, negative or neutral; in sentiment analysis, it refers to determining whether the expressed opinion in a document, a sentence or an entity feature/aspect is positive, negative, or neutral. [adapted from Wikipedia]</rdfs:comment>
         <rdfs:label xml:lang="en">Polarity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/PolarityLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PolarityLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of adding to units of a text (especially in sentiment-intensive texts) tags that indicate polarity (negative, positive, neutral)</rdfs:comment>
-        <rdfs:label xml:lang="en">Polarity Labelling</rdfs:label>
     </owl:Class>
     
 
@@ -4730,26 +4533,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/ReadabilityAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ReadabilityAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The process/task of adding readability scores (or any other type of similar annotation) to a text or textual segment showing how easy it is to read and understand its meaning.</rdfs:comment>
-        <rdfs:label xml:lang="en">Readability annotation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/ReadabilityAnnotator -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ReadabilityAnnotator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/ReadabilityAnnotation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that annotates the tokens of a text with readability scores</rdfs:comment>
         <rdfs:label xml:lang="en">Readability annotator</rdfs:label>
     </owl:Class>
@@ -5025,15 +4812,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SemanticAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Semantic Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/SemanticAnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType">
@@ -5054,12 +4832,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticAnnotator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Annotator"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/performsOperation"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A component that annotates the tokens of a text with semantic features</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic annotator</rdfs:label>
     </owl:Class>
@@ -5079,16 +4851,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A division of words into classes based on their common semantic features</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic class</rdfs:label>
         <skos:altLabel xml:lang="en">Semantic type</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SemanticClassLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticClassLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of classifying words in a text according to a set of semantic classes (types).</rdfs:comment>
-        <rdfs:label xml:lang="en">Semantic Class Labelling</rdfs:label>
     </owl:Class>
     
 
@@ -5113,16 +4875,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A schematic representation of a situation involving various participants, props and other conceptual roles, each of which is a frame element</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic frame</rdfs:label>
         <skos:altLabel xml:lang="en">Frame</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SemanticRelationLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticRelationLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task//process of attaching tags indicating the semantic relation that holds between units of a text.</rdfs:comment>
-        <rdfs:label xml:lang="en">Semantic Relation Labelling</rdfs:label>
     </owl:Class>
     
 
@@ -5155,16 +4907,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SemanticRoleLabelling -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticRoleLabelling">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of attaching labels that correspond to the roles that the arguments of a predicate take in an event</rdfs:comment>
-        <rdfs:label xml:lang="en">Semantic Role Labelling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/SemanticSearch -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticSearch">
@@ -5193,15 +4935,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A group of words, usually containing a verb, that expresses a thought in the form of a statement, question, instruction, or exclamation and starts with a capital letter when written [https://dictionary.cambridge.org/dictionary/english/sentence]</rdfs:comment>
         <rdfs:label xml:lang="en">Sentence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SentenceAlignment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SentenceAlignment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Alignment"/>
-        <rdfs:label xml:lang="en">Sentence Alignment</rdfs:label>
     </owl:Class>
     
 
@@ -5732,16 +5465,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/TemporalExpressions -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TemporalExpressions">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:comment xml:lang="en">The task/process of determining the boundaries of units of text that denote time-related concepts and attaching to them tags that name these concepts (e.g. date, time, duration etc.)</rdfs:comment>
-        <rdfs:label xml:lang="en">Temporal Expressions Labelling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Term -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Term">
@@ -5851,17 +5574,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:altLabel xml:lang="en">Document classification</skos:altLabel>
         <skos:altLabel xml:lang="en">Text categorisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Text classification</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/TextGeneration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextGeneration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Generation"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
-        <rdfs:label xml:lang="en">Text Generation</rdfs:label>
-        <rdfs:label xml:lang="en">Text generation</rdfs:label>
     </owl:Class>
     
 
@@ -6552,15 +6264,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A word is a unit which is a constituent at the phrase level and above. It is sometimes identifiable according to such criteria as (a) being the minimal possible unit in a reply, (b) having features such as a regular stress pattern, and phonological changes conditioned by or blocked at word boundaries, (c) being the largest unit resistant to insertion of new constituents within its boundaries, or (d) being the smallest constituent that can be moved within a sentence without making the sentence ungrammatical. A word is sometimes placed, in a hierarchy of grammatical constituents, above the morpheme level and below the phrase level. [http://www.glossary.sil.org/term/word]
 In annotation, words are often used as equivalent to tokens; thus, for instance, punctuation marks (traditionally not considered as words) will also be annotated as &quot;word&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">Word</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/WordAlignment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WordAlignment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Alignment"/>
-        <rdfs:label xml:lang="en">Word Alignment</rdfs:label>
     </owl:Class>
     
 
