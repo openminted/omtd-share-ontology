@@ -699,15 +699,6 @@
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/AvatarSynthesis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AvatarSynthesis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityGeneration"/>
-        <rdfs:label xml:lang="e">Avatar Synthesis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Bayesian -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Bayesian">
@@ -887,15 +878,6 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format for the XML version of the British National Corpus (http://www.natcorp.ox.ac.uk/)</rdfs:comment>
         <rdfs:label xml:lang="en">BNC format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/BodyMovements -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BodyMovements">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="en">Body Movements</rdfs:label>
     </owl:Class>
     
 
@@ -2405,15 +2387,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/ExpressionRecognition -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ExpressionRecognition">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="en">Expression Recognition</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/ExtractionOfDomainSpecificInformation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ExtractionOfDomainSpecificInformation">
@@ -2437,33 +2410,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of detecting in a text and extracting information relevant to funding (e.g. funding programme, award, funder etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Extraction of funding information</rdfs:label>
         <skos:altLabel xml:lang="en">Mining of funding information</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/FaceRecognition -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FaceRecognition">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="en">Face Recognition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/FaceVerification -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FaceVerification">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Face Verification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/FacialExpressions -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FacialExpressions">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Facial Expressions</rdfs:label>
     </owl:Class>
     
 
@@ -2668,15 +2614,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/GazeEyeMovements -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/GazeEyeMovements">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Gaze Eye Movements</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/GazeteerBasedMatcher -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/GazeteerBasedMatcher">
@@ -2807,33 +2744,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/HandArmGestures -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HandArmGestures">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Hand Arm Gestures</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/HandManipulationOfObjects -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HandManipulationOfObjects">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Hand Manipulation Of Objects</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/HeadMovements -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HeadMovements">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="en">Head Movements</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/HistoricalEvent -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HistoricalEvent">
@@ -2880,15 +2790,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Format according to the specifications of HTML5 Microdata</rdfs:comment>
         <rdfs:label xml:lang="en">HTML5 Microdata</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/HumanoidAgentSynthesis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HumanoidAgentSynthesis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityGeneration"/>
-        <rdfs:label xml:lang="en">Humanoid Agent Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -3038,16 +2939,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A family of learning algorithms that, instead of performing explicit generalization, compares new problem instances with instances seen in training, which have been stored in memory.</rdfs:comment>
         <rdfs:label xml:lang="en">Instance-based Learning</rdfs:label>
         <skos:example xml:lang="en">Examples of instance-based learning algorithm are the k-nearest neighbor algorithm, kernel machines and RBF networks.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/IntraDocumentCoReferenceResolution -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/IntraDocumentCoReferenceResolution">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:comment xml:lang="en">The process/task of determining all linguistic expressions that refer to the same entity inside a single text.</rdfs:comment>
-        <rdfs:label xml:lang="en">Intra-document Co-reference Resolution</rdfs:label>
     </owl:Class>
     
 
@@ -3570,39 +3461,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/LinguisticResearch -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LinguisticResearch">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Linguistic Research</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/LinkedDataFormat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LinkedDataFormat">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Formats used for linked data</rdfs:comment>
         <rdfs:label xml:lang="en">Linked data format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/LipMovements -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LipMovements">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="en">Lip Movements</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/LipTrackingAnalysis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LipTrackingAnalysis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModalityAnnotation"/>
-        <rdfs:label xml:lang="e">Lip Tracking Analysis</rdfs:label>
     </owl:Class>
     
 
@@ -3673,15 +3537,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A component that is used in predicting based on machine learning models</rdfs:comment>
         <rdfs:label xml:lang="en">Machine Learning predictor</rdfs:label>
         <skos:comment xml:lang="en">maybe create another class for predictors, analytics</skos:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/MachineTranslation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MachineTranslation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Translation"/>
-        <rdfs:label xml:lang="en">Machine Translation</rdfs:label>
     </owl:Class>
     
 
@@ -3816,24 +3671,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">The IANA mimetype that can be used for the data format; it can be the exact or a broader mimetype; unofficial mimetypes are also used, but this will be revisited</rdfs:comment>
         <rdfs:label xml:lang="en">Mimetype</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/ModalityAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ModalityAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Modality Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/ModalityGeneration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ModalityGeneration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label>Modality Generation</rdfs:label>
     </owl:Class>
     
 
@@ -4021,24 +3858,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/MultimediaDevelopment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MultimediaDevelopment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Multimedia Development</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/MultimediaDocumentProcessing -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MultimediaDocumentProcessing">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Multimedia Document Processing</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Naf -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Naf">
@@ -4132,15 +3951,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Generation"/>
         <rdfs:label xml:lang="en">Natural Language Generation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/NaturalLanguageUnderstanding -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NaturalLanguageUnderstanding">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Natural Language Understanding</rdfs:label>
     </owl:Class>
     
 
@@ -4307,15 +4117,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label>OperationsWithMultimediaInputOrOutput</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Organism -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Organism">
@@ -4338,15 +4139,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A word or group of words that denotes an organization, such as company, association, institution etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/OrthographicTranscription -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/OrthographicTranscription">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Orthographic Transcription</rdfs:label>
     </owl:Class>
     
 
@@ -4401,15 +4193,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of segmenting a text into paragraphs and marking their boundaries</rdfs:comment>
         <rdfs:label xml:lang="en">Paragraph splitting</rdfs:label>
         <skos:altLabel xml:lang="en">Paragraph segmentation</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/ParalanguageAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ParalanguageAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Paralanguage Annotation</rdfs:label>
     </owl:Class>
     
 
@@ -4530,15 +4313,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/PersonIdentification -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PersonIdentification">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Person Identification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/PersuasiveExpression -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PersuasiveExpression">
@@ -4582,15 +4356,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AgriculturalEntity"/>
         <rdfs:comment xml:lang="en">The physical appearance or biochemical characteristic of an organism as a result of the interaction of its genotype and the environment [http://www.biology-online.org/dictionary/Phenotype]</rdfs:comment>
         <rdfs:label xml:lang="en">Phenotype</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/PhoneticTranscription -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PhoneticTranscription">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Phonetic Transcription</rdfs:label>
     </owl:Class>
     
 
@@ -4776,15 +4541,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ComponentType"/>
         <rdfs:comment xml:lang="en">A component that is used in processing operations</rdfs:comment>
         <rdfs:label xml:lang="en">Processor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/ProsodicAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ProsodicAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Prosodic Annotation</rdfs:label>
     </owl:Class>
     
 
@@ -5022,15 +4778,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ResourceAccess"/>
         <rdfs:comment xml:lang="en">Getting access to the contents of an input resource</rdfs:comment>
         <rdfs:label xml:lang="en">Reading</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/ReadingAndWritingAidApplications -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ReadingAndWritingAidApplications">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Reading and Writing Aid Applications</rdfs:label>
     </owl:Class>
     
 
@@ -5428,15 +5175,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SemanticWeb -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticWeb">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Semantic Web</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Sentence -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Sentence">
@@ -5575,24 +5313,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SignLanguageGeneration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SignLanguageGeneration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Sign Language Generation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SignLanguageRecognition -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SignLanguageRecognition">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="e">Sign Language Recognition</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Simplifier -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Simplifier">
@@ -5655,51 +5375,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SoundEventAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SoundEventAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Sound Event Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SoundToTextAlignment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SoundToTextAlignment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Sound To Text Alignment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeakerIdentification -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeakerIdentification">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Speaker Identification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeakerTurns -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeakerTurns">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Speaker Turns</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeakerVerification -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeakerVerification">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
-        <rdfs:label xml:lang="en">Speaker Verification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Species -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Species">
@@ -5731,111 +5406,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechAnalysis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechAnalysis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechAnnotation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Speech Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechAssistedVideoControl -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechAssistedVideoControl">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Assisted Video Control</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechLipsCorrelationAnalysis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechLipsCorrelationAnalysis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnalysis"/>
-        <rdfs:label xml:lang="en">Speech Lips Correlation Analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechRecognition -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechRecognition">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Recognition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechSynthesis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechSynthesis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Synthesis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechToSpeechTranslation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechToSpeechTranslation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Translation"/>
-        <rdfs:label xml:lang="en">Speech to Speech Translation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechUnderstanding -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechUnderstanding">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Understanding</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpeechVerification -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechVerification">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Speech Verification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpellChecking -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpellChecking">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Spell Checking</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/SpellingChecker -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpellingChecker">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/PreOrPostProcessor"/>
         <rdfs:comment xml:lang="en">A component that corrects spelling mistakes in a text</rdfs:comment>
         <rdfs:label xml:lang="en">Spelling checker</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SpokenDialogueSystems -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpokenDialogueSystems">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Spoken Dialogue Systems</rdfs:label>
     </owl:Class>
     
 
@@ -6071,15 +5647,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/TalkingHeadSynthesis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TalkingHeadSynthesis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Talking Head Synthesis</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Tcf -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Tcf">
@@ -6295,15 +5862,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
         <rdfs:label xml:lang="en">Text Generation</rdfs:label>
         <rdfs:label xml:lang="en">Text generation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Text to Speech Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -6554,24 +6112,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Translation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Translation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Translation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Transliteration -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Transliteration">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">Transliteration</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Tsv -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Tsv">
@@ -6680,15 +6220,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/UserAuthentication -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/UserAuthentication">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationsnottobeused"/>
-        <rdfs:label xml:lang="en">User Authentication</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Validation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Validation">
@@ -6753,15 +6284,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/VisualSceneUnderstanding -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/VisualSceneUnderstanding">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="e">Visual Scene Understanding</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Visualiser -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Visualiser">
@@ -6786,15 +6308,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The representation of an object, situation, or set of information as a chart, diagram or any other image that helps end users understand the contents or message</rdfs:comment>
         <rdfs:label xml:lang="en">Visualization</rdfs:label>
         <skos:altLabel xml:lang="en">Visualisation</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/VoiceControl -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/VoiceControl">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operationswithmultimediainputoroutput"/>
-        <rdfs:label xml:lang="en">Voice Control</rdfs:label>
     </owl:Class>
     
 
