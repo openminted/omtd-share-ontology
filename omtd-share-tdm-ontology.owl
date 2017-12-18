@@ -1942,15 +1942,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Deprecatedclasses -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Deprecatedclasses">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label>deprecatedClasses</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/DerivationalAnalysis -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DerivationalAnalysis">
@@ -3006,16 +2997,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/TextAndDataMining"/>
         <rdfs:comment xml:lang="en">The activity of obtaining information resources relevant to an information need from a collection of information resources; searches can be based on full-text or other content-based indexing</rdfs:comment>
         <rdfs:label xml:lang="en">Information retrieval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Infrastructure -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Infrastructure">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Deprecatedclasses"/>
-        <rdfs:comment xml:lang="en">The basic structures and facilities required for the operation of a system</rdfs:comment>
-        <rdfs:label xml:lang="en">Infrastructure</rdfs:label>
     </owl:Class>
     
 
@@ -4232,16 +4213,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/NlpDevelopmentEnvironment -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NlpDevelopmentEnvironment">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Deprecatedclasses"/>
-        <rdfs:comment xml:lang="en">A technology that supports the development of data resources, like lexicons, grammars, corpora, etc. Can be included in an Architecture or in a Platform</rdfs:comment>
-        <rdfs:label xml:lang="en">NLP development environment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Normalization -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Normalization">
@@ -4655,17 +4626,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AgriculturalEntity"/>
         <rdfs:comment xml:lang="en">Physical and chemical property of substances</rdfs:comment>
         <rdfs:label xml:lang="en">Physico-chemical property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Platform -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Platform">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Deprecatedclasses"/>
-        <rdfs:comment xml:lang="en">A technology that eases the development and/or execution of new software programmes</rdfs:comment>
-        <rdfs:label xml:lang="en">Platform</rdfs:label>
-        <skos:example xml:lang="en">OpenMinTeD</skos:example>
     </owl:Class>
     
 
