@@ -2,16 +2,16 @@
 <rdf:RDF xmlns="http://webprotege.stanford.edu/project/8PqyPFFm3nKjhWae2B5Poj#"
      xml:base="http://webprotege.stanford.edu/project/8PqyPFFm3nKjhWae2B5Poj"
      xmlns:omtd-share="http://w3id.org/def/omtd-share/"
+     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
      xmlns:lappsgrid="http://vocab.lappsgrid.org/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/8PqyPFFm3nKjhWae2B5Poj"/>
+    <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share"/>
     
 
 
@@ -32,12 +32,9 @@
     
 
 
-
     <!-- http://www.w3.org/2000/01/rdf-schema#altLabel -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#altLabel">
-        <rdfs:label>rdfs:altLabel</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#altLabel"/>
     
 
 
@@ -119,6 +116,12 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass">
@@ -127,25 +130,15 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#sameAs -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
-        <rdfs:label>skos:closeMatch</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#relatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedTo">
-        <rdfs:label>skos:relatedTo</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedTo"/>
     
 
 
@@ -184,12 +177,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#sameAs -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
@@ -207,6 +194,168 @@
     
 
 
+    <!-- http://purl.org/olia/olia-top.owl#Clause -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Clause"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Constituent -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Constituent"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Date -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Date"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#DiscourseFeature -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#DiscourseFeature"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Frame -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Frame"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#LexicalRelation -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#LexicalRelation"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticCategory -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticCategory"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticFeature -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticFeature"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#NamedEntity -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#NamedEntity"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Phrase -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Phrase"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#PolarityFeature -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#PolarityFeature"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#SemanticFeature -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SemanticFeature"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#SemanticRole -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SemanticRole"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Sentence -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Sentence"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Stem -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Stem"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#SyntacticCategory -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SyntacticCategory"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Token -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Token"/>
+    
+
+
+    <!-- http://purl.org/olia/olia-top.owl#Word -->
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Word"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Annotation -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Annotation"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Constituent -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Constituent"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Coreference -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Coreference"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Dependency -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Dependency"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Document -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Document"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/NamedEntity -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/NamedEntity"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Paragraph -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Paragraph"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/SemanticRole -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/SemanticRole"/>
+    
+
+
+    <!-- http://vocab.lappsgrid.org/Token -->
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Token"/>
+    
+
+
     <!-- http://w3id.org/def/omtd-share/ACLAnthologyCorpusFormat -->
 
     <owl:Class rdf:about="http://w3id.org/def/omtd-share/ACLAnthologyCorpusFormat">
@@ -219,14 +368,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format specific to the ACL Anthology Reference Corpus (http://acl-arc.comp.nus.edu.sg/), most probably version 20080325</rdfs:comment>
@@ -419,9 +568,9 @@
 
     <owl:Class rdf:about="http://w3id.org/def/omtd-share/AnnotationOfQuestionTopics">
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/SemanticAnnotation"/>
-        <skos:altLabel xml:lang="en">Annotation of question topical targets</skos:altLabel>
         <rdfs:comment xml:lang="en">The task/process of attaching tags to the segment of a question that functions as the topic of that question</rdfs:comment>
         <rdfs:label xml:lang="en">Annotation of question topics</rdfs:label>
+        <skos:altLabel xml:lang="en">Annotation of question topical targets</skos:altLabel>
     </owl:Class>
     
 
@@ -533,14 +682,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format for the XML version of the British National Corpus (http://www.natcorp.ox.ac.uk/)</rdfs:comment>
@@ -568,6 +717,12 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/AnnotationFormat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://brat.nlplab.org/standoff.html</owl:hasValue>
             </owl:Restriction>
@@ -576,12 +731,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">BRAT stand-off format for annotations (BRAT is a online environment for collaborative text annotation, cf. http://brat.nlplab.org/)</rdfs:comment>
@@ -624,14 +773,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Binary format used for CAS data</rdfs:comment>
@@ -1410,14 +1559,14 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/AnnotationFormat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">DkPro format for tokenized files containing one sentence per line and tokens split by whitespaces.</rdfs:comment>
@@ -2317,10 +2466,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/def/omtd-share/FormatConversion">
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/SupportOperation"/>
-        <skos:altLabel xml:lang="en">File conversion</skos:altLabel>
         <rdfs:comment xml:lang="en">The task/process of converting (changing) the format of a resource into another (e.g. PDF to TXT or XML)</rdfs:comment>
         <rdfs:label xml:lang="en">Format conversion</rdfs:label>
         <skos:altLabel xml:lang="en">Data conversion</skos:altLabel>
+        <skos:altLabel xml:lang="en">File conversion</skos:altLabel>
     </owl:Class>
     
 
@@ -2633,14 +2782,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A tab-separated format with limited markup (e.g. for sentences, documents, but not recursive structures like parse-trees) used by the IMS Open Corpus Workbench.</rdfs:comment>
@@ -2719,14 +2868,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Inline XML file format</rdfs:comment>
@@ -3326,12 +3475,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/hasFileExtension"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdb</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
                 <owl:hasValue rdf:resource="IANA:application/vnd.msaccess"/>
             </owl:Restriction>
@@ -3340,6 +3483,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
                 <owl:hasValue rdf:resource="IANA:application/x-msaccess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/hasFileExtension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdb</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format for Microsoft Access database</rdfs:comment>
@@ -3479,14 +3628,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/AnnotationFormat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.mallet-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.mallet-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Topic proportions in the shape [\t]\t\t...</rdfs:comment>
@@ -4037,14 +4186,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/hasFileExtension"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pdf</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="IANA:application/pdf"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="IANA:application/pdf"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/hasFileExtension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pdf</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format for PDF files (Portable Document Format)</rdfs:comment>
@@ -4746,14 +4895,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-              <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-              <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Reuters-21578 corpus in SGML format</rdfs:comment>
@@ -4774,14 +4923,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Reuters-21578 corpus transformed into text format using ExtractReuters in the lucene-benchmarks project</rdfs:comment>
@@ -5177,14 +5326,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/UIMACASF"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The CAS is the native data model used by UIMA; there are various ways of saving CAS data, using XMI, XCAS, or binary formats; this is for the serialized format</rdfs:comment>
@@ -5269,14 +5418,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/omtd-share/DataFormat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Solr format</rdfs:comment>
@@ -5722,14 +5871,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.tei-c.org/index.xml</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="IANA:application/tei+xml"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="IANA:application/tei+xml"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.tei-c.org/index.xml</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Data format for TEI-encoded (Text Encoding Initiative) texts</rdfs:comment>
@@ -5773,14 +5922,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Format for TGrep2 (search engine for searching syntactic parse trees represented as bracketed structures)</rdfs:comment>
@@ -6047,6 +6196,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html</owl:hasValue>
             </owl:Restriction>
@@ -6055,12 +6210,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The TIGER XML format was created for encoding syntactic constituency structures in the German TIGER corpus. It has since been used for many other corpora as well. TIGERSearch is a linguistic search engine specifically targetting this format. The format has later been extended to also support semantic frame annotations.</rdfs:comment>
@@ -6206,14 +6355,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-                <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl"/>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Format of the Tübingen Partially Parsed Corpus of Written German (TüPP-D/Z) XML files; TüPP D/Z (http://www.sfs.uni-tuebingen.de/de/ascl/ressourcen/corpora/tuepp-dz.html) is a collection of articles from the German newspaper taz (die tageszeitung) annotated and encoded in a XML format.</rdfs:comment>
@@ -7161,240 +7310,18 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
                 <owl:hasValue rdf:resource="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/def/omtd-share/documentationURL"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">UIMA serialisation in JSON</rdfs:comment>
         <rdfs:label xml:lang="en">UIMA/JSON</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date -->
-
-    <owl:Class rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"/>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Clause -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Clause">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Clause</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Constituent -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Constituent">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Constituent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Date -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Date">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Date</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#DiscourseFeature -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#DiscourseFeature">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#DiscourseFeature</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Frame -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Frame">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Frame</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#LexicalRelation -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#LexicalRelation">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#LexicalRelation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticCategory -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticCategory">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#MorphosyntacticCategory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticFeature -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticFeature">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#MorphosyntacticFeature</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#NamedEntity -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#NamedEntity">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#NamedEntity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Phrase -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Phrase">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Phrase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#PolarityFeature -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#PolarityFeature">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#PolarityFeature</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#SemanticFeature -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SemanticFeature">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#SemanticFeature</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#SemanticRole -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SemanticRole">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#SemanticRole</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Sentence -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Sentence">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Sentence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Stem -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Stem">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Stem</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#SyntacticCategory -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SyntacticCategory">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#SyntacticCategory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Token -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Token">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Token</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#Word -->
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Word">
-        <rdfs:label>http://purl.org/olia/olia-top.owl#Word</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Annotation -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Annotation">
-        <rdfs:label>http://vocab.lappsgrid.org/Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Constituent -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Constituent">
-        <rdfs:label>http://vocab.lappsgrid.org/Constituent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Coreference -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Coreference">
-        <rdfs:label>http://vocab.lappsgrid.org/Coreference</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Dependency -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Dependency">
-        <rdfs:label>http://vocab.lappsgrid.org/Dependency</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Document -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Document">
-        <rdfs:label> http://vocab.lappsgrid.org/Document</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/NamedEntity -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/NamedEntity">
-        <rdfs:label>http://vocab.lappsgrid.org/NamedEntity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Paragraph -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Paragraph">
-        <rdfs:label>http://vocab.lappsgrid.org/Paragraph</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/SemanticRole -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/SemanticRole">
-        <rdfs:label>http://vocab.lappsgrid.org/SemanticRole</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Token -->
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Token">
-        <rdfs:label> http://vocab.lappsgrid.org/Token</rdfs:label>
     </owl:Class>
     
 
@@ -7430,275 +7357,69 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fjson -->
+    <!-- IANA:application/pdf -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fjson">
-        <rdfs:label>application/json</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="IANA:application/pdf"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fmsword -->
+    <!-- IANA:application/vnd.msaccess -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fmsword">
-        <rdfs:label>application/msword</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="IANA:application/vnd.msaccess"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fpdf -->
+    <!-- IANA:application/x-msaccess -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpdf">
-        <rdfs:label>application/pdf</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="IANA:application/x-msaccess"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fpostscri -->
+    <!-- IANA:application/tei+xml -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpostscri">
-        <rdfs:label>application/postscri</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="IANA:application/tei+xml"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fpostscript -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpostscript">
-        <rdfs:label>application/postscript</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Frtf -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Frtf">
-        <rdfs:label>application/rtf</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.ms-excel -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.ms-excel">
-        <rdfs:label>application/vnd.ms-excel</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.msaccess -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.msaccess">
-        <rdfs:label>application/vnd.msaccess</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-latex -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-latex">
-        <rdfs:label>application/x-latex</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-msaccess -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-msaccess">
-        <rdfs:label>application/x-msaccess</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
     
 
 
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-tex -->
+    <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-tex">
-        <rdfs:label>application/x-tex</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra3 -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra3">
-        <rdfs:label>application/x.org.dkpro.negra3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra4 -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra4">
-        <rdfs:label>application/x.org.dkpro.negra4</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tgrep2 -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tgrep2">
-        <rdfs:label>application/x.org.dkpro.tgrep2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fxml">
-        <rdfs:label>application/xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Femma%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Femma%2Bxml">
-        <rdfs:label>application/emma+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fjson%2Bld -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fjson%2Bld">
-        <rdfs:label>application/json+ld</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fld%2Bjson -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fld%2Bjson">
-        <rdfs:label>application/ld+json</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fld%2Bjson%3Bprofile%3D%22http%3A%2F%2Fwww.w3.org%2Fns%2Fanno.jsonld%22 -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fld%2Bjson%3Bprofile%3D%22http%3A%2F%2Fwww.w3.org%2Fns%2Fanno.jsonld%22">
-        <rdfs:label>application/ld+json;profile=&quot;http://www.w3.org/ns/anno.jsonld&quot;</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fpls%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpls%2Bxml">
-        <rdfs:label>application/pls+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Frdf%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Frdf%2Bxml">
-        <rdfs:label>application/rdf+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Ftei%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Ftei%2Bxml">
-        <rdfs:label>application/tei+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.xmi%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.xmi%2Bxml">
-        <rdfs:label>application/vnd.xmi+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-tmx%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-tmx%2Bxml">
-        <rdfs:label>application/x-tmx+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-xces%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-xces%2Bxml">
-        <rdfs:label>application/x-xces+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx-xml%2Balvis -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-xml%2Balvis">
-        <rdfs:label>application/x-xml+alvis</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.kaf%2Bjson -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.kaf%2Bjson">
-        <rdfs:label>application/x.kaf+json</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.graf%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.graf%2Bxml">
-        <rdfs:label>application/x.org.dkpro.graf+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.reuters21578%2Bsgml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.reuters21578%2Bsgml">
-        <rdfs:label>application/x.org.dkpro.reuters21578+sgml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tiger%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tiger%2Bxml">
-        <rdfs:label>application/x.org.dkpro.tiger+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tuepp%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tuepp%2Bxml">
-        <rdfs:label>application/x.org.dkpro.tuepp+xml</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bbinary -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bbinary">
-        <rdfs:label>application/x.org.dkpro.uima+binary</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bjson -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bjson">
-        <rdfs:label>application/x.org.dkpro.uima+json</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/def/omtd-share/application%2Fxhtml%2Bxml -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fxhtml%2Bxml">
-        <rdfs:label>application/xhtml+xml</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl"/>
     
 
 
@@ -7720,7 +7441,9 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
     <!-- http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date -->
 
-    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"/>
+    <owl:NamedIndividual rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date">
+        <rdfs:label>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -7892,9 +7615,307 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
+    <!-- http://w3id.org/def/omtd-share/application%2Fjson -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fjson">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/json</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fmsword -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fmsword">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/msword</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fpdf -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpdf">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/pdf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fpostscript -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpostscript">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/postscript</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Frtf -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Frtf">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/rtf</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.ms-excel -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.ms-excel">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/vnd.ms-excel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.msaccess -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.msaccess">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/vnd.msaccess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-latex -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-latex">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-latex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-msaccess -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-msaccess">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-msaccess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-tex -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-tex">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-tex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra3">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.negra3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.negra4">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.negra4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tgrep2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tgrep2">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.tgrep2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Femma%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Femma%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/emma+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fjson%2Bld -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fjson%2Bld">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/json+ld</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fld%2Bjson -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fld%2Bjson">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/ld+json</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fld%2Bjson%3Bprofile%3D%22http%3A%2F%2Fwww.w3.org%2Fns%2Fanno.jsonld%22 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fld%2Bjson%3Bprofile%3D%22http%3A%2F%2Fwww.w3.org%2Fns%2Fanno.jsonld%22">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/ld+json;profile=&quot;http://www.w3.org/ns/anno.jsonld&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fpls%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fpls%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/pls+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Frdf%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Frdf%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/rdf+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Ftei%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Ftei%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/tei+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fvnd.xmi%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fvnd.xmi%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/vnd.xmi+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-tmx%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-tmx%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-tmx+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-xces%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-xces%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-xces+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx-xml%2Balvis -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx-xml%2Balvis">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x-xml+alvis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.kaf%2Bjson -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.kaf%2Bjson">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.kaf+json</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.graf%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.graf%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.graf+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.reuters21578%2Bsgml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.reuters21578%2Bsgml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.reuters21578+sgml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tiger%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tiger%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.tiger+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tuepp%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.tuepp%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.tuepp+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bbinary -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bbinary">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.uima+binary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bjson -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fx.org.dkpro.uima%2Bjson">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/x.org.dkpro.uima+json</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/def/omtd-share/application%2Fxhtml%2Bxml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/application%2Fxhtml%2Bxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+        <rdfs:label>application/xhtml+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/def/omtd-share/text%2Fcsv -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fcsv">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/csv</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7903,6 +7924,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fhtml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fhtml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/html</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7910,13 +7932,16 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
     <!-- http://w3id.org/def/omtd-share/text%2Fplain -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fplain"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fplain">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://w3id.org/def/omtd-share/text%2Fsgml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fsgml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/sgml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7925,6 +7950,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Ftab-separated-values -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Ftab-separated-values">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/tab-separated-values</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7933,6 +7959,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fturtle -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fturtle">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/turtle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7941,6 +7968,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx-cochrane -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx-cochrane">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x-cochrane</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7949,6 +7977,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx-pubmed -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx-pubmed">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x-pubmed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7957,6 +7986,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2000 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2000">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2000</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7965,6 +7995,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2002 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2002">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2002</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7973,6 +8004,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2003 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2003">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2003</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7981,6 +8013,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2006 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2006">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2006</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7989,9 +8022,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2008 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2008">
-        <rdfs:label> 	
-text/x.org.dkpro.conll-2008</rdfs:label>
-        <rdfs:label> text/x.org.dkpro.conll-2008</rdfs:label>
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2008</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8000,6 +8031,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2009 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2009">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2009</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8008,6 +8040,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2012 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-2012">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-2012</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8016,6 +8049,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-u -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.conll-u">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.conll-u</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8024,6 +8058,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.imscwb -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.imscwb">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.imscwb</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8032,6 +8067,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ngram -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ngram">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.ngram</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8040,6 +8076,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ptb-chunked -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ptb-chunked">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.ptb-chunked</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8048,6 +8085,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ptb-combined -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.ptb-combined">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.ptb-combined</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8056,6 +8094,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.reuters21578 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fx.org.dkpro.reuters21578">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/x.org.dkpro.reuters21578</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8064,6 +8103,7 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Fxml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Fxml">
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8072,9 +8112,75 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <!-- http://w3id.org/def/omtd-share/text%2Ftcf%2Bxml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/def/omtd-share/text%2Ftcf%2Bxml">
-        <rdfs:label> text/tcf+xml</rdfs:label>
+        <rdf:type rdf:resource="http://w3id.org/def/omtd-share/Mimetype"/>
         <rdfs:label>text/tcf+xml</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.penntree-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.penntree-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
+    
+
+
+    <!-- https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl -->
+
+    <owl:NamedIndividual rdf:about="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
     
 
 
@@ -8086,13 +8192,8 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date">
-        <rdfs:label>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</rdfs:label>
-        <rdfs:label> http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/def/omtd-share/text%2Fplain">
         <rdfs:comment xml:lang="en">Default value for the format of textual files; a textual file should be human-readable and must not contain binary data</rdfs:comment>
-        <rdfs:label xml:lang="en">plain text</rdfs:label>
         <rdfs:label>text/plain</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="wptmp:entity#JSON">
@@ -8103,11 +8204,11 @@ text/x.org.dkpro.conll-2008</rdfs:label>
     <rdf:Description rdf:about="wptmp:entity#Normalization">
         <rdfs:label xml:lang="en">Normalization</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="wptmp:entity#GATE format">
-        <rdfs:label xml:lang="en">GATE format</rdfs:label>
+    <rdf:Description rdf:about="wptmp:entity#GATE%20format">
         <rdfs:comment xml:lang="en">Formats proprietary to GATE tools</rdfs:comment>
+        <rdfs:label xml:lang="en">GATE format</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="wptmp:entity#Tabular format">
+    <rdf:Description rdf:about="wptmp:entity#Tabular%20format">
         <rdfs:label xml:lang="en">Tabular format</rdfs:label>
         <rdfs:comment xml:lang="en">Any format with text in columns</rdfs:comment>
     </rdf:Description>
@@ -8115,5 +8216,5 @@ text/x.org.dkpro.conll-2008</rdfs:label>
 
 
 
-<!-- Generated by the OWL API (version 4.3.1) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
