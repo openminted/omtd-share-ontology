@@ -1819,7 +1819,6 @@ _:genid117 <http://www.w3.org/2002/07/owl#hasValue> "https://builds.openminted.e
 _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid118 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
 _:genid118 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_json_ld> .
-<http://w3id.org/meta-share/omtd-share/Application_json_ld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/Json_ld> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format encoding Linked Data using JSON"@en .
 <http://w3id.org/meta-share/omtd-share/Json_ld> <http://www.w3.org/2000/01/rdf-schema#label> "JSON/LD"@en .
 # 
@@ -4264,6 +4263,7 @@ _:genid297 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.inform
 <http://w3id.org/meta-share/omtd-share/Application_json> <http://www.w3.org/2000/01/rdf-schema#label> "application/json" .
 # 
 # http://w3id.org/meta-share/omtd-share/Application_json_ld
+<http://w3id.org/meta-share/omtd-share/Application_json_ld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://w3id.org/meta-share/omtd-share/Application_ld_json
 <http://w3id.org/meta-share/omtd-share/Application_ld_json> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
