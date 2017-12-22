@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://w3id.org/meta-share/omtd-share#"
-     xml:base="http://w3id.org/meta-share/omtd-share"
+<rdf:RDF xmlns="http://w3id.org/meta-share/omtd-share/"
+     xml:base="http://w3id.org/meta-share/omtd-share/"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
