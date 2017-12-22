@@ -1,0 +1,1368 @@
+{
+  "@context" : {
+    "Tsv" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tsv"
+    },
+    "DataMerging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataMerging"
+    },
+    "Bayesian" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Bayesian"
+    },
+    "FeatureExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FeatureExtractor"
+    },
+    "ClusteringMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ClusteringMethod"
+    },
+    "DataSplitting" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataSplitting"
+    },
+    "BilingualLexiconInduction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BilingualLexiconInduction"
+    },
+    "StructuralAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/StructuralAnnotation"
+    },
+    "KeywordExtraction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KeywordExtraction"
+    },
+    "FeatureExtraction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FeatureExtraction"
+    },
+    "DecisionTrees" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DecisionTrees"
+    },
+    "Chunk" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Chunk"
+    },
+    "BionlpFormats" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BionlpFormats"
+    },
+    "Annotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Annotation"
+    },
+    "StatisticalLearningMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/StatisticalLearningMethod"
+    },
+    "LexiconEnhancement" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconEnhancement"
+    },
+    "equivalentClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
+      "@type" : "@id"
+    },
+    "HistoricalEvent" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/HistoricalEvent"
+    },
+    "Graf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Graf"
+    },
+    "Bionlp" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Bionlp"
+    },
+    "Clause" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Clause"
+    },
+    "Metabolite" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Metabolite"
+    },
+    "NamedEntityRecognition" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/NamedEntityRecognition"
+    },
+    "TermExtraction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TermExtraction"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Stemming" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Stemming"
+    },
+    "Filter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Filter"
+    },
+    "Summarization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Summarization"
+    },
+    "WikipediaArticleInfo" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "LifeSciences" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LifeSciences"
+    },
+    "DialogueAct" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DialogueAct"
+    },
+    "Editor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Editor"
+    },
+    "DeepLearning" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DeepLearning"
+    },
+    "ResourceAccess" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ResourceAccess"
+    },
+    "ComponentType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ComponentType"
+    },
+    "SocialSciencesEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SocialSciencesEntity"
+    },
+    "InformationFilteringByRecommenderSystems" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InformationFilteringByRecommenderSystems"
+    },
+    "WikipediaArticle" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaArticle"
+    },
+    "MediaWikiMarkup" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MediaWikiMarkup"
+    },
+    "Writing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Writing"
+    },
+    "Imscwb" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Imscwb"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "LexiconFormatConversion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconFormatConversion"
+    },
+    "IonicChannel" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/IonicChannel"
+    },
+    "Datasift_json" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Datasift_json"
+    },
+    "Media" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Media"
+    },
+    "ReadabilityAnnotator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ReadabilityAnnotator"
+    },
+    "DataCollector" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataCollector"
+    },
+    "XcesIlspVariant" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/XcesIlspVariant"
+    },
+    "WikipediaTemplateFilteredArticle" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle"
+    },
+    "Organism" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Organism"
+    },
+    "OfficialText" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/OfficialText"
+    },
+    "relatedTo" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#relatedTo",
+      "@type" : "@id"
+    },
+    "PreOrPostProcessor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PreOrPostProcessor"
+    },
+    "Latex" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Latex"
+    },
+    "LexiconAccess" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconAccess"
+    },
+    "TrainerOfMachineLearningModels" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels"
+    },
+    "Pml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Pml"
+    },
+    "Turtle" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Turtle"
+    },
+    "Kaf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Kaf"
+    },
+    "PersuasiveExpression" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PersuasiveExpression"
+    },
+    "BinaryFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BinaryFormat"
+    },
+    "ConstituencyParsing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ConstituencyParsing"
+    },
+    "Cochrane" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Cochrane"
+    },
+    "Habitat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Habitat"
+    },
+    "LexiconExtractionFromLexica" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconExtractionFromLexica"
+    },
+    "Organization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Organization"
+    },
+    "SpeechAct" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SpeechAct"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Owl_xml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Owl_xml"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "DataFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataFormat"
+    },
+    "ContradictionDetection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ContradictionDetection"
+    },
+    "LanguageIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LanguageIdentifier"
+    },
+    "MorphosyntacticTagging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphosyntacticTagging"
+    },
+    "Postscript" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Postscript"
+    },
+    "Html5Microdata" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Html5Microdata"
+    },
+    "Neuron" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Neuron"
+    },
+    "SemanticAnnotator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticAnnotator"
+    },
+    "Reader" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Reader"
+    },
+    "Pls" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Pls"
+    },
+    "BrainRegion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BrainRegion"
+    },
+    "GrammarChecker" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GrammarChecker"
+    },
+    "Viewing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Viewing"
+    },
+    "OntologyEnhancement" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/OntologyEnhancement"
+    },
+    "DerivationalFeature" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DerivationalFeature"
+    },
+    "KnowledgeDiscovery" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KnowledgeDiscovery"
+    },
+    "KernelMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KernelMethod"
+    },
+    "Evaluation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Evaluation"
+    },
+    "PtbChunked" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PtbChunked"
+    },
+    "CorpusViewing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CorpusViewing"
+    },
+    "ScriptBasedAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScriptBasedAnalysis"
+    },
+    "RuleBasedMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RuleBasedMethod"
+    },
+    "TdmMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TdmMethod"
+    },
+    "ArtificialNeuralNetwork" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ArtificialNeuralNetwork"
+    },
+    "TextAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TextAnnotation"
+    },
+    "SupportComponent" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SupportComponent"
+    },
+    "SocialSciences" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SocialSciences"
+    },
+    "SpellingChecker" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SpellingChecker"
+    },
+    "Conll2000" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2000"
+    },
+    "Emotion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Emotion"
+    },
+    "Generator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Generator"
+    },
+    "KeaCorpus" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KeaCorpus"
+    },
+    "AnnotationOfDocumentStructure" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationOfDocumentStructure"
+    },
+    "SentimentAnalyzer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SentimentAnalyzer"
+    },
+    "MalletLdaTopicProportionsSorted" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MalletLdaTopicProportionsSorted"
+    },
+    "SupportOperation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SupportOperation"
+    },
+    "RecognizingTextualEntailment" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RecognizingTextualEntailment"
+    },
+    "MsWord" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MsWord"
+    },
+    "MachineLearningPredictor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MachineLearningPredictor"
+    },
+    "LexiconViewer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconViewer"
+    },
+    "Reuters21578Sgml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Reuters21578Sgml"
+    },
+    "LexiconAcquisitionFromCorpora" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconAcquisitionFromCorpora"
+    },
+    "CorpusFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CorpusFormat"
+    },
+    "ConllFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ConllFormat"
+    },
+    "Sentiment" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Sentiment"
+    },
+    "DkproTokenized" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DkproTokenized"
+    },
+    "LexicalSemanticRelation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation"
+    },
+    "QuestionTopicalTarget" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/QuestionTopicalTarget"
+    },
+    "BelowPosTagging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BelowPosTagging"
+    },
+    "Paraphrasing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Paraphrasing"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#altLabel"
+    },
+    "WikipediaDiscussion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaDiscussion"
+    },
+    "Phrase" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Phrase"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ScholarlyCommunication" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyCommunication"
+    },
+    "Blikiwikipedia" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Blikiwikipedia"
+    },
+    "Nif" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Nif"
+    },
+    "Marker" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Marker"
+    },
+    "GateXml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GateXml"
+    },
+    "Polarity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Polarity"
+    },
+    "Stemmer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Stemmer"
+    },
+    "AgriculturalEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AgriculturalEntity"
+    },
+    "TextAndDataMining" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TextAndDataMining"
+    },
+    "FactoredTagLemFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FactoredTagLemFormat"
+    },
+    "FlowControl" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FlowControl"
+    },
+    "WikipediaRevision" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaRevision"
+    },
+    "Json" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Json"
+    },
+    "LexiconExtractorFromLexica" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconExtractorFromLexica"
+    },
+    "Location" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Location"
+    },
+    "InformationRetrieval" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InformationRetrieval"
+    },
+    "Crawling" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Crawling"
+    },
+    "OntologyAcquisition" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/OntologyAcquisition"
+    },
+    "Operation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Operation"
+    },
+    "Debugging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Debugging"
+    },
+    "Solr" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Solr"
+    },
+    "LanguageIdentification" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LanguageIdentification"
+    },
+    "Chat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Chat"
+    },
+    "TabularFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TabularFormat"
+    },
+    "EnsembleMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EnsembleMethod"
+    },
+    "WheatRelatedSpecies" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WheatRelatedSpecies"
+    },
+    "Chemical" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Chemical"
+    },
+    "CrowdsourcingComponent" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CrowdsourcingComponent"
+    },
+    "AnnotationOfDerivationalFeatures" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationOfDerivationalFeatures"
+    },
+    "BncFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BncFormat"
+    },
+    "SyntacticAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"
+    },
+    "PartOfSpeechTagger" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PartOfSpeechTagger"
+    },
+    "ExploratorySearch" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ExploratorySearch"
+    },
+    "Dependency" : {
+      "@id" : "http://vocab.lappsgrid.org/Dependency"
+    },
+    "Event" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Event"
+    },
+    "MachineLearningMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MachineLearningMethod"
+    },
+    "EmotionDetection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EmotionDetection"
+    },
+    "TrainingOfLanguageModels" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TrainingOfLanguageModels"
+    },
+    "Funding" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Funding"
+    },
+    "CoReferenceResolution" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CoReferenceResolution"
+    },
+    "hasMimetype" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/hasMimetype",
+      "@type" : "@id"
+    },
+    "ScientificValue" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScientificValue"
+    },
+    "ComputationalArgumentation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ComputationalArgumentation"
+    },
+    "MsAccessDatabase" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MsAccessDatabase"
+    },
+    "AccessComponent" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AccessComponent"
+    },
+    "Person" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Person"
+    },
+    "Converter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Converter"
+    },
+    "Validation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Validation"
+    },
+    "Writer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Writer"
+    },
+    "TopicDetection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TopicDetection"
+    },
+    "TigerXml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TigerXml"
+    },
+    "TemporalExpressionRecognition" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TemporalExpressionRecognition"
+    },
+    "Parser" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Parser"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type" : "@id"
+    },
+    "BionlpSt2013A1_a2" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2"
+    },
+    "DatabaseFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DatabaseFormat"
+    },
+    "ScriptBasedAnalyser" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser"
+    },
+    "Relation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Relation"
+    },
+    "Date" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Date"
+    },
+    "Topic" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Topic"
+    },
+    "Mimetype" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Mimetype"
+    },
+    "AnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationType"
+    },
+    "Compound" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Compound"
+    },
+    "DiscourseAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType"
+    },
+    "GazeteerBasedMatcher" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GazeteerBasedMatcher"
+    },
+    "Sentence" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Sentence"
+    },
+    "LanguageModelling" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LanguageModelling"
+    },
+    "KeywordExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KeywordExtractor"
+    },
+    "GazeteerBasedMatching" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GazeteerBasedMatching"
+    },
+    "Normalizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Normalizer"
+    },
+    "Simplifier" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Simplifier"
+    },
+    "Citation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Citation"
+    },
+    "Debugger" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Debugger"
+    },
+    "SemanticFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#SemanticFeature"
+    },
+    "Domain" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Domain"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "AimedCorpusFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AimedCorpusFormat"
+    },
+    "Folia" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Folia"
+    },
+    "Lll" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Lll"
+    },
+    "IonicConductance" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/IonicConductance"
+    },
+    "Json_ld" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Json_ld"
+    },
+    "Editing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Editing"
+    },
+    "DependencyConversion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DependencyConversion"
+    },
+    "AllbusVariable" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AllbusVariable"
+    },
+    "WordSegmentation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WordSegmentation"
+    },
+    "Tex" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tex"
+    },
+    "AnnotatorOfSemanticRoleLabels" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotatorOfSemanticRoleLabels"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "PersuasiveExpressionMining" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PersuasiveExpressionMining"
+    },
+    "Brat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Brat"
+    },
+    "SemanticAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticAnnotationType"
+    },
+    "Web1t" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Web1t"
+    },
+    "Html" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Html"
+    },
+    "DiscourseAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DiscourseAnnotation"
+    },
+    "LinguisticAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LinguisticAnalysis"
+    },
+    "WikipediaPage" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaPage"
+    },
+    "Constituent" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Constituent"
+    },
+    "MalletLdaTopicProportions" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MalletLdaTopicProportions"
+    },
+    "performsOperation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/performsOperation",
+      "@type" : "@id"
+    },
+    "CoReferenceAnnotator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CoReferenceAnnotator"
+    },
+    "Lemmatizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Lemmatizer"
+    },
+    "WikipediaFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaFormat"
+    },
+    "SentenceSplitter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SentenceSplitter"
+    },
+    "PosTagging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PosTagging"
+    },
+    "SentimentAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SentimentAnalysis"
+    },
+    "AudienceReaction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AudienceReaction"
+    },
+    "XmlBioc" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/XmlBioc"
+    },
+    "DependencyParsing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DependencyParsing"
+    },
+    "Obo" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Obo"
+    },
+    "Crowdsourcing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Crowdsourcing"
+    },
+    "InlineXml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InlineXml"
+    },
+    "Tei" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tei"
+    },
+    "NeuroscienceEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/NeuroscienceEntity"
+    },
+    "Jdbc" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Jdbc"
+    },
+    "MultiWordUnit" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MultiWordUnit"
+    },
+    "AssociationRuleLearning" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AssociationRuleLearning"
+    },
+    "Conll2002" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2002"
+    },
+    "SpectralData" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SpectralData"
+    },
+    "Sgml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Sgml"
+    },
+    "KnowledgeAcquisition" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KnowledgeAcquisition"
+    },
+    "Argumentation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Argumentation"
+    },
+    "Tgrep2" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tgrep2"
+    },
+    "Tokenization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tokenization"
+    },
+    "IonicCurrent" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/IonicCurrent"
+    },
+    "DataCollection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataCollection"
+    },
+    "Phenotype" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Phenotype"
+    },
+    "LinkedDataFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LinkedDataFormat"
+    },
+    "Matching" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Matching"
+    },
+    "Analyzer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Analyzer"
+    },
+    "MorphologicalAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType"
+    },
+    "KnowledgeRepresentation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/KnowledgeRepresentation"
+    },
+    "MorphosyntacticCategory" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticCategory"
+    },
+    "NegraExport" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/NegraExport"
+    },
+    "Crawler" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Crawler"
+    },
+    "MachineAndStatisticalLearningMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MachineAndStatisticalLearningMethod"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Xces" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Xces"
+    },
+    "Gene" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Gene"
+    },
+    "WikipediaQuery" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaQuery"
+    },
+    "PartOfSpeech" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PartOfSpeech"
+    },
+    "SyntacticoSemanticLink" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SyntacticoSemanticLink"
+    },
+    "LexiconVisualization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconVisualization"
+    },
+    "WebAnnotationFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WebAnnotationFormat"
+    },
+    "TextCategorization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TextCategorization"
+    },
+    "SerializedCas" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SerializedCas"
+    },
+    "DiscourseAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DiscourseAnalysis"
+    },
+    "ConstituencyParser" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ConstituencyParser"
+    },
+    "ExtractionOfDomainSpecificInformation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ExtractionOfDomainSpecificInformation"
+    },
+    "Rdf_xml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Rdf_xml"
+    },
+    "Ptb" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Ptb"
+    },
+    "DependencyParser" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DependencyParser"
+    },
+    "Viewer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Viewer"
+    },
+    "BiologicalEnity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BiologicalEnity"
+    },
+    "GateFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GateFormat"
+    },
+    "Regularisation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Regularisation"
+    },
+    "hasAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/hasAnnotationType",
+      "@type" : "@id"
+    },
+    "WikipediaRevisionPair" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair"
+    },
+    "Keyword" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Keyword"
+    },
+    "TheoreticalFrame" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TheoreticalFrame"
+    },
+    "WordSense" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WordSense"
+    },
+    "AnnotationFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationFormat"
+    },
+    "QuestionAnswering" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/QuestionAnswering"
+    },
+    "PtbCombined" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PtbCombined"
+    },
+    "InformationExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InformationExtractor"
+    },
+    "DocumentFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DocumentFormat"
+    },
+    "ScientificUnit" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScientificUnit"
+    },
+    "SentenceSplitting" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SentenceSplitting"
+    },
+    "Rna" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Rna"
+    },
+    "AnnotationOfMultiWordUnits" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationOfMultiWordUnits"
+    },
+    "CorpusViewer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CorpusViewer"
+    },
+    "Normalization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Normalization"
+    },
+    "EmotionRecognizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EmotionRecognizer"
+    },
+    "Processor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Processor"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "MorphologicalTagger" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalTagger"
+    },
+    "Tuepp" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tuepp"
+    },
+    "Emma" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Emma"
+    },
+    "Gate_json" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Gate_json"
+    },
+    "Json_genia" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Json_genia"
+    },
+    "DataMerger" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataMerger"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "Coreference" : {
+      "@id" : "http://vocab.lappsgrid.org/Coreference"
+    },
+    "WordSenseDisambiguation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WordSenseDisambiguation"
+    },
+    "PhysicoChemicalProperty" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PhysicoChemicalProperty"
+    },
+    "Conll2009" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2009"
+    },
+    "documentationUrl" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/documentationUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "MorphologicalFeature" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalFeature"
+    },
+    "ProteinFamily" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ProteinFamily"
+    },
+    "Readability" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Readability"
+    },
+    "DerivationalAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DerivationalAnalysis"
+    },
+    "MorphosyntacticFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticFeature"
+    },
+    "TemporalExpression" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TemporalExpression"
+    },
+    "InformationFiltering" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InformationFiltering"
+    },
+    "Tokenizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tokenizer"
+    },
+    "ConllU" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ConllU"
+    },
+    "SemanticClass" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticClass"
+    },
+    "Lemma" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Lemma"
+    },
+    "FormatConversion" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FormatConversion"
+    },
+    "NamedEntity" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#NamedEntity"
+    },
+    "broadMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broadMatch"
+    },
+    "DependencyConverter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DependencyConverter"
+    },
+    "SemanticSearch" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticSearch"
+    },
+    "EntityMentionRecognition" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EntityMentionRecognition"
+    },
+    "PolarityFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#PolarityFeature"
+    },
+    "Word" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Word"
+    },
+    "RdfFormats" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RdfFormats"
+    },
+    "Xpath" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Xpath"
+    },
+    "Tcf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tcf"
+    },
+    "LexiconExtractorFromCorpora" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconExtractorFromCorpora"
+    },
+    "DimensionalityReduction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DimensionalityReduction"
+    },
+    "AnnotationOfCompoundingFeatures" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures"
+    },
+    "DependencyTree" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DependencyTree"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "Pdf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Pdf"
+    },
+    "ScholarlyCommunicationAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"
+    },
+    "LexicalRelation" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#LexicalRelation"
+    },
+    "AclAnthologyCorpusFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AclAnthologyCorpusFormat"
+    },
+    "LinguisticEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LinguisticEntity"
+    },
+    "Text" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Text"
+    },
+    "Frame" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Frame"
+    },
+    "InstanceBasedLearning" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InstanceBasedLearning"
+    },
+    "ChemicalEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ChemicalEntity"
+    },
+    "Subjectivity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Subjectivity"
+    },
+    "ParagraphSplitting" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ParagraphSplitting"
+    },
+    "Parsing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Parsing"
+    },
+    "SemanticRole" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#SemanticRole"
+    },
+    "GeneFamily" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GeneFamily"
+    },
+    "Uima_json" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Uima_json"
+    },
+    "MorphologicalAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalAnalysis"
+    },
+    "ContentMining" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ContentMining"
+    },
+    "SoftwareDevelopmentEnvironment" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SoftwareDevelopmentEnvironment"
+    },
+    "Agriculture" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Agriculture"
+    },
+    "Xhtml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Xhtml"
+    },
+    "WikiFormats" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikiFormats"
+    },
+    "I2b2" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/I2b2"
+    },
+    "deployedInDomain" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/deployedInDomain",
+      "@type" : "@id"
+    },
+    "Lemmatization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Lemmatization"
+    },
+    "Paragraph" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Paragraph"
+    },
+    "Reuters21578Txt" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Reuters21578Txt"
+    },
+    "DocumentAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DocumentAnnotationType"
+    },
+    "Pubmed" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Pubmed"
+    },
+    "PersuasiveExpressionMiner" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PersuasiveExpressionMiner"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Synapse" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Synapse"
+    },
+    "TextAndDataAnalytics" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics"
+    },
+    "TermExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TermExtractor"
+    },
+    "Naf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Naf"
+    },
+    "Document" : {
+      "@id" : "http://vocab.lappsgrid.org/Document"
+    },
+    "ConstituencyTree" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ConstituencyTree"
+    },
+    "MethodOfResearch" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MethodOfResearch"
+    },
+    "TopicExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TopicExtractor"
+    },
+    "MorphologicalAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation"
+    },
+    "Domain-specificAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "Csv" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Csv"
+    },
+    "Disambiguator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Disambiguator"
+    },
+    "Prediction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Prediction"
+    },
+    "DataSplitter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DataSplitter"
+    },
+    "ContradictionDetector" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ContradictionDetector"
+    },
+    "EventExtractor" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EventExtractor"
+    },
+    "Xmi" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Xmi"
+    },
+    "LexiconViewing" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconViewing"
+    },
+    "Owl" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Owl"
+    },
+    "Matcher" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Matcher"
+    },
+    "Segmenter" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Segmenter"
+    },
+    "CertaintyLevel" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/CertaintyLevel"
+    },
+    "Species" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Species"
+    },
+    "WordSenseDisambiguator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator"
+    },
+    "MsExcel" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MsExcel"
+    },
+    "Aligner" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Aligner"
+    },
+    "StructuralAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/StructuralAnnotationType"
+    },
+    "FlowController" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FlowController"
+    },
+    "BiologicalActivity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BiologicalActivity"
+    },
+    "Contradiction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Contradiction"
+    },
+    "ExtractionOfFundingInformation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ExtractionOfFundingInformation"
+    },
+    "DiscourseFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#DiscourseFeature"
+    },
+    "WikipediaLink" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaLink"
+    },
+    "Rtf" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Rtf"
+    },
+    "Xml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Xml"
+    },
+    "SubcategorizationFrame" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SubcategorizationFrame"
+    },
+    "SupportOfCrowdsourcingTasks" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SupportOfCrowdsourcingTasks"
+    },
+    "Annotator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Annotator"
+    },
+    "Conll2008" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2008"
+    },
+    "Visualiser" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Visualiser"
+    },
+    "EntityMentionPair" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EntityMentionPair"
+    },
+    "Term" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Term"
+    },
+    "Summarizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Summarizer"
+    },
+    "Token" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Token"
+    },
+    "DocumentSection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DocumentSection"
+    },
+    "Conll2012" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2012"
+    },
+    "RelationExtraction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RelationExtraction"
+    },
+    "RegressionAnalysis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RegressionAnalysis"
+    },
+    "Diaml" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Diaml"
+    },
+    "SemanticFrame" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticFrame"
+    },
+    "NamedEntitityRecognizer" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/NamedEntitityRecognizer"
+    },
+    "UimaCasFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/UimaCasFormat"
+    },
+    "VariablesDectector" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/VariablesDectector"
+    },
+    "Conll2003" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2003"
+    },
+    "TrainingOfMachineLearningModels" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TrainingOfMachineLearningModels"
+    },
+    "FastInfoset" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FastInfoset"
+    },
+    "DiscourceRelation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DiscourceRelation"
+    },
+    "Chunking" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Chunking"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "ModelOrganism_species" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ModelOrganism_species"
+    },
+    "DocumentClassifier" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DocumentClassifier"
+    },
+    "Visualization" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Visualization"
+    },
+    "Chunker" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Chunker"
+    },
+    "GrapeVariety" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/GrapeVariety"
+    },
+    "Evaluator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Evaluator"
+    },
+    "hasFileExtension" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/hasFileExtension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Stem" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Stem"
+    },
+    "InformationExtraction" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/InformationExtraction"
+    },
+    "SyntacticCategory" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#SyntacticCategory"
+    },
+    "AlvisEnrichedDocumentFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AlvisEnrichedDocumentFormat"
+    },
+    "Cadixe_json" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Cadixe_json"
+    },
+    "Conll2006" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Conll2006"
+    },
+    "SupportOperationForKnowledgeResources" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SupportOperationForKnowledgeResources"
+    },
+    "Validator" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Validator"
+    },
+    "Tmx" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Tmx"
+    },
+    "BinaryCas" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BinaryCas"
+    },
+    "EventDetection" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/EventDetection"
+    },
+    "Reading" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Reading"
+    },
+    "LexiconMerging" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexiconMerging"
+    },
+    "Protein" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Protein"
+    }
+  }
+}
