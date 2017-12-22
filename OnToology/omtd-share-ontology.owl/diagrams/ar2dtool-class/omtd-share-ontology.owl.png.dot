@@ -136,10 +136,10 @@ node [shape = rectangle, color="orange"]; "omtds:TextAndDataMining" "omtds:DataS
 	"NULL" -> "lappsgrid:Annotation" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "omtds:Application_vnd_msaccess" [ label = "owl:hasValue" ];
 	"NULL" -> "omtds:Application_x_org_dkpro_negra3" [ label = "owl:hasValue" ];
-	"NULL" -> "omtds:Application_x_org_dkpro_reuters21578_sgml" [ label = "owl:hasValue" ];
 	"NULL" -> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div" [ label = "owl:hasValue" ];
-	"NULL" -> "omtds:ScholarlyCommunication" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "omtds:Application_x_org_dkpro_reuters21578_sgml" [ label = "owl:hasValue" ];
 	"NULL" -> "skos:broadMatch" [ label = "owl:onProperty" ];
+	"NULL" -> "omtds:ScholarlyCommunication" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl" [ label = "owl:hasValue" ];
 	"NULL" -> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma" [ label = "owl:hasValue" ];
 	"NULL" -> "omtds:Application_rdf_xml" [ label = "owl:hasValue" ];
