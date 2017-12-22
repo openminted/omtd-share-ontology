@@ -13,7 +13,7 @@
      xmlns:lappsgrid="http://vocab.lappsgrid.org/"
      xmlns:ns1="http://purl.org/vocab/vann/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share">
+    <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share/">
         <owl:versionInfo>v1.0.0</owl:versionInfo>
         <ns1:preferredNamespacePrefix>omtds</ns1:preferredNamespacePrefix>
         <dc:title>OMTD-SHARE ontology</dc:title>
