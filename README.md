@@ -1,1 +1,1 @@
-# omtd-share-tdm
+# omtd-share ontology
