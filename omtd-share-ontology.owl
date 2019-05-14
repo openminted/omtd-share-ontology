@@ -3958,6 +3958,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Nif">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/CorpusFormat"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4001,6 +4002,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Obo -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Obo">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4086,6 +4088,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Owl -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Owl">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:comment xml:lang="en">Superclass for formats used for OWL</rdfs:comment>
         <rdfs:label xml:lang="en">OWL</rdfs:label>
@@ -4596,6 +4599,23 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/RdfFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/RdfFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/REC-rdf-syntax/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
+        <rdfs:comment xml:lang="en">Formats for RDF (Resource Description Framework) resources</rdfs:comment>
+        <rdfs:label xml:lang="en">RDF format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/RdfFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/RdfFormats">
@@ -4608,6 +4628,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Formats for RDF (Resource Description Framework) resources</rdfs:comment>
         <rdfs:label xml:lang="en">RDF formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4615,6 +4636,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Rdf_xml -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Rdf_xml">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Xml"/>
         <rdfs:subClassOf>
@@ -6013,6 +6035,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Turtle -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Turtle">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
