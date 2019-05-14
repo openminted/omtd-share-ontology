@@ -843,7 +843,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
         <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:comment xml:lang="en">Formats used  for BioNLP shared tasks</rdfs:comment>
-        <rdfs:label xml:lang="en">BioNLP formats</rdfs:label>
+        <rdfs:label xml:lang="en">BioNLP format</rdfs:label>
     </owl:Class>
     
 
