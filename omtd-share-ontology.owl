@@ -5701,8 +5701,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">txt</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:altLabel xml:lang="en">plain text</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Default value for the format of textual files; a textual file should be human-readable and must not contain binary data</rdfs:comment>
-        <rdfs:label xml:lang="en">Text</rdfs:label>
+        <rdfs:label xml:lang="en">text/plain</rdfs:label>
     </owl:Class>
     
 
