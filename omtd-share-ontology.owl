@@ -823,6 +823,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/Bionlp -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Bionlp">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -836,12 +837,24 @@
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/BionlpFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
+        <rdfs:comment xml:lang="en">Formats used  for BioNLP shared tasks</rdfs:comment>
+        <rdfs:label xml:lang="en">BioNLP formats</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/BionlpFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpFormats">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
         <rdfs:comment xml:lang="en">Formats used  for BioNLP shared tasks</rdfs:comment>
         <rdfs:label xml:lang="en">BioNLP formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -849,6 +862,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2 -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2965,6 +2979,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Json_genia -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Json_genia">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Json"/>
         <rdfs:subClassOf>
