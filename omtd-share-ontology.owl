@@ -3596,6 +3596,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/MediaWikiMarkup -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MediaWikiMarkup">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6248,12 +6249,24 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/WikiFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WikiFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormats"/>
+        <rdfs:comment xml:lang="en">Superclass for wiki formats</rdfs:comment>
+        <rdfs:label xml:lang="en">Wiki format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/WikiFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WikiFormats">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Superclass for wiki formats</rdfs:comment>
         <rdfs:label xml:lang="en">Wiki formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
