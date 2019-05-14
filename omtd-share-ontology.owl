@@ -474,6 +474,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AgriculturalEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of the agricultural domain; the use of the AGROVOC thesaurus is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Agricultural entity</rdfs:label>
     </owl:Class>
@@ -812,6 +813,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BiologicalEnity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of biology</rdfs:comment>
         <rdfs:label xml:lang="en">Biological enity</rdfs:label>
     </owl:Class>
@@ -1010,6 +1012,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ChemicalEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities from chemistry</rdfs:comment>
         <rdfs:label xml:lang="en">Chemical entity</rdfs:label>
     </owl:Class>
@@ -2132,6 +2135,18 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
     </owl:Class>
@@ -3387,6 +3402,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LinguisticEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of linguistics; the use of OLIA is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Linguistic entity</rdfs:label>
     </owl:Class>
@@ -3911,6 +3927,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NeuroscienceEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of neuroscience</rdfs:comment>
         <rdfs:label xml:lang="en">Neuroscience entity</rdfs:label>
     </owl:Class>
@@ -4689,6 +4706,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Relation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of relation that holds between two or more entities of a specific domain</rdfs:comment>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
     </owl:Class>
@@ -4829,6 +4847,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
     </owl:Class>
@@ -4839,6 +4858,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScientificUnit">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NamedEntity"/>
         <rdfs:comment xml:lang="en">Scientific unit</rdfs:comment>
         <rdfs:label xml:lang="en">Scientific unit</rdfs:label>
@@ -4850,6 +4870,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScientificValue">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NamedEntity"/>
         <rdfs:comment xml:lang="en">Scientific value</rdfs:comment>
         <rdfs:label xml:lang="en">Scientific value</rdfs:label>
@@ -5152,6 +5173,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SocialSciencesEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that pertains to entities of social sciences; the use of TheSoz is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Social sciences entity</rdfs:label>
     </owl:Class>
