@@ -90,6 +90,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces"/>
+    
+
+
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
@@ -582,6 +588,18 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation"/>
+        <rdfs:comment xml:lang="en">The task/process of marking compounds (single words composed of two or more free morphemes) and their parts</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotation of compounds</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures"/>
         <rdfs:comment xml:lang="en">The task/process of marking compounds (single words composed of two or more free morphemes) and their parts</rdfs:comment>
         <rdfs:label xml:lang="en">Annotation of compounds</rdfs:label>
     </owl:Class>
