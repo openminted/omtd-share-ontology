@@ -1060,6 +1060,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/Citation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Citation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:comment xml:lang="en">Reference to a book, paper, or author, especially in a scholarly work.</rdfs:comment>
         <rdfs:label xml:lang="en">Citation</rdfs:label>
@@ -2107,6 +2108,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/DocumentSection -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DocumentSection">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/StructuralAnnotationType"/>
         <rdfs:subClassOf>
@@ -2518,6 +2520,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Funding -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Funding">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:comment xml:lang="en">Annotation related to the funding of a resource (e.g. funder, funding project, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Funding</rdfs:label>
@@ -3055,6 +3058,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Keyword -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Keyword">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType"/>
         <rdfs:comment xml:lang="en">A word or group of words used to describe or index the contents of a document</rdfs:comment>
@@ -4833,6 +4837,19 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
+        <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/ScholarlyCommunication -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyCommunication">
@@ -4850,6 +4867,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
