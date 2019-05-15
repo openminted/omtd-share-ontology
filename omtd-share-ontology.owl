@@ -24,7 +24,7 @@
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Petr Knoth</dct:creator>
         <dct:creator>Sophie Aubin</dct:creator>
-        <dct:issued>2017-12-22</dct:issued>
+        <dct:issued>2019-05-15</dct:issued>
         <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <ns1:preferredNamespacePrefix>omtd</ns1:preferredNamespacePrefix>
         <rdfs:comment>The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. 
