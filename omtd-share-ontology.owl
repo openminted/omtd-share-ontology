@@ -1,38 +1,38 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://w3id.org/meta-share/omtd-share/"
      xml:base="http://w3id.org/meta-share/omtd-share/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ns1="http://purl.org/vocab/vann/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:omtds="http://w3id.org/meta-share/omtd-share/"
-     xmlns:lappsgrid="http://vocab.lappsgrid.org/"
-     xmlns:ns1="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
+     xmlns:lappsgrid="http://vocab.lappsgrid.org/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share/">
-        <owl:versionInfo>v1.0.0</owl:versionInfo>
-        <ns1:preferredNamespacePrefix>omtds</ns1:preferredNamespacePrefix>
+        <dc:description>OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).</dc:description>
         <dc:title>OMTD-SHARE ontology</dc:title>
-        <dct:creator>Petr Knoth</dct:creator>
+        <dct:contributor>Richard Eckart de Castilho</dct:contributor>
         <dct:creator>Claire Nedellec</dct:creator>
         <dct:creator>Dimitris Galanis</dct:creator>
-        <dct:issued>2017-12-22</dct:issued>
-        <dct:contributor>Richard Eckart de Castilho</dct:contributor>
-        <dct:creator>Marta Villegas</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dct:creator>Sophie Aubin</dct:creator>
-        <dc:description>OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).</dc:description>
         <dct:creator>Katerina Gkirtzou</dct:creator>
-        <rdfs:label xml:lang="en">OMTD-SHARE ontology</rdfs:label>
+        <dct:creator>Marta Villegas</dct:creator>
+        <dct:creator>Penny Labropoulou</dct:creator>
+        <dct:creator>Petr Knoth</dct:creator>
+        <dct:creator>Sophie Aubin</dct:creator>
+        <dct:issued>2019-05-15</dct:issued>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <ns1:preferredNamespacePrefix>omtd</ns1:preferredNamespacePrefix>
         <rdfs:comment>The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. 
 	It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). 
 	The ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
 	The ontology is still in a working status.</rdfs:comment>
-        <dct:creator>Penny Labropoulou</dct:creator>
+        <rdfs:label xml:lang="en">OMTD-SHARE ontology</rdfs:label>
+        <owl:versionInfo>v1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -48,9 +48,57 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
@@ -426,6 +474,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AgriculturalEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of the agricultural domain; the use of the AGROVOC thesaurus is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Agricultural entity</rdfs:label>
     </owl:Class>
@@ -540,6 +589,18 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation"/>
+        <rdfs:comment xml:lang="en">The task/process of marking compounds (single words composed of two or more free morphemes) and their parts</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotation of compounds</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures"/>
         <rdfs:comment xml:lang="en">The task/process of marking compounds (single words composed of two or more free morphemes) and their parts</rdfs:comment>
         <rdfs:label xml:lang="en">Annotation of compounds</rdfs:label>
     </owl:Class>
@@ -752,6 +813,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BiologicalEnity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of biology</rdfs:comment>
         <rdfs:label xml:lang="en">Biological enity</rdfs:label>
     </owl:Class>
@@ -761,6 +823,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/Bionlp -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Bionlp">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -774,12 +837,24 @@
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/BionlpFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
+        <rdfs:comment xml:lang="en">Formats used  for BioNLP shared tasks</rdfs:comment>
+        <rdfs:label xml:lang="en">BioNLP format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/BionlpFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpFormats">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
         <rdfs:comment xml:lang="en">Formats used  for BioNLP shared tasks</rdfs:comment>
         <rdfs:label xml:lang="en">BioNLP formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -787,6 +862,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2 -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -950,6 +1026,7 @@
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ChemicalEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities from chemistry</rdfs:comment>
         <rdfs:label xml:lang="en">Chemical entity</rdfs:label>
     </owl:Class>
@@ -997,6 +1074,7 @@
     <!-- http://w3id.org/meta-share/omtd-share/Citation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Citation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:comment xml:lang="en">Reference to a book, paper, or author, especially in a scholarly work.</rdfs:comment>
         <rdfs:label xml:lang="en">Citation</rdfs:label>
@@ -2044,6 +2122,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/DocumentSection -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DocumentSection">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/StructuralAnnotationType"/>
         <rdfs:subClassOf>
@@ -2072,6 +2151,18 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
     </owl:Class>
@@ -2443,6 +2534,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Funding -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Funding">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:comment xml:lang="en">Annotation related to the funding of a resource (e.g. funder, funding project, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Funding</rdfs:label>
@@ -2887,6 +2979,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Json_genia -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Json_genia">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BionlpFormats"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Json"/>
         <rdfs:subClassOf>
@@ -2980,6 +3073,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Keyword -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Keyword">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType"/>
         <rdfs:comment xml:lang="en">A word or group of words used to describe or index the contents of a document</rdfs:comment>
@@ -3327,6 +3421,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LinguisticEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of linguistics; the use of OLIA is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Linguistic entity</rdfs:label>
     </owl:Class>
@@ -3501,6 +3596,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/MediaWikiMarkup -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MediaWikiMarkup">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3851,6 +3947,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NeuroscienceEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation pertaining to entities of neuroscience</rdfs:comment>
         <rdfs:label xml:lang="en">Neuroscience entity</rdfs:label>
     </owl:Class>
@@ -3862,6 +3959,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Nif">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/CorpusFormat"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3905,6 +4003,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Obo -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Obo">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3990,6 +4089,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Owl -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Owl">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:comment xml:lang="en">Superclass for formats used for OWL</rdfs:comment>
         <rdfs:label xml:lang="en">OWL</rdfs:label>
@@ -4500,6 +4600,23 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/RdfFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/RdfFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/REC-rdf-syntax/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
+        <rdfs:comment xml:lang="en">Formats for RDF (Resource Description Framework) resources</rdfs:comment>
+        <rdfs:label xml:lang="en">RDF format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/RdfFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/RdfFormats">
@@ -4512,6 +4629,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Formats for RDF (Resource Description Framework) resources</rdfs:comment>
         <rdfs:label xml:lang="en">RDF formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4519,6 +4637,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Rdf_xml -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Rdf_xml">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Xml"/>
         <rdfs:subClassOf>
@@ -4629,6 +4748,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Relation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of relation that holds between two or more entities of a specific domain</rdfs:comment>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
     </owl:Class>
@@ -4755,6 +4875,19 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
+        <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/ScholarlyCommunication -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyCommunication">
@@ -4769,8 +4902,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4779,6 +4914,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScientificUnit">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NamedEntity"/>
         <rdfs:comment xml:lang="en">Scientific unit</rdfs:comment>
         <rdfs:label xml:lang="en">Scientific unit</rdfs:label>
@@ -4790,6 +4926,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScientificValue">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NamedEntity"/>
         <rdfs:comment xml:lang="en">Scientific value</rdfs:comment>
         <rdfs:label xml:lang="en">Scientific value</rdfs:label>
@@ -5092,6 +5229,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SocialSciencesEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that pertains to entities of social sciences; the use of TheSoz is recommended</rdfs:comment>
         <rdfs:label xml:lang="en">Social sciences entity</rdfs:label>
     </owl:Class>
@@ -5563,8 +5701,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">txt</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:altLabel xml:lang="en">plain text</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Default value for the format of textual files; a textual file should be human-readable and must not contain binary data</rdfs:comment>
-        <rdfs:label xml:lang="en">Text</rdfs:label>
+        <rdfs:label xml:lang="en">text/plain</rdfs:label>
     </owl:Class>
     
 
@@ -5576,7 +5715,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/meta-share/omtd-share/TextAndDataMining"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The process/task of converting unstructured text and data into high-quality structured data that can be further analysed to extract knowledge, support decision making etc.</rdfs:comment>
@@ -5898,6 +6037,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Turtle -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Turtle">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormat"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/RdfFormats"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6110,12 +6250,24 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/WikiFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WikiFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/WikiFormats"/>
+        <rdfs:comment xml:lang="en">Superclass for wiki formats</rdfs:comment>
+        <rdfs:label xml:lang="en">Wiki format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/WikiFormats -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WikiFormats">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Superclass for wiki formats</rdfs:comment>
         <rdfs:label xml:lang="en">Wiki formats</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -7372,5 +7524,5 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
