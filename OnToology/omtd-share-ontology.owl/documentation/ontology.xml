@@ -11,6 +11,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share/">
+        <dc:date>2015-05-15</dc:date>
         <dc:description>OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).</dc:description>
         <dc:title>OMTD-SHARE ontology</dc:title>
         <terms:contributor>Richard Eckart de Castilho</terms:contributor>
@@ -29,7 +30,8 @@
 	The ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
 	The ontology is still in a working status.</rdfs:comment>
         <rdfs:label xml:lang="en">OMTD-SHARE ontology</rdfs:label>
-        <owl:versionInfo>v1.1.0</owl:versionInfo>
+        <owl:priorVersion>1.0.0</owl:priorVersion>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -43,6 +45,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 
