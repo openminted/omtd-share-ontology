@@ -275,6 +275,9 @@
     "Evaluation" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Evaluation"
     },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
     "PtbChunked" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/PtbChunked"
     },
@@ -1045,6 +1048,9 @@
     },
     "DependencyTree" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/DependencyTree"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
