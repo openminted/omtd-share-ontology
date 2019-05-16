@@ -380,6 +380,9 @@
     "Phrase" : {
       "@id" : "http://purl.org/olia/olia-top.owl#Phrase"
     },
+    "RdfFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/RdfFormat"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -595,6 +598,9 @@
     "Normalizer" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Normalizer"
     },
+    "WikiFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/WikiFormat"
+    },
     "Simplifier" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Simplifier"
     },
@@ -696,8 +702,14 @@
     "SentenceSplitter" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/SentenceSplitter"
     },
+    "DomainSpecificAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"
+    },
     "PosTagging" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/PosTagging"
+    },
+    "ScholarlyAnalyticsEntity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"
     },
     "SentimentAnalysis" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/SentimentAnalysis"
@@ -786,6 +798,9 @@
     "NegraExport" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/NegraExport"
     },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
     "Crawler" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Crawler"
     },
@@ -813,8 +828,14 @@
     "LexiconVisualization" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/LexiconVisualization"
     },
+    "AnnotationOfCompounds" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds"
+    },
     "WebAnnotationFormat" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/WebAnnotationFormat"
+    },
+    "BionlpFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/BionlpFormat"
     },
     "TextCategorization" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/TextCategorization"
@@ -1049,6 +1070,9 @@
     },
     "Frame" : {
       "@id" : "http://purl.org/olia/olia-top.owl#Frame"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces"
     },
     "InstanceBasedLearning" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/InstanceBasedLearning"

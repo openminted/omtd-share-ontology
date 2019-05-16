@@ -7,32 +7,64 @@
 @base <http://w3id.org/meta-share/omtd-share/> .
 
 <http://w3id.org/meta-share/omtd-share/> rdf:type owl:Ontology ;
-                                          <http://purl.org/dc/elements/1.1/description> "OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources)."^^xsd:string ;
-                                          <http://purl.org/dc/elements/1.1/title> "OMTD-SHARE ontology"^^xsd:string ;
-                                          <http://purl.org/dc/terms/contributor> "Richard Eckart de Castilho"^^xsd:string ;
-                                          <http://purl.org/dc/terms/creator> "Claire Nedellec"^^xsd:string ,
-                                                                             "Dimitris Galanis"^^xsd:string ,
-                                                                             "Katerina Gkirtzou"^^xsd:string ,
-                                                                             "Marta Villegas"^^xsd:string ,
-                                                                             "Penny Labropoulou"^^xsd:string ,
-                                                                             "Petr Knoth"^^xsd:string ,
-                                                                             "Sophie Aubin"^^xsd:string ;
-                                          <http://purl.org/dc/terms/issued> "2017-12-22"^^xsd:string ;
+                                          <http://purl.org/dc/elements/1.1/description> "OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources)." ;
+                                          <http://purl.org/dc/elements/1.1/title> "OMTD-SHARE ontology" ;
+                                          <http://purl.org/dc/terms/contributor> "Richard Eckart de Castilho" ;
+                                          <http://purl.org/dc/terms/creator> "Claire Nedellec" ,
+                                                                             "Dimitris Galanis" ,
+                                                                             "Katerina Gkirtzou" ,
+                                                                             "Marta Villegas" ,
+                                                                             "Penny Labropoulou" ,
+                                                                             "Petr Knoth" ,
+                                                                             "Sophie Aubin" ;
+                                          <http://purl.org/dc/terms/issued> "2019-05-15" ;
                                           <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtds"^^xsd:string ;
+                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd" ;
                                           rdfs:comment """The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. 
 	It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). 
 	The ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
-	The ontology is still in a working status."""^^xsd:string ;
+	The ontology is still in a working status.""" ;
                                           rdfs:label "OMTD-SHARE ontology"@en ;
-                                          owl:versionInfo "v1.0.0"^^xsd:string .
+                                          owl:versionInfo "v1.1.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/source
 <http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/replaces
+<http://purl.org/dc/terms/replaces> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#altLabel
@@ -98,7 +130,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  http://www.w3.org/2002/07/owl#equivalentClass
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-                    rdfs:label "owl:equivalentClass"^^xsd:string .
+                    rdfs:label "owl:equivalentClass" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#closeMatch
@@ -271,7 +303,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                                           ] ,
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty :documentationUrl ;
-                                            owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology"^^xsd:string
+                                            owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology"
                                           ] ;
                           rdfs:comment "Data format specific to the ACL Anthology Reference Corpus (http://acl-arc.comp.nus.edu.sg/), most probably version 20080325"@en ;
                           rdfs:label "ACL Anthology Corpus format"@en .
@@ -279,7 +311,8 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 
 ###  http://w3id.org/meta-share/omtd-share/AgriculturalEntity
 :AgriculturalEntity rdf:type owl:Class ;
-                    rdfs:subClassOf :Domain-specificAnnotation ;
+                    rdfs:subClassOf :Domain-specificAnnotation ,
+                                    :DomainSpecificAnnotationType ;
                     rdfs:comment "Any kind of annotation pertaining to entities of the agricultural domain; the use of the AGROVOC thesaurus is recommended"@en ;
                     rdfs:label "Agricultural entity"@en .
 
@@ -296,7 +329,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                    rdfs:subClassOf :CorpusFormat ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :documentationUrl ;
-                                     owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#Aimed_Collection_Reader"^^xsd:string
+                                     owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#Aimed_Collection_Reader"
                                    ] ;
                    rdfs:comment "Format of the Aimed corpus (225 abstracts from MEDLINE) with the gold standard sentence, protein, protein-protein interaction annotations."@en ;
                    rdfs:label "AIMED corpus format"@en .
@@ -326,7 +359,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                                              ] ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty :documentationUrl ;
-                                               owl:hasValue "http://www.lrec-conf.org/proceedings/lrec2006/pdf/742_pdf.pdf"^^xsd:string
+                                               owl:hasValue "http://www.lrec-conf.org/proceedings/lrec2006/pdf/742_pdf.pdf"
                                              ] ;
                              rdfs:comment "Format for linguistic annotations of documents used for the ALVIS framework"@en ;
                              rdfs:label "ALVIS Enriched Document format"@en .
@@ -362,7 +395,16 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 :AnnotationOfCompoundingFeatures rdf:type owl:Class ;
                                  rdfs:subClassOf :MorphologicalAnnotation ;
                                  rdfs:comment "The task/process of marking compounds (single words composed of two or more free morphemes) and their parts"@en ;
-                                 rdfs:label "Annotation of compounds"@en .
+                                 rdfs:label "Annotation of compounds"@en ;
+                                 owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds
+:AnnotationOfCompounds rdf:type owl:Class ;
+                       rdfs:subClassOf :MorphologicalAnnotation ;
+                       <http://purl.org/dc/terms/replaces> :AnnotationOfCompoundingFeatures ;
+                       rdfs:comment "The task/process of marking compounds (single words composed of two or more free morphemes) and their parts"@en ;
+                       rdfs:label "Annotation of compounds"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/AnnotationOfDerivationalFeatures
@@ -487,7 +529,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"
                            ] ;
            rdfs:comment "Binary format used for CAS data"@en ;
            rdfs:label "Binary CAS"@en ;
@@ -511,35 +553,47 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 
 ###  http://w3id.org/meta-share/omtd-share/BiologicalEnity
 :BiologicalEnity rdf:type owl:Class ;
-                 rdfs:subClassOf :Domain-specificAnnotation ;
+                 rdfs:subClassOf :Domain-specificAnnotation ,
+                                 :DomainSpecificAnnotationType ;
                  rdfs:comment "Any kind of annotation pertaining to entities of biology"@en ;
                  rdfs:label "Biological enity"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Bionlp
 :Bionlp rdf:type owl:Class ;
-        rdfs:subClassOf :BionlpFormats ,
+        rdfs:subClassOf :BionlpFormat ,
+                        :BionlpFormats ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_bionlp_shared_task_2"^^xsd:string
+                          owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_bionlp_shared_task_2"
                         ] ;
         rdfs:comment "File format used for the BioNLP Shared Task format"@en ;
         rdfs:label "BioNLP"@en .
+
+
+###  http://w3id.org/meta-share/omtd-share/BionlpFormat
+:BionlpFormat rdf:type owl:Class ;
+              rdfs:subClassOf :DocumentFormat ;
+              <http://purl.org/dc/terms/replaces> :BionlpFormats ;
+              rdfs:comment "Formats used  for BioNLP shared tasks"@en ;
+              rdfs:label "BioNLP format"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/BionlpFormats
 :BionlpFormats rdf:type owl:Class ;
                rdfs:subClassOf :DocumentFormat ;
                rdfs:comment "Formats used  for BioNLP shared tasks"@en ;
-               rdfs:label "BioNLP formats"@en .
+               rdfs:label "BioNLP formats"@en ;
+               owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2
 :BionlpSt2013A1_a2 rdf:type owl:Class ;
-                   rdfs:subClassOf :BionlpFormats ,
+                   rdfs:subClassOf :BionlpFormat ,
+                                   :BionlpFormats ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :documentationUrl ;
-                                     owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_bionlp_st_2013_a1_a2_1"^^xsd:string
+                                     owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_bionlp_st_2013_a1_a2_1"
                                    ] ;
                    rdfs:comment "Format used in BioNLP Shared Task 2013"@en ;
                    rdfs:label "BioNLP-ST 2013 a1/a2"@en ;
@@ -551,7 +605,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                 rdfs:subClassOf :WikipediaFormat ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :documentationUrl ;
-                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bliki-asl"^^xsd:string
+                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bliki-asl"
                                 ] ;
                 rdfs:comment "The Java Wikipedia API (Bliki engine) is a parser library for converting Wikipedia wikitext notation to HTML."@en ;
                 rdfs:label "blikiWikipedia"@en .
@@ -571,7 +625,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"
                            ] ;
            rdfs:comment "Data format for the XML version of the British National Corpus (http://www.natcorp.ox.ac.uk/)"@en ;
            rdfs:label "BNC format"@en .
@@ -594,11 +648,11 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "http://brat.nlplab.org/standoff.html"^^xsd:string
+                        owl:hasValue "http://brat.nlplab.org/standoff.html"
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"^^xsd:string
+                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"
                       ] ;
       rdfs:comment "BRAT stand-off format for annotations (BRAT is a online environment for collaborative text annotation, cf. http://brat.nlplab.org/)"@en ;
       rdfs:label "BRAT"@en .
@@ -614,7 +668,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :documentationUrl ;
-                               owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#ExportCadixeJSON"^^xsd:string
+                               owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#ExportCadixeJSON"
                              ] ;
              rdfs:comment "AlvisAE protocol format"@en ;
              rdfs:label "Cadixe/JSON"@en .
@@ -632,7 +686,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
       rdfs:subClassOf :AnnotationFormat ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "http://talkbank.org/manuals/CHAT.pdf"^^xsd:string
+                        owl:hasValue "http://talkbank.org/manuals/CHAT.pdf"
                       ] ;
       rdfs:comment "CHAT (Codes for the Human Analysis of Transcripts) transcription format; used by CHILDES corpora"@en ;
       rdfs:label "CHAT"@en ;
@@ -649,7 +703,8 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 
 ###  http://w3id.org/meta-share/omtd-share/ChemicalEntity
 :ChemicalEntity rdf:type owl:Class ;
-                rdfs:subClassOf :Domain-specificAnnotation ;
+                rdfs:subClassOf :Domain-specificAnnotation ,
+                                :DomainSpecificAnnotationType ;
                 rdfs:comment "Any kind of annotation pertaining to entities from chemistry"@en ;
                 rdfs:label "Chemical entity"@en .
 
@@ -683,7 +738,8 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 
 ###  http://w3id.org/meta-share/omtd-share/Citation
 :Citation rdf:type owl:Class ;
-          rdfs:subClassOf :ScholarlyCommunicationAnnotation ;
+          rdfs:subClassOf :ScholarlyAnalyticsEntity ,
+                          :ScholarlyCommunicationAnnotation ;
           rdfs:comment "Reference to a book, paper, or author, especially in a scholarly work."@en ;
           rdfs:label "Citation"@en .
 
@@ -731,7 +787,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :documentationUrl ;
-                            owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#sec:creole:pubmed"^^xsd:string
+                            owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#sec:creole:pubmed"
                           ] ;
           rdfs:comment "Format used in Cochrane texts"@en ;
           rdfs:label "Cochrane"@en .
@@ -771,7 +827,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2000"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2000"
                            ] ;
            rdfs:comment "The CoNLL 2000 format represents POS and Chunk tags. Fields in a line are separated by spaces. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2000"@en .
@@ -786,7 +842,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2002"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2002"
                            ] ;
            rdfs:comment "The CoNLL 2002 format encodes named entity spans. Fields are separated by a single space. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2002"@en .
@@ -801,7 +857,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Conll2003"^^xsd:string
+                             owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Conll2003"
                            ] ;
            rdfs:comment "The CoNLL 2004 format encodes named entity spans and chunk spans. Fields are separated by a single space. Sentences are separated by a blank new line. Named entities and chunks are encoded in the IOB1 format. I.e. a B prefix is only used if the category of the following span differs from the category of the current span."@en ;
            rdfs:label "CoNLL-2003"@en .
@@ -816,7 +872,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2006"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2006"
                            ] ;
            rdfs:comment "The CoNLL 2006 (aka CoNLL-X) format targets dependency parsing. Columns are tab-separated. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2006"@en ;
@@ -833,7 +889,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Conll2008"^^xsd:string
+                             owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Conll2008"
                            ] ;
            rdfs:comment "The CoNLL 2008 format targets syntactic and semantic dependencies. Columns are tab-separated. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2008"@en .
@@ -848,7 +904,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2009"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2009"
                            ] ;
            rdfs:comment "The CoNLL 2009 format targets semantic role labeling. Columns are tab-separated. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2009"@en .
@@ -863,7 +919,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2012"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Conll2012"
                            ] ;
            rdfs:comment "The CoNLL 2012 format targets semantic role labeling and coreference. Columns are tab-separated. Sentences are separated by a blank new line."@en ;
            rdfs:label "CoNLL-2012"@en .
@@ -890,7 +946,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "http://universaldependencies.org/docs/format.html"^^xsd:string
+                          owl:hasValue "http://universaldependencies.org/docs/format.html"
                         ] ;
         rdfs:comment "Format used for CoNLL."@en ;
         rdfs:label "CoNLL-U"@en .
@@ -1101,7 +1157,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
             rdfs:subClassOf owl:Thing ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty <http://www.w3.org/2004/02/skos/core#broadMatch> ;
-                              owl:hasValue "dc:format"^^xsd:string
+                              owl:hasValue "dc:format"
                             ] ;
             rdfs:comment "The format of a computer file storing data"@en ;
             rdfs:label "Data format"@en ;
@@ -1162,7 +1218,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :documentationUrl ;
-                                 owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#x28-59500023.32"^^xsd:string
+                                 owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#x28-59500023.32"
                                ] ;
                rdfs:comment "Common format for social media data from http://datasift.com"@en ;
                rdfs:label "DataSift/JSON"@en .
@@ -1311,7 +1367,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
        rdfs:subClassOf :AnnotationFormat ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://www.iso.org/standard/51967.html"^^xsd:string
+                         owl:hasValue "https://www.iso.org/standard/51967.html"
                        ] ;
        rdfs:comment "Format following Dialogue Act Markup Language (DiAML) which is defined within the ISO standard 24617-2"@en ;
        rdfs:label "DIAML"@en .
@@ -1373,7 +1429,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :documentationUrl ;
-                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText"^^xsd:string
+                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText"
                                 ] ;
                 rdfs:comment "DkPro format for tokenized files containing one sentence per line and tokens split by whitespaces."@en ;
                 rdfs:label "DKPro tokenized"@en .
@@ -1412,7 +1468,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/DocumentSection
 :DocumentSection rdf:type owl:Class ;
-                 rdfs:subClassOf :ScholarlyCommunicationAnnotation ,
+                 rdfs:subClassOf :ScholarlyAnalyticsEntity ,
+                                 :ScholarlyCommunicationAnnotation ,
                                  :StructuralAnnotationType ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty rdfs:seeAlso ;
@@ -1433,7 +1490,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 :Domain-specificAnnotation rdf:type owl:Class ;
                            rdfs:subClassOf :AnnotationType ;
                            rdfs:comment "Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)"@en ;
-                           rdfs:label "Domain-specific annotation type"@en .
+                           rdfs:label "Domain-specific annotation type"@en ;
+                           owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType
+:DomainSpecificAnnotationType rdf:type owl:Class ;
+                              rdfs:subClassOf :AnnotationType ;
+                              <http://purl.org/dc/terms/replaces> :DomainSpecificAnnotationType ;
+                              rdfs:comment "Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)"@en ;
+                              rdfs:label "Domain-specific annotation type"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Editing
@@ -1606,7 +1672,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       rdfs:subClassOf :AnnotationFormat ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty :documentationUrl ;
-                                        owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_factored_tag_lem_1"^^xsd:string
+                                        owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_factored_tag_lem_1"
                                       ] ;
                       rdfs:comment "Factored tag lemma format"@en ;
                       rdfs:label "Factored tag lem format"@en .
@@ -1618,7 +1684,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                              :GateFormat ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :documentationUrl ;
-                               owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#x28-59400023.31"^^xsd:string
+                               owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#x28-59400023.31"
                              ] ;
              rdfs:comment "A compressed binary encoding of GATE XML"@en ;
              rdfs:label "Fast Infoset"@en .
@@ -1676,7 +1742,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        :Xml ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://proycon.github.io/folia/"^^xsd:string
+                         owl:hasValue "https://proycon.github.io/folia/"
                        ] ;
        rdfs:comment "FoLiA is an XML-based annotation format, suitable for the representation of linguistically annotated language resources"@en ;
        rdfs:label "FoLiA"@en ;
@@ -1694,7 +1760,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Funding
 :Funding rdf:type owl:Class ;
-         rdfs:subClassOf :ScholarlyCommunicationAnnotation ;
+         rdfs:subClassOf :ScholarlyAnalyticsEntity ,
+                         :ScholarlyCommunicationAnnotation ;
          rdfs:comment "Annotation related to the funding of a resource (e.g. funder, funding project, etc.)"@en ;
          rdfs:label "Funding"@en .
 
@@ -1728,7 +1795,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://gate.ac.uk/sale/tao/splitch17.html"^^xsd:string
+                             owl:hasValue "https://gate.ac.uk/sale/tao/splitch17.html"
                            ] ;
            rdfs:comment "A Twitter-style JSON format used for GATE documents"@en ;
            rdfs:label "GATE/JSON"@en ;
@@ -1783,11 +1850,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "http://dl.acm.org/citation.cfm?id=1642060"^^xsd:string
+                        owl:hasValue "http://dl.acm.org/citation.cfm?id=1642060"
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Graf"^^xsd:string
+                        owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Graf"
                       ] ;
       rdfs:comment "GrAF (Graph Annotation Format) is an extension of the Linguistic Annotation Framework (LAF)"@en ;
       rdfs:label "GrAF"@en ;
@@ -1844,7 +1911,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :documentationUrl ;
-                                  owl:hasValue "https://www.w3.org/TR/microdata/"^^xsd:string
+                                  owl:hasValue "https://www.w3.org/TR/microdata/"
                                 ] ;
                 rdfs:comment "Format according to the specifications of HTML5 Microdata"@en ;
                 rdfs:label "HTML5 Microdata"@en .
@@ -1855,11 +1922,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
       rdfs:subClassOf :AnnotationFormat ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#I2B2Reader"^^xsd:string
+                        owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#I2B2Reader"
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php"^^xsd:string
+                        owl:hasValue "https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php"
                       ] ;
       rdfs:comment "Format of the I2B2 challenge"@en ;
       rdfs:label "I2B2"@en .
@@ -1879,7 +1946,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"^^xsd:string
+                          owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"
                         ] ;
         rdfs:comment "A tab-separated format with limited markup (e.g. for sentences, documents, but not recursive structures like parse-trees) used by the IMS Open Corpus Workbench."@en ;
         rdfs:label "imsCwb"@en ;
@@ -1939,7 +2006,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"
                            ] ;
            rdfs:comment "Inline XML file format"@en ;
            rdfs:label "Inline XML"@en .
@@ -1986,7 +2053,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
       rdfs:subClassOf :DatabaseFormat ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Jdbc"^^xsd:string
+                        owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Jdbc"
                       ] ;
       rdfs:comment "For JDBC databases"@en ;
       rdfs:label "JDBC"@en ;
@@ -2006,7 +2073,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Json_genia
 :Json_genia rdf:type owl:Class ;
-            rdfs:subClassOf :BionlpFormats ,
+            rdfs:subClassOf :BionlpFormat ,
+                            :BionlpFormats ,
                             :Json ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :hasMimetype ;
@@ -2014,7 +2082,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :documentationUrl ;
-                              owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#GeniaJSONReader"^^xsd:string
+                              owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#GeniaJSONReader"
                             ] ;
             rdfs:comment "JSON format of the Genia dataset"@en ;
             rdfs:label "JSON/Genia"@en .
@@ -2043,7 +2111,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://kyoto-project.eu/xmlgroup.iit.cnr.it/kyoto/indexdd46.html?option=com_content&view=article&id=141&Itemid=130"^^xsd:string
+                       owl:hasValue "http://kyoto-project.eu/xmlgroup.iit.cnr.it/kyoto/indexdd46.html?option=com_content&view=article&id=141&Itemid=130"
                      ] ;
      rdfs:comment "KAF (also known as Knowledge Annotation Format) is a language neutral annotation format representing both morpho-syntactic and semantic annotation of documents through a stand-off multilayered structure"@en ;
      rdfs:label "KAF"@en ;
@@ -2056,7 +2124,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
            rdfs:subClassOf :CorpusFormat ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_kea_corpus_1"^^xsd:string
+                             owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_kea_corpus_1"
                            ] ;
            rdfs:comment "KEA-style (Keyphrase Extraction Algorithm) corpus"@en ;
            rdfs:label "KEA corpus"@en .
@@ -2072,7 +2140,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Keyword
 :Keyword rdf:type owl:Class ;
-         rdfs:subClassOf :ScholarlyCommunicationAnnotation ,
+         rdfs:subClassOf :ScholarlyAnalyticsEntity ,
+                         :ScholarlyCommunicationAnnotation ,
                          :SemanticAnnotationType ;
          rdfs:comment "A word or group of words used to describe or index the contents of a document"@en ;
          rdfs:label "Keyword"@en .
@@ -2151,7 +2220,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://www.latex-project.org/about/"^^xsd:string
+                         owl:hasValue "https://www.latex-project.org/about/"
                        ] ;
        rdfs:comment "Data format for documents using LaTeX (a high-quality typesetting system very popular for scientific documents)"@en ;
        rdfs:label "LATEX"@en .
@@ -2315,7 +2384,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/LinguisticEntity
 :LinguisticEntity rdf:type owl:Class ;
-                  rdfs:subClassOf :Domain-specificAnnotation ;
+                  rdfs:subClassOf :Domain-specificAnnotation ,
+                                  :DomainSpecificAnnotationType ;
                   rdfs:comment "Any kind of annotation pertaining to entities of linguistics; the use of OLIA is recommended"@en ;
                   rdfs:label "Linguistic entity"@en .
 
@@ -2332,7 +2402,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
      rdfs:subClassOf :AnnotationFormat ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_lll_1"^^xsd:string
+                       owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_lll_1"
                      ] ;
      rdfs:comment "Format of the LLL challenge"@en ;
      rdfs:label "LLL"@en .
@@ -2385,7 +2455,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty :documentationUrl ;
-                                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.mallet-asl"^^xsd:string
+                                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.mallet-asl"
                                            ] ;
                            rdfs:comment "Topic proportions in the shape [\\t]\\t\\t..."@en ;
                            rdfs:label "Mallet LDA Topic Proportions"@en .
@@ -2396,7 +2466,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                  rdfs:subClassOf :AnnotationFormat ,
                                                  [ rdf:type owl:Restriction ;
                                                    owl:onProperty :documentationUrl ;
-                                                   owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicsProportionsSorted"^^xsd:string
+                                                   owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicsProportionsSorted"
                                                  ] ;
                                  rdfs:comment "Topic proportions in the shape [\\t]\\t\\t... sorted"@en ;
                                  rdfs:label "Mallet LDA Topic Proportions Sorted"@en .
@@ -2437,10 +2507,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/MediaWikiMarkup
 :MediaWikiMarkup rdf:type owl:Class ;
-                 rdfs:subClassOf :WikiFormats ,
+                 rdfs:subClassOf :WikiFormat ,
+                                 :WikiFormats ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :documentationUrl ;
-                                   owl:hasValue "https://www.mediawiki.org/wiki/Help:Formatting"^^xsd:string
+                                   owl:hasValue "https://www.mediawiki.org/wiki/Help:Formatting"
                                  ] ;
                  rdfs:comment "Wiki markup for formatting"@en ;
                  rdfs:label "Media Wiki markup"@en .
@@ -2557,7 +2628,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :hasFileExtension ;
-                                    owl:hasValue "mdb"^^xsd:string
+                                    owl:hasValue "mdb"
                                   ] ;
                   rdfs:comment "Data format for Microsoft Access database"@en ;
                   rdfs:label "MS-Access database"@en .
@@ -2585,7 +2656,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasFileExtension ;
-                          owl:hasValue "doc"^^xsd:string
+                          owl:hasValue "doc"
                         ] ;
         rdfs:comment "Data format for Microsoft Word documents"@en ;
         rdfs:label "MS-Word"@en .
@@ -2603,11 +2674,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
      rdfs:subClassOf :AnnotationFormat ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://wordpress.let.vupr.nl/naf/"^^xsd:string
+                       owl:hasValue "http://wordpress.let.vupr.nl/naf/"
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://github.com/newsreader/NAF"^^xsd:string
+                       owl:hasValue "https://github.com/newsreader/NAF"
                      ] ;
      rdfs:comment "The NAF format is linguistic annotation format designed for complex NLP pipelines. NAF combines strengths of the Linguistic Annotation Framework (LAF) as described in Ide et al. (2003) and the NLP Interchange Format (Hellman et al. 2013, NIF)."@en ;
      rdfs:label "NAF"@en ;
@@ -2665,7 +2736,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :documentationUrl ;
-                               owl:hasValue "http://www.coli.uni-saarland.de/~thorsten/publications/Brants-CLAUS98.pdf"^^xsd:string
+                               owl:hasValue "http://www.coli.uni-saarland.de/~thorsten/publications/Brants-CLAUS98.pdf"
                              ] ;
              rdfs:comment "Export format for annotated corpora in the NeGra project"@en ;
              rdfs:label "NeGra export"@en .
@@ -2681,7 +2752,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/NeuroscienceEntity
 :NeuroscienceEntity rdf:type owl:Class ;
-                    rdfs:subClassOf :Domain-specificAnnotation ;
+                    rdfs:subClassOf :Domain-specificAnnotation ,
+                                    :DomainSpecificAnnotationType ;
                     rdfs:comment "Any kind of annotation pertaining to entities of neuroscience"@en ;
                     rdfs:label "Neuroscience entity"@en .
 
@@ -2690,10 +2762,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 :Nif rdf:type owl:Class ;
      rdfs:subClassOf :AnnotationFormat ,
                      :CorpusFormat ,
+                     :RdfFormat ,
                      :RdfFormats ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://persistence.uni-leipzig.org/nlp2rdf/"^^xsd:string
+                       owl:hasValue "http://persistence.uni-leipzig.org/nlp2rdf/"
                      ] ;
      rdfs:comment "The NLP Interchange Format (NIF) is an RDF/OWL-based format that aims to achieve interoperability between Natural Language Processing (NLP) tools, language resources and annotations; it consists of specifications, ontologies and software (overview), which are combined under the version identifier \"NIF 2.0\", but are versioned individually"@en ;
      rdfs:label "NIF"@en ;
@@ -2720,10 +2793,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Obo
 :Obo rdf:type owl:Class ;
-     rdfs:subClassOf :RdfFormats ,
+     rdfs:subClassOf :RdfFormat ,
+                     :RdfFormats ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://owlcollab.github.io/oboformat/doc/obo-syntax.html"^^xsd:string
+                       owl:hasValue "http://owlcollab.github.io/oboformat/doc/obo-syntax.html"
                      ] ;
      rdfs:comment "Serialization format for ontologies according to the Open Biomedical Ontologies model."@en ;
      rdfs:label "OBO"@en .
@@ -2780,7 +2854,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Owl
 :Owl rdf:type owl:Class ;
-     rdfs:subClassOf :RdfFormats ;
+     rdfs:subClassOf :RdfFormat ,
+                     :RdfFormats ;
      rdfs:comment "Superclass for formats used for OWL"@en ;
      rdfs:label "OWL"@en .
 
@@ -2882,7 +2957,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasFileExtension ;
-                       owl:hasValue "pdf"^^xsd:string
+                       owl:hasValue "pdf"
                      ] ;
      rdfs:comment "Data format for PDF files (Portable Document Format)"@en ;
      rdfs:label "PDF"@en .
@@ -2960,7 +3035,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://www.iana.org/assignments/media-types/application/pls+xml"^^xsd:string
+                       owl:hasValue "https://www.iana.org/assignments/media-types/application/pls+xml"
                      ] ;
      rdfs:comment "Data format according to the Pronunciation Lexicon Specification (PLS)"@en ;
      rdfs:label "PLS"@en .
@@ -2976,11 +3051,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://ufal.mff.cuni.cz/jazz/PML/index_en.html"^^xsd:string
+                       owl:hasValue "http://ufal.mff.cuni.cz/jazz/PML/index_en.html"
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_prague_markup_language_1"^^xsd:string
+                       owl:hasValue "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_prague_markup_language_1"
                      ] ;
      rdfs:comment "Format according to the Prague Markup Language (http://ufal.mff.cuni.cz/jazz/PML/index_en.html); PML is a generic data format based on XML intended for storing linguistically annotated data, such as the Prague Dependency Treebank, also annotation lexicons, etc."@en ;
      rdfs:label "PML"@en ;
@@ -3016,11 +3091,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :documentationUrl ;
-                              owl:hasValue "https://www.iana.org/assignments/media-types/application/postscript"^^xsd:string
+                              owl:hasValue "https://www.iana.org/assignments/media-types/application/postscript"
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :hasFileExtension ;
-                              owl:hasValue "ps"^^xsd:string
+                              owl:hasValue "ps"
                             ] ;
             rdfs:comment "Data format for PostScript files"@en ;
             rdfs:label "postscript"@en .
@@ -3083,7 +3158,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :documentationUrl ;
-                              owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-PennTreebankChunked"^^xsd:string
+                              owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-PennTreebankChunked"
                             ] ;
             rdfs:comment "Penn Treebank chunked format"@en ;
             rdfs:label "PTB-chunked"@en ;
@@ -3100,7 +3175,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :documentationUrl ;
-                               owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-PennTreebankCombined"^^xsd:string
+                               owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-PennTreebankCombined"
                              ] ;
              rdfs:comment "Penn Treebank combined format"@en ;
              rdfs:label "PTB-combined"@en ;
@@ -3117,7 +3192,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#sec:creole:pubmed"^^xsd:string
+                          owl:hasValue "https://gate.ac.uk/sale/tao/splitch23.html#sec:creole:pubmed"
                         ] ;
         rdfs:comment "Textual format used for PubMed articles"@en ;
         rdfs:label "PubMed"@en .
@@ -3140,20 +3215,34 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                                                       "Question topic"@en .
 
 
+###  http://w3id.org/meta-share/omtd-share/RdfFormat
+:RdfFormat rdf:type owl:Class ;
+           rdfs:subClassOf :DataFormat ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :documentationUrl ;
+                             owl:hasValue "https://www.w3.org/TR/REC-rdf-syntax/"
+                           ] ;
+           <http://purl.org/dc/terms/replaces> :RdfFormats ;
+           rdfs:comment "Formats for RDF (Resource Description Framework) resources"@en ;
+           rdfs:label "RDF format"@en .
+
+
 ###  http://w3id.org/meta-share/omtd-share/RdfFormats
 :RdfFormats rdf:type owl:Class ;
             rdfs:subClassOf :DataFormat ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :documentationUrl ;
-                              owl:hasValue "https://www.w3.org/TR/REC-rdf-syntax/"^^xsd:string
+                              owl:hasValue "https://www.w3.org/TR/REC-rdf-syntax/"
                             ] ;
             rdfs:comment "Formats for RDF (Resource Description Framework) resources"@en ;
-            rdfs:label "RDF formats"@en .
+            rdfs:label "RDF formats"@en ;
+            owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Rdf_xml
 :Rdf_xml rdf:type owl:Class ;
-         rdfs:subClassOf :RdfFormats ,
+         rdfs:subClassOf :RdfFormat ,
+                         :RdfFormats ,
                          :Xml ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasMimetype ;
@@ -3161,7 +3250,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :documentationUrl ;
-                           owl:hasValue "https://www.w3.org/TR/REC-rdf-syntax/"^^xsd:string
+                           owl:hasValue "https://www.w3.org/TR/REC-rdf-syntax/"
                          ] ;
          rdfs:comment "Data format for RDF (Resource Description Framework) XML format; RDF/XML is a serialisation for RDF"@en ;
          rdfs:label "RDF/XML"@en .
@@ -3230,7 +3319,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Relation
 :Relation rdf:type owl:Class ;
-          rdfs:subClassOf :Domain-specificAnnotation ;
+          rdfs:subClassOf :Domain-specificAnnotation ,
+                          :DomainSpecificAnnotationType ;
           rdfs:comment "Any type of relation that holds between two or more entities of a specific domain"@en ;
           rdfs:label "Relation"@en .
 
@@ -3263,7 +3353,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :documentationUrl ;
-                                    owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"^^xsd:string
+                                    owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"
                                   ] ;
                   rdfs:comment "Reuters-21578 corpus in SGML format"@en ;
                   rdfs:label "Reuters21578 SGML"@en .
@@ -3282,7 +3372,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :documentationUrl ;
-                                   owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"^^xsd:string
+                                   owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"
                                  ] ;
                  rdfs:comment "Reuters-21578 corpus transformed into text format using ExtractReuters in the lucene-benchmarks project"@en ;
                  rdfs:label "Reuters21578 Txt"@en .
@@ -3305,7 +3395,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasFileExtension ;
-                       owl:hasValue "rtf"^^xsd:string
+                       owl:hasValue "rtf"
                      ] ;
      rdfs:comment "Rich Text Format; proprietary data format of Microsoft"@en ;
      rdfs:label "RTF"@en .
@@ -3318,6 +3408,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                  rdfs:label "Rule-based Method"@en .
 
 
+###  http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity
+:ScholarlyAnalyticsEntity rdf:type owl:Class ;
+                          rdfs:subClassOf :Domain-specificAnnotation ,
+                                          :DomainSpecificAnnotationType ,
+                                          :ScholarlyAnalyticsEntity ;
+                          <http://purl.org/dc/terms/replaces> :ScholarlyCommunicationAnnotation ;
+                          rdfs:comment "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en ;
+                          rdfs:label "Scholarly analytics entity"@en .
+
+
 ###  http://w3id.org/meta-share/omtd-share/ScholarlyCommunication
 :ScholarlyCommunication rdf:type owl:Class ;
                         rdfs:subClassOf :Domain ;
@@ -3327,14 +3427,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation
 :ScholarlyCommunicationAnnotation rdf:type owl:Class ;
-                                  rdfs:subClassOf :Domain-specificAnnotation ;
+                                  rdfs:subClassOf :Domain-specificAnnotation ,
+                                                  :DomainSpecificAnnotationType ;
                                   rdfs:comment "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en ;
-                                  rdfs:label "Scholarly analytics entity"@en .
+                                  rdfs:label "Scholarly analytics entity"@en ;
+                                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://w3id.org/meta-share/omtd-share/ScientificUnit
 :ScientificUnit rdf:type owl:Class ;
                 rdfs:subClassOf :Domain-specificAnnotation ,
+                                :DomainSpecificAnnotationType ,
                                 :NamedEntity ;
                 rdfs:comment "Scientific unit"@en ;
                 rdfs:label "Scientific unit"@en .
@@ -3343,6 +3446,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/ScientificValue
 :ScientificValue rdf:type owl:Class ;
                  rdfs:subClassOf :Domain-specificAnnotation ,
+                                 :DomainSpecificAnnotationType ,
                                  :NamedEntity ;
                  rdfs:comment "Scientific value"@en ;
                  rdfs:label "Scientific value"@en .
@@ -3521,7 +3625,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :documentationUrl ;
-                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"^^xsd:string
+                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"
                                ] ;
                rdfs:comment "The CAS is the native data model used by UIMA; there are various ways of saving CAS data, using XMI, XCAS, or binary formats; this is for the serialized format"@en ;
                rdfs:label "Serialized CAS"@en .
@@ -3554,7 +3658,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/SocialSciencesEntity
 :SocialSciencesEntity rdf:type owl:Class ;
-                      rdfs:subClassOf :Domain-specificAnnotation ;
+                      rdfs:subClassOf :Domain-specificAnnotation ,
+                                      :DomainSpecificAnnotationType ;
                       rdfs:comment "Any kind of annotation that pertains to entities of social sciences; the use of TheSoz is recommended"@en ;
                       rdfs:label "Social sciences entity"@en .
 
@@ -3575,7 +3680,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :documentationUrl ;
-                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"^^xsd:string
+                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"
                       ] ;
       rdfs:comment "Solr format"@en ;
       rdfs:label "Solr"@en .
@@ -3784,7 +3889,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format"^^xsd:string
+                       owl:hasValue "https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format"
                      ] ;
      rdfs:comment "An XML data exchange format developed within the WebLicht architecture to facilitate efficient interoperability between the tools; it allows the various linguistic annotations produced by the tools within WebLicht to be stored in one document; it supports incremental enrichment of linguistic annotations at various levels of analysis in a stand-­off XML‐based format"@en ;
      rdfs:label "TCF"@en ;
@@ -3812,7 +3917,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://www.tei-c.org/index.xml"^^xsd:string
+                       owl:hasValue "http://www.tei-c.org/index.xml"
                      ] ;
      rdfs:comment "Data format for TEI-encoded (Text Encoding Initiative) texts"@en ;
      rdfs:label "TEI"@en ;
@@ -3869,7 +3974,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://en.wikipedia.org/wiki/TeX"^^xsd:string
+                       owl:hasValue "https://en.wikipedia.org/wiki/TeX"
                      ] ;
      rdfs:comment "Data format for documents using Tex (a typesetting system)"@en ;
      rdfs:label "TEX"@en .
@@ -3884,10 +3989,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasFileExtension ;
-                        owl:hasValue "txt"^^xsd:string
+                        owl:hasValue "txt"
                       ] ;
+      rdfs:altLabel "plain text"@en ;
       rdfs:comment "Default value for the format of textual files; a textual file should be human-readable and must not contain binary data"@en ;
-      rdfs:label "Text"@en .
+      rdfs:label "text/plain"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics
@@ -3895,7 +4001,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       rdfs:subClassOf :Operation ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#closeMatch> ;
-                                        owl:someValuesFrom :TextAndDataAnalytics
+                                        owl:someValuesFrom :TextAndDataMining
                                       ] ;
                       rdfs:comment "The process/task of converting unstructured text and data into high-quality structured data that can be further analysed to extract knowledge, support decision making etc."@en ;
                       rdfs:label "Text and Data Analytics"@en .
@@ -3942,7 +4048,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"^^xsd:string
+                          owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"
                         ] ;
         rdfs:comment "Format for TGrep2 (search engine for searching syntactic parse trees represented as bracketed structures)"@en ;
         rdfs:label "TGrep2"@en .
@@ -3971,11 +4077,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :documentationUrl ;
-                            owl:hasValue "http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html"^^xsd:string
+                            owl:hasValue "http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html"
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :documentationUrl ;
-                            owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"^^xsd:string
+                            owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"
                           ] ;
           rdfs:comment "The TIGER XML format was created for encoding syntactic constituency structures in the German TIGER corpus. It has since been used for many other corpora as well. TIGERSearch is a linguistic search engine specifically targetting this format. The format has later been extended to also support semantic frame annotations."@en ;
           rdfs:label "Tiger XML"@en .
@@ -3991,7 +4097,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "http://www.ttt.org/oscarstandards/tmx/tmx14-20020710.htm"^^xsd:string
+                       owl:hasValue "http://www.ttt.org/oscarstandards/tmx/tmx14-20020710.htm"
                      ] ;
      rdfs:comment "The purpose of the TMX format is to provide a standard method to describe translation memory data that is being exchanged among tools and/or translation vendors, while introducing little or no loss of critical data during the process."@en ;
      rdfs:label "TMX"@en ;
@@ -4075,7 +4181,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/TrainingOfLanguageModels
 :TrainingOfLanguageModels rdf:type owl:Class ;
                           rdfs:subClassOf :LanguageModelling ;
-                          <http://purl.org/dc/elements/1.1/source> "Adapted from http://homepages.inf.ed.ac.uk/lzhang10/slm.html"^^xsd:string ;
+                          <http://purl.org/dc/elements/1.1/source> "Adapted from http://homepages.inf.ed.ac.uk/lzhang10/slm.html" ;
                           rdfs:comment "The task/process of training (statistical) language models that  that can estimate the distribution of natural language as accurately as possible."@en ;
                           rdfs:label "Training of language models"@en .
 
@@ -4083,7 +4189,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/TrainingOfMachineLearningModels
 :TrainingOfMachineLearningModels rdf:type owl:Class ;
                                  rdfs:subClassOf :LanguageModelling ;
-                                 <http://purl.org/dc/elements/1.1/source> "adapted from http://docs.aws.amazon.com/machine-learning/latest/dg/training-ml-models.html"^^xsd:string ;
+                                 <http://purl.org/dc/elements/1.1/source> "adapted from http://docs.aws.amazon.com/machine-learning/latest/dg/training-ml-models.html" ;
                                  rdfs:comment "The task/process of creating Machine Learning (ML) models by providing a ML algorithm with training data that help the algorithm discover patterns in data, and construct the appropriate models using these discoveries"@en ;
                                  rdfs:label "Training of Machine Learning models"@en .
 
@@ -4115,7 +4221,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp"^^xsd:string
+                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp"
                        ] ;
        rdfs:comment "Format of the Tübingen Partially Parsed Corpus of Written German (TüPP-D/Z) XML files; TüPP D/Z (http://www.sfs.uni-tuebingen.de/de/ascl/ressourcen/corpora/tuepp-dz.html) is a collection of articles from the German newspaper taz (die tageszeitung) annotated and encoded in a XML format."@en ;
        rdfs:label "Tuepp"@en .
@@ -4123,14 +4229,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Turtle
 :Turtle rdf:type owl:Class ;
-        rdfs:subClassOf :RdfFormats ,
+        rdfs:subClassOf :RdfFormat ,
+                        :RdfFormats ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasMimetype ;
                           owl:hasValue :Text_turtle
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :documentationUrl ;
-                          owl:hasValue "https://www.w3.org/TR/turtle/"^^xsd:string
+                          owl:hasValue "https://www.w3.org/TR/turtle/"
                         ] ;
         rdfs:comment "Textual syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes."@en ;
         rdfs:label "Turtle"@en .
@@ -4157,7 +4264,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                            ] ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :documentationUrl ;
-                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"^^xsd:string
+                             owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"
                            ] ;
            rdfs:comment "UIMA serialisation in JSON"@en ;
            rdfs:label "UIMA/JSON"@en .
@@ -4237,11 +4344,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://catalog.ldc.upenn.edu/LDC2006T13"^^xsd:string
+                         owl:hasValue "https://catalog.ldc.upenn.edu/LDC2006T13"
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Web1T"^^xsd:string
+                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Web1T"
                        ] ;
        rdfs:comment "File format used by the Web1T n-gram corpus, a huge collection of n-grams collected from the internet."@en ;
        rdfs:label "Web1T"@en .
@@ -4257,7 +4364,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :documentationUrl ;
-                                       owl:hasValue "https://www.w3.org/TR/annotation-model/"^^xsd:string
+                                       owl:hasValue "https://www.w3.org/TR/annotation-model/"
                                      ] ;
                      rdfs:comment "A structured model and format to enable annotations to be shared and reused across different hardware and software platforms."@en ;
                      rdfs:label "Web annotation format"@en .
@@ -4271,11 +4378,20 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      rdfs:label "Wheat-related species"@en .
 
 
+###  http://w3id.org/meta-share/omtd-share/WikiFormat
+:WikiFormat rdf:type owl:Class ;
+            rdfs:subClassOf :DataFormat ;
+            <http://purl.org/dc/terms/replaces> :WikiFormats ;
+            rdfs:comment "Superclass for wiki formats"@en ;
+            rdfs:label "Wiki format"@en .
+
+
 ###  http://w3id.org/meta-share/omtd-share/WikiFormats
 :WikiFormats rdf:type owl:Class ;
              rdfs:subClassOf :DataFormat ;
              rdfs:comment "Superclass for wiki formats"@en ;
-             rdfs:label "Wiki formats"@en .
+             rdfs:label "Wiki formats"@en ;
+             owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://w3id.org/meta-share/omtd-share/WikipediaArticle
@@ -4283,7 +4399,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                   rdfs:subClassOf :WikipediaFormat ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :documentationUrl ;
-                                    owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-WikipediaArticle"^^xsd:string
+                                    owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-WikipediaArticle"
                                   ] ;
                   rdfs:comment "Format for wikipedia articles"@en ;
                   rdfs:label "Wikipedia article"@en .
@@ -4294,7 +4410,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       rdfs:subClassOf :WikipediaFormat ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty :documentationUrl ;
-                                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaArticleInfo"^^xsd:string
+                                        owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaArticleInfo"
                                       ] ;
                       rdfs:comment "Format of general article infos"@en ;
                       rdfs:label "Wikipedia article info"@en .
@@ -4305,7 +4421,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                      rdfs:subClassOf :WikipediaFormat ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :documentationUrl ;
-                                       owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaDiscussion"^^xsd:string
+                                       owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaDiscussion"
                                      ] ;
                      rdfs:comment "Format for wikipedia discussion pages"@en ;
                      rdfs:label "Wikipedia discussion"@en .
@@ -4323,7 +4439,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                rdfs:subClassOf :WikipediaFormat ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :documentationUrl ;
-                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaLink"^^xsd:string
+                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaLink"
                                ] ;
                rdfs:comment "Format for wikipedia links"@en ;
                rdfs:label "Wikipedia link"@en .
@@ -4334,7 +4450,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                rdfs:subClassOf :WikipediaFormat ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty :documentationUrl ;
-                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaPage"^^xsd:string
+                                 owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaPage"
                                ] ;
                rdfs:comment "Format of wikipedia pages in the database (articles, discussions, etc)"@en ;
                rdfs:label "Wikipedia page"@en .
@@ -4345,7 +4461,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                 rdfs:subClassOf :WikipediaFormat ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :documentationUrl ;
-                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaQuery"^^xsd:string
+                                  owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaQuery"
                                 ] ;
                 rdfs:comment "Reads all article pages that match a query created by the numerous parameters of this class."@en ;
                 rdfs:label "Wikipedia query"@en .
@@ -4356,7 +4472,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                    rdfs:subClassOf :WikipediaFormat ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :documentationUrl ;
-                                     owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevision"^^xsd:string
+                                     owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevision"
                                    ] ;
                    rdfs:comment "Format for wikipedia revision pages"@en ;
                    rdfs:label "Wikipedia revision"@en .
@@ -4367,7 +4483,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        rdfs:subClassOf :WikipediaFormat ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :documentationUrl ;
-                                         owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevisionPair"^^xsd:string
+                                         owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevisionPair"
                                        ] ;
                        rdfs:comment "Pairs of adjacent revisions of all articles"@en ;
                        rdfs:label "Wikipedia revision pair"@en .
@@ -4378,7 +4494,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                   rdfs:subClassOf :WikipediaFormat ,
                                                   [ rdf:type owl:Restriction ;
                                                     owl:onProperty :documentationUrl ;
-                                                    owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaTemplateFilteredArticle"^^xsd:string
+                                                    owl:hasValue "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaTemplateFilteredArticle"
                                                   ] ;
                                   rdfs:comment "Format for wikipedia pages that contain or do not contain the templates specified in the template whitelist and template blacklist"@en ;
                                   rdfs:label "Wikipedia template filtered article"@en .
@@ -4487,11 +4603,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://www.w3.org/TR/xhtml1/"^^xsd:string
+                         owl:hasValue "https://www.w3.org/TR/xhtml1/"
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFileExtension ;
-                         owl:hasValue "html"^^xsd:string
+                         owl:hasValue "html"
                        ] ;
        rdfs:comment "Data format for XHTML (Extensible HyperText Markup Language)"@en ;
        rdfs:label "XHTML"@en .
@@ -4507,11 +4623,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :documentationUrl ;
-                       owl:hasValue "https://www.iana.org/assignments/media-types/application/vnd.xmi+xml"^^xsd:string
+                       owl:hasValue "https://www.iana.org/assignments/media-types/application/vnd.xmi+xml"
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasFileExtension ;
-                       owl:hasValue "xmi"^^xsd:string
+                       owl:hasValue "xmi"
                      ] ;
      rdfs:comment "Data format for the XML Metadata Interchange (XMI), which is an Object Management Group (OMG) standard for exchanging metadata information via Extensible Markup Language (XML)"@en ;
      rdfs:label "XMI"@en .
@@ -4541,7 +4657,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :documentationUrl ;
-                           owl:hasValue "http://bioc.sourceforge.net/"^^xsd:string
+                           owl:hasValue "http://bioc.sourceforge.net/"
                          ] ;
          rdfs:comment "BioC is a simple format to share text data and annotations."@en ;
          rdfs:label "XML BioC"@en .
@@ -4556,11 +4672,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://www.w3.org/TR/xpath/"^^xsd:string
+                         owl:hasValue "https://www.w3.org/TR/xpath/"
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :documentationUrl ;
-                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-XmlXPath"^^xsd:string
+                         owl:hasValue "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-XmlXPath"
                        ] ;
        rdfs:comment "XPath is a language for addressing parts of an XML document, designed to be used by both XSLT and XPointer."@en ;
        rdfs:label "XPath"@en .
@@ -4616,134 +4732,134 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures> rdf:type owl:NamedIndividual ;
-                                                                                                                                                              rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures"^^xsd:string .
+                                                                                                                                                              rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS> rdf:type owl:NamedIndividual ;
-                                                                                                                                          rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS"^^xsd:string .
+                                                                                                                                          rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date> rdf:type owl:NamedIndividual ;
-                                                                                                                                  rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"^^xsd:string .
+                                                                                                                                  rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event> rdf:type owl:NamedIndividual ;
-                                                                                                                                   rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event"^^xsd:string .
+                                                                                                                                   rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location> rdf:type owl:NamedIndividual ;
-                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location"^^xsd:string .
+                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity> rdf:type owl:NamedIndividual ;
-                                                                                                                                         rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"^^xsd:string .
+                                                                                                                                         rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization> rdf:type owl:NamedIndividual ;
-                                                                                                                                          rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization"^^xsd:string .
+                                                                                                                                          rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person> rdf:type owl:NamedIndividual ;
-                                                                                                                                    rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person"^^xsd:string .
+                                                                                                                                    rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound> rdf:type owl:NamedIndividual ;
-                                                                                                                                               rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound"^^xsd:string .
+                                                                                                                                               rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div> rdf:type owl:NamedIndividual ;
-                                                                                                                                          rdfs:label " http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"^^xsd:string .
+                                                                                                                                          rdfs:label " http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma> rdf:type owl:NamedIndividual ;
-                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma"^^xsd:string .
+                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence> rdf:type owl:NamedIndividual ;
-                                                                                                                                               rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence"^^xsd:string .
+                                                                                                                                               rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem> rdf:type owl:NamedIndividual ;
-                                                                                                                                           rdfs:label " http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem"^^xsd:string .
+                                                                                                                                           rdfs:label " http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token> rdf:type owl:NamedIndividual ;
-                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"^^xsd:string .
+                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument> rdf:type owl:NamedIndividual ;
-                                                                                                                                                    rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"^^xsd:string .
+                                                                                                                                                    rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField> rdf:type owl:NamedIndividual ;
-                                                                                                                                                 rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField"^^xsd:string .
+                                                                                                                                                 rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate> rdf:type owl:NamedIndividual ;
-                                                                                                                                                     rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate"^^xsd:string .
+                                                                                                                                                     rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense> rdf:type owl:NamedIndividual ;
-                                                                                                                                             rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense"^^xsd:string .
+                                                                                                                                             rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk> rdf:type owl:NamedIndividual ;
-                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk"^^xsd:string .
+                                                                                                                                            rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent> rdf:type owl:NamedIndividual ;
-                                                                                                                                                        rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"^^xsd:string .
+                                                                                                                                                        rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency> rdf:type owl:NamedIndividual ;
-                                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency"^^xsd:string .
+                                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution> rdf:type owl:NamedIndividual ;
-                                                                                                                                              rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution"^^xsd:string .
+                                                                                                                                              rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation> rdf:type owl:NamedIndividual ;
-                                                                                                                                                           rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"^^xsd:string .
+                                                                                                                                                           rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation" .
 
 
 ###  http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore
 <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore> rdf:type owl:NamedIndividual ;
-                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore"^^xsd:string .
+                                                                                                                                      rdfs:label "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_emma_xml
 :Application_emma_xml rdf:type owl:NamedIndividual ,
                                :Mimetype ;
-                      rdfs:label "application/emma+xml"^^xsd:string .
+                      rdfs:label "application/emma+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_json
 :Application_json rdf:type owl:NamedIndividual ,
                            :Mimetype ;
-                  rdfs:label "application/json"^^xsd:string .
+                  rdfs:label "application/json" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_json_ld
@@ -4753,193 +4869,193 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 ###  http://w3id.org/meta-share/omtd-share/Application_ld_json
 :Application_ld_json rdf:type owl:NamedIndividual ,
                               :Mimetype ;
-                     rdfs:label "application/ld+json"^^xsd:string .
+                     rdfs:label "application/ld+json" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_
 :Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_ rdf:type owl:NamedIndividual ,
                                                                       :Mimetype ;
-                                                             rdfs:label "application/ld+json;profile=\"http://www.w3.org/ns/anno.jsonld\""^^xsd:string .
+                                                             rdfs:label "application/ld+json;profile=\"http://www.w3.org/ns/anno.jsonld\"" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_msword
 :Application_msword rdf:type owl:NamedIndividual ,
                              :Mimetype ;
-                    rdfs:label "application/msword"^^xsd:string .
+                    rdfs:label "application/msword" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_pdf
 :Application_pdf rdf:type owl:NamedIndividual ,
                           :Mimetype ;
-                 rdfs:label "application/pdf"^^xsd:string .
+                 rdfs:label "application/pdf" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_pls_xml
 :Application_pls_xml rdf:type owl:NamedIndividual ,
                               :Mimetype ;
-                     rdfs:label "application/pls+xml"^^xsd:string .
+                     rdfs:label "application/pls+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_postscript
 :Application_postscript rdf:type owl:NamedIndividual ,
                                  :Mimetype ;
-                        rdfs:label "application/postscript"^^xsd:string .
+                        rdfs:label "application/postscript" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_rdf_xml
 :Application_rdf_xml rdf:type owl:NamedIndividual ,
                               :Mimetype ;
-                     rdfs:label "application/rdf+xml"^^xsd:string .
+                     rdfs:label "application/rdf+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_rtf
 :Application_rtf rdf:type owl:NamedIndividual ,
                           :Mimetype ;
-                 rdfs:label "application/rtf"^^xsd:string .
+                 rdfs:label "application/rtf" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_tei_xml
 :Application_tei_xml rdf:type owl:NamedIndividual ,
                               :Mimetype ;
-                     rdfs:label "application/tei+xml"^^xsd:string .
+                     rdfs:label "application/tei+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_vnd_msExcel
 :Application_vnd_msExcel rdf:type owl:NamedIndividual ,
                                   :Mimetype ;
-                         rdfs:label "application/vnd.ms-excel"^^xsd:string .
+                         rdfs:label "application/vnd.ms-excel" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_vnd_msaccess
 :Application_vnd_msaccess rdf:type owl:NamedIndividual ,
                                    :Mimetype ;
-                          rdfs:label "application/vnd.msaccess"^^xsd:string .
+                          rdfs:label "application/vnd.msaccess" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_vnd_xmi_xml
 :Application_vnd_xmi_xml rdf:type owl:NamedIndividual ,
                                   :Mimetype ;
-                         rdfs:label "application/vnd.xmi+xml"^^xsd:string .
+                         rdfs:label "application/vnd.xmi+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xLatex
 :Application_xLatex rdf:type owl:NamedIndividual ,
                              :Mimetype ;
-                    rdfs:label "application/x-latex"^^xsd:string .
+                    rdfs:label "application/x-latex" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xMsaccess
 :Application_xMsaccess rdf:type owl:NamedIndividual ,
                                 :Mimetype ;
-                       rdfs:label "application/x-msaccess"^^xsd:string .
+                       rdfs:label "application/x-msaccess" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xTex
 :Application_xTex rdf:type owl:NamedIndividual ,
                            :Mimetype ;
-                  rdfs:label "application/x-tex"^^xsd:string .
+                  rdfs:label "application/x-tex" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xTmx_xml
 :Application_xTmx_xml rdf:type owl:NamedIndividual ,
                                :Mimetype ;
-                      rdfs:label "application/x-tmx+xml"^^xsd:string .
+                      rdfs:label "application/x-tmx+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xXces_xml
 :Application_xXces_xml rdf:type owl:NamedIndividual ,
                                 :Mimetype ;
-                       rdfs:label "application/x-xces+xml"^^xsd:string .
+                       rdfs:label "application/x-xces+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xXml_alvis
 :Application_xXml_alvis rdf:type owl:NamedIndividual ,
                                  :Mimetype ;
-                        rdfs:label "application/x-xml+alvis"^^xsd:string .
+                        rdfs:label "application/x-xml+alvis" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_kaf_json
 :Application_x_kaf_json rdf:type owl:NamedIndividual ,
                                  :Mimetype ;
-                        rdfs:label "application/x.kaf+json"^^xsd:string .
+                        rdfs:label "application/x.kaf+json" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_graf_xml
 :Application_x_org_dkpro_graf_xml rdf:type owl:NamedIndividual ,
                                            :Mimetype ;
-                                  rdfs:label "application/x.org.dkpro.graf+xml"^^xsd:string .
+                                  rdfs:label "application/x.org.dkpro.graf+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_negra3
 :Application_x_org_dkpro_negra3 rdf:type owl:NamedIndividual ,
                                          :Mimetype ;
-                                rdfs:label "application/x.org.dkpro.negra3"^^xsd:string .
+                                rdfs:label "application/x.org.dkpro.negra3" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_negra4
 :Application_x_org_dkpro_negra4 rdf:type owl:NamedIndividual ,
                                          :Mimetype ;
-                                rdfs:label "application/x.org.dkpro.negra4"^^xsd:string .
+                                rdfs:label "application/x.org.dkpro.negra4" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_reuters21578_sgml
 :Application_x_org_dkpro_reuters21578_sgml rdf:type owl:NamedIndividual ,
                                                     :Mimetype ;
-                                           rdfs:label "application/x.org.dkpro.reuters21578+sgml"^^xsd:string .
+                                           rdfs:label "application/x.org.dkpro.reuters21578+sgml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tgrep2
 :Application_x_org_dkpro_tgrep2 rdf:type owl:NamedIndividual ,
                                          :Mimetype ;
-                                rdfs:label "application/x.org.dkpro.tgrep2"^^xsd:string .
+                                rdfs:label "application/x.org.dkpro.tgrep2" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tiger_xml
 :Application_x_org_dkpro_tiger_xml rdf:type owl:NamedIndividual ,
                                             :Mimetype ;
-                                   rdfs:label "application/x.org.dkpro.tiger+xml"^^xsd:string .
+                                   rdfs:label "application/x.org.dkpro.tiger+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tuepp_xml
 :Application_x_org_dkpro_tuepp_xml rdf:type owl:NamedIndividual ,
                                             :Mimetype ;
-                                   rdfs:label "application/x.org.dkpro.tuepp+xml"^^xsd:string .
+                                   rdfs:label "application/x.org.dkpro.tuepp+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_uima_binary
 :Application_x_org_dkpro_uima_binary rdf:type owl:NamedIndividual ,
                                               :Mimetype ;
-                                     rdfs:label "application/x.org.dkpro.uima+binary"^^xsd:string .
+                                     rdfs:label "application/x.org.dkpro.uima+binary" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_uima_json
 :Application_x_org_dkpro_uima_json rdf:type owl:NamedIndividual ,
                                             :Mimetype ;
-                                   rdfs:label "application/x.org.dkpro.uima+json"^^xsd:string .
+                                   rdfs:label "application/x.org.dkpro.uima+json" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xhtml_xml
 :Application_xhtml_xml rdf:type owl:NamedIndividual ,
                                 :Mimetype ;
-                       rdfs:label "application/xhtml+xml"^^xsd:string .
+                       rdfs:label "application/xhtml+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Application_xml
 :Application_xml rdf:type owl:NamedIndividual ,
                           :Mimetype ;
-                 rdfs:label "application/xml"^^xsd:string .
+                 rdfs:label "application/xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_csv
 :Text_csv rdf:type owl:NamedIndividual ,
                    :Mimetype ;
-          rdfs:label "text/csv"^^xsd:string .
+          rdfs:label "text/csv" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_html
 :Text_html rdf:type owl:NamedIndividual ,
                     :Mimetype ;
-           rdfs:label "text/html"^^xsd:string .
+           rdfs:label "text/html" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_plain
@@ -4950,121 +5066,121 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 ###  http://w3id.org/meta-share/omtd-share/Text_sgml
 :Text_sgml rdf:type owl:NamedIndividual ,
                     :Mimetype ;
-           rdfs:label "text/sgml"^^xsd:string .
+           rdfs:label "text/sgml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_tabSeparatedValues
 :Text_tabSeparatedValues rdf:type owl:NamedIndividual ,
                                   :Mimetype ;
-                         rdfs:label "text/tab-separated-values"^^xsd:string .
+                         rdfs:label "text/tab-separated-values" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_tcf_xml
 :Text_tcf_xml rdf:type owl:NamedIndividual ,
                        :Mimetype ;
-              rdfs:label "text/tcf+xml"^^xsd:string .
+              rdfs:label "text/tcf+xml" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_turtle
 :Text_turtle rdf:type owl:NamedIndividual ,
                       :Mimetype ;
-             rdfs:label "text/turtle"^^xsd:string .
+             rdfs:label "text/turtle" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_xCochrane
 :Text_xCochrane rdf:type owl:NamedIndividual ,
                          :Mimetype ;
-                rdfs:label "text/x-cochrane"^^xsd:string .
+                rdfs:label "text/x-cochrane" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_xPubmed
 :Text_xPubmed rdf:type owl:NamedIndividual ,
                        :Mimetype ;
-              rdfs:label "text/x-pubmed"^^xsd:string .
+              rdfs:label "text/x-pubmed" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2000
 :Text_x_org_dkpro_conll2000 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2000"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2000" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2002
 :Text_x_org_dkpro_conll2002 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2002"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2002" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2003
 :Text_x_org_dkpro_conll2003 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2003"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2003" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2006
 :Text_x_org_dkpro_conll2006 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2006"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2006" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2008
 :Text_x_org_dkpro_conll2008 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2008"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2008" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2009
 :Text_x_org_dkpro_conll2009 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2009"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2009" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conll2012
 :Text_x_org_dkpro_conll2012 rdf:type owl:NamedIndividual ,
                                      :Mimetype ;
-                            rdfs:label "text/x.org.dkpro.conll-2012"^^xsd:string .
+                            rdfs:label "text/x.org.dkpro.conll-2012" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_conllU
 :Text_x_org_dkpro_conllU rdf:type owl:NamedIndividual ,
                                   :Mimetype ;
-                         rdfs:label "text/x.org.dkpro.conll-u"^^xsd:string .
+                         rdfs:label "text/x.org.dkpro.conll-u" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_imscwb
 :Text_x_org_dkpro_imscwb rdf:type owl:NamedIndividual ,
                                   :Mimetype ;
-                         rdfs:label "text/x.org.dkpro.imscwb"^^xsd:string .
+                         rdfs:label "text/x.org.dkpro.imscwb" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_ngram
 :Text_x_org_dkpro_ngram rdf:type owl:NamedIndividual ,
                                  :Mimetype ;
-                        rdfs:label "text/x.org.dkpro.ngram"^^xsd:string .
+                        rdfs:label "text/x.org.dkpro.ngram" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_ptbChunked
 :Text_x_org_dkpro_ptbChunked rdf:type owl:NamedIndividual ,
                                       :Mimetype ;
-                             rdfs:label "text/x.org.dkpro.ptb-chunked"^^xsd:string .
+                             rdfs:label "text/x.org.dkpro.ptb-chunked" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_ptbCombined
 :Text_x_org_dkpro_ptbCombined rdf:type owl:NamedIndividual ,
                                        :Mimetype ;
-                              rdfs:label "text/x.org.dkpro.ptb-combined"^^xsd:string .
+                              rdfs:label "text/x.org.dkpro.ptb-combined" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_reuters21578
 :Text_x_org_dkpro_reuters21578 rdf:type owl:NamedIndividual ,
                                         :Mimetype ;
-                               rdfs:label "text/x.org.dkpro.reuters21578"^^xsd:string .
+                               rdfs:label "text/x.org.dkpro.reuters21578" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Text_xml
 :Text_xml rdf:type owl:NamedIndividual ,
                    :Mimetype ;
-          rdfs:label "text/xml"^^xsd:string .
+          rdfs:label "text/xml" .
 
 
 ###  https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml
@@ -5111,4 +5227,4 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl> rdf:type owl:NamedIndividual .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
