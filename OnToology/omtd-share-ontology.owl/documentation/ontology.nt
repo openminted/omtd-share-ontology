@@ -9,12 +9,12 @@
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/creator> "Penny Labropoulou" .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/creator> "Petr Knoth" .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/creator> "Sophie Aubin" .
-<http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/issued> "2017-12-22" .
+<http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/issued> "2019-05-15" .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://w3id.org/meta-share/omtd-share/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtds" .
+<http://w3id.org/meta-share/omtd-share/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd" .
 <http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2000/01/rdf-schema#comment> "The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. \n\tIt currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). \n\tThe ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).\n\tThe ontology is still in a working status." .
 <http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2000/01/rdf-schema#label> "OMTD-SHARE ontology"@en .
-<http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+<http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.0" .
 # 
 # 
 # #################################################################
@@ -24,8 +24,32 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/source
 <http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/replaces
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#altLabel
 <http://www.w3.org/2000/01/rdf-schema#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -243,6 +267,7 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro
 # http://w3id.org/meta-share/omtd-share/AgriculturalEntity
 <http://w3id.org/meta-share/omtd-share/AgriculturalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/AgriculturalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/AgriculturalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/AgriculturalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation pertaining to entities of the agricultural domain; the use of the AGROVOC thesaurus is recommended"@en .
 <http://w3id.org/meta-share/omtd-share/AgriculturalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultural entity"@en .
 # 
@@ -317,6 +342,14 @@ _:genid7 <http://www.w3.org/2002/07/owl#hasValue> "http://www.lrec-conf.org/proc
 <http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation> .
 <http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures> <http://www.w3.org/2000/01/rdf-schema#comment> "The task/process of marking compounds (single words composed of two or more free morphemes) and their parts"@en .
 <http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation of compounds"@en .
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotation> .
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/AnnotationOfCompoundingFeatures> .
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds> <http://www.w3.org/2000/01/rdf-schema#comment> "The task/process of marking compounds (single words composed of two or more free morphemes) and their parts"@en .
+<http://w3id.org/meta-share/omtd-share/AnnotationOfCompounds> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation of compounds"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/AnnotationOfDerivationalFeatures
 <http://w3id.org/meta-share/omtd-share/AnnotationOfDerivationalFeatures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -449,11 +482,13 @@ _:genid12 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/BiologicalEnity
 <http://w3id.org/meta-share/omtd-share/BiologicalEnity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/BiologicalEnity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/BiologicalEnity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/BiologicalEnity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation pertaining to entities of biology"@en .
 <http://w3id.org/meta-share/omtd-share/BiologicalEnity> <http://www.w3.org/2000/01/rdf-schema#label> "Biological enity"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Bionlp
 <http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormat> .
 <http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormats> .
 <http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -462,14 +497,23 @@ _:genid13 <http://www.w3.org/2002/07/owl#hasValue> "https://builds.openminted.eu
 <http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/2000/01/rdf-schema#comment> "File format used for the BioNLP Shared Task format"@en .
 <http://w3id.org/meta-share/omtd-share/Bionlp> <http://www.w3.org/2000/01/rdf-schema#label> "BioNLP"@en .
 # 
+# http://w3id.org/meta-share/omtd-share/BionlpFormat
+<http://w3id.org/meta-share/omtd-share/BionlpFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/BionlpFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
+<http://w3id.org/meta-share/omtd-share/BionlpFormat> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/BionlpFormats> .
+<http://w3id.org/meta-share/omtd-share/BionlpFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Formats used  for BioNLP shared tasks"@en .
+<http://w3id.org/meta-share/omtd-share/BionlpFormat> <http://www.w3.org/2000/01/rdf-schema#label> "BioNLP format"@en .
+# 
 # http://w3id.org/meta-share/omtd-share/BionlpFormats
 <http://w3id.org/meta-share/omtd-share/BionlpFormats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/BionlpFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
 <http://w3id.org/meta-share/omtd-share/BionlpFormats> <http://www.w3.org/2000/01/rdf-schema#comment> "Formats used  for BioNLP shared tasks"@en .
 <http://w3id.org/meta-share/omtd-share/BionlpFormats> <http://www.w3.org/2000/01/rdf-schema#label> "BioNLP formats"@en .
+<http://w3id.org/meta-share/omtd-share/BionlpFormats> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2
 <http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormat> .
 <http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormats> .
 <http://w3id.org/meta-share/omtd-share/BionlpSt2013A1_a2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -575,6 +619,7 @@ _:genid24 <http://www.w3.org/2002/07/owl#hasValue> "http://talkbank.org/manuals/
 # http://w3id.org/meta-share/omtd-share/ChemicalEntity
 <http://w3id.org/meta-share/omtd-share/ChemicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ChemicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ChemicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/ChemicalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation pertaining to entities from chemistry"@en .
 <http://w3id.org/meta-share/omtd-share/ChemicalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical entity"@en .
 # 
@@ -604,6 +649,7 @@ _:genid25 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro
 # 
 # http://w3id.org/meta-share/omtd-share/Citation
 <http://w3id.org/meta-share/omtd-share/Citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Citation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
 <http://w3id.org/meta-share/omtd-share/Citation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
 <http://w3id.org/meta-share/omtd-share/Citation> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a book, paper, or author, especially in a scholarly work."@en .
 <http://w3id.org/meta-share/omtd-share/Citation> <http://www.w3.org/2000/01/rdf-schema#label> "Citation"@en .
@@ -1262,6 +1308,7 @@ _:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-s
 # 
 # http://w3id.org/meta-share/omtd-share/DocumentSection
 <http://w3id.org/meta-share/omtd-share/DocumentSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/DocumentSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
 <http://w3id.org/meta-share/omtd-share/DocumentSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
 <http://w3id.org/meta-share/omtd-share/DocumentSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/StructuralAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/DocumentSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
@@ -1282,6 +1329,14 @@ _:genid80 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro
 <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
 <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)"@en .
 <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Domain-specific annotation type"@en .
+<http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType
+<http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
+<http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)"@en .
+<http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Domain-specific annotation type"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Editing
 <http://w3id.org/meta-share/omtd-share/Editing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1515,6 +1570,7 @@ _:genid94 <http://www.w3.org/2002/07/owl#hasValue> "https://proycon.github.io/fo
 # 
 # http://w3id.org/meta-share/omtd-share/Funding
 <http://w3id.org/meta-share/omtd-share/Funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
 <http://w3id.org/meta-share/omtd-share/Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
 <http://w3id.org/meta-share/omtd-share/Funding> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation related to the funding of a resource (e.g. funder, funding project, etc.)"@en .
 <http://w3id.org/meta-share/omtd-share/Funding> <http://www.w3.org/2000/01/rdf-schema#label> "Funding"@en .
@@ -1708,7 +1764,7 @@ _:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/InformationFiltering
 <http://w3id.org/meta-share/omtd-share/InformationFiltering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/InformationFiltering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/InformationRetrieval> .
-<http://w3id.org/meta-share/omtd-share/InformationFiltering> <http://www.w3.org/2000/01/rdf-schema#comment> "The process/task of removing (filtering out) redundant or unwanted information from an information stream using (semi)automated or computerized methods prior to presentation to a human user; the selection of the items is based on the correlation between the content of the items and the user\u2019s preferences (content-based filtering) or the correlation between people with similar preferences (collaborative filtering)"@en .
+<http://w3id.org/meta-share/omtd-share/InformationFiltering> <http://www.w3.org/2000/01/rdf-schema#comment> "The process/task of removing (filtering out) redundant or unwanted information from an information stream using (semi)automated or computerized methods prior to presentation to a human user; the selection of the items is based on the correlation between the content of the items and the user’s preferences (content-based filtering) or the correlation between people with similar preferences (collaborative filtering)"@en .
 <http://w3id.org/meta-share/omtd-share/InformationFiltering> <http://www.w3.org/2000/01/rdf-schema#label> "Information filtering"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/InformationFilteringByRecommenderSystems
@@ -1797,6 +1853,7 @@ _:genid115 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/
 # 
 # http://w3id.org/meta-share/omtd-share/Json_genia
 <http://w3id.org/meta-share/omtd-share/Json_genia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Json_genia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormat> .
 <http://w3id.org/meta-share/omtd-share/Json_genia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/BionlpFormats> .
 <http://w3id.org/meta-share/omtd-share/Json_genia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Json> .
 <http://w3id.org/meta-share/omtd-share/Json_genia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
@@ -1858,6 +1915,7 @@ _:genid121 <http://www.w3.org/2002/07/owl#hasValue> "https://builds.openminted.e
 # 
 # http://w3id.org/meta-share/omtd-share/Keyword
 <http://w3id.org/meta-share/omtd-share/Keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Keyword> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
 <http://w3id.org/meta-share/omtd-share/Keyword> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
 <http://w3id.org/meta-share/omtd-share/Keyword> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/Keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "A word or group of words used to describe or index the contents of a document"@en .
@@ -2063,7 +2121,7 @@ _:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/LifeSciences
 <http://w3id.org/meta-share/omtd-share/LifeSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/LifeSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain> .
-<http://w3id.org/meta-share/omtd-share/LifeSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "A branch of science (such as biology, medicine, and sometimes anthropology or sociology) that deals with living organisms and life processes \u2014usually used in plural"@en .
+<http://w3id.org/meta-share/omtd-share/LifeSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "A branch of science (such as biology, medicine, and sometimes anthropology or sociology) that deals with living organisms and life processes —usually used in plural"@en .
 <http://w3id.org/meta-share/omtd-share/LifeSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Life sciences"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/LinguisticAnalysis
@@ -2075,6 +2133,7 @@ _:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/LinguisticEntity
 <http://w3id.org/meta-share/omtd-share/LinguisticEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/LinguisticEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/LinguisticEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/LinguisticEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation pertaining to entities of linguistics; the use of OLIA is recommended"@en .
 <http://w3id.org/meta-share/omtd-share/LinguisticEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Linguistic entity"@en .
 # 
@@ -2183,6 +2242,7 @@ _:genid139 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # 
 # http://w3id.org/meta-share/omtd-share/MediaWikiMarkup
 <http://w3id.org/meta-share/omtd-share/MediaWikiMarkup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/MediaWikiMarkup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikiFormat> .
 <http://w3id.org/meta-share/omtd-share/MediaWikiMarkup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikiFormats> .
 <http://w3id.org/meta-share/omtd-share/MediaWikiMarkup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
 _:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -2407,6 +2467,7 @@ _:genid160 <http://www.w3.org/2002/07/owl#hasValue> "http://www.coli.uni-saarlan
 # http://w3id.org/meta-share/omtd-share/NeuroscienceEntity
 <http://w3id.org/meta-share/omtd-share/NeuroscienceEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/NeuroscienceEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/NeuroscienceEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/NeuroscienceEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation pertaining to entities of neuroscience"@en .
 <http://w3id.org/meta-share/omtd-share/NeuroscienceEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Neuroscience entity"@en .
 # 
@@ -2414,6 +2475,7 @@ _:genid160 <http://www.w3.org/2002/07/owl#hasValue> "http://www.coli.uni-saarlan
 <http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
+<http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormat> .
 <http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
 <http://w3id.org/meta-share/omtd-share/Nif> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid161 .
 _:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -2441,6 +2503,7 @@ _:genid162 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # 
 # http://w3id.org/meta-share/omtd-share/Obo
 <http://w3id.org/meta-share/omtd-share/Obo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Obo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormat> .
 <http://w3id.org/meta-share/omtd-share/Obo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
 <http://w3id.org/meta-share/omtd-share/Obo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid163 .
 _:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -2494,6 +2557,7 @@ _:genid164 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # 
 # http://w3id.org/meta-share/omtd-share/Owl
 <http://w3id.org/meta-share/omtd-share/Owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Owl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormat> .
 <http://w3id.org/meta-share/omtd-share/Owl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
 <http://w3id.org/meta-share/omtd-share/Owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for formats used for OWL"@en .
 <http://w3id.org/meta-share/omtd-share/Owl> <http://www.w3.org/2000/01/rdf-schema#label> "OWL"@en .
@@ -2821,38 +2885,51 @@ _:genid190 <http://www.w3.org/2002/07/owl#hasValue> "https://gate.ac.uk/sale/tao
 <http://w3id.org/meta-share/omtd-share/QuestionTopicalTarget> <http://www.w3.org/2004/02/skos/core#altLabel> "QTT"@en .
 <http://w3id.org/meta-share/omtd-share/QuestionTopicalTarget> <http://www.w3.org/2004/02/skos/core#altLabel> "Question topic"@en .
 # 
-# http://w3id.org/meta-share/omtd-share/RdfFormats
-<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
-<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid191 .
+# http://w3id.org/meta-share/omtd-share/RdfFormat
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid191 .
 _:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid191 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
 _:genid191 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/REC-rdf-syntax/" .
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Formats for RDF (Resource Description Framework) resources"@en .
+<http://w3id.org/meta-share/omtd-share/RdfFormat> <http://www.w3.org/2000/01/rdf-schema#label> "RDF format"@en .
+# 
+# http://w3id.org/meta-share/omtd-share/RdfFormats
+<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
+<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid192 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid192 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/REC-rdf-syntax/" .
 <http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#comment> "Formats for RDF (Resource Description Framework) resources"@en .
 <http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2000/01/rdf-schema#label> "RDF formats"@en .
+<http://w3id.org/meta-share/omtd-share/RdfFormats> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://w3id.org/meta-share/omtd-share/Rdf_xml
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormat> .
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid192 .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid192 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid192 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_rdf_xml> .
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid193 .
 _:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid193 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/REC-rdf-syntax/" .
+_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid193 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_rdf_xml> .
+<http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid194 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/REC-rdf-syntax/" .
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for RDF (Resource Description Framework) XML format; RDF/XML is a serialisation for RDF"@en .
 <http://w3id.org/meta-share/omtd-share/Rdf_xml> <http://www.w3.org/2000/01/rdf-schema#label> "RDF/XML"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Readability
 <http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid194 .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid194 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore> .
+<http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid195 .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid195 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore> .
 <http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/2000/01/rdf-schema#comment> "The ease with which a reader can understand a written text. [https://en.wikipedia.org/wiki/Readability]"@en .
 <http://w3id.org/meta-share/omtd-share/Readability> <http://www.w3.org/2000/01/rdf-schema#label> "Readability"@en .
 # 
@@ -2865,10 +2942,10 @@ _:genid194 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/Reader
 <http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AccessComponent> .
-<http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid195 .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Reading> .
+<http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid196 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid196 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Reading> .
 <http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that reads content of various types (pdf, txt, xml etc.)"@en .
 <http://w3id.org/meta-share/omtd-share/Reader> <http://www.w3.org/2000/01/rdf-schema#label> "Reader"@en .
 # 
@@ -2903,6 +2980,7 @@ _:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Relation
 <http://w3id.org/meta-share/omtd-share/Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/Relation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of relation that holds between two or more entities of a specific domain"@en .
 <http://w3id.org/meta-share/omtd-share/Relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"@en .
 # 
@@ -2922,36 +3000,36 @@ _:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Reuters21578Sgml
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
-<http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid196 .
-_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid196 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid196 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_reuters21578_sgml> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid197 .
 _:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid197 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid197 <http://www.w3.org/2002/07/owl#hasValue> <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml> .
+_:genid197 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid197 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_reuters21578_sgml> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid198 .
 _:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid198 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml" .
+_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid198 <http://www.w3.org/2002/07/owl#hasValue> <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml> .
+<http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid199 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid199 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml" .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#comment> "Reuters-21578 corpus in SGML format"@en .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Sgml> <http://www.w3.org/2000/01/rdf-schema#label> "Reuters21578 SGML"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Reuters21578Txt
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
-<http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid199 .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid199 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid199 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_reuters21578> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid200 .
 _:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid200 <http://www.w3.org/2002/07/owl#hasValue> <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt> .
+_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid200 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_reuters21578> .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid201 .
 _:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid201 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt" .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid201 <http://www.w3.org/2002/07/owl#hasValue> <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt> .
+<http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid202 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt" .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#comment> "Reuters-21578 corpus transformed into text format using ExtractReuters in the lucene-benchmarks project"@en .
 <http://w3id.org/meta-share/omtd-share/Reuters21578Txt> <http://www.w3.org/2000/01/rdf-schema#label> "Reuters21578 Txt"@en .
 # 
@@ -2965,14 +3043,14 @@ _:genid201 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 # http://w3id.org/meta-share/omtd-share/Rtf
 <http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
-<http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
-_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid202 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_rtf> .
 <http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid203 .
 _:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid203 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
-_:genid203 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
+_:genid203 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid203 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_rtf> .
+<http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
+_:genid204 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
 <http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#comment> "Rich Text Format; proprietary data format of Microsoft"@en .
 <http://w3id.org/meta-share/omtd-share/Rtf> <http://www.w3.org/2000/01/rdf-schema#label> "RTF"@en .
 # 
@@ -2982,21 +3060,33 @@ _:genid203 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
 <http://w3id.org/meta-share/omtd-share/RuleBasedMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of method that makes use of set(s) of rules to perform the relevant task."@en .
 <http://w3id.org/meta-share/omtd-share/RuleBasedMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Rule-based Method"@en .
 # 
+# http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en .
+<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly analytics entity"@en .
+# 
 # http://w3id.org/meta-share/omtd-share/ScholarlyCommunication
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain> .
-<http://w3id.org/meta-share/omtd-share/ScholarlyCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Scholarly communication can be defined as \u201Cthe system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use. The system includes both formal means of communication, such as publication in peer-reviewed journals, and informal channels, such as electronic listservs.\u201D (Association of College & Research Libraries, \u201CPrinciples and Strategies for the Reform of Scholarly Communication 1,\u201D 2003)"@en .
+<http://w3id.org/meta-share/omtd-share/ScholarlyCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Scholarly communication can be defined as “the system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use. The system includes both formal means of communication, such as publication in peer-reviewed journals, and informal channels, such as electronic listservs.” (Association of College & Research Libraries, “Principles and Strategies for the Reform of Scholarly Communication 1,” 2003)"@en .
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly communication"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en .
 <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly analytics entity"@en .
+<http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://w3id.org/meta-share/omtd-share/ScientificUnit
 <http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/NamedEntity> .
 <http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific unit"@en .
 <http://w3id.org/meta-share/omtd-share/ScientificUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific unit"@en .
@@ -3004,6 +3094,7 @@ _:genid203 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
 # http://w3id.org/meta-share/omtd-share/ScientificValue
 <http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/NamedEntity> .
 <http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific value"@en .
 <http://w3id.org/meta-share/omtd-share/ScientificValue> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific value"@en .
@@ -3011,10 +3102,10 @@ _:genid203 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
 # http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser
 <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SupportComponent> .
-<http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid204 .
-_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid204 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalysis> .
+<http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalysis> .
 <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that performs analysis tasks based on a script"@en .
 <http://w3id.org/meta-share/omtd-share/ScriptBasedAnalyser> <http://www.w3.org/2000/01/rdf-schema#label> "Script-based analyser"@en .
 # 
@@ -3034,10 +3125,10 @@ _:genid204 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/SemanticAnnotationType
 <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid205 .
-_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SemanticFeature> .
+<http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid206 .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid206 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SemanticFeature> .
 <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of annotation pertaining to the semantic level"@en .
 <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic annotation type"@en .
 # 
@@ -3050,10 +3141,10 @@ _:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/
 # http://w3id.org/meta-share/omtd-share/SemanticClass
 <http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid206 .
-_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid206 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField> .
+<http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid207 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField> .
 <http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A division of words into classes based on their common semantic features"@en .
 <http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic class"@en .
 <http://w3id.org/meta-share/omtd-share/SemanticClass> <http://www.w3.org/2004/02/skos/core#altLabel> "Semantic type"@en .
@@ -3061,14 +3152,14 @@ _:genid206 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/SemanticFrame
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid207 .
-_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid207 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Frame> .
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid208 .
 _:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid208 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid208 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate> .
+_:genid208 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid208 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Frame> .
+<http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid209 .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid209 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate> .
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://purl.org/dc/elements/1.1/source> <https://framenet.icsi.berkeley.edu/fndrupal/glossary> .
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#comment> "A schematic representation of a situation involving various participants, props and other conceptual roles, each of which is a frame element"@en .
 <http://w3id.org/meta-share/omtd-share/SemanticFrame> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic frame"@en .
@@ -3077,18 +3168,18 @@ _:genid208 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/SemanticRole
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid209 .
-_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid209 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SemanticRole> .
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid210 .
 _:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid210 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid210 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.lappsgrid.org/SemanticRole> .
+_:genid210 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SemanticRole> .
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid211 .
 _:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid211 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument> .
+_:genid211 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid211 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.lappsgrid.org/SemanticRole> .
+<http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid212 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument> .
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A semantic role is the underlying relationship that a participant has with the main verb in a clause [http://www.glossary.sil.org/term/semantic-role]"@en .
 <http://w3id.org/meta-share/omtd-share/SemanticRole> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic role"@en .
 # 
@@ -3101,14 +3192,14 @@ _:genid211 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/Sentence
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/StructuralAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid212 .
-_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid212 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Sentence> .
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid213 .
 _:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid213 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid213 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence> .
+_:genid213 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid213 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Sentence> .
+<http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid214 .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid214 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid214 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence> .
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of words, usually containing a verb, that expresses a thought in the form of a statement, question, instruction, or exclamation and starts with a capital letter when written [https://dictionary.cambridge.org/dictionary/english/sentence]"@en .
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/2000/01/rdf-schema#label> "Sentence"@en .
 # 
@@ -3128,10 +3219,10 @@ _:genid213 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/Sentiment
 <http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid214 .
-_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid214 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid214 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation> .
+<http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid215 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid215 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation> .
 <http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The affective state (judgement, feeling) of a person or group towards an entity or event"@en .
 <http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2000/01/rdf-schema#label> "Sentiment"@en .
 <http://w3id.org/meta-share/omtd-share/Sentiment> <http://www.w3.org/2004/02/skos/core#altLabel> "Opinion"@en .
@@ -3148,11 +3239,11 @@ _:genid214 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/SentimentAnalyzer
 <http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Analyzer> .
-<http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid215 .
-_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid215 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid215 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/SentimentAnalysis> .
-<http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that tries to identify sentences that express the author\u2019s negative or positive feelings on something"@en .
+<http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid216 .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid216 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid216 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/SentimentAnalysis> .
+<http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that tries to identify sentences that express the author’s negative or positive feelings on something"@en .
 <http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2000/01/rdf-schema#label> "Sentiment analyzer"@en .
 <http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2004/02/skos/core#altLabel> "Opinion mining tool"@en .
 <http://w3id.org/meta-share/omtd-share/SentimentAnalyzer> <http://www.w3.org/2004/02/skos/core#comment> "could also be an annotator"@en .
@@ -3160,24 +3251,24 @@ _:genid215 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/SerializedCas
 <http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/UimaCasFormat> .
-<http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid216 .
-_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid216 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid216 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas> .
 <http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid217 .
 _:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid217 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid217 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas" .
+_:genid217 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid217 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas> .
+<http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid218 .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid218 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid218 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas" .
 <http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#comment> "The CAS is the native data model used by UIMA; there are various ways of saving CAS data, using XMI, XCAS, or binary formats; this is for the serialized format"@en .
 <http://w3id.org/meta-share/omtd-share/SerializedCas> <http://www.w3.org/2000/01/rdf-schema#label> "Serialized CAS"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Sgml
 <http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
-<http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid218 .
-_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid218 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid218 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_sgml> .
+<http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid219 .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid219 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid219 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_sgml> .
 <http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/2000/01/rdf-schema#comment> "SGML format"@en .
 <http://w3id.org/meta-share/omtd-share/Sgml> <http://www.w3.org/2000/01/rdf-schema#label> "SGML"@en .
 # 
@@ -3196,6 +3287,7 @@ _:genid218 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/
 # http://w3id.org/meta-share/omtd-share/SocialSciencesEntity
 <http://w3id.org/meta-share/omtd-share/SocialSciencesEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SocialSciencesEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
+<http://w3id.org/meta-share/omtd-share/SocialSciencesEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/SocialSciencesEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of annotation that pertains to entities of social sciences; the use of TheSoz is recommended"@en .
 <http://w3id.org/meta-share/omtd-share/SocialSciencesEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Social sciences entity"@en .
 # 
@@ -3208,14 +3300,14 @@ _:genid218 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/
 # http://w3id.org/meta-share/omtd-share/Solr
 <http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
-<http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid219 .
-_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid219 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid219 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl> .
 <http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid220 .
 _:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid220 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid220 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl" .
+_:genid220 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid220 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl> .
+<http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid221 .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid221 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid221 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl" .
 <http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#comment> "Solr format"@en .
 <http://w3id.org/meta-share/omtd-share/Solr> <http://www.w3.org/2000/01/rdf-schema#label> "Solr"@en .
 # 
@@ -3254,34 +3346,34 @@ _:genid220 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 # http://w3id.org/meta-share/omtd-share/Stem
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid221 .
-_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid221 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid221 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Stem> .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid222 .
 _:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid222 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid222 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem> .
+_:genid222 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid222 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Stem> .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid223 .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid223 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid223 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem> .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#comment> "A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]"@en .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#label> "Stem"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Stemmer
 <http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Annotator> .
-<http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid223 .
-_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid223 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid223 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Stemming> .
+<http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid224 .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid224 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Stemming> .
 <http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that extracts stems from words in a text, usually by removing the most common morphological and inflectional endings from words"@en .
 <http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/2000/01/rdf-schema#label> "Stemmer"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Stemming
 <http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/TextAnnotation> .
-<http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid224 .
-_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid224 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
-_:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Lemmatization> .
+<http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid225 .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid225 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid225 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Lemmatization> .
 <http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/2000/01/rdf-schema#comment> "The task/process of cutting off the ends of words (mainly inflectional affixes but sometimes also derivational affixes) aiming to relate words to a base form."@en .
 <http://w3id.org/meta-share/omtd-share/Stemming> <http://www.w3.org/2000/01/rdf-schema#label> "Stemming"@en .
 # 
@@ -3309,7 +3401,7 @@ _:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Subjectivity
 <http://w3id.org/meta-share/omtd-share/Subjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Subjectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Subjectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The linguistic expression of somebody\u2019s opinions, sentiments, emotions, evaluations, beliefs, speculations (private states, i.e. states that are not open to objective observation or verification). [http://www.mavir.net/docs/JWiebe-Subjectivity-nov2010.pdf]"@en .
+<http://w3id.org/meta-share/omtd-share/Subjectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The linguistic expression of somebody’s opinions, sentiments, emotions, evaluations, beliefs, speculations (private states, i.e. states that are not open to objective observation or verification). [http://www.mavir.net/docs/JWiebe-Subjectivity-nov2010.pdf]"@en .
 <http://w3id.org/meta-share/omtd-share/Subjectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Subjectivity"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Summarization
@@ -3322,20 +3414,20 @@ _:genid224 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Summarizer
 <http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Generator> .
-<http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid225 .
-_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid225 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid225 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Summarization> .
+<http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid226 .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid226 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid226 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Summarization> .
 <http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that produces a natural language synopsis of a longer text"@en .
 <http://w3id.org/meta-share/omtd-share/Summarizer> <http://www.w3.org/2000/01/rdf-schema#label> "Summarizer"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/SupportComponent
 <http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ComponentType> .
-<http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid226 .
-_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid226 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid226 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/SupportOperation> .
+<http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid227 .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid227 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid227 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/SupportOperation> .
 <http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that provides support to developers"@en .
 <http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Support component"@en .
 <http://w3id.org/meta-share/omtd-share/SupportComponent> <http://www.w3.org/2004/02/skos/core#altLabel> "Helper"@en .
@@ -3369,10 +3461,10 @@ _:genid226 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid227 .
-_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid227 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid227 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SyntacticCategory> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid228 .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid228 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid228 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#SyntacticCategory> .
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of annotation that pertains to the syntactic level"@en .
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Syntactic annotation type"@en .
 # 
@@ -3394,15 +3486,15 @@ _:genid227 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid228 .
-_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid228 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid228 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_tcf_xml> .
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid229 .
 _:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid229 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid229 <http://www.w3.org/2002/07/owl#hasValue> "https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format" .
-<http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#comment> "An XML data exchange format developed within the WebLicht architecture to facilitate efficient interoperability between the tools; it allows the various linguistic annotations produced by the tools within WebLicht to be stored in one document; it supports incremental enrichment of linguistic annotations at various levels of analysis in a stand-\u00ADoff XML\u2010based format"@en .
+_:genid229 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid229 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_tcf_xml> .
+<http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid230 .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid230 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid230 <http://www.w3.org/2002/07/owl#hasValue> "https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format" .
+<http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#comment> "An XML data exchange format developed within the WebLicht architecture to facilitate efficient interoperability between the tools; it allows the various linguistic annotations produced by the tools within WebLicht to be stored in one document; it supports incremental enrichment of linguistic annotations at various levels of analysis in a stand-­off XML‐based format"@en .
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2000/01/rdf-schema#label> "TCF"@en .
 <http://w3id.org/meta-share/omtd-share/Tcf> <http://www.w3.org/2004/02/skos/core#altLabel> "Text Corpus Format"@en .
 # 
@@ -3416,18 +3508,18 @@ _:genid229 <http://www.w3.org/2002/07/owl#hasValue> "https://weblicht.sfs.uni-tu
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid230 .
-_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid230 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid230 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_tei_xml> .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid231 .
 _:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid231 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid231 <http://www.w3.org/2002/07/owl#hasValue> <IANA:application/tei+xml> .
+_:genid231 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid231 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_tei_xml> .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid232 .
 _:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid232 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid232 <http://www.w3.org/2002/07/owl#hasValue> "http://www.tei-c.org/index.xml" .
+_:genid232 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid232 <http://www.w3.org/2002/07/owl#hasValue> <IANA:application/tei+xml> .
+<http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid233 .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid233 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid233 <http://www.w3.org/2002/07/owl#hasValue> "http://www.tei-c.org/index.xml" .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for TEI-encoded (Text Encoding Initiative) texts"@en .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2000/01/rdf-schema#label> "TEI"@en .
 <http://w3id.org/meta-share/omtd-share/Tei> <http://www.w3.org/2004/02/skos/core#altLabel> "Text Encoding Initiative"@en .
@@ -3460,10 +3552,10 @@ _:genid232 <http://www.w3.org/2002/07/owl#hasValue> "http://www.tei-c.org/index.
 # http://w3id.org/meta-share/omtd-share/TermExtractor
 <http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Analyzer> .
-<http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid233 .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid233 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid233 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TermExtraction> .
+<http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid234 .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid234 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid234 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TermExtraction> .
 <http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that tries to extract terms from a corpus"@en .
 <http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2000/01/rdf-schema#label> "Term extractor"@en .
 <http://w3id.org/meta-share/omtd-share/TermExtractor> <http://www.w3.org/2004/02/skos/core#altLabel> "Terminology extractor"@en .
@@ -3471,38 +3563,39 @@ _:genid233 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Tex
 <http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
-<http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid234 .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid234 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid234 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xTex> .
 <http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid235 .
 _:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid235 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid235 <http://www.w3.org/2002/07/owl#hasValue> "https://en.wikipedia.org/wiki/TeX" .
+_:genid235 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid235 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xTex> .
+<http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid236 .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid236 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid236 <http://www.w3.org/2002/07/owl#hasValue> "https://en.wikipedia.org/wiki/TeX" .
 <http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for documents using Tex (a typesetting system)"@en .
 <http://w3id.org/meta-share/omtd-share/Tex> <http://www.w3.org/2000/01/rdf-schema#label> "TEX"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Text
 <http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
-<http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid236 .
-_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid236 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid236 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_plain> .
 <http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid237 .
 _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid237 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
-_:genid237 <http://www.w3.org/2002/07/owl#hasValue> "txt" .
+_:genid237 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid237 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_plain> .
+<http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid238 .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid238 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
+_:genid238 <http://www.w3.org/2002/07/owl#hasValue> "txt" .
+<http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#altLabel> "plain text"@en .
 <http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#comment> "Default value for the format of textual files; a textual file should be human-readable and must not contain binary data"@en .
-<http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
+<http://w3id.org/meta-share/omtd-share/Text> <http://www.w3.org/2000/01/rdf-schema#label> "text/plain"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics
 <http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Operation> .
-<http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid238 .
-_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid238 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
-_:genid238 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> .
+<http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid239 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid239 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TextAndDataMining> .
 <http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/2000/01/rdf-schema#comment> "The process/task of converting unstructured text and data into high-quality structured data that can be further analysed to extract knowledge, support decision making etc."@en .
 <http://w3id.org/meta-share/omtd-share/TextAndDataAnalytics> <http://www.w3.org/2000/01/rdf-schema#label> "Text and Data Analytics"@en .
 # 
@@ -3534,18 +3627,18 @@ _:genid238 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Tgrep2
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
-<http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid239 .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid239 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid239 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tgrep2> .
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid240 .
 _:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid240 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid240 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl> .
+_:genid240 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid240 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tgrep2> .
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid241 .
 _:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid241 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid241 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl" .
+_:genid241 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid241 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl> .
+<http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid242 .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid242 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid242 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl" .
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for TGrep2 (search engine for searching syntactic parse trees represented as bracketed structures)"@en .
 <http://w3id.org/meta-share/omtd-share/Tgrep2> <http://www.w3.org/2000/01/rdf-schema#label> "TGrep2"@en .
 # 
@@ -3561,22 +3654,22 @@ _:genid241 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid242 .
-_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid242 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid242 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tiger_xml> .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid243 .
 _:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid243 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid243 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl> .
+_:genid243 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid243 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tiger_xml> .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid244 .
 _:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid244 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid244 <http://www.w3.org/2002/07/owl#hasValue> "http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html" .
+_:genid244 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid244 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl> .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid245 .
 _:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid245 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid245 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl" .
+_:genid245 <http://www.w3.org/2002/07/owl#hasValue> "http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html" .
+<http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid246 .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid246 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid246 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl" .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#comment> "The TIGER XML format was created for encoding syntactic constituency structures in the German TIGER corpus. It has since been used for many other corpora as well. TIGERSearch is a linguistic search engine specifically targetting this format. The format has later been extended to also support semantic frame annotations."@en .
 <http://w3id.org/meta-share/omtd-share/TigerXml> <http://www.w3.org/2000/01/rdf-schema#label> "Tiger XML"@en .
 # 
@@ -3584,14 +3677,14 @@ _:genid245 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid246 .
-_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid246 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid246 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xTmx_xml> .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid247 .
 _:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid247 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid247 <http://www.w3.org/2002/07/owl#hasValue> "http://www.ttt.org/oscarstandards/tmx/tmx14-20020710.htm" .
+_:genid247 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid247 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xTmx_xml> .
+<http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid248 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid248 <http://www.w3.org/2002/07/owl#hasValue> "http://www.ttt.org/oscarstandards/tmx/tmx14-20020710.htm" .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#comment> "The purpose of the TMX format is to provide a standard method to describe translation memory data that is being exchanged among tools and/or translation vendors, while introducing little or no loss of critical data during the process."@en .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2000/01/rdf-schema#label> "TMX"@en .
 <http://w3id.org/meta-share/omtd-share/Tmx> <http://www.w3.org/2004/02/skos/core#altLabel> "Translation Memory Exchange"@en .
@@ -3599,18 +3692,18 @@ _:genid247 <http://www.w3.org/2002/07/owl#hasValue> "http://www.ttt.org/oscarsta
 # http://w3id.org/meta-share/omtd-share/Token
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/StructuralAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid248 .
-_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid248 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid248 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Token> .
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid249 .
 _:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid249 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid249 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.lappsgrid.org/Token> .
+_:genid249 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Token> .
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid250 .
 _:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid250 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid250 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token> .
+_:genid250 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid250 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.lappsgrid.org/Token> .
+<http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid251 .
+_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid251 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid251 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token> .
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of characters surrounded by spaces or punctuation marks, as well as punctuation marks themselves"@en .
 <http://w3id.org/meta-share/omtd-share/Token> <http://www.w3.org/2000/01/rdf-schema#label> "Token"@en .
 # 
@@ -3637,10 +3730,10 @@ _:genid250 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/InformationExtraction> .
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/KnowledgeDiscovery> .
-<http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid251 .
-_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid251 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
-_:genid251 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TextCategorization> .
+<http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid252 .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid252 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:genid252 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TextCategorization> .
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#comment> "The task/process of identifying the topic of a text or dataset (e.g. by clustering keywords or using topic models)"@en .
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Topic detection"@en .
 <http://w3id.org/meta-share/omtd-share/TopicDetection> <http://www.w3.org/2004/02/skos/core#altLabel> "Topic extraction"@en .
@@ -3654,10 +3747,10 @@ _:genid251 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels
 <http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SupportComponent> .
-<http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid252 .
-_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid252 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid252 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TrainingOfMachineLearningModels> .
+<http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid253 .
+_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid253 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid253 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/TrainingOfMachineLearningModels> .
 <http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that is used in training models for machine learning"@en .
 <http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2000/01/rdf-schema#label> "Trainer of Machine Learning models"@en .
 <http://w3id.org/meta-share/omtd-share/TrainerOfMachineLearningModels> <http://www.w3.org/2004/02/skos/core#altLabel> "ML models trainer"@en .
@@ -3680,10 +3773,10 @@ _:genid252 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Tsv
 <http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/TabularFormat> .
-<http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid253 .
-_:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid253 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid253 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_tabSeparatedValues> .
+<http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid254 .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid254 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid254 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_tabSeparatedValues> .
 <http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for files with tab-separated values"@en .
 <http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2000/01/rdf-schema#label> "TSV"@en .
 <http://w3id.org/meta-share/omtd-share/Tsv> <http://www.w3.org/2004/02/skos/core#altLabel> "Tab-separated values"@en .
@@ -3693,32 +3786,33 @@ _:genid253 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid254 .
-_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid254 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid254 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tuepp_xml> .
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid255 .
 _:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid255 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid255 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl> .
+_:genid255 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid255 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_tuepp_xml> .
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid256 .
 _:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid256 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid256 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp" .
-<http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#comment> "Format of the Tu\u0308bingen Partially Parsed Corpus of Written German (Tu\u0308PP-D/Z) XML files; T\u00FCPP D/Z (http://www.sfs.uni-tuebingen.de/de/ascl/ressourcen/corpora/tuepp-dz.html) is a collection of articles from the German newspaper taz (die tageszeitung) annotated and encoded in a XML format."@en .
+_:genid256 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid256 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl> .
+<http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid257 .
+_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid257 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid257 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Tuepp" .
+<http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#comment> "Format of the Tübingen Partially Parsed Corpus of Written German (TüPP-D/Z) XML files; TüPP D/Z (http://www.sfs.uni-tuebingen.de/de/ascl/ressourcen/corpora/tuepp-dz.html) is a collection of articles from the German newspaper taz (die tageszeitung) annotated and encoded in a XML format."@en .
 <http://w3id.org/meta-share/omtd-share/Tuepp> <http://www.w3.org/2000/01/rdf-schema#label> "Tuepp"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Turtle
 <http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormat> .
 <http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/RdfFormats> .
-<http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid257 .
-_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid257 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid257 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_turtle> .
 <http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid258 .
 _:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid258 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid258 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/turtle/" .
+_:genid258 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid258 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_turtle> .
+<http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid259 .
+_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid259 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid259 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/turtle/" .
 <http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes."@en .
 <http://w3id.org/meta-share/omtd-share/Turtle> <http://www.w3.org/2000/01/rdf-schema#label> "Turtle"@en .
 # 
@@ -3732,18 +3826,18 @@ _:genid258 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/turtl
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Json> .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/UimaCasFormat> .
-<http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid259 .
-_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid259 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid259 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_uima_json> .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid260 .
 _:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid260 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid260 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl> .
+_:genid260 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid260 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_x_org_dkpro_uima_json> .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid261 .
 _:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid261 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid261 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl" .
+_:genid261 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid261 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl> .
+<http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid262 .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid262 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid262 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl" .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#comment> "UIMA serialisation in JSON"@en .
 <http://w3id.org/meta-share/omtd-share/Uima_json> <http://www.w3.org/2000/01/rdf-schema#label> "UIMA/JSON"@en .
 # 
@@ -3757,10 +3851,10 @@ _:genid261 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 # http://w3id.org/meta-share/omtd-share/Validator
 <http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SupportComponent> .
-<http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid262 .
-_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid262 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid262 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Validation> .
+<http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid263 .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid263 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid263 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Validation> .
 <http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/2000/01/rdf-schema#comment> "A component used to confirm that a system/resource meets the specifications and fulfills its intended purpose"@en .
 <http://w3id.org/meta-share/omtd-share/Validator> <http://www.w3.org/2000/01/rdf-schema#label> "Validator"@en .
 # 
@@ -3774,10 +3868,10 @@ _:genid262 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Viewer
 <http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SupportComponent> .
-<http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid263 .
-_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid263 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid263 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Viewing> .
+<http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid264 .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid264 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid264 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Viewing> .
 <http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that supports humans in accessing the contents of a resource"@en .
 <http://w3id.org/meta-share/omtd-share/Viewer> <http://www.w3.org/2000/01/rdf-schema#label> "Viewer"@en .
 # 
@@ -3790,10 +3884,10 @@ _:genid263 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Visualiser
 <http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SupportComponent> .
-<http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid264 .
-_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid264 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid264 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Visualization> .
+<http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid265 .
+_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid265 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid265 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Visualization> .
 <http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/2000/01/rdf-schema#comment> "A component or interface that renders the contents of a resource in a graphic way for visualisation purposes"@en .
 <http://w3id.org/meta-share/omtd-share/Visualiser> <http://www.w3.org/2000/01/rdf-schema#label> "Visualiser"@en .
 # 
@@ -3808,18 +3902,18 @@ _:genid264 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Web1t
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/CorpusFormat> .
-<http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid265 .
-_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid265 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid265 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_ngram> .
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid266 .
 _:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid266 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid266 <http://www.w3.org/2002/07/owl#hasValue> "https://catalog.ldc.upenn.edu/LDC2006T13" .
+_:genid266 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid266 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_x_org_dkpro_ngram> .
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid267 .
 _:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid267 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid267 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Web1T" .
+_:genid267 <http://www.w3.org/2002/07/owl#hasValue> "https://catalog.ldc.upenn.edu/LDC2006T13" .
+<http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid268 .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid268 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid268 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-Web1T" .
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#comment> "File format used by the Web1T n-gram corpus, a huge collection of n-grams collected from the internet."@en .
 <http://w3id.org/meta-share/omtd-share/Web1t> <http://www.w3.org/2000/01/rdf-schema#label> "Web1T"@en .
 # 
@@ -3827,14 +3921,14 @@ _:genid267 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.inform
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Json> .
-<http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid268 .
-_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid268 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid268 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_> .
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid269 .
 _:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid269 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid269 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/annotation-model/" .
+_:genid269 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid269 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_> .
+<http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid270 .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid270 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid270 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/annotation-model/" .
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured model and format to enable annotations to be shared and reused across different hardware and software platforms."@en .
 <http://w3id.org/meta-share/omtd-share/WebAnnotationFormat> <http://www.w3.org/2000/01/rdf-schema#label> "Web annotation format"@en .
 # 
@@ -3845,39 +3939,47 @@ _:genid269 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/annot
 <http://w3id.org/meta-share/omtd-share/WheatRelatedSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "Wheat-related species"@en .
 <http://w3id.org/meta-share/omtd-share/WheatRelatedSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Wheat-related species"@en .
 # 
+# http://w3id.org/meta-share/omtd-share/WikiFormat
+<http://w3id.org/meta-share/omtd-share/WikiFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/meta-share/omtd-share/WikiFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
+<http://w3id.org/meta-share/omtd-share/WikiFormat> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/WikiFormats> .
+<http://w3id.org/meta-share/omtd-share/WikiFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for wiki formats"@en .
+<http://w3id.org/meta-share/omtd-share/WikiFormat> <http://www.w3.org/2000/01/rdf-schema#label> "Wiki format"@en .
+# 
 # http://w3id.org/meta-share/omtd-share/WikiFormats
 <http://w3id.org/meta-share/omtd-share/WikiFormats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikiFormats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
 <http://w3id.org/meta-share/omtd-share/WikiFormats> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for wiki formats"@en .
 <http://w3id.org/meta-share/omtd-share/WikiFormats> <http://www.w3.org/2000/01/rdf-schema#label> "Wiki formats"@en .
+<http://w3id.org/meta-share/omtd-share/WikiFormats> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaArticle
 <http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid270 .
-_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid270 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid270 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-WikipediaArticle" .
+<http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid271 .
+_:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid271 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid271 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-WikipediaArticle" .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for wikipedia articles"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticle> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia article"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo
 <http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid271 .
-_:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid271 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid271 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaArticleInfo" .
+<http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid272 .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid272 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid272 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaArticleInfo" .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Format of general article infos"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaArticleInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia article info"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaDiscussion
 <http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid272 .
-_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid272 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid272 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaDiscussion" .
+<http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid273 .
+_:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid273 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid273 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaDiscussion" .
 <http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for wikipedia discussion pages"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaDiscussion> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia discussion"@en .
 # 
@@ -3890,60 +3992,60 @@ _:genid272 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 # http://w3id.org/meta-share/omtd-share/WikipediaLink
 <http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid273 .
-_:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid273 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid273 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaLink" .
+<http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid274 .
+_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid274 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid274 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaLink" .
 <http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for wikipedia links"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaLink> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia link"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaPage
 <http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid274 .
-_:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid274 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid274 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaPage" .
+<http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid275 .
+_:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid275 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid275 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaPage" .
 <http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/2000/01/rdf-schema#comment> "Format of wikipedia pages in the database (articles, discussions, etc)"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaPage> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia page"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaQuery
 <http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid275 .
-_:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid275 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid275 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaQuery" .
+<http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid276 .
+_:genid276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid276 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid276 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaQuery" .
 <http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "Reads all article pages that match a query created by the numerous parameters of this class."@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaQuery> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia query"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaRevision
 <http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid276 .
-_:genid276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid276 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid276 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevision" .
+<http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid277 .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid277 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid277 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevision" .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for wikipedia revision pages"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevision> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia revision"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair
 <http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid277 .
-_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid277 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid277 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevisionPair" .
+<http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid278 .
+_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid278 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid278 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaRevisionPair" .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/2000/01/rdf-schema#comment> "Pairs of adjacent revisions of all articles"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaRevisionPair> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia revision pair"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle
 <http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/WikipediaFormat> .
-<http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid278 .
-_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid278 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid278 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaTemplateFilteredArticle" .
+<http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid279 .
+_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid279 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid279 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaTemplateFilteredArticle" .
 <http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "Format for wikipedia pages that contain or do not contain the templates specified in the template whitelist and template blacklist"@en .
 <http://w3id.org/meta-share/omtd-share/WikipediaTemplateFilteredArticle> <http://www.w3.org/2000/01/rdf-schema#label> "Wikipedia template filtered article"@en .
 # 
@@ -3951,10 +4053,10 @@ _:genid278 <http://www.w3.org/2002/07/owl#hasValue> "https://dkpro.github.io/dkp
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType> .
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/StructuralAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid279 .
-_:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid279 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
-_:genid279 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Word> .
+<http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid280 .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid280 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid280 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/olia-top.owl#Word> .
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#comment> "A word is a unit which is a constituent at the phrase level and above. It is sometimes identifiable according to such criteria as (a) being the minimal possible unit in a reply, (b) having features such as a regular stress pattern, and phonological changes conditioned by or blocked at word boundaries, (c) being the largest unit resistant to insertion of new constituents within its boundaries, or (d) being the smallest constituent that can be moved within a sentence without making the sentence ungrammatical. A word is sometimes placed, in a hierarchy of grammatical constituents, above the morpheme level and below the phrase level. [http://www.glossary.sil.org/term/word]\nIn annotation, words are often used as equivalent to tokens; thus, for instance, punctuation marks (traditionally not considered as words) will also be annotated as \"word\"."@en .
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/2000/01/rdf-schema#label> "Word"@en .
 # 
@@ -3967,10 +4069,10 @@ _:genid279 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/olia/
 # http://w3id.org/meta-share/omtd-share/WordSense
 <http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/SemanticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid280 .
-_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid280 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
-_:genid280 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense> .
+<http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid281 .
+_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid281 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid281 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense> .
 <http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponds to the structural part of a lexical entry that contains the relevant semantic, grammatical, and anthropological information for a lexical unit. [adapted from http://www.glossary.sil.org/term/sense]"@en .
 <http://w3id.org/meta-share/omtd-share/WordSense> <http://www.w3.org/2000/01/rdf-schema#label> "Word sense"@en .
 # 
@@ -3984,10 +4086,10 @@ _:genid280 <http://www.w3.org/2002/07/owl#hasValue> <http://dkpro.github.io/dkpr
 # http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator
 <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Disambiguator> .
-<http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid281 .
-_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid281 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid281 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguation> .
+<http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid282 .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid282 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid282 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguation> .
 <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that tries to identify which sense of a word (i.e. meaning) is used in a sentence, when the word has multiple meanings"@en .
 <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2000/01/rdf-schema#label> "Word sense disambiguator"@en .
 <http://w3id.org/meta-share/omtd-share/WordSenseDisambiguator> <http://www.w3.org/2004/02/skos/core#comment> "could also be an annotator and a support component (used in a lot of processes)"@en .
@@ -3995,10 +4097,10 @@ _:genid281 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 # http://w3id.org/meta-share/omtd-share/Writer
 <http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AccessComponent> .
-<http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid282 .
-_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid282 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
-_:genid282 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Writing> .
+<http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid283 .
+_:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid283 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/performsOperation> .
+_:genid283 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-share/omtd-share/Writing> .
 <http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that writes processing results in various formats"@en .
 <http://w3id.org/meta-share/omtd-share/Writer> <http://www.w3.org/2000/01/rdf-schema#label> "Writer"@en .
 # 
@@ -4012,20 +4114,20 @@ _:genid282 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/meta-
 <http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
 <http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid283 .
-_:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid283 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid283 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xXces_xml> .
+<http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid284 .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid284 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid284 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xXces_xml> .
 <http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for documents and corpora using the XCES standard (Corpus Encoding Standard for XML), cf. http://www.xces.org/"@en .
 <http://w3id.org/meta-share/omtd-share/Xces> <http://www.w3.org/2000/01/rdf-schema#label> "XCES"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/XcesIlspVariant
 <http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xces> .
-<http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid284 .
-_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid284 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid284 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xXces_xml> .
+<http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid285 .
+_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid285 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid285 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xXces_xml> .
 <http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "A variant of XCES implemented for documents"@en .
 <http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2000/01/rdf-schema#label> "XCES ILSP variant"@en .
 <http://w3id.org/meta-share/omtd-share/XcesIlspVariant> <http://www.w3.org/2004/02/skos/core#altLabel> "xces; format-variant=ilsp"@en .
@@ -4034,18 +4136,18 @@ _:genid284 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid285 .
-_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid285 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid285 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xhtml_xml> .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid286 .
 _:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid286 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid286 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/xhtml1/" .
+_:genid286 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid286 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xhtml_xml> .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid287 .
 _:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid287 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
-_:genid287 <http://www.w3.org/2002/07/owl#hasValue> "html" .
+_:genid287 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid287 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/xhtml1/" .
+<http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid288 .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid288 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
+_:genid288 <http://www.w3.org/2002/07/owl#hasValue> "html" .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for XHTML (Extensible HyperText Markup Language)"@en .
 <http://w3id.org/meta-share/omtd-share/Xhtml> <http://www.w3.org/2000/01/rdf-schema#label> "XHTML"@en .
 # 
@@ -4053,64 +4155,64 @@ _:genid287 <http://www.w3.org/2002/07/owl#hasValue> "html" .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid288 .
-_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid288 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid288 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_vnd_xmi_xml> .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid289 .
 _:genid289 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid289 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid289 <http://www.w3.org/2002/07/owl#hasValue> "https://www.iana.org/assignments/media-types/application/vnd.xmi+xml" .
+_:genid289 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid289 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_vnd_xmi_xml> .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid290 .
 _:genid290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid290 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
-_:genid290 <http://www.w3.org/2002/07/owl#hasValue> "xmi" .
+_:genid290 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid290 <http://www.w3.org/2002/07/owl#hasValue> "https://www.iana.org/assignments/media-types/application/vnd.xmi+xml" .
+<http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid291 .
+_:genid291 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid291 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasFileExtension> .
+_:genid291 <http://www.w3.org/2002/07/owl#hasValue> "xmi" .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#comment> "Data format for the XML Metadata Interchange (XMI), which is an Object Management Group (OMG) standard for exchanging metadata information via Extensible Markup Language (XML)"@en .
 <http://w3id.org/meta-share/omtd-share/Xmi> <http://www.w3.org/2000/01/rdf-schema#label> "XMI"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Xml
 <http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DataFormat> .
-<http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid291 .
-_:genid291 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid291 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid291 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
 <http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid292 .
 _:genid292 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid292 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid292 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_xml> .
+_:genid292 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
+<http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid293 .
+_:genid293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid293 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid293 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Text_xml> .
 <http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass for grouping together XML formats"@en .
 <http://w3id.org/meta-share/omtd-share/Xml> <http://www.w3.org/2000/01/rdf-schema#label> "XML"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/XmlBioc
 <http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid293 .
-_:genid293 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid293 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid293 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
 <http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid294 .
 _:genid294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid294 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid294 <http://www.w3.org/2002/07/owl#hasValue> "http://bioc.sourceforge.net/" .
+_:genid294 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid294 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
+<http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid295 .
+_:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid295 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid295 <http://www.w3.org/2002/07/owl#hasValue> "http://bioc.sourceforge.net/" .
 <http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#comment> "BioC is a simple format to share text data and annotations."@en .
 <http://w3id.org/meta-share/omtd-share/XmlBioc> <http://www.w3.org/2000/01/rdf-schema#label> "XML BioC"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Xpath
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Xml> .
-<http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid295 .
-_:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid295 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
-_:genid295 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid296 .
 _:genid296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid296 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid296 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/xpath/" .
+_:genid296 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/hasMimetype> .
+_:genid296 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/meta-share/omtd-share/Application_xml> .
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid297 .
 _:genid297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid297 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
-_:genid297 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-XmlXPath" .
+_:genid297 <http://www.w3.org/2002/07/owl#hasValue> "https://www.w3.org/TR/xpath/" .
+<http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid298 .
+_:genid298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid298 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/meta-share/omtd-share/documentationUrl> .
+_:genid298 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-XmlXPath" .
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#comment> "XPath is a language for addressing parts of an XML document, designed to be used by both XSLT and XPointer."@en .
 <http://w3id.org/meta-share/omtd-share/Xpath> <http://www.w3.org/2000/01/rdf-schema#label> "XPath"@en .
 # 
@@ -4562,4 +4664,4 @@ _:genid297 <http://www.w3.org/2002/07/owl#hasValue> "https://zoidberg.ukp.inform
 # https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl
 <https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
