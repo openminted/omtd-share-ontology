@@ -3,7 +3,6 @@
      xml:base="http://w3id.org/meta-share/omtd-share/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:ns1="http://purl.org/vocab/vann/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,9 +10,11 @@
      xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
      xmlns:lappsgrid="http://vocab.lappsgrid.org/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share/">
+        <dc:date>2015-05-15</dc:date>
         <dc:description>OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).</dc:description>
         <dc:title>OMTD-SHARE ontology</dc:title>
         <dct:contributor>Richard Eckart de Castilho</dct:contributor>
@@ -26,13 +27,14 @@
         <dct:creator>Sophie Aubin</dct:creator>
         <dct:issued>2019-05-15</dct:issued>
         <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <ns1:preferredNamespacePrefix>omtd</ns1:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>omtd</vann:preferredNamespacePrefix>
         <rdfs:comment>The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. 
 	It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). 
 	The ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
 	The ontology is still in a working status.</rdfs:comment>
         <rdfs:label xml:lang="en">OMTD-SHARE ontology</rdfs:label>
-        <owl:versionInfo>v1.1.0</owl:versionInfo>
+        <owl:priorVersion>1.0.0</owl:priorVersion>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -45,6 +47,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
 

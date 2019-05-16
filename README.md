@@ -1,2 +1,1 @@
 # omtd-share ontology
-
