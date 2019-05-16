@@ -1,4 +1,5 @@
 <http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/elements/1.1/date> "2015-05-15" .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/elements/1.1/description> "OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources)." .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/elements/1.1/title> "OMTD-SHARE ontology" .
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/dc/terms/contributor> "Richard Eckart de Castilho" .
@@ -14,7 +15,8 @@
 <http://w3id.org/meta-share/omtd-share/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd" .
 <http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2000/01/rdf-schema#comment> "The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. \n\tIt currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). \n\tThe ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).\n\tThe ontology is still in a working status." .
 <http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2000/01/rdf-schema#label> "OMTD-SHARE ontology"@en .
-<http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.0" .
+<http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2002/07/owl#priorVersion> "1.0.0" .
+<http://w3id.org/meta-share/omtd-share/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
 # 
 # 
 # #################################################################
@@ -23,6 +25,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

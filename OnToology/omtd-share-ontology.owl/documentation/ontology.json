@@ -2858,6 +2858,9 @@
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -2968,6 +2971,9 @@
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2015-05-15"
+  } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources)."
   } ],
@@ -3008,8 +3014,11 @@
     "@language" : "en",
     "@value" : "OMTD-SHARE ontology"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@value" : "1.0.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v1.1.0"
+    "@value" : "1.1.0"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/AccessComponent",
