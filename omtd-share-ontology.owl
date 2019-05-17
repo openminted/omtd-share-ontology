@@ -4888,7 +4888,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"/>
         <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation"/>
         <rdfs:comment xml:lang="en">Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Scholarly analytics entity</rdfs:label>
