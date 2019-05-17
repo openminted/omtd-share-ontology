@@ -64,29 +64,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:Application_vnd_msExcel">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="280.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_vnd_msExcel</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue2" source="nid_NULL" target="nid_omtd:Application_vnd_msExcel">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:FlowControl">
          <data key="d0">
             <y:ShapeNode>
@@ -99,12 +76,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom3" source="nid_NULL" target="nid_omtd:FlowControl">
+    <edge id="eid_owl:someValuesFrom2" source="nid_NULL" target="nid_omtd:FlowControl">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_omtd:Application_vnd_msExcel">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="280.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_vnd_msExcel</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue3" source="nid_NULL" target="nid_omtd:Application_vnd_msExcel">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -593,29 +593,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="1490.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue25" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_lappsgrid:Document">
          <data key="d0">
             <y:ShapeNode>
@@ -628,12 +605,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom26" source="nid_NULL" target="nid_lappsgrid:Document">
+    <edge id="eid_owl:someValuesFrom25" source="nid_NULL" target="nid_lappsgrid:Document">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="1490.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue26" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -823,19 +823,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization">
+      <node id="nid_https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="1350.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="1330.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue35" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization">
+    <edge id="eid_owl:hasValue35" source="nid_NULL" target="nid_https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -869,19 +869,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl">
+      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="1330.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="1350.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue37" source="nid_NULL" target="nid_https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl">
+    <edge id="eid_owl:hasValue37" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1375,29 +1375,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:Application_pls_xml">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_pls_xml</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue59" source="nid_NULL" target="nid_omtd:Application_pls_xml">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:Application_xLatex">
          <data key="d0">
             <y:ShapeNode>
@@ -1410,7 +1387,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue60" source="nid_NULL" target="nid_omtd:Application_xLatex">
+    <edge id="eid_owl:hasValue59" source="nid_NULL" target="nid_omtd:Application_xLatex">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_omtd:Application_pls_xml">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_pls_xml</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue60" source="nid_NULL" target="nid_omtd:Application_pls_xml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1605,29 +1605,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:Application_x_org_dkpro_graf_xml">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_x_org_dkpro_graf_xml</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue69" source="nid_NULL" target="nid_omtd:Application_x_org_dkpro_graf_xml">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation">
          <data key="d0">
             <y:ShapeNode>
@@ -1640,7 +1617,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue70" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation">
+    <edge id="eid_owl:hasValue69" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_omtd:Application_x_org_dkpro_graf_xml">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="370.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_x_org_dkpro_graf_xml</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue70" source="nid_NULL" target="nid_omtd:Application_x_org_dkpro_graf_xml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2249,29 +2249,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:DependencyConversion">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:DependencyConversion</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom97" source="nid_NULL" target="nid_omtd:DependencyConversion">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:Visualization">
          <data key="d0">
             <y:ShapeNode>
@@ -2284,7 +2261,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom98" source="nid_NULL" target="nid_omtd:Visualization">
+    <edge id="eid_owl:someValuesFrom97" source="nid_NULL" target="nid_omtd:Visualization">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_omtd:DependencyConversion">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:DependencyConversion</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom98" source="nid_NULL" target="nid_omtd:DependencyConversion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2433,29 +2433,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:SupportOfCrowdsourcingTasks">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:SupportOfCrowdsourcingTasks</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom105" source="nid_NULL" target="nid_omtd:SupportOfCrowdsourcingTasks">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:Reading">
          <data key="d0">
             <y:ShapeNode>
@@ -2468,7 +2445,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom106" source="nid_NULL" target="nid_omtd:Reading">
+    <edge id="eid_owl:someValuesFrom105" source="nid_NULL" target="nid_omtd:Reading">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_omtd:SupportOfCrowdsourcingTasks">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:SupportOfCrowdsourcingTasks</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom106" source="nid_NULL" target="nid_omtd:SupportOfCrowdsourcingTasks">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2778,6 +2778,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_omtd:Application_vnd_msaccess">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="290.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_vnd_msaccess</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue120" source="nid_NULL" target="nid_omtd:Application_vnd_msaccess">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_omtd:Writing">
          <data key="d0">
             <y:ShapeNode>
@@ -2790,7 +2813,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom120" source="nid_NULL" target="nid_omtd:Writing">
+    <edge id="eid_owl:someValuesFrom121" source="nid_NULL" target="nid_omtd:Writing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2813,35 +2836,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom121" source="nid_NULL" target="nid_lappsgrid:Annotation">
+    <edge id="eid_owl:someValuesFrom122" source="nid_NULL" target="nid_lappsgrid:Annotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_omtd:Application_vnd_msaccess">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="290.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_vnd_msaccess</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue122" source="nid_NULL" target="nid_omtd:Application_vnd_msaccess">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2870,29 +2870,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="1350.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue124" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:Application_x_org_dkpro_reuters21578_sgml">
          <data key="d0">
             <y:ShapeNode>
@@ -2905,7 +2882,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue125" source="nid_NULL" target="nid_omtd:Application_x_org_dkpro_reuters21578_sgml">
+    <edge id="eid_owl:hasValue124" source="nid_NULL" target="nid_omtd:Application_x_org_dkpro_reuters21578_sgml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2916,24 +2893,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_skos:broadMatch">
+      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="1350.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">skos:broadMatch</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty126" source="nid_NULL" target="nid_skos:broadMatch">
+    <edge id="eid_owl:hasValue125" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2951,12 +2928,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom127" source="nid_NULL" target="nid_omtd:ScholarlyCommunication">
+    <edge id="eid_owl:someValuesFrom126" source="nid_NULL" target="nid_omtd:ScholarlyCommunication">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_skos:broadMatch">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">skos:broadMatch</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty127" source="nid_NULL" target="nid_skos:broadMatch">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3721,29 +3721,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:Application_postscript">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_postscript</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:hasValue161" source="nid_NULL" target="nid_omtd:Application_postscript">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_oliatop:Phrase">
          <data key="d0">
             <y:ShapeNode>
@@ -3756,7 +3733,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom162" source="nid_NULL" target="nid_oliatop:Phrase">
+    <edge id="eid_owl:someValuesFrom161" source="nid_NULL" target="nid_oliatop:Phrase">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3767,19 +3744,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument">
+      <node id="nid_omtd:Application_postscript">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="1450.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:Application_postscript</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue163" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument">
+    <edge id="eid_owl:hasValue162" source="nid_NULL" target="nid_omtd:Application_postscript">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3802,12 +3779,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom164" source="nid_NULL" target="nid_omtd:PersuasiveExpressionMining">
+    <edge id="eid_owl:someValuesFrom163" source="nid_NULL" target="nid_omtd:PersuasiveExpressionMining">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="1450.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue164" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3905,24 +3905,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity">
+      <node id="nid_omtd:SocialSciences">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="1340.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:SocialSciences</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:hasValue169" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity">
+    <edge id="eid_owl:someValuesFrom169" source="nid_NULL" target="nid_omtd:SocialSciences">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3974,29 +3974,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_omtd:SocialSciences">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">omtd:SocialSciences</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom172" source="nid_NULL" target="nid_omtd:SocialSciences">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_omtd:DataMerging">
          <data key="d0">
             <y:ShapeNode>
@@ -4009,12 +3986,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom173" source="nid_NULL" target="nid_omtd:DataMerging">
+    <edge id="eid_owl:someValuesFrom172" source="nid_NULL" target="nid_omtd:DataMerging">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="1340.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:hasValue173" source="nid_NULL" target="nid_http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:hasValue</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

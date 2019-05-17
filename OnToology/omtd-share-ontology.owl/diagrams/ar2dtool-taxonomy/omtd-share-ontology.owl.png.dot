@@ -474,7 +474,6 @@ node [shape = rectangle, color="black"]; "omtd:DocumentSection" "omtd:Event" "om
 	"omtd:Json_genia" -> "omtd:Json" [ label = "rdfs:subClassOf" ];
 	"omtd:Json_genia" -> "omtd:BionlpFormats" [ label = "rdfs:subClassOf" ];
 	"omtd:Json_genia" -> "omtd:BionlpFormat" [ label = "rdfs:subClassOf" ];
-	"omtd:ScholarlyAnalyticsEntity" -> "omtd:ScholarlyAnalyticsEntity" [ label = "rdfs:subClassOf" ];
 	"omtd:ScholarlyAnalyticsEntity" -> "omtd:DomainSpecificAnnotationType" [ label = "rdfs:subClassOf" ];
 	"omtd:ScholarlyAnalyticsEntity" -> "omtd:Domain-specificAnnotation" [ label = "rdfs:subClassOf" ];
 	"omtd:Pubmed" -> "omtd:DocumentFormat" [ label = "rdfs:subClassOf" ];

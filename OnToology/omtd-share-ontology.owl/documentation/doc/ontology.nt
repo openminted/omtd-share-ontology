@@ -3069,7 +3069,6 @@ _:genid204 <http://www.w3.org/2002/07/owl#hasValue> "rtf" .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://purl.org/dc/terms/replaces> <http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation> .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en .
 <http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly analytics entity"@en .

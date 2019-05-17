@@ -3417,8 +3417,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity
 :ScholarlyAnalyticsEntity rdf:type owl:Class ;
                           rdfs:subClassOf :Domain-specificAnnotation ,
-                                          :DomainSpecificAnnotationType ,
-                                          :ScholarlyAnalyticsEntity ;
+                                          :DomainSpecificAnnotationType ;
                           <http://purl.org/dc/terms/replaces> :ScholarlyCommunicationAnnotation ;
                           rdfs:comment "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en ;
                           rdfs:label "Scholarly analytics entity"@en .

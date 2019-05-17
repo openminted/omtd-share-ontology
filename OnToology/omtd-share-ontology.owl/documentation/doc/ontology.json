@@ -8458,8 +8458,6 @@
     "@id" : "http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"
   }, {
     "@id" : "http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType"
-  }, {
-    "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyCommunication",

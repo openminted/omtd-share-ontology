@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="528" parse.nodes="422" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="527" parse.nodes="422" parse.order="free">
       <node id="nid_omtd:Sgml">
          <data key="d0">
             <y:ShapeNode>
@@ -9914,7 +9914,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf472" source="nid_omtd:ScholarlyAnalyticsEntity" target="nid_omtd:ScholarlyAnalyticsEntity">
+    <edge id="eid_rdfs:subClassOf472" source="nid_omtd:ScholarlyAnalyticsEntity" target="nid_omtd:DomainSpecificAnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9925,18 +9925,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf473" source="nid_omtd:ScholarlyAnalyticsEntity" target="nid_omtd:DomainSpecificAnnotationType">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdfs:subClassOf474" source="nid_omtd:ScholarlyAnalyticsEntity" target="nid_omtd:Domain-specificAnnotation">
+    <edge id="eid_rdfs:subClassOf473" source="nid_omtd:ScholarlyAnalyticsEntity" target="nid_omtd:Domain-specificAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9959,7 +9948,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf475" source="nid_omtd:Pubmed" target="nid_omtd:DocumentFormat">
+    <edge id="eid_rdfs:subClassOf474" source="nid_omtd:Pubmed" target="nid_omtd:DocumentFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9970,7 +9959,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf476" source="nid_omtd:CorpusFormat" target="nid_omtd:DataFormat">
+    <edge id="eid_rdfs:subClassOf475" source="nid_omtd:CorpusFormat" target="nid_omtd:DataFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9993,7 +9982,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf477" source="nid_omtd:LifeSciences" target="nid_omtd:Domain">
+    <edge id="eid_rdfs:subClassOf476" source="nid_omtd:LifeSciences" target="nid_omtd:Domain">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10016,7 +10005,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf478" source="nid_omtd:SentenceSplitter" target="nid_omtd:Segmenter">
+    <edge id="eid_rdfs:subClassOf477" source="nid_omtd:SentenceSplitter" target="nid_omtd:Segmenter">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10027,7 +10016,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf479" source="nid_omtd:TextAnnotation" target="nid_omtd:Annotation">
+    <edge id="eid_rdfs:subClassOf478" source="nid_omtd:TextAnnotation" target="nid_omtd:Annotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10050,7 +10039,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf480" source="nid_omtd:TrainingOfLanguageModels" target="nid_omtd:LanguageModelling">
+    <edge id="eid_rdfs:subClassOf479" source="nid_omtd:TrainingOfLanguageModels" target="nid_omtd:LanguageModelling">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10073,7 +10062,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf481" source="nid_omtd:StatisticalLearningMethod" target="nid_omtd:TdmMethod">
+    <edge id="eid_rdfs:subClassOf480" source="nid_omtd:StatisticalLearningMethod" target="nid_omtd:TdmMethod">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10096,7 +10085,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf482" source="nid_omtd:Conll2008" target="nid_omtd:ConllFormat">
+    <edge id="eid_rdfs:subClassOf481" source="nid_omtd:Conll2008" target="nid_omtd:ConllFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10119,7 +10108,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf483" source="nid_omtd:EmotionRecognizer" target="nid_omtd:Analyzer">
+    <edge id="eid_rdfs:subClassOf482" source="nid_omtd:EmotionRecognizer" target="nid_omtd:Analyzer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10142,7 +10131,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf484" source="nid_omtd:SemanticClass" target="nid_omtd:SemanticAnnotationType">
+    <edge id="eid_rdfs:subClassOf483" source="nid_omtd:SemanticClass" target="nid_omtd:SemanticAnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10165,7 +10154,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf485" source="nid_omtd:RegressionAnalysis" target="nid_omtd:MachineAndStatisticalLearningMethod">
+    <edge id="eid_rdfs:subClassOf484" source="nid_omtd:RegressionAnalysis" target="nid_omtd:MachineAndStatisticalLearningMethod">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10188,7 +10177,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf486" source="nid_omtd:EmotionDetection" target="nid_omtd:InformationExtraction">
+    <edge id="eid_rdfs:subClassOf485" source="nid_omtd:EmotionDetection" target="nid_omtd:InformationExtraction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10211,7 +10200,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf487" source="nid_omtd:Argumentation" target="nid_omtd:DiscourseAnnotation">
+    <edge id="eid_rdfs:subClassOf486" source="nid_omtd:Argumentation" target="nid_omtd:DiscourseAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10222,7 +10211,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf488" source="nid_omtd:FormatConversion" target="nid_omtd:SupportOperation">
+    <edge id="eid_rdfs:subClassOf487" source="nid_omtd:FormatConversion" target="nid_omtd:SupportOperation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10245,7 +10234,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf489" source="nid_omtd:Chunker" target="nid_omtd:Annotator">
+    <edge id="eid_rdfs:subClassOf488" source="nid_omtd:Chunker" target="nid_omtd:Annotator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10256,7 +10245,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf490" source="nid_omtd:MorphologicalAnnotationType" target="nid_omtd:AnnotationType">
+    <edge id="eid_rdfs:subClassOf489" source="nid_omtd:MorphologicalAnnotationType" target="nid_omtd:AnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10267,7 +10256,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf491" source="nid_omtd:SocialSciencesEntity" target="nid_omtd:DomainSpecificAnnotationType">
+    <edge id="eid_rdfs:subClassOf490" source="nid_omtd:SocialSciencesEntity" target="nid_omtd:DomainSpecificAnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10278,7 +10267,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf492" source="nid_omtd:SocialSciencesEntity" target="nid_omtd:Domain-specificAnnotation">
+    <edge id="eid_rdfs:subClassOf491" source="nid_omtd:SocialSciencesEntity" target="nid_omtd:Domain-specificAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10301,7 +10290,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf493" source="nid_omtd:Tuepp" target="nid_omtd:Xml">
+    <edge id="eid_rdfs:subClassOf492" source="nid_omtd:Tuepp" target="nid_omtd:Xml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10312,7 +10301,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf494" source="nid_omtd:Tuepp" target="nid_omtd:CorpusFormat">
+    <edge id="eid_rdfs:subClassOf493" source="nid_omtd:Tuepp" target="nid_omtd:CorpusFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10323,7 +10312,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf495" source="nid_omtd:Tuepp" target="nid_omtd:AnnotationFormat">
+    <edge id="eid_rdfs:subClassOf494" source="nid_omtd:Tuepp" target="nid_omtd:AnnotationFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10346,7 +10335,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf496" source="nid_omtd:PartOfSpeechTagger" target="nid_omtd:MorphologicalTagger">
+    <edge id="eid_rdfs:subClassOf495" source="nid_omtd:PartOfSpeechTagger" target="nid_omtd:MorphologicalTagger">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10369,7 +10358,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf497" source="nid_omtd:TigerXml" target="nid_omtd:CorpusFormat">
+    <edge id="eid_rdfs:subClassOf496" source="nid_omtd:TigerXml" target="nid_omtd:CorpusFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10380,7 +10369,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf498" source="nid_omtd:TigerXml" target="nid_omtd:AnnotationFormat">
+    <edge id="eid_rdfs:subClassOf497" source="nid_omtd:TigerXml" target="nid_omtd:AnnotationFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10391,7 +10380,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf499" source="nid_omtd:TigerXml" target="nid_omtd:Xml">
+    <edge id="eid_rdfs:subClassOf498" source="nid_omtd:TigerXml" target="nid_omtd:Xml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10414,7 +10403,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf500" source="nid_omtd:PtbChunked" target="nid_omtd:Ptb">
+    <edge id="eid_rdfs:subClassOf499" source="nid_omtd:PtbChunked" target="nid_omtd:Ptb">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10425,7 +10414,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf501" source="nid_omtd:Parsing" target="nid_omtd:TextAnnotation">
+    <edge id="eid_rdfs:subClassOf500" source="nid_omtd:Parsing" target="nid_omtd:TextAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10436,7 +10425,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf502" source="nid_omtd:Parsing" target="nid_omtd:LinguisticAnalysis">
+    <edge id="eid_rdfs:subClassOf501" source="nid_omtd:Parsing" target="nid_omtd:LinguisticAnalysis">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10459,7 +10448,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf503" source="nid_omtd:LanguageIdentification" target="nid_omtd:SupportOperation">
+    <edge id="eid_rdfs:subClassOf502" source="nid_omtd:LanguageIdentification" target="nid_omtd:SupportOperation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10470,7 +10459,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf504" source="nid_omtd:StructuralAnnotation" target="nid_omtd:TextAnnotation">
+    <edge id="eid_rdfs:subClassOf503" source="nid_omtd:StructuralAnnotation" target="nid_omtd:TextAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10493,7 +10482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf505" source="nid_omtd:Blikiwikipedia" target="nid_omtd:WikipediaFormat">
+    <edge id="eid_rdfs:subClassOf504" source="nid_omtd:Blikiwikipedia" target="nid_omtd:WikipediaFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10516,7 +10505,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf506" source="nid_omtd:Location" target="nid_omtd:NamedEntity">
+    <edge id="eid_rdfs:subClassOf505" source="nid_omtd:Location" target="nid_omtd:NamedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10539,7 +10528,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf507" source="nid_omtd:FlowControl" target="nid_omtd:SupportOperation">
+    <edge id="eid_rdfs:subClassOf506" source="nid_omtd:FlowControl" target="nid_omtd:SupportOperation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10550,7 +10539,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf508" source="nid_omtd:ResourceAccess" target="nid_omtd:SupportOperation">
+    <edge id="eid_rdfs:subClassOf507" source="nid_omtd:ResourceAccess" target="nid_omtd:SupportOperation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10561,7 +10550,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf509" source="nid_omtd:BionlpFormat" target="nid_omtd:DocumentFormat">
+    <edge id="eid_rdfs:subClassOf508" source="nid_omtd:BionlpFormat" target="nid_omtd:DocumentFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10584,7 +10573,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf510" source="nid_omtd:KeywordExtraction" target="nid_omtd:InformationExtraction">
+    <edge id="eid_rdfs:subClassOf509" source="nid_omtd:KeywordExtraction" target="nid_omtd:InformationExtraction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10607,7 +10596,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf511" source="nid_omtd:Html5Microdata" target="nid_omtd:Html">
+    <edge id="eid_rdfs:subClassOf510" source="nid_omtd:Html5Microdata" target="nid_omtd:Html">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10618,7 +10607,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf512" source="nid_omtd:Html5Microdata" target="nid_omtd:AnnotationFormat">
+    <edge id="eid_rdfs:subClassOf511" source="nid_omtd:Html5Microdata" target="nid_omtd:AnnotationFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10641,7 +10630,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf513" source="nid_omtd:WordSenseDisambiguation" target="nid_omtd:SupportOperation">
+    <edge id="eid_rdfs:subClassOf512" source="nid_omtd:WordSenseDisambiguation" target="nid_omtd:SupportOperation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10664,7 +10653,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf514" source="nid_omtd:ContentMining" target="nid_omtd:Operation">
+    <edge id="eid_rdfs:subClassOf513" source="nid_omtd:ContentMining" target="nid_omtd:Operation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10675,7 +10664,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf515" source="nid_omtd:Json" target="nid_omtd:DataFormat">
+    <edge id="eid_rdfs:subClassOf514" source="nid_omtd:Json" target="nid_omtd:DataFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10686,7 +10675,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf516" source="nid_omtd:Operation" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf515" source="nid_omtd:Operation" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10709,7 +10698,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf517" source="nid_omtd:LexiconFormatConversion" target="nid_omtd:SupportOperationForKnowledgeResources">
+    <edge id="eid_rdfs:subClassOf516" source="nid_omtd:LexiconFormatConversion" target="nid_omtd:SupportOperationForKnowledgeResources">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10720,7 +10709,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf518" source="nid_omtd:LexiconFormatConversion" target="nid_omtd:FormatConversion">
+    <edge id="eid_rdfs:subClassOf517" source="nid_omtd:LexiconFormatConversion" target="nid_omtd:FormatConversion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10731,7 +10720,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf519" source="nid_omtd:UimaCasFormat" target="nid_omtd:DataFormat">
+    <edge id="eid_rdfs:subClassOf518" source="nid_omtd:UimaCasFormat" target="nid_omtd:DataFormat">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10754,7 +10743,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf520" source="nid_omtd:Owl_xml" target="nid_omtd:Xml">
+    <edge id="eid_rdfs:subClassOf519" source="nid_omtd:Owl_xml" target="nid_omtd:Xml">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10765,7 +10754,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf521" source="nid_omtd:Owl_xml" target="nid_omtd:Owl">
+    <edge id="eid_rdfs:subClassOf520" source="nid_omtd:Owl_xml" target="nid_omtd:Owl">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10788,7 +10777,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf522" source="nid_omtd:Metabolite" target="nid_omtd:NamedEntity">
+    <edge id="eid_rdfs:subClassOf521" source="nid_omtd:Metabolite" target="nid_omtd:NamedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10799,7 +10788,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf523" source="nid_omtd:Metabolite" target="nid_omtd:BiologicalEnity">
+    <edge id="eid_rdfs:subClassOf522" source="nid_omtd:Metabolite" target="nid_omtd:BiologicalEnity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10822,7 +10811,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf524" source="nid_omtd:AudienceReaction" target="nid_omtd:DiscourseAnnotationType">
+    <edge id="eid_rdfs:subClassOf523" source="nid_omtd:AudienceReaction" target="nid_omtd:DiscourseAnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10845,7 +10834,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf525" source="nid_omtd:ScientificValue" target="nid_omtd:NamedEntity">
+    <edge id="eid_rdfs:subClassOf524" source="nid_omtd:ScientificValue" target="nid_omtd:NamedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10856,7 +10845,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf526" source="nid_omtd:ScientificValue" target="nid_omtd:DomainSpecificAnnotationType">
+    <edge id="eid_rdfs:subClassOf525" source="nid_omtd:ScientificValue" target="nid_omtd:DomainSpecificAnnotationType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -10867,7 +10856,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf527" source="nid_omtd:ScientificValue" target="nid_omtd:Domain-specificAnnotation">
+    <edge id="eid_rdfs:subClassOf526" source="nid_omtd:ScientificValue" target="nid_omtd:Domain-specificAnnotation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
