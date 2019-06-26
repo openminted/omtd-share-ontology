@@ -2367,10 +2367,6 @@
         <Class IRI="Operation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Annotation"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="AnnotationFormat"/>
         <Class IRI="DataFormat"/>
     </SubClassOf>
@@ -7598,7 +7594,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>Annotation</IRI>
-        <Literal xml:lang="en_us">Labeling</Literal>
+        <Literal xml:lang="en_us">Labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -7828,7 +7824,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>Anonymization</IRI>
-        <Literal xml:lang="en_uk">Anonymisation</Literal>
+        <Literal xml:lang="en_uk">Anonymisation [en_uk]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8373,7 +8369,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>CertaintyLevelLabelling</IRI>
-        <Literal xml:lang="en_us">Certainty level labeling</Literal>
+        <Literal xml:lang="en_us">Certainty level labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -8963,7 +8959,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Crawling</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9249,7 +9245,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>DeepParsing</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9359,7 +9355,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>DialogueModelling</IRI>
-        <Literal xml:lang="en_us">Dialog modeling</Literal>
+        <Literal xml:lang="en_us">Dialog modeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -9369,7 +9365,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>DialogueModelling</IRI>
-        <Literal xml:lang="en_us">Dialogue modeling</Literal>
+        <Literal xml:lang="en_us">Dialogue modeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -9464,7 +9460,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>DiscourseModelling</IRI>
-        <Literal xml:lang="en_us">Discourse modeling</Literal>
+        <Literal xml:lang="en_us">Discourse modeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -9674,7 +9670,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>EmotionLabelling</IRI>
-        <Literal xml:lang="en_us">Emotion labeling</Literal>
+        <Literal xml:lang="en_us">Emotion labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9722,11 +9718,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Entity linking</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>EntityMentionLabelling</IRI>
-        <Literal xml:lang="en">The task/process of detecting in a text mentions of a specific class of entities (e.g. biochemical entities, historical persons)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>EntityMentionLabelling</IRI>
         <Literal xml:lang="en">Entity mention labelling</Literal>
@@ -9734,7 +9725,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>EntityMentionLabelling</IRI>
-        <Literal xml:lang="en_us">Entity mention labeling</Literal>
+        <Literal xml:lang="en_us">Entity mention labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9749,7 +9740,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EntityMentionRecognition</IRI>
-        <Literal xml:lang="en">The task/process of assessing the quality of a resource, e.g. based on the contents (for a dataset) or performance (for a tool or service)</Literal>
+        <Literal xml:lang="en">The task/process of detecting in a text mentions of a specific class of entities (e.g. biochemical entities, historical persons)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9774,7 +9765,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Evaluation</IRI>
-        <Literal xml:lang="en">The task/process of assessing the quality performance of parsers</Literal>
+        <Literal xml:lang="en">The task/process of assessing the quality of a resource, e.g. based on the contents (for a dataset) or performance (for a tool or service)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9784,7 +9775,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EvaluationOfBroadCoverageNaturalLanguageParsers</IRI>
-        <Literal xml:lang="en">The task/process of assessing the quality performance of machine translation tools</Literal>
+        <Literal xml:lang="en">The task/process of assessing the quality performance of parsers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9799,7 +9790,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EvaluationOfMachineTranslationAndTranslationTools</IRI>
-        <Literal xml:lang="en">The process/task of identifying events in data (text, video, images etc.), usually combined with their classification into types of events and recognition of the event attributes (e.g. time, place, participants and duration)</Literal>
+        <Literal xml:lang="en">The task/process of assessing the quality performance of machine translation tools</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9849,7 +9840,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EventDetection</IRI>
-        <Literal xml:lang="en">The process/act of marking events and classifying them into types of events in a text</Literal>
+        <Literal xml:lang="en">The process/task of identifying events in data (text, video, images etc.), usually combined with their classification into types of events and recognition of the event attributes (e.g. time, place, participants and duration)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9879,7 +9870,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EventLabelling</IRI>
-        <Literal xml:lang="en">A type of search which, in contrast to traditional lookup search, covers a broad class of activities, such as investigating, evaluating, comparing, and synthesizing</Literal>
+        <Literal xml:lang="en">The process/act of marking events and classifying them into types of events in a text</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9894,12 +9885,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>EventLabelling</IRI>
-        <Literal xml:lang="en_us">Event labeling</Literal>
+        <Literal xml:lang="en_us">Event labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExploratorySearch</IRI>
-        <Literal xml:lang="en">Extraction of information that pertains to specific domains/disciplines; it can be used combined with &quot;&quot;Annotation type&quot;&quot; to specify the type of information extracted</Literal>
+        <Literal xml:lang="en">A type of search which, in contrast to traditional lookup search, covers a broad class of activities, such as investigating, evaluating, comparing, and synthesizing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9909,12 +9900,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExtractionOfDomainSpecificInformation</IRI>
-        <Literal xml:lang="en">Extraction of information that pertains to specific domains/disciplines; it can be used combined with &quot;Annotation type&quot; to specify the type of information extracted</Literal>
+        <Literal xml:lang="en">Extraction of information that pertains to specific domains/disciplines; it can be used combined with &quot;&quot;Annotation type&quot;&quot; to specify the type of information extracted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExtractionOfDomainSpecificInformation</IRI>
-        <Literal xml:lang="en">The task/process of detecting in a text and extracting information relevant to funding (e.g. funding programme, award, funder etc.)</Literal>
+        <Literal xml:lang="en">Extraction of information that pertains to specific domains/disciplines; it can be used combined with &quot;Annotation type&quot; to specify the type of information extracted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9924,7 +9915,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExtractionOfFundingInformation</IRI>
-        <Literal xml:lang="en">The task/process of recognizing that a person appears on a digital image or a video frame from a video source and possibly marking the contours around it</Literal>
+        <Literal xml:lang="en">The task/process of detecting in a text and extracting information relevant to funding (e.g. funding programme, award, funder etc.)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9939,7 +9930,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FaceDetection</IRI>
-        <Literal xml:lang="en">The task/process of identifying or verifying a person from a digital image or a video frame from a video source [adapted from Wikipedia]</Literal>
+        <Literal xml:lang="en">The task/process of recognizing that a person appears on a digital image or a video frame from a video source and possibly marking the contours around it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9949,7 +9940,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FaceRecognition</IRI>
-        <Literal xml:lang="en">The task/process of validating a claimed identity based on the image of a face, and either accepting or rejecting the identity claim [adapted from http://www.idiap.ch/~marcel/labs/faceverif.php]</Literal>
+        <Literal xml:lang="en">The task/process of identifying or verifying a person from a digital image or a video frame from a video source [adapted from Wikipedia]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9964,7 +9955,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FaceVerification</IRI>
-        <Literal xml:lang="en">The task/process of detecting emotions on human face based on biometric markers [adapted from https://sightcorp.com/knowledge-base/facial-expression-recognition/]</Literal>
+        <Literal xml:lang="en">The task/process of validating a claimed identity based on the image of a face, and either accepting or rejecting the identity claim [adapted from http://www.idiap.ch/~marcel/labs/faceverif.php]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9979,7 +9970,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FacialExpressionRecognition</IRI>
-        <Literal xml:lang="en">Feature extraction consists in transforming arbitrary data, such as text or images, into numerical features usable for machine learning</Literal>
+        <Literal xml:lang="en">The task/process of detecting emotions on human face based on biometric markers [adapted from https://sightcorp.com/knowledge-base/facial-expression-recognition/]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10039,7 +10030,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FeatureExtraction</IRI>
-        <Literal xml:lang="en">In data communications, flow control is the process of managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver. It provides a mechanism for the receiver to control the transmission speed, so that the receiving node is not overwhelmed with data from transmitting node.</Literal>
+        <Literal xml:lang="en">Feature extraction consists in transforming arbitrary data, such as text or images, into numerical features usable for machine learning</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10072,6 +10063,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Filter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FiniteStateTechnology</IRI>
+        <Literal xml:lang="en">In data communications, flow control is the process of managing the rate of data transmission between two nodes to prevent a fast sender from overwhelming a slow receiver. It provides a mechanism for the receiver to control the transmission speed, so that the receiving node is not overwhelmed with data from transmitting node.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>FiniteStateTechnology</IRI>
         <Literal xml:lang="en">Finite state technology</Literal>
@@ -10085,11 +10081,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
         <IRI>FlowControl</IRI>
         <IRI>https://en.wikipedia.org/wiki/Flow_control_(data)</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>FlowControl</IRI>
-        <Literal xml:lang="en">The task/process of converting (changing) the format of a resource into another (e.g. PDF to TXT or XML)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10124,7 +10115,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FormatConversion</IRI>
-        <Literal xml:lang="en">The task/process of recognising and labelling in a text predicate argument structures and the semantic roles of the constituents, in accordance to the frame semantics theory.</Literal>
+        <Literal xml:lang="en">The task/process of converting (changing) the format of a resource into another (e.g. PDF to TXT or XML)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10144,7 +10135,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FrameSemanticParsing</IRI>
-        <Literal xml:lang="en">The task/process of performing a comparison between a text/dataset and a gazeteer and identifying in the text/dataset units that are included in the gazeteer</Literal>
+        <Literal xml:lang="en">The task/process of recognising and labelling in a text predicate argument structures and the semantic roles of the constituents, in accordance to the frame semantics theory.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10205,6 +10196,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GazeteerBasedMatcher</IRI>
         <Literal xml:lang="en">Gazeteer based matcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GazeteerBasedMatching</IRI>
+        <Literal xml:lang="en">The task/process of performing a comparison between a text/dataset and a gazeteer and identifying in the text/dataset units that are included in the gazeteer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10277,11 +10273,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Grammar checker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>GrammarChecking</IRI>
-        <Literal xml:lang="en">The ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens and other devices [from Wikipedia]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GrammarChecking</IRI>
         <Literal xml:lang="en">Grammar checking</Literal>
@@ -10309,7 +10300,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HandwritingRecognition</IRI>
-        <Literal xml:lang="en">The process of performing Machine Translation facilitated by pre-editing or post-editing steps, or interactive human intervention to steer or select from alternative translations</Literal>
+        <Literal xml:lang="en">The ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens and other devices [from Wikipedia]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10324,7 +10315,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>HandwritingRecognition</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10359,7 +10350,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HumanAidedMachineTranslation</IRI>
-        <Literal xml:lang="en">A multi-disciplinary research area focusing on the design and use of computer technology deployed in interfaces between humans and computers</Literal>
+        <Literal xml:lang="en">The process of performing Machine Translation facilitated by pre-editing or post-editing steps, or interactive human intervention to steer or select from alternative translations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10379,7 +10370,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HumanComputerInteraction</IRI>
-        <Literal xml:lang="en">Advanced image processing in which artificial-intelligence techniques are used to interpret images by locating, characterizing, and recognizing objects and other features in the scene. [from https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/image-understanding]</Literal>
+        <Literal xml:lang="en">A multi-disciplinary research area focusing on the design and use of computer technology deployed in interfaces between humans and computers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10404,7 +10395,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ImageUnderstanding</IRI>
-        <Literal xml:lang="en">The process/task of automatically extracting structured information from unstructured and/or semi-structured data</Literal>
+        <Literal xml:lang="en">Advanced image processing in which artificial-intelligence techniques are used to interpret images by locating, characterizing, and recognizing objects and other features in the scene. [from https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/image-understanding]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10414,7 +10405,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>ImageUnderstanding</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10434,7 +10425,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>InformationExtraction</IRI>
-        <Literal xml:lang="en">The process/task of removing (filtering out) redundant or unwanted information from an information stream using (semi)automated or computerized methods prior to presentation to a human user; the selection of the items is based on the correlation between the content of the items and the userâ€™s preferences (content-based filtering) or the correlation between people with similar preferences (collaborative filtering)</Literal>
+        <Literal xml:lang="en">The process/task of automatically extracting structured information from unstructured and/or semi-structured data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10469,7 +10460,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>InformationFiltering</IRI>
-        <Literal xml:lang="en">The delivery of information in the form of suggestions by recommender systems; recommender systems seek to predict the &quot;&quot;rating&quot;&quot; or &quot;&quot;preference&quot;&quot; that a user would give to an item</Literal>
+        <Literal xml:lang="en">The process/task of removing (filtering out) redundant or unwanted information from an information stream using (semi)automated or computerized methods prior to presentation to a human user; the selection of the items is based on the correlation between the content of the items and the userâ€™s preferences (content-based filtering) or the correlation between people with similar preferences (collaborative filtering)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10479,12 +10470,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>InformationFilteringByRecommenderSystems</IRI>
-        <Literal xml:lang="en">The activity of obtaining information resources relevant to an information need from a collection of information resources; searches can be based on full-text or other content-based indexing</Literal>
+        <Literal xml:lang="en">The delivery of information in the form of suggestions by recommender systems; recommender systems seek to predict the &quot;&quot;rating&quot;&quot; or &quot;&quot;preference&quot;&quot; that a user would give to an item</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>InformationFilteringByRecommenderSystems</IRI>
         <Literal xml:lang="en">Information filtering by recommender systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InformationRetrieval</IRI>
+        <Literal xml:lang="en">The activity of obtaining information resources relevant to an information need from a collection of information resources; searches can be based on full-text or other content-based indexing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10509,7 +10505,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>InformationStorage</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10789,12 +10785,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>KnowledgeRepresentation</IRI>
-        <Literal xml:lang="en">KR</Literal>
+        <Literal>KR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>KnowledgeRepresentation</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11189,7 +11185,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Localization</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11744,12 +11740,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>NamedEntityRecognition</IRI>
-        <Literal xml:lang="en">Entity Extraction</Literal>
+        <Literal>Entity Extraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>NamedEntityRecognition</IRI>
-        <Literal xml:lang="en">Entity Identification</Literal>
+        <Literal>Entity Identification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -11839,7 +11835,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>NaturalLanguageUnderstanding</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11909,7 +11905,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>NlpDevelopmentSupport</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -12629,7 +12625,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>QuestionAnswering</IRI>
-        <Literal xml:lang="en">Answer extraction (AE) aims at retrieving those exact passages of a document that directly answer a given user question. AE is more ambitious than information retrieval and information extraction in that the retrieval results are short phrases, not entire documents, and in that the queries may be arbitrarily specific. It is less ambitious than full-fledged question answering in that the answers are not generated from a knowledge base but looked up in the text of documents.</Literal>
+        <Literal>Answer extraction (AE) aims at retrieving those exact passages of a document that directly answer a given user question. AE is more ambitious than information retrieval and information extraction in that the retrieval results are short phrases, not entire documents, and in that the queries may be arbitrarily specific. It is less ambitious than full-fledged question answering in that the answers are not generated from a knowledge base but looked up in the text of documents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13049,7 +13045,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>SemanticClassLabelling</IRI>
-        <Literal xml:lang="en_us">Semantic class labeling</Literal>
+        <Literal xml:lang="en_us">Semantic class labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
@@ -13094,7 +13090,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>SemanticRelationLabelling</IRI>
-        <Literal xml:lang="en_us">Semantic relation labeling</Literal>
+        <Literal xml:lang="en_us">Semantic relation labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13119,7 +13115,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>SemanticRoleLabelling</IRI>
-        <Literal xml:lang="en_us">Semantic role labeling</Literal>
+        <Literal xml:lang="en_us">Semantic role labeling [en_us]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13694,7 +13690,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>Stemming</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13779,7 +13775,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>Summarization</IRI>
-        <Literal xml:lang="en_ulk">Automatic Text Summarisation</Literal>
+        <Literal xml:lang="en_uk">Automatic Text Summarisation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -13909,7 +13905,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>SyntacticStructureGeneration</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13949,7 +13945,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>TaskOrientedTextAnalysisEvaluation</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14494,7 +14490,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>Tokenization</IRI>
-        <Literal xml:lang="en">Tokenisation</Literal>
+        <Literal xml:lang="en_uk">Tokenisation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -14659,7 +14655,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Transcription</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14674,7 +14670,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Translation</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14689,7 +14685,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Transliteration</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14754,7 +14750,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>UnicodeConformTokenizing</IRI>
-        <Literal xml:lang="en"></Literal>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
