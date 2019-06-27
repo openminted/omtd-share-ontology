@@ -6061,7 +6061,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SupportOperation"/>
-        <Class IRI="OptimalCharacterRecognition"/>
+        <Class IRI="Operation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SupportOperationForKnowledgeResources"/>
