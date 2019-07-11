@@ -1823,6 +1823,9 @@
         <Class IRI="Nif"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasMethod"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"/>
     </Declaration>
     <Declaration>
@@ -1926,6 +1929,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Text_x_org_dkpro_imscwb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDataFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="WikipediaRevisionPair"/>
@@ -7295,6 +7301,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAnnotationType"/>
         <Class IRI="AnnotationType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDataFormat"/>
+        <Class IRI="DataFormat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMethod"/>
+        <Class IRI="TdmMethod"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMimetype"/>
@@ -15196,6 +15210,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has annotation type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDataFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasFileExtension</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The file extension usually associated with a specific data format (e.g. txt for plain text files, pdf for PDF files etc.)</Literal>
@@ -15204,6 +15223,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>hasFileExtension</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has file extension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMethod</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
