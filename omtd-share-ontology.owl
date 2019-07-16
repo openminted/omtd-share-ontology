@@ -107,7 +107,10 @@
         <Class IRI="TextEncryption"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_vnd_msaccess"/>
+        <NamedIndividual IRI="application_xXces_xml"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LD_json"/>
     </Declaration>
     <Declaration>
         <Class IRI="ExtractionOfFundingInformation"/>
@@ -119,10 +122,10 @@
         <Class IRI="Diaml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Evaluation"/>
+        <Class IRI="Disambiguator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Disambiguator"/>
+        <Class IRI="Evaluation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Relation"/>
@@ -146,10 +149,13 @@
         <Class IRI="WordSenseDisambiguation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_negra3"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
     </Declaration>
     <Declaration>
         <Class IRI="Obo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
     </Declaration>
     <Declaration>
         <Class IRI="DkproTokenized"/>
@@ -161,7 +167,13 @@
         <Class IRI="AnnotationOfCompounds"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Avro_json"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AutomaticSubtitling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="wav"/>
     </Declaration>
     <Declaration>
         <Class IRI="DependencyParser"/>
@@ -174,6 +186,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="LexiconViewer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_mpa"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:SyntacticCategory"/>
@@ -197,9 +212,6 @@
         <Class IRI="ParallelSentenceExtraction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_emma_xml"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore"/>
     </Declaration>
     <Declaration>
@@ -212,13 +224,10 @@
         <Class IRI="WikiFormat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_uima_json"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AnnotationOfSpeakerTurns"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_xhtml_xml"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_negra4"/>
     </Declaration>
     <Declaration>
         <Class IRI="OntologyAcquisition"/>
@@ -236,6 +245,15 @@
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="OpenOfficePresentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_ngram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="aif"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Generator"/>
     </Declaration>
     <Declaration>
@@ -246,6 +264,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="SpeechAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_sgml"/>
     </Declaration>
     <Declaration>
         <Class IRI="SemanticReasoning"/>
@@ -266,10 +287,16 @@
         <Class IRI="Xpath"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Anafora"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="TextAnnotation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Conll2006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_wordprocessingml_document"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:related"/>
@@ -296,10 +323,10 @@
         <Class IRI="GateFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TextCategorization"/>
+        <NamedIndividual IRI="application_xMsaccess"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_rdf_xml"/>
+        <Class IRI="TextCategorization"/>
     </Declaration>
     <Declaration>
         <Class IRI="PolarityLabelling"/>
@@ -335,13 +362,13 @@
         <Class IRI="TdmMethod"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Rtf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="skos:relatedTo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Rtf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
@@ -371,19 +398,31 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_pdf"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="IANA:application/pdf"/>
     </Declaration>
     <Declaration>
         <Class IRI="EntityMentionLabelling"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="audio_mpeg"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DocumentReading"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_rdf_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="Stemmer"/>
     </Declaration>
     <Declaration>
         <Class IRI="Conll2008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MsPowerpoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="IonicConductance"/>
@@ -398,10 +437,13 @@
         <Class IRI="Reading"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SyntacticStructureGeneration"/>
+        <Class IRI="FrameSemanticParsing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="FrameSemanticParsing"/>
+        <NamedIndividual IRI="application_rtf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SyntacticStructureGeneration"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agriculture"/>
@@ -426,6 +468,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="TrainerOfMachineLearningModels"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_fastinfoset"/>
     </Declaration>
     <Declaration>
         <Class IRI="Domain-specificAnnotation"/>
@@ -464,10 +509,16 @@
         <Class IRI="Tcf"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_x_json_twitter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DiscourceRelation"/>
     </Declaration>
     <Declaration>
         <Class IRI="WordSenseDisambiguator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_tei_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="TemporalExpression"/>
@@ -492,6 +543,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="TigerXml"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xXml_alvis"/>
     </Declaration>
     <Declaration>
         <Class IRI="AclAnthologyCorpusFormat"/>
@@ -578,9 +632,6 @@
         <Class IRI="WikipediaTemplateFilteredArticle"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_xCochrane"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Tmx"/>
     </Declaration>
     <Declaration>
@@ -594,9 +645,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="XmlBioc"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_xMsaccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="Xml"/>
@@ -626,19 +674,25 @@
         <Class IRI="Funding"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_html"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="WikipediaQuery"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_json"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
     </Declaration>
     <Declaration>
         <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_emma_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="ParalanguageAnnotation"/>
@@ -662,10 +716,10 @@
         <Class IRI="Csv"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_json_ld"/>
+        <Class IRI="LinkedDataFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LinkedDataFormat"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_presentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Phenotype"/>
@@ -683,16 +737,13 @@
         <Class IRI="Analyzer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_tuepp_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="RuleBasedMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusManagement"/>
+        <Class IRI="PosTagging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PosTagging"/>
+        <Class IRI="CorpusManagement"/>
     </Declaration>
     <Declaration>
         <Class IRI="LifeSciences"/>
@@ -704,7 +755,7 @@
         <Class IRI="ParagraphSplitting"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_tei_xml"/>
+        <NamedIndividual IRI="text_tcf_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="OrthographicTranscription"/>
@@ -725,16 +776,19 @@
         <Class IRI="Editor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_negra3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="TrainingOfNmtModels"/>
     </Declaration>
     <Declaration>
         <Class IRI="DialogueAct"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Organism"/>
+        <Class IRI="TextIndexing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TextIndexing"/>
+        <Class IRI="Organism"/>
     </Declaration>
     <Declaration>
         <Class IRI="DocumentAnnotationType"/>
@@ -746,10 +800,13 @@
         <Class IRI="NormalizationOfMeasurements"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_xTex"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DiscourseAnalysis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2008"/>
+        <NamedIndividual IRI="application_anno_json"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourseAnnotation"/>
@@ -770,7 +827,7 @@
         <Class IRI="GrammarChecker"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_rtf"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_spreadsheet"/>
     </Declaration>
     <Declaration>
         <Class IRI="QuestionAnswering"/>
@@ -794,9 +851,6 @@
         <Class IRI="Text"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_xXces_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="MultimediaRetrieval"/>
     </Declaration>
     <Declaration>
@@ -806,10 +860,10 @@
         <Class IRI="BilingualLexiconInduction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Imscwb"/>
+        <Class IRI="Matcher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Matcher"/>
+        <Class IRI="Imscwb"/>
     </Declaration>
     <Declaration>
         <Class IRI="Cadixe_json"/>
@@ -825,6 +879,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="DependencyTree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AudioFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="WikipediaFormat"/>
@@ -851,6 +908,9 @@
         <Class IRI="TermExtraction"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Gate_twitter_json"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Viewer"/>
     </Declaration>
     <Declaration>
@@ -864,6 +924,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="DataSplitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="mpg"/>
     </Declaration>
     <Declaration>
         <Class IRI="SemanticRole"/>
@@ -884,9 +947,6 @@
         <Class IRI="Pdf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_pls_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ComponentType"/>
     </Declaration>
     <Declaration>
@@ -894,6 +954,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="HistoricalEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_tuepp_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="LexiconFormatConversion"/>
@@ -929,22 +992,16 @@
         <Class IRI="Validation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2009"/>
+        <NamedIndividual IRI="application_msword"/>
     </Declaration>
     <Declaration>
         <Class IRI="InlineXml"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_xXml_alvis"/>
     </Declaration>
     <Declaration>
         <Class IRI="TrainingOfLanguageModels"/>
     </Declaration>
     <Declaration>
         <Class IRI="StatisticalLearningMethod"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_ptbCombined"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:DiscourseFeature"/>
@@ -956,13 +1013,19 @@
         <AnnotationProperty abbreviatedIRI="dct:issued"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="audio_vnd_wave"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Conll2000"/>
     </Declaration>
     <Declaration>
         <Class IRI="Bionlp"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_xml"/>
+        <NamedIndividual IRI="audio_basic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_aiff"/>
     </Declaration>
     <Declaration>
         <Class IRI="AnnotationOfNumbers"/>
@@ -974,10 +1037,10 @@
         <Class IRI="ClusteringMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="NaturalLanguageUnderstanding"/>
+        <Class IRI="SignLanguageRecognition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SignLanguageRecognition"/>
+        <Class IRI="NaturalLanguageUnderstanding"/>
     </Declaration>
     <Declaration>
         <Class IRI="Polarity"/>
@@ -1010,9 +1073,6 @@
         <Class IRI="Chemical"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2003"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
@@ -1043,9 +1103,6 @@
         <Class IRI="UnicodeConformTokenizing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_uima_binary"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="TerminologyMarkup"/>
     </Declaration>
     <Declaration>
@@ -1064,9 +1121,6 @@
         <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_turtle"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Anonymization"/>
     </Declaration>
     <Declaration>
@@ -1079,22 +1133,16 @@
         <Class IRI="ConstituencyTree"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Conll2002"/>
+        <NamedIndividual IRI="application_x_org_dkpro_uima_binary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conllU"/>
+        <Class IRI="Conll2002"/>
     </Declaration>
     <Declaration>
         <Class IRI="Term"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_tabSeparatedValues"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Protein"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2006"/>
     </Declaration>
     <Declaration>
         <Class IRI="StatisticalLanguageModelling"/>
@@ -1124,10 +1172,16 @@
         <Class IRI="MorphologicalAnnotation"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_xLatex"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ScholarlyCommunicationAnnotation"/>
     </Declaration>
     <Declaration>
         <Class IRI="NegraExport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_tgrep2"/>
     </Declaration>
     <Declaration>
         <Class IRI="LexiconExtractorFromCorpora"/>
@@ -1139,7 +1193,13 @@
         <Class IRI="AssociationRuleLearning"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DataCollection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_tabSeparatedValues"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="skos:broadMatch"/>
@@ -1154,22 +1214,19 @@
         <Class IRI="SentenceAlignment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_uima_json"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Date"/>
     </Declaration>
     <Declaration>
         <Class IRI="RdfFormats"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_html"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="MultilingualGeneration"/>
     </Declaration>
     <Declaration>
         <Class IRI="Media"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_postscript"/>
     </Declaration>
     <Declaration>
         <Class IRI="MorphosyntacticTagging"/>
@@ -1184,7 +1241,13 @@
         <Class IRI="BinaryFormat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_negra4"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Normalizer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_mpa_robust"/>
     </Declaration>
     <Declaration>
         <Class IRI="MorphologicalTagger"/>
@@ -1202,16 +1265,22 @@
         <Class IRI="WebAnnotationFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Lemma"/>
+        <NamedIndividual IRI="application_x_kaf_json"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:PolarityFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lemma"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMimetype"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xTmx_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="Person"/>
@@ -1241,13 +1310,13 @@
         <Class IRI="Phrase"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_tiger_xml"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ProteinFamily"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourseModelling"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2000"/>
     </Declaration>
     <Declaration>
         <Class IRI="QuestionTopicalTarget"/>
@@ -1257,12 +1326,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="lappsgrid:Dependency"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2012"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_pdf"/>
     </Declaration>
     <Declaration>
         <Class IRI="MediaWikiMarkup"/>
@@ -1277,22 +1340,16 @@
         <Class IRI="DependencyConverter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Gate_json"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="EntityMentionRecognition"/>
+        <Class IRI="DependencyConversion"/>
     </Declaration>
     <Declaration>
         <Class IRI="SubcategorizationFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DependencyConversion"/>
+        <Class IRI="EntityMentionRecognition"/>
     </Declaration>
     <Declaration>
         <Class IRI="Turtle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_reuters21578"/>
     </Declaration>
     <Declaration>
         <Class IRI="TemporalExpressionsLabelling"/>
@@ -1313,13 +1370,13 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_tiger_xml"/>
+        <NamedIndividual IRI="audio_wav"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_vnd_msaccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="Habitat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_reuters21578_sgml"/>
     </Declaration>
     <Declaration>
         <Class IRI="DecisionTrees"/>
@@ -1329,6 +1386,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="SupportComponent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xml_alto"/>
     </Declaration>
     <Declaration>
         <Class IRI="LexiconEnhancement"/>
@@ -1349,9 +1409,6 @@
         <Class IRI="LexicalSemanticRelation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_xTmx_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="TopicExtractor"/>
     </Declaration>
     <Declaration>
@@ -1362,9 +1419,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="HandwritingRecognition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_csv"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.penntree-asl"/>
@@ -1388,13 +1442,10 @@
         <Class IRI="Debugger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CoReferenceResolution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SemanticAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_xml"/>
+        <Class IRI="CoReferenceResolution"/>
     </Declaration>
     <Declaration>
         <Class IRI="I2b2"/>
@@ -1412,7 +1463,7 @@
         <Class IRI="WordAlignment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2002"/>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_presentationml_presentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="SemanticAnnotationType"/>
@@ -1436,10 +1487,7 @@
         <Class IRI="BotDetection"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_vnd_msExcel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_"/>
+        <Class IRI="basic"/>
     </Declaration>
     <Declaration>
         <Class IRI="Crawling"/>
@@ -1448,10 +1496,10 @@
         <Class IRI="SpeechRecognition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_ngram"/>
+        <Class IRI="DocumentSection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DocumentSection"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_text"/>
     </Declaration>
     <Declaration>
         <Class IRI="XcesIlspVariant"/>
@@ -1490,10 +1538,10 @@
         <Class IRI="Xhtml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Paraphrasing"/>
+        <NamedIndividual IRI="application_pls_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_xTex"/>
+        <Class IRI="Paraphrasing"/>
     </Declaration>
     <Declaration>
         <Class IRI="Kaf"/>
@@ -1523,6 +1571,9 @@
         <DataProperty IRI="hasFileExtension"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Alto"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
@@ -1533,6 +1584,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:MorphosyntacticCategory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_vnd_ms_powerpoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="CoReferenceAnnotator"/>
@@ -1568,9 +1622,6 @@
         <Class IRI="DataMerger"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_ld_json"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Tokenization"/>
     </Declaration>
     <Declaration>
@@ -1583,16 +1634,19 @@
         <Class IRI="AnnotationOfQuestionTopics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ComputationalArgumentation"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
+        <Class IRI="ComputationalArgumentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="NaturalLanguageGeneration"/>
     </Declaration>
     <Declaration>
         <Class IRI="FeatureExtraction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Constituent"/>
@@ -1628,25 +1682,22 @@
         <Class IRI="SpeechUnderstanding"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_plain"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="RegressionAnalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="TextGeneration"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_tcf_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="LanguageIdentification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
+        <NamedIndividual IRI="application_ld_json_profile_http_www_w3_org_ns_anno_jsonld"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_sgml"/>
+        <NamedIndividual IRI="text_x_org_dkpro_ptbChunked"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
     </Declaration>
     <Declaration>
         <Class IRI="NamedEntitityRecognizer"/>
@@ -1679,6 +1730,9 @@
         <Class abbreviatedIRI="oliatop:Date"/>
     </Declaration>
     <Declaration>
+        <Class IRI="OasisSpreadsheet"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="LipTrackingAnalysis"/>
     </Declaration>
     <Declaration>
@@ -1697,10 +1751,10 @@
         <Class IRI="InstanceBasedLearning"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ContradictionDetection"/>
+        <Class IRI="CorpusViewing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusViewing"/>
+        <Class IRI="ContradictionDetection"/>
     </Declaration>
     <Declaration>
         <Class IRI="Latex"/>
@@ -1728,6 +1782,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="KeywordExtractor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_x_org_dkpro_graf_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="PartOfSpeechTagger"/>
@@ -1766,10 +1823,10 @@
         <Class IRI="Stem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Graf"/>
+        <Class IRI="PtbCombined"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PtbCombined"/>
+        <Class IRI="Graf"/>
     </Declaration>
     <Declaration>
         <Class IRI="Emotion"/>
@@ -1778,7 +1835,7 @@
         <Class IRI="DependencyParsing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_ptbChunked"/>
+        <NamedIndividual IRI="text_x_org_dkpro_imscwb"/>
     </Declaration>
     <Declaration>
         <Class IRI="ManagementOfAnnotations"/>
@@ -1799,13 +1856,22 @@
         <Class IRI="FeatureExtractor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_anafora"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="InformationStorage"/>
     </Declaration>
     <Declaration>
         <Class IRI="TermExtractor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2008"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Viewing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OasisText"/>
     </Declaration>
     <Declaration>
         <Class IRI="EventDetection"/>
@@ -1826,6 +1892,12 @@
         <ObjectProperty IRI="hasMethod"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_spreadsheetml_sheet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xhtml_xml"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"/>
     </Declaration>
     <Declaration>
@@ -1835,7 +1907,13 @@
         <NamedIndividual IRI="IANA:application/x-msaccess"/>
     </Declaration>
     <Declaration>
+        <Class IRI="OasisPresentation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ModelOrganism_species"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_x_brat"/>
     </Declaration>
     <Declaration>
         <Class IRI="BiologicalActivity"/>
@@ -1844,31 +1922,37 @@
         <Class IRI="SentimentAnalysis"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2009"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="LanguageModelling"/>
     </Declaration>
     <Declaration>
         <Class IRI="MethodOfResearch"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_ld_json"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AuthoringSupport"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="AnnotationOfCompoundingFeatures"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Json"/>
     </Declaration>
     <Declaration>
         <Class IRI="GazeteerBasedMatching"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Json"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AnnotationOfCompoundingFeatures"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Parser"/>
     </Declaration>
     <Declaration>
-        <Class IRI="BuildingOfFiniteStateAutomata"/>
+        <Class abbreviatedIRI="lappsgrid:Document"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="lappsgrid:Document"/>
+        <Class IRI="BuildingOfFiniteStateAutomata"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpeechSynthesisEvaluation"/>
@@ -1898,10 +1982,10 @@
         <Class IRI="Localization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ReadabilityAnnotation"/>
+        <Class IRI="Simplifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Simplifier"/>
+        <Class IRI="ReadabilityAnnotation"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpeechEnhancement"/>
@@ -1916,19 +2000,19 @@
         <Class IRI="AuthorClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_tgrep2"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2006"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_msword"/>
+        <NamedIndividual IRI="application_vnd_msExcel"/>
     </Declaration>
     <Declaration>
         <Class IRI="Chunking"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="lappsgrid:Coreference"/>
+        <NamedIndividual IRI="text_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Text_x_org_dkpro_imscwb"/>
+        <Class abbreviatedIRI="lappsgrid:Coreference"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasDataFormat"/>
@@ -1943,7 +2027,7 @@
         <Class IRI="Tuepp"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_vnd_xmi_xml"/>
+        <Class IRI="OpenFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="NamedEntity"/>
@@ -1982,6 +2066,9 @@
         <Class IRI="SemanticFrame"/>
     </Declaration>
     <Declaration>
+        <Class IRI="OpenOfficeDocument"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AnnotatorOfSemanticRoleLabels"/>
     </Declaration>
     <Declaration>
@@ -2003,12 +2090,6 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_xLatex"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Text_xPubmed"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Bayesian"/>
     </Declaration>
     <Declaration>
@@ -2024,16 +2105,19 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Tika"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="SentimentAnalyzer"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScientificUnit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_json"/>
+        <Class IRI="SpectralData"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SpectralData"/>
+        <NamedIndividual IRI="application_vnd_xmi_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="Domain"/>
@@ -2045,10 +2129,10 @@
         <Class IRI="Brat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
+        <NamedIndividual IRI="text_xCochrane"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_kaf_json"/>
+        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="Evaluator"/>
@@ -2084,6 +2168,9 @@
         <Class IRI="ScholarlyAnalyticsEntity"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_ptbCombined"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="oliatop:Clause"/>
     </Declaration>
     <Declaration>
@@ -2094,6 +2181,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="TextCompression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_tika"/>
     </Declaration>
     <Declaration>
         <Class IRI="Stemming"/>
@@ -2111,7 +2201,13 @@
         <Class IRI="TopicDetection"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_reuters21578"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="OperationWithMultimediaInputOrOutput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_csv"/>
     </Declaration>
     <Declaration>
         <Class IRI="MultimediaDevelopment"/>
@@ -2120,16 +2216,19 @@
         <Class IRI="Subjectivity"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="application_postscript"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ExploratorySearch"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Sentence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="InformationExtraction"/>
+        <Class IRI="AnnotationOfTextualEntailment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AnnotationOfTextualEntailment"/>
+        <Class IRI="InformationExtraction"/>
     </Declaration>
     <Declaration>
         <Class IRI="NegationDetection"/>
@@ -2150,13 +2249,16 @@
         <Class IRI="ContentMining"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_xPubmed"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="InformationExtractor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Json_ld"/>
+        <Class IRI="GazeteerBasedMatcher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GazeteerBasedMatcher"/>
+        <NamedIndividual IRI="text_plain"/>
     </Declaration>
     <Declaration>
         <Class IRI="Folia"/>
@@ -2165,10 +2267,10 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
+        <Class IRI="Annotator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Annotator"/>
+        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="DerivationalFeature"/>
@@ -2184,6 +2286,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="DocumentFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2002"/>
     </Declaration>
     <Declaration>
         <Class IRI="BiologicalEnity"/>
@@ -2231,9 +2336,6 @@
         <Class IRI="IntraDocumentCoReferenceResolution"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Application_x_org_dkpro_graf_xml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Metabolite"/>
     </Declaration>
     <Declaration>
@@ -2243,10 +2345,25 @@
         <Class IRI="InformationFiltering"/>
     </Declaration>
     <Declaration>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xml"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ContradictionDetector"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2003"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AlvisEnrichedDocumentFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_turtle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_x_wav"/>
     </Declaration>
     <Declaration>
         <Class IRI="ConstituencyParser"/>
@@ -2279,7 +2396,7 @@
         <Class IRI="AclAnthologyCorpusFormat"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_plain"/>
+            <NamedIndividual IRI="text_plain"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2336,6 +2453,24 @@
         <Class IRI="SocialSciencesEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Alto"/>
+        <Class IRI="Xml"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Alto"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_xml_alto"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Alto"/>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/ALTO_(XML)</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="AlvisEnrichedDocumentFormat"/>
         <Class IRI="AnnotationFormat"/>
     </SubClassOf>
@@ -2347,7 +2482,7 @@
         <Class IRI="AlvisEnrichedDocumentFormat"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2355,6 +2490,24 @@
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.lrec-conf.org/proceedings/lrec2006/pdf/742_pdf.pdf</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Anafora"/>
+        <Class IRI="AnnotationFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Anafora"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="text_x_anafora"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Anafora"/>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5657237/</Literal>
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2468,6 +2621,10 @@
         <Class IRI="DiscourseAnnotationType"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="AudioFormat"/>
+        <Class IRI="DataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="AudioSegmentation"/>
         <Class IRI="SpeechAnnotation"/>
     </SubClassOf>
@@ -2486,6 +2643,17 @@
     <SubClassOf>
         <Class IRI="AutomaticSubtitling"/>
         <Class IRI="NaturalLanguageGeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Avro_json"/>
+        <Class IRI="Json"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Avro_json"/>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://avro.apache.org/docs/1.8.1/spec.html</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Bayesian"/>
@@ -2515,7 +2683,7 @@
         <Class IRI="BinaryCas"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_uima_binary"/>
+            <NamedIndividual IRI="application_x_org_dkpro_uima_binary"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2617,7 +2785,7 @@
         <Class IRI="BncFormat"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2649,6 +2817,13 @@
     <SubClassOf>
         <Class IRI="Brat"/>
         <Class IRI="AnnotationFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Brat"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="text_x_brat"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Brat"/>
@@ -2687,7 +2862,7 @@
         <Class IRI="Cadixe_json"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json"/>
+            <NamedIndividual IRI="application_json"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2790,7 +2965,7 @@
         <Class IRI="Cochrane"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_xCochrane"/>
+            <NamedIndividual IRI="text_xCochrane"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2839,7 +3014,7 @@
         <Class IRI="Conll2000"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2000"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2857,7 +3032,7 @@
         <Class IRI="Conll2002"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2002"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2002"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2875,7 +3050,7 @@
         <Class IRI="Conll2003"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2003"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2003"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2893,7 +3068,7 @@
         <Class IRI="Conll2006"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2006"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2006"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2911,7 +3086,7 @@
         <Class IRI="Conll2008"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2008"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2008"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2929,7 +3104,7 @@
         <Class IRI="Conll2009"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2009"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2009"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2947,7 +3122,7 @@
         <Class IRI="Conll2012"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conll2012"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2980,7 +3155,7 @@
         <Class IRI="ConllU"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_conllU"/>
+            <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3155,7 +3330,7 @@
         <Class IRI="Csv"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_csv"/>
+            <NamedIndividual IRI="text_csv"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3176,13 +3351,6 @@
     <SubClassOf>
         <Class IRI="DataFormat"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="DataFormat"/>
-        <DataHasValue>
-            <DataProperty abbreviatedIRI="skos:broadMatch"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dc:format</Literal>
-        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DataMasking"/>
@@ -3234,7 +3402,7 @@
         <Class IRI="Datasift_json"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json"/>
+            <NamedIndividual IRI="application_json"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3535,7 +3703,7 @@
         <Class IRI="Emma"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_emma_xml"/>
+            <NamedIndividual IRI="application_emma_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3708,6 +3876,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FastInfoset"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_fastinfoset"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FastInfoset"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://gate.ac.uk/sale/tao/splitch23.html#x28-59400023.31</Literal>
@@ -3802,26 +3977,26 @@
         <Class IRI="GateXml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Gate_json"/>
+        <Class IRI="Gate_twitter_json"/>
         <Class IRI="GateFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Gate_json"/>
+        <Class IRI="Gate_twitter_json"/>
         <Class IRI="Json"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Gate_json"/>
+        <Class IRI="Gate_twitter_json"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json"/>
+            <NamedIndividual IRI="application_x_json_twitter"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Gate_json"/>
+        <Class IRI="Gate_twitter_json"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://gate.ac.uk/sale/tao/splitch17.html</Literal>
@@ -3866,7 +4041,7 @@
         <Class IRI="Graf"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_graf_xml"/>
+            <NamedIndividual IRI="application_x_org_dkpro_graf_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3919,7 +4094,7 @@
         <Class IRI="Html"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_html"/>
+            <NamedIndividual IRI="text_html"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3934,7 +4109,7 @@
         <Class IRI="Html5Microdata"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_html"/>
+            <NamedIndividual IRI="text_html"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3986,7 +4161,7 @@
         <Class IRI="Imscwb"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_imscwb"/>
+            <NamedIndividual IRI="text_x_org_dkpro_imscwb"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4046,7 +4221,7 @@
         <Class IRI="InlineXml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4111,13 +4286,6 @@
         <Class IRI="DataFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Json"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Json_genia"/>
         <Class IRI="BionlpFormat"/>
     </SubClassOf>
@@ -4133,7 +4301,7 @@
         <Class IRI="Json_genia"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json"/>
+            <NamedIndividual IRI="application_json"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4142,25 +4310,6 @@
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#GeniaJSONReader</Literal>
         </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Json_ld"/>
-        <Class IRI="DocumentFormat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Json_ld"/>
-        <Class IRI="Json"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Json_ld"/>
-        <Class IRI="LinkedDataFormat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Json_ld"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_json_ld"/>
-        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Kaf"/>
@@ -4174,7 +4323,7 @@
         <Class IRI="Kaf"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_kaf_json"/>
+            <NamedIndividual IRI="application_x_kaf_json"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4239,6 +4388,25 @@
         <Class IRI="TextAndDataMining"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="LD_json"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LD_json"/>
+        <Class IRI="Json"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LD_json"/>
+        <Class IRI="LinkedDataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LD_json"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_ld_json"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="LanguageChecking"/>
         <Class IRI="AuthoringSupport"/>
     </SubClassOf>
@@ -4281,7 +4449,7 @@
         <Class IRI="Latex"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xLatex"/>
+            <NamedIndividual IRI="application_xLatex"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4665,14 +4833,14 @@
         <Class IRI="MsAccessDatabase"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_vnd_msaccess"/>
+            <NamedIndividual IRI="application_vnd_msaccess"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MsAccessDatabase"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xMsaccess"/>
+            <NamedIndividual IRI="application_xMsaccess"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4712,7 +4880,18 @@
         <Class IRI="MsExcel"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_vnd_msExcel"/>
+            <NamedIndividual IRI="application_vnd_msExcel"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MsPowerpoint"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MsPowerpoint"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_ms_powerpoint"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4723,7 +4902,7 @@
         <Class IRI="MsWord"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_msword"/>
+            <NamedIndividual IRI="application_msword"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4851,14 +5030,14 @@
         <Class IRI="NegraExport"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_negra3"/>
+            <NamedIndividual IRI="application_x_org_dkpro_negra3"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="NegraExport"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_negra4"/>
+            <NamedIndividual IRI="application_x_org_dkpro_negra4"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4939,6 +5118,55 @@
         <Class IRI="Chunking"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="OasisPresentation"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisPresentation"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisPresentation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_oasis_opendocument_presentation"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisSpreadsheet"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisSpreadsheet"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisSpreadsheet"/>
+        <Class IRI="TabularFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisSpreadsheet"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_oasis_opendocument_spreadsheet"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisText"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisText"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OasisText"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_oasis_opendocument_text"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Obo"/>
         <Class IRI="RdfFormat"/>
     </SubClassOf>
@@ -4968,6 +5196,71 @@
     <SubClassOf>
         <Class IRI="OntologyEnhancement"/>
         <Class IRI="KnowledgeAcquisition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenFormat"/>
+        <Class IRI="DataFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeDocument"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeDocument"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeDocument"/>
+        <Class IRI="Xml"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeDocument"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_wordprocessingml_document"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficePresentation"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficePresentation"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficePresentation"/>
+        <Class IRI="Xml"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficePresentation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_presentationml_presentation"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+        <Class IRI="OpenFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+        <Class IRI="TabularFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+        <Class IRI="Xml"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenOfficeSpreadsheet"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_spreadsheetml_sheet"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Operation"/>
@@ -5020,7 +5313,7 @@
         <Class IRI="Owl_xml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5096,7 +5389,7 @@
         <Class IRI="Pdf"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_pdf"/>
+            <NamedIndividual IRI="application_pdf"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5186,7 +5479,7 @@
         <Class IRI="Pls"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_pls_xml"/>
+            <NamedIndividual IRI="application_pls_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5208,7 +5501,7 @@
         <Class IRI="Pml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5256,7 +5549,7 @@
         <Class IRI="Postscript"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_postscript"/>
+            <NamedIndividual IRI="application_postscript"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5332,7 +5625,7 @@
         <Class IRI="PtbChunked"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_ptbChunked"/>
+            <NamedIndividual IRI="text_x_org_dkpro_ptbChunked"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5350,7 +5643,7 @@
         <Class IRI="PtbCombined"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_ptbCombined"/>
+            <NamedIndividual IRI="text_x_org_dkpro_ptbCombined"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5368,7 +5661,7 @@
         <Class IRI="Pubmed"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_xPubmed"/>
+            <NamedIndividual IRI="text_xPubmed"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5428,7 +5721,7 @@
         <Class IRI="Rdf_xml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_rdf_xml"/>
+            <NamedIndividual IRI="application_rdf_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5516,7 +5809,7 @@
         <Class IRI="Reuters21578Sgml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_reuters21578_sgml"/>
+            <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5541,7 +5834,7 @@
         <Class IRI="Reuters21578Txt"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_reuters21578"/>
+            <NamedIndividual IRI="text_x_org_dkpro_reuters21578"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5570,7 +5863,7 @@
         <Class IRI="Rtf"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_rtf"/>
+            <NamedIndividual IRI="application_rtf"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5826,7 +6119,7 @@
         <Class IRI="Sgml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_sgml"/>
+            <NamedIndividual IRI="text_sgml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6140,7 +6433,7 @@
         <Class IRI="Tcf"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_tcf_xml"/>
+            <NamedIndividual IRI="text_tcf_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6166,7 +6459,7 @@
         <Class IRI="Tei"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_tei_xml"/>
+            <NamedIndividual IRI="application_tei_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6230,7 +6523,7 @@
         <Class IRI="Tex"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xTex"/>
+            <NamedIndividual IRI="application_xTex"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6248,7 +6541,7 @@
         <Class IRI="Text"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_plain"/>
+            <NamedIndividual IRI="text_plain"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6321,7 +6614,7 @@
         <Class IRI="Tgrep2"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_tgrep2"/>
+            <NamedIndividual IRI="application_x_org_dkpro_tgrep2"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6362,7 +6655,7 @@
         <Class IRI="TigerXml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_tiger_xml"/>
+            <NamedIndividual IRI="application_x_org_dkpro_tiger_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6387,6 +6680,17 @@
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Tika"/>
+        <Class IRI="DocumentFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tika"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_tika"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Tmx"/>
         <Class IRI="AnnotationFormat"/>
     </SubClassOf>
@@ -6398,7 +6702,7 @@
         <Class IRI="Tmx"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xTmx_xml"/>
+            <NamedIndividual IRI="application_xTmx_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6511,7 +6815,7 @@
         <Class IRI="Tsv"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_tabSeparatedValues"/>
+            <NamedIndividual IRI="text_tabSeparatedValues"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6530,7 +6834,7 @@
         <Class IRI="Tuepp"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_tuepp_xml"/>
+            <NamedIndividual IRI="application_x_org_dkpro_tuepp_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6559,7 +6863,7 @@
         <Class IRI="Turtle"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_turtle"/>
+            <NamedIndividual IRI="text_turtle"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6585,7 +6889,7 @@
         <Class IRI="Uima_json"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_x_org_dkpro_uima_json"/>
+            <NamedIndividual IRI="application_x_org_dkpro_uima_json"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6675,7 +6979,7 @@
         <Class IRI="Web1t"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_x_org_dkpro_ngram"/>
+            <NamedIndividual IRI="text_x_org_dkpro_ngram"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6704,7 +7008,14 @@
         <Class IRI="WebAnnotationFormat"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_"/>
+            <NamedIndividual IRI="application_anno_json"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WebAnnotationFormat"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="application_ld_json_profile_http_www_w3_org_ns_anno_jsonld"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6909,7 +7220,7 @@
         <Class IRI="Xces"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xXces_xml"/>
+            <NamedIndividual IRI="application_xXces_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6920,7 +7231,7 @@
         <Class IRI="XcesIlspVariant"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xXces_xml"/>
+            <NamedIndividual IRI="application_xXces_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6935,7 +7246,7 @@
         <Class IRI="Xhtml"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xhtml_xml"/>
+            <NamedIndividual IRI="application_xhtml_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6964,7 +7275,7 @@
         <Class IRI="Xmi"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_vnd_xmi_xml"/>
+            <NamedIndividual IRI="application_vnd_xmi_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6986,20 +7297,6 @@
         <Class IRI="DataFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Xml"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Xml"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Text_xml"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="XmlBioc"/>
         <Class IRI="Xml"/>
     </SubClassOf>
@@ -7007,7 +7304,7 @@
         <Class IRI="XmlBioc"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -7025,7 +7322,7 @@
         <Class IRI="Xpath"/>
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
-            <NamedIndividual IRI="Application_xml"/>
+            <NamedIndividual IRI="application_xml"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -7042,225 +7339,431 @@
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/DKPro%20Core%20Documentation%20(GitHub)/de.tudarmstadt.ukp.dkpro.core$de.tudarmstadt.ukp.dkpro.core.doc-asl/doclinks/5/format-reference.html#format-XmlXPath</Literal>
         </DataHasValue>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="aif"/>
+        <Class IRI="AudioFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="aif"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_aiff"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="aif"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aif</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="basic"/>
+        <Class IRI="AudioFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="basic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_basic"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="basic"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">au</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="basic"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">snd</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mpg"/>
+        <Class IRI="AudioFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mpg"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_mpa"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mpg"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_mpa_robust"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mpg"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_mpeg"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mpg"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpg</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <Class IRI="AudioFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_vnd_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_wav"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_x_wav"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wav"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wav</Literal>
+        </DataHasValue>
+    </SubClassOf>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_emma_xml"/>
+        <NamedIndividual IRI="application_anno_json"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_json"/>
+        <NamedIndividual IRI="application_emma_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_ld_json"/>
+        <NamedIndividual IRI="application_fastinfoset"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_"/>
+        <NamedIndividual IRI="application_json"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_msword"/>
+        <NamedIndividual IRI="application_ld_json"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_pdf"/>
+        <NamedIndividual IRI="application_ld_json_profile_http_www_w3_org_ns_anno_jsonld"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_pls_xml"/>
+        <NamedIndividual IRI="application_msword"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_postscript"/>
+        <NamedIndividual IRI="application_pdf"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_rdf_xml"/>
+        <NamedIndividual IRI="application_pls_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_rtf"/>
+        <NamedIndividual IRI="application_postscript"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_tei_xml"/>
+        <NamedIndividual IRI="application_rdf_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_vnd_msExcel"/>
+        <NamedIndividual IRI="application_rtf"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_vnd_msaccess"/>
+        <NamedIndividual IRI="application_tei_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_vnd_xmi_xml"/>
+        <NamedIndividual IRI="application_tika"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xLatex"/>
+        <NamedIndividual IRI="application_vnd_msExcel"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xMsaccess"/>
+        <NamedIndividual IRI="application_vnd_ms_powerpoint"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xTex"/>
+        <NamedIndividual IRI="application_vnd_msaccess"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xTmx_xml"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_presentation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xXces_xml"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_spreadsheet"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xXml_alvis"/>
+        <NamedIndividual IRI="application_vnd_oasis_opendocument_text"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_kaf_json"/>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_presentationml_presentation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_graf_xml"/>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_spreadsheetml_sheet"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_negra3"/>
+        <NamedIndividual IRI="application_vnd_openxmlformats_officedocument_wordprocessingml_document"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_negra4"/>
+        <NamedIndividual IRI="application_vnd_xmi_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_reuters21578_sgml"/>
+        <NamedIndividual IRI="application_xLatex"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_tgrep2"/>
+        <NamedIndividual IRI="application_xMsaccess"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_tiger_xml"/>
+        <NamedIndividual IRI="application_xTex"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_tuepp_xml"/>
+        <NamedIndividual IRI="application_xTmx_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_uima_binary"/>
+        <NamedIndividual IRI="application_xXces_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_x_org_dkpro_uima_json"/>
+        <NamedIndividual IRI="application_xXml_alvis"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xhtml_xml"/>
+        <NamedIndividual IRI="application_x_json_twitter"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Application_xml"/>
+        <NamedIndividual IRI="application_x_kaf_json"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_csv"/>
+        <NamedIndividual IRI="application_x_org_dkpro_graf_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_html"/>
+        <NamedIndividual IRI="application_x_org_dkpro_negra3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_plain"/>
+        <NamedIndividual IRI="application_x_org_dkpro_negra4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_sgml"/>
+        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_tabSeparatedValues"/>
+        <NamedIndividual IRI="application_x_org_dkpro_tgrep2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_tcf_xml"/>
+        <NamedIndividual IRI="application_x_org_dkpro_tiger_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_turtle"/>
+        <NamedIndividual IRI="application_x_org_dkpro_tuepp_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_xCochrane"/>
+        <NamedIndividual IRI="application_x_org_dkpro_uima_binary"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_xPubmed"/>
+        <NamedIndividual IRI="application_x_org_dkpro_uima_json"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2000"/>
+        <NamedIndividual IRI="application_xhtml_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2002"/>
+        <NamedIndividual IRI="application_xml"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2003"/>
+        <NamedIndividual IRI="application_xml_alto"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2006"/>
+        <NamedIndividual IRI="audio_aiff"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2008"/>
+        <NamedIndividual IRI="audio_basic"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2009"/>
+        <NamedIndividual IRI="audio_mpa"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conll2012"/>
+        <NamedIndividual IRI="audio_mpa_robust"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_conllU"/>
+        <NamedIndividual IRI="audio_mpeg"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_imscwb"/>
+        <NamedIndividual IRI="audio_vnd_wave"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_ngram"/>
+        <NamedIndividual IRI="audio_wav"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_ptbChunked"/>
+        <NamedIndividual IRI="audio_wave"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_ptbCombined"/>
+        <NamedIndividual IRI="audio_x_wav"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_x_org_dkpro_reuters21578"/>
+        <NamedIndividual IRI="text_csv"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
-        <NamedIndividual IRI="Text_xml"/>
+        <NamedIndividual IRI="text_html"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_plain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_sgml"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_tabSeparatedValues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_tcf_xml"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_turtle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_xCochrane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_xPubmed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_anafora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_brat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_imscwb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_ngram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_ptbChunked"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_ptbCombined"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_x_org_dkpro_reuters21578"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="text_xml"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="deployedInDomain"/>
@@ -7553,6 +8056,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ALLBUS variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Alto</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ALTO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AlvisEnrichedDocumentFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Format for linguistic annotations of documents used for the ALVIS framework</Literal>
@@ -7561,6 +8069,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AlvisEnrichedDocumentFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ALVIS Enriched Document format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Anafora</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anafora</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7640,7 +8153,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AnnotationFormat</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any format used for annotated textual documents</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any format used for annotated files</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8069,6 +8582,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AudioFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any format used for audio files</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AudioFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audio format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AudioSegmentation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task/process of partitioning audio stream into homogeneous segments and classifying them into speech and non-speech segments</Literal>
     </AnnotationAssertion>
@@ -8136,6 +8659,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AutomaticSubtitling</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Automatic subtitling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Avro_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Avro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Avro_json</IRI>
+        <IRI>https://avro.apache.org/docs/1.8.1/spec.html</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
@@ -10190,17 +10723,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Gate_json</IRI>
+        <IRI>Gate_twitter_json</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Twitter-style JSON format used for GATE documents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Gate_json</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GATE/JSON</Literal>
+        <IRI>Gate_twitter_json</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GATE/JSON twitter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <IRI>Gate_json</IRI>
+        <IRI>Gate_twitter_json</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Twitter/JSON</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10645,16 +11178,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Json_ld</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data format encoding Linked Data using JSON</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Json_ld</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">JSON/LD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Kaf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">KAF (also known as Knowledge Annotation Format) is a language neutral annotation format representing both morpho-syntactic and semantic annotation of documents through a stand-off multilayered structure</Literal>
     </AnnotationAssertion>
@@ -10807,6 +11330,26 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>KnowledgeRepresentation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>LD_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">JSON linked data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>LD_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LD-Json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LD_json</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data format encoding Linked Data using JSON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LD_json</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">JSON/LD</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11550,6 +12093,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MsPowerpoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data format for Microsoft Powerpoint files</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MsPowerpoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MS-Powerpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>MsWord</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data format for Microsoft Word documents</Literal>
     </AnnotationAssertion>
@@ -11974,6 +12527,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Noun phrase chunking</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OasisPresentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oasis Presentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OasisSpreadsheet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oasis spreadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OasisText</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Oasis text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Obo</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Serialization format for ontologies according to the Open Biomedical Ontologies model.</Literal>
@@ -12012,6 +12580,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>OntologyEnhancement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontology enhancement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpenOfficeDocument</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open office document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpenOfficePresentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open office presentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpenOfficeSpreadsheet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open office spreadsheet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14444,6 +15027,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tiger XML</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tika</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tika</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Tmx</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The purpose of the TMX format is to provide a standard method to describe translation memory data that is being exchanged among tools and/or translation vendors, while introducing little or no loss of critical data during the process.</Literal>
@@ -15180,6 +15768,281 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">XPath</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>aif</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_anno_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/anno+json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_emma_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/emma+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_fastinfoset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/fastinfoset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_ld_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/ld+json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_ld_json_profile_http_www_w3_org_ns_anno_jsonld</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/ld+json;profile=&quot;http://www.w3.org/ns/anno.jsonld&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_msword</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/msword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_pdf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_pls_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/pls+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_postscript</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/postscript</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_rdf_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/rdf+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_rtf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/rtf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_tei_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/tei+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_tika</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/tika</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_msExcel</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.msExcel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_ms_powerpoint</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.ms-powerpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_msaccess</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.msaccess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_oasis_opendocument_presentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.oasis.opendocument.presentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_oasis_opendocument_spreadsheet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.oasis.opendocument.spreadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_oasis_opendocument_text</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.oasis.opendocument.text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_openxmlformats_officedocument_presentationml_presentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.openxmlformats-officedocument.presentationml.presentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_openxmlformats_officedocument_spreadsheetml_sheet</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_openxmlformats_officedocument_wordprocessingml_document</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.openxmlformats-officedocument.wordprocessingml.document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_vnd_xmi_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.xmi+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xLatex</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-latex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xMsaccess</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-msaccess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xTex</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-tex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xTmx_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-tmx+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xXces_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-xces+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xXml_alvis</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-xml+alvis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_json_twitter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-json-twitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_kaf_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-kaf+json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_graf_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.graf+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_negra3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.negra3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_negra4</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.negra4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_reuters21578_sgml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.reuters21578+sgml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_tgrep2</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tgrep2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_tiger_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tiger+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_tuepp_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tuepp+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_uima_binary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.uima+binary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_x_org_dkpro_uima_json</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.uima+json</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xhtml_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/xhtml+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>application_xml_alto</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/xml+alto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_aiff</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/aiff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_basic</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/basic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_mpa</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/MPA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_mpa_robust</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/mpa-robust</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_mpeg</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/mpeg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_vnd_wave</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/vnd.wave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_wav</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/wav</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_wave</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/wave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_x_wav</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/x-wav</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>basic</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">basic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>deployedInDomain</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concept A is used frequently in domain B</Literal>
@@ -15240,6 +16103,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has mimetype</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>mpg</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio mpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>performsOperation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component A performs Operation B</Literal>
@@ -15253,6 +16121,136 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>performsOperation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">performs Task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_csv</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/csv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_html</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_plain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/plain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_sgml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/sgml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_tabSeparatedValues</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/tab-separated-values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_tcf_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/tcf+xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_turtle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/turtle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_xCochrane</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-cochrane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_xPubmed</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-pubmed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_anafora</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-anafora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_brat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-brat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2009</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conll2012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2012</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_conllU</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-u</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_imscwb</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.imscwb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_ngram</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ngram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_ptbChunked</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ptb-chunked</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_ptbCombined</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ptb-combined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_x_org_dkpro_reuters21578</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.reuters21578</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>text_xml</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>wav</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio wav</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
