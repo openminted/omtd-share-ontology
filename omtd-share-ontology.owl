@@ -95,9 +95,6 @@
 	The ontology is still in a working status.</Literal>
     </Annotation>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Coreference"/>
     </Declaration>
     <Declaration>
@@ -107,10 +104,10 @@
         <Class IRI="TextEncryption"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xXces_xml"/>
+        <Class IRI="LD_json"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LD_json"/>
+        <NamedIndividual IRI="application_xXces_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="ExtractionOfFundingInformation"/>
@@ -122,10 +119,10 @@
         <Class IRI="Diaml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Disambiguator"/>
+        <Class IRI="Evaluation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Evaluation"/>
+        <Class IRI="Disambiguator"/>
     </Declaration>
     <Declaration>
         <Class IRI="Relation"/>
@@ -149,16 +146,16 @@
         <Class IRI="WordSenseDisambiguation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Obo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
     </Declaration>
     <Declaration>
         <Class IRI="DkproTokenized"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
     </Declaration>
     <Declaration>
         <Class IRI="Tokenizer"/>
@@ -210,9 +207,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="ParallelSentenceExtraction"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore"/>
     </Declaration>
     <Declaration>
         <Class IRI="Readability"/>
@@ -320,22 +314,22 @@
         <Class IRI="Reuters21578Sgml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GateFormat"/>
+        <NamedIndividual IRI="application_xMsaccess"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xMsaccess"/>
+        <Class IRI="GateFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="TextCategorization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PolarityLabelling"/>
+        <Class IRI="MachineLearningMethod"/>
     </Declaration>
     <Declaration>
         <Class IRI="LexiconAccess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MachineLearningMethod"/>
+        <Class IRI="PolarityLabelling"/>
     </Declaration>
     <Declaration>
         <Class IRI="AutomaticHyperlinking"/>
@@ -345,9 +339,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="OntologyEnhancement"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="IANA:application/tei+xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="DeepLearning"/>
@@ -362,13 +353,10 @@
         <Class IRI="TdmMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Rtf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="skos:relatedTo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField"/>
+        <Class IRI="Rtf"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
@@ -377,10 +365,10 @@
         <Class IRI="WheatRelatedSpecies"/>
     </Declaration>
     <Declaration>
-        <Class IRI="KnowledgeRepresentation"/>
+        <Class IRI="DimensionalityReduction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DimensionalityReduction"/>
+        <Class IRI="KnowledgeRepresentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="LanguageIdentifier"/>
@@ -395,13 +383,7 @@
         <Class IRI="Clause"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="application_pdf"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="IANA:application/pdf"/>
     </Declaration>
     <Declaration>
         <Class IRI="EntityMentionLabelling"/>
@@ -479,13 +461,13 @@
         <Class IRI="DatabaseFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Converter"/>
+        <Class IRI="ConstituencyParsing"/>
     </Declaration>
     <Declaration>
         <Class IRI="DataSplitting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ConstituencyParsing"/>
+        <Class IRI="Converter"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Phrase"/>
@@ -494,10 +476,10 @@
         <Class IRI="TextToSpeechSynthesis"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
+        <Class IRI="TalkingHeadSynthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TalkingHeadSynthesis"/>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
     </Declaration>
     <Declaration>
         <Class IRI="Writer"/>
@@ -506,10 +488,10 @@
         <Class abbreviatedIRI="lappsgrid:SemanticRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Tcf"/>
+        <NamedIndividual IRI="application_x_json_twitter"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_x_json_twitter"/>
+        <Class IRI="Tcf"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourceRelation"/>
@@ -525,9 +507,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Visualiser"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="NamedEntityRecognition"/>
@@ -557,9 +536,6 @@
         <Class IRI="NormalizationOfNumbers"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="PersonIdentification"/>
     </Declaration>
     <Declaration>
@@ -567,9 +543,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="CorpusViewer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="IANA:application/vnd.msaccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="MsAccessDatabase"/>
@@ -611,19 +584,19 @@
         <Class IRI="Editing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EntityMentionPair"/>
+        <Class IRI="RdfFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="RdfFormat"/>
+        <Class IRI="EntityMentionPair"/>
     </Declaration>
     <Declaration>
         <Class IRI="Lemmatizer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Emma"/>
+        <Class IRI="Argumentation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Argumentation"/>
+        <Class IRI="Emma"/>
     </Declaration>
     <Declaration>
         <Class IRI="DocumentImageAnalysis"/>
@@ -633,9 +606,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Tmx"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization"/>
     </Declaration>
     <Declaration>
         <Class IRI="Dependency"/>
@@ -648,9 +618,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Xml"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpeakerIdentification"/>
@@ -675,9 +642,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="WikipediaQuery"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_json"/>
@@ -725,12 +689,6 @@
         <Class IRI="Phenotype"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="KnowledgeDiscovery"/>
     </Declaration>
     <Declaration>
@@ -740,10 +698,10 @@
         <Class IRI="RuleBasedMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PosTagging"/>
+        <Class IRI="CorpusManagement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusManagement"/>
+        <Class IRI="PosTagging"/>
     </Declaration>
     <Declaration>
         <Class IRI="LifeSciences"/>
@@ -767,10 +725,10 @@
         <Class IRI="SignLanguageGeneration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Html"/>
+        <Class IRI="Normalization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Normalization"/>
+        <Class IRI="Html"/>
     </Declaration>
     <Declaration>
         <Class IRI="Editor"/>
@@ -785,10 +743,10 @@
         <Class IRI="DialogueAct"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TextIndexing"/>
+        <Class IRI="Organism"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Organism"/>
+        <Class IRI="TextIndexing"/>
     </Declaration>
     <Declaration>
         <Class IRI="DocumentAnnotationType"/>
@@ -812,13 +770,7 @@
         <Class IRI="DiscourseAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="FaceDetection"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScriptBasedAnalyser"/>
@@ -836,9 +788,6 @@
         <Class IRI="Mimetype"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ChemicalEntity"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="OfficialText"/>
     </Declaration>
     <Declaration>
@@ -846,6 +795,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="WikipediaArticleInfo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ChemicalEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="Text"/>
@@ -860,13 +812,13 @@
         <Class IRI="BilingualLexiconInduction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Matcher"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Imscwb"/>
     </Declaration>
     <Declaration>
         <Class IRI="Cadixe_json"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Matcher"/>
     </Declaration>
     <Declaration>
         <Class IRI="Regularisation"/>
@@ -887,10 +839,10 @@
         <Class IRI="WikipediaFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AudioSegmentation"/>
+        <ObjectProperty IRI="deployedInDomain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="deployedInDomain"/>
+        <Class IRI="AudioSegmentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Topic"/>
@@ -962,9 +914,6 @@
         <Class IRI="LexiconFormatConversion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Constituent"/>
     </Declaration>
     <Declaration>
@@ -998,10 +947,10 @@
         <Class IRI="InlineXml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TrainingOfLanguageModels"/>
+        <Class IRI="StatisticalLearningMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="StatisticalLearningMethod"/>
+        <Class IRI="TrainingOfLanguageModels"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:DiscourseFeature"/>
@@ -1037,10 +986,10 @@
         <Class IRI="ClusteringMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SignLanguageRecognition"/>
+        <Class IRI="NaturalLanguageUnderstanding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="NaturalLanguageUnderstanding"/>
+        <Class IRI="SignLanguageRecognition"/>
     </Declaration>
     <Declaration>
         <Class IRI="Polarity"/>
@@ -1064,12 +1013,6 @@
         <Class IRI="WikiFormats"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Chemical"/>
     </Declaration>
     <Declaration>
@@ -1091,13 +1034,7 @@
         <Class abbreviatedIRI="lappsgrid:Token"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SentenceSplitting"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
     </Declaration>
     <Declaration>
         <Class IRI="UnicodeConformTokenizing"/>
@@ -1113,9 +1050,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Json_genia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -1148,19 +1082,16 @@
         <Class IRI="StatisticalLanguageModelling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="UserAuthentication"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScholarlyCommunication"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Parsing"/>
+        <Class IRI="KeaCorpus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="KeaCorpus"/>
+        <Class IRI="Parsing"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="performsOperation"/>
@@ -1232,10 +1163,10 @@
         <Class IRI="MorphosyntacticTagging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Owl_xml"/>
+        <Class IRI="CertaintyLevelLabelling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CertaintyLevelLabelling"/>
+        <Class IRI="Owl_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="BinaryFormat"/>
@@ -1256,22 +1187,22 @@
         <Class IRI="TheoreticalFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SyntacticoSemanticLink"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="IonicChannel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="WebAnnotationFormat"/>
+        <Class IRI="SyntacticoSemanticLink"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_x_kaf_json"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
+        <Class IRI="WebAnnotationFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="Lemma"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
@@ -1280,10 +1211,10 @@
         <ObjectProperty IRI="hasMimetype"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xTmx_xml"/>
+        <Class IRI="Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Person"/>
+        <NamedIndividual IRI="application_xTmx_xml"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourseAnnotationType"/>
@@ -1367,9 +1298,6 @@
         <Class IRI="ConceptNormalization"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="audio_wav"/>
     </Declaration>
     <Declaration>
@@ -1394,9 +1322,6 @@
         <Class IRI="LexiconEnhancement"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SpeakerVerification"/>
     </Declaration>
     <Declaration>
@@ -1409,19 +1334,16 @@
         <Class IRI="LexicalSemanticRelation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TopicExtractor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="AnnotationOfMultiWordUnits"/>
     </Declaration>
     <Declaration>
         <Class IRI="HandwritingRecognition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.penntree-asl"/>
+        <Class IRI="AnnotationOfMultiWordUnits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TopicExtractor"/>
     </Declaration>
     <Declaration>
         <Class IRI="NeuroscienceEntity"/>
@@ -1436,16 +1358,13 @@
         <Class IRI="Citation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Debugger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SemanticAnnotation"/>
+        <Class IRI="CoReferenceResolution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CoReferenceResolution"/>
+        <Class IRI="SemanticAnnotation"/>
     </Declaration>
     <Declaration>
         <Class IRI="I2b2"/>
@@ -1508,13 +1427,13 @@
         <Class IRI="Jdbc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SoundToTextAlignment"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="oliatop:SemanticRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="Rdf_xml"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SoundToTextAlignment"/>
     </Declaration>
     <Declaration>
         <Class IRI="Transliteration"/>
@@ -1535,10 +1454,10 @@
         <AnnotationProperty abbreviatedIRI="dct:contributor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Xhtml"/>
+        <NamedIndividual IRI="application_pls_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_pls_xml"/>
+        <Class IRI="Xhtml"/>
     </Declaration>
     <Declaration>
         <Class IRI="Paraphrasing"/>
@@ -1601,19 +1520,13 @@
         <Class IRI="AnnotationOfDocumentStructure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Paragraph"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Writing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk"/>
+        <Class IRI="Paragraph"/>
     </Declaration>
     <Declaration>
         <Class IRI="ReadabilityAnnotator"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="Tsv"/>
@@ -1631,22 +1544,19 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AnnotationOfQuestionTopics"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ComputationalArgumentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AnnotationOfQuestionTopics"/>
     </Declaration>
     <Declaration>
         <Class IRI="NaturalLanguageGeneration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="FeatureExtraction"/>
+        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
+        <Class IRI="FeatureExtraction"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Constituent"/>
@@ -1676,9 +1586,6 @@
         <Class IRI="Pls"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SpeechUnderstanding"/>
     </Declaration>
     <Declaration>
@@ -1695,9 +1602,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="text_x_org_dkpro_ptbChunked"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
     </Declaration>
     <Declaration>
         <Class IRI="NamedEntitityRecognizer"/>
@@ -1748,13 +1652,13 @@
         <Class IRI="AgeBracketDetection"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ContradictionDetection"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="InstanceBasedLearning"/>
     </Declaration>
     <Declaration>
         <Class IRI="CorpusViewing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ContradictionDetection"/>
     </Declaration>
     <Declaration>
         <Class IRI="Latex"/>
@@ -1763,22 +1667,10 @@
         <Class IRI="Html5Microdata"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SocialSciences"/>
     </Declaration>
     <Declaration>
         <Class IRI="PtbChunked"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="KeywordExtractor"/>
@@ -1844,9 +1736,6 @@
         <Class IRI="Debugging"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="oliatop:MorphosyntacticFeature"/>
     </Declaration>
     <Declaration>
@@ -1898,13 +1787,7 @@
         <NamedIndividual IRI="application_xhtml_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SpellingChecker"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="IANA:application/x-msaccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="OasisPresentation"/>
@@ -1925,10 +1808,10 @@
         <NamedIndividual IRI="text_x_org_dkpro_conll2009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LanguageModelling"/>
+        <Class IRI="MethodOfResearch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MethodOfResearch"/>
+        <Class IRI="LanguageModelling"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_ld_json"/>
@@ -2027,19 +1910,16 @@
         <Class IRI="Tuepp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="OpenFormat"/>
+        <Class IRI="NamedEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="NamedEntity"/>
+        <Class IRI="OpenFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="LinguisticEntity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Frame"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="AgriculturalEntity"/>
@@ -2066,13 +1946,13 @@
         <Class IRI="SemanticFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="OpenOfficeDocument"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="AnnotatorOfSemanticRoleLabels"/>
     </Declaration>
     <Declaration>
         <Class IRI="GeneFamily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpenOfficeDocument"/>
     </Declaration>
     <Declaration>
         <Class IRI="StructuralAnnotation"/>
@@ -2087,9 +1967,6 @@
         <Class IRI="AimedCorpusFormat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Bayesian"/>
     </Declaration>
     <Declaration>
@@ -2097,12 +1974,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Segmenter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS"/>
     </Declaration>
     <Declaration>
         <Class IRI="Tika"/>
@@ -2132,9 +2003,6 @@
         <NamedIndividual IRI="text_xCochrane"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Evaluator"/>
     </Declaration>
     <Declaration>
@@ -2147,13 +2015,13 @@
         <Class abbreviatedIRI="oliatop:Stem"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="lappsgrid:Paragraph"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Translation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Pml"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="lappsgrid:Paragraph"/>
     </Declaration>
     <Declaration>
         <Class IRI="EventExtractor"/>
@@ -2183,10 +2051,10 @@
         <Class IRI="TextCompression"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_tika"/>
+        <Class IRI="Stemming"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Stemming"/>
+        <NamedIndividual IRI="application_tika"/>
     </Declaration>
     <Declaration>
         <Class IRI="SemanticRelationLabelling"/>
@@ -2216,10 +2084,10 @@
         <Class IRI="Subjectivity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_postscript"/>
+        <Class IRI="ExploratorySearch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ExploratorySearch"/>
+        <NamedIndividual IRI="application_postscript"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Sentence"/>
@@ -2264,13 +2132,7 @@
         <Class IRI="Folia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Annotator"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
     </Declaration>
     <Declaration>
         <Class IRI="DerivationalFeature"/>
@@ -2279,10 +2141,10 @@
         <Class IRI="Marker"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <Class IRI="Alignment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Alignment"/>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
     </Declaration>
     <Declaration>
         <Class IRI="DocumentFormat"/>
@@ -2324,10 +2186,10 @@
         <Class IRI="FormatConversion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Datasift_json"/>
+        <Class IRI="Sgml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Sgml"/>
+        <Class IRI="Datasift_json"/>
     </Declaration>
     <Declaration>
         <Class IRI="Contradiction"/>
@@ -2401,16 +2263,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AclAnthologyCorpusFormat"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AclAnthologyCorpusFormat"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-AclAnthology</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl</Literal>
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2579,13 +2441,6 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="AnnotationType"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
-            <Class abbreviatedIRI="lappsgrid:Annotation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Annotator"/>
         <Class IRI="Processor"/>
     </SubClassOf>
@@ -2688,13 +2543,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="BinaryCas"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="BinaryCas"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl</Literal>
@@ -2790,13 +2638,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="BncFormat"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="BncFormat"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bnc-asl</Literal>
@@ -2823,13 +2664,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="text_x_brat"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Brat"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.brat-asl"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -2913,10 +2747,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Chunk"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Chunker"/>
@@ -2985,10 +2819,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Compound"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ComputationalArgumentation"/>
@@ -3141,13 +2975,6 @@
         <Class IRI="TabularFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ConllFormat"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="ConllU"/>
         <Class IRI="ConllFormat"/>
     </SubClassOf>
@@ -3204,10 +3031,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Constituent"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ContentMining"/>
@@ -3425,10 +3252,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Date"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Debugger"/>
@@ -3474,10 +3301,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Dependency"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DependencyConversion"/>
@@ -3595,16 +3422,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DkproTokenized"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DkproTokenized"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-TokenizedText</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl</Literal>
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -3659,10 +3486,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DocumentSection"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Domain"/>
@@ -3796,10 +3623,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Event"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="EventDetection"/>
@@ -4166,13 +3993,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Imscwb"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Imscwb"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl</Literal>
@@ -4222,13 +4042,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="application_xml"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="InlineXml"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4465,10 +4278,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Lemma"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Lemmatization"/>
@@ -4641,10 +4454,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Location"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MachineAndStatisticalLearningMethod"/>
@@ -4683,10 +4496,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MalletLdaTopicProportions"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MalletLdaTopicProportions"/>
@@ -4805,10 +4618,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MorphologicalFeature"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MorphologicalTagger"/>
@@ -4841,20 +4654,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="application_xMsaccess"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="MsAccessDatabase"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="IANA:application/vnd.msaccess"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="MsAccessDatabase"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="IANA:application/x-msaccess"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -4980,27 +4779,6 @@
     <SubClassOf>
         <Class IRI="NamedEntity"/>
         <Class IRI="SemanticAnnotationType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="NamedEntity"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
-            <Class abbreviatedIRI="oliatop:NamedEntity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="NamedEntity"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
-            <Class abbreviatedIRI="lappsgrid:NamedEntity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="NamedEntity"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"/>
-        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="NamedEntityDissambiguation"/>
@@ -5284,10 +5062,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Organization"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="OrthographicTranscription"/>
@@ -5368,10 +5146,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PartOfSpeech"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PartOfSpeechTagger"/>
@@ -5394,13 +5172,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Pdf"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="IANA:application/pdf"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Pdf"/>
         <DataHasValue>
             <DataProperty IRI="hasFileExtension"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pdf</Literal>
@@ -5412,10 +5183,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Person"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PersonIdentification"/>
@@ -5611,13 +5382,6 @@
         <Class IRI="AnnotationFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Ptb"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.penntree-asl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="PtbChunked"/>
         <Class IRI="Ptb"/>
     </SubClassOf>
@@ -5688,22 +5452,8 @@
         <Class IRI="DataFormat"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="RdfFormat"/>
-        <DataHasValue>
-            <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.w3.org/TR/REC-rdf-syntax/</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="RdfFormats"/>
         <Class IRI="DataFormat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="RdfFormats"/>
-        <DataHasValue>
-            <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.w3.org/TR/REC-rdf-syntax/</Literal>
-        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Rdf_xml"/>
@@ -5737,10 +5487,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Readability"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ReadabilityAnnotation"/>
@@ -5814,13 +5564,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Reuters21578Sgml"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Reuters21578Sgml"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Sgml</Literal>
@@ -5835,13 +5578,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="text_x_org_dkpro_reuters21578"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Reuters21578Txt"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -5949,13 +5685,6 @@
         <Class IRI="AnnotationType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="SemanticAnnotationType"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
-            <Class abbreviatedIRI="oliatop:SemanticFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="SemanticAnnotator"/>
         <Class IRI="Annotator"/>
     </SubClassOf>
@@ -5965,10 +5694,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticClass"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticClassLabelling"/>
@@ -5987,10 +5716,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticFrame"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticReasoning"/>
@@ -6020,10 +5749,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticRole"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SemanticRoleLabelling"/>
@@ -6046,10 +5775,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sentence"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SentenceAlignment"/>
@@ -6069,10 +5798,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sentiment"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SentimentAnalysis"/>
@@ -6099,16 +5828,9 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SerializedCas"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="SerializedCas"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas</Literal>
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6157,13 +5879,6 @@
     <SubClassOf>
         <Class IRI="Solr"/>
         <Class IRI="DataFormat"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Solr"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.solr-asl"/>
-        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Solr"/>
@@ -6285,10 +6000,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Stem"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Stemmer"/>
@@ -6464,16 +6179,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tei"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="IANA:application/tei+xml"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.tei-c.org/index.xml</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tei"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
-            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.tei-c.org/index.xml</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.iana.org/assignments/media-types/application/tei+xml</Literal>
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6619,13 +6334,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tgrep2"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Tgrep2"/>
         <DataHasValue>
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tgrep-gpl</Literal>
@@ -6656,13 +6364,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="application_x_org_dkpro_tiger_xml"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="TigerXml"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -6732,10 +6433,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Token"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tokenization"/>
@@ -6839,10 +6540,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tuepp"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tuepp-asl</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tuepp"/>
@@ -6890,13 +6591,6 @@
         <ObjectHasValue>
             <ObjectProperty IRI="hasMimetype"/>
             <NamedIndividual IRI="application_x_org_dkpro_uima_json"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Uima_json"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.json-asl"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -7173,10 +6867,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="WordSense"/>
-        <ObjectHasValue>
-            <ObjectProperty abbreviatedIRI="rdfs:seeAlso"/>
-            <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense"/>
-        </ObjectHasValue>
+        <DataHasValue>
+            <DataProperty IRI="documentationUrl"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="WordSenseDisambiguation"/>
@@ -7846,126 +7540,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticField</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticPredicate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.mallet.type.TopicDistribution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.type.ReadabilityScore</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AccessComponent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A component that provides access to data resources, e.g. reads a resource or writes the output of a process in a certain format</Literal>
@@ -8371,166 +7945,6 @@
         <Literal xml:lang="en_uk" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anonymisation [en_uk]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_emma_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/emma+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_json</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/json</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_ld_json</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/ld+json</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_ld_json_profile_http_www_w3_org_ns_anno_jsonld_</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/ld+json;profile=&quot;http://www.w3.org/ns/anno.jsonld&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_msword</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/msword</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_pdf</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_pls_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/pls+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_postscript</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/postscript</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_rdf_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/rdf+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_rtf</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/rtf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_tei_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/tei+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_vnd_msExcel</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.ms-excel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_vnd_msaccess</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.msaccess</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_vnd_xmi_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/vnd.xmi+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xLatex</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-latex</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xMsaccess</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-msaccess</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xTex</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-tex</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xTmx_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-tmx+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xXces_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-xces+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xXml_alvis</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-xml+alvis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_kaf_json</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.kaf+json</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_graf_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.graf+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_negra3</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.negra3</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_negra4</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.negra4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_reuters21578_sgml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.reuters21578+sgml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_tgrep2</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tgrep2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_tiger_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tiger+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_tuepp_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.tuepp+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_uima_binary</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.uima+binary</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_x_org_dkpro_uima_json</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x.org.dkpro.uima+json</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xhtml_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/xhtml+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Application_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Argumentation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task/process of marking argumentative structures, components and relations in a text</Literal>
@@ -8664,11 +8078,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Avro_json</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Avro</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Avro_json</IRI>
-        <IRI>https://avro.apache.org/docs/1.8.1/spec.html</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
@@ -12583,6 +11992,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpenFormat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>OpenOfficeDocument</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open office document</Literal>
     </AnnotationAssertion>
@@ -14562,6 +13976,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TDM Method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>Tei</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text Encoding Initiative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Tei</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data format for TEI-encoded (Text Encoding Initiative) texts</Literal>
@@ -14570,11 +13989,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Tei</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TEI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <IRI>Tei</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text Encoding Initiative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14885,116 +14299,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>TextToSpeechSynthesis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The generation of synthetic speech from text. Typically, a text-to-speech synthesis system performs a text analysis using natural language processing techniques; determines the appropriate phonetic string and prosodic features; and generates a speech signal by employing a concatenative or rule-based synthesis method.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_csv</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/csv</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_html</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_sgml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/sgml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_tabSeparatedValues</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/tab-separated-values</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_tcf_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/tcf+xml</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_turtle</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/turtle</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_xCochrane</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-cochrane</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_xPubmed</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x-pubmed</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2000</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2000</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2002</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2002</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2003</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2003</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2006</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2006</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2008</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2008</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2009</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2009</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conll2012</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-2012</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_conllU</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.conll-u</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_imscwb</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.imscwb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_ngram</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ngram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_ptbChunked</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ptb-chunked</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_ptbCombined</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.ptb-combined</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_x_org_dkpro_reuters21578</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/x.org.dkpro.reuters21578</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Text_xml</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
