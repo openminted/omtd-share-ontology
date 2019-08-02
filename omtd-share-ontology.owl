@@ -119,10 +119,10 @@
         <Class IRI="Diaml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Evaluation"/>
+        <Class IRI="Disambiguator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Disambiguator"/>
+        <Class IRI="Evaluation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Relation"/>
@@ -146,16 +146,16 @@
         <Class IRI="WordSenseDisambiguation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Obo"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="text_x_org_dkpro_conll2012"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DkproTokenized"/>
+        <Class IRI="Obo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DkproTokenized"/>
     </Declaration>
     <Declaration>
         <Class IRI="Tokenizer"/>
@@ -314,22 +314,25 @@
         <Class IRI="Reuters21578Sgml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xMsaccess"/>
+        <Class IRI="GateFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GateFormat"/>
+        <NamedIndividual IRI="audio_mpeg3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_xMsaccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="TextCategorization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MachineLearningMethod"/>
+        <Class IRI="PolarityLabelling"/>
     </Declaration>
     <Declaration>
         <Class IRI="LexiconAccess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PolarityLabelling"/>
+        <Class IRI="MachineLearningMethod"/>
     </Declaration>
     <Declaration>
         <Class IRI="AutomaticHyperlinking"/>
@@ -365,10 +368,10 @@
         <Class IRI="WheatRelatedSpecies"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DimensionalityReduction"/>
+        <Class IRI="KnowledgeRepresentation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="KnowledgeRepresentation"/>
+        <Class IRI="DimensionalityReduction"/>
     </Declaration>
     <Declaration>
         <Class IRI="LanguageIdentifier"/>
@@ -422,9 +425,6 @@
         <Class IRI="FrameSemanticParsing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_rtf"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="SyntacticStructureGeneration"/>
     </Declaration>
     <Declaration>
@@ -432,6 +432,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="PersuasiveExpressionMining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application_rtf"/>
     </Declaration>
     <Declaration>
         <Class IRI="Pubmed"/>
@@ -461,13 +464,13 @@
         <Class IRI="DatabaseFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ConstituencyParsing"/>
+        <Class IRI="Converter"/>
     </Declaration>
     <Declaration>
         <Class IRI="DataSplitting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Converter"/>
+        <Class IRI="ConstituencyParsing"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Phrase"/>
@@ -476,10 +479,10 @@
         <Class IRI="TextToSpeechSynthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TalkingHeadSynthesis"/>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
+        <Class IRI="TalkingHeadSynthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="Writer"/>
@@ -488,10 +491,10 @@
         <Class abbreviatedIRI="lappsgrid:SemanticRole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_x_json_twitter"/>
+        <Class IRI="Tcf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Tcf"/>
+        <NamedIndividual IRI="application_x_json_twitter"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourceRelation"/>
@@ -522,6 +525,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="TigerXml"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audio_x_mpeg3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="mp3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_xXml_alvis"/>
@@ -584,19 +593,19 @@
         <Class IRI="Editing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="RdfFormat"/>
+        <Class IRI="EntityMentionPair"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EntityMentionPair"/>
+        <Class IRI="RdfFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="Lemmatizer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Argumentation"/>
+        <Class IRI="Emma"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Emma"/>
+        <Class IRI="Argumentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="DocumentImageAnalysis"/>
@@ -698,10 +707,10 @@
         <Class IRI="RuleBasedMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusManagement"/>
+        <Class IRI="PosTagging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PosTagging"/>
+        <Class IRI="CorpusManagement"/>
     </Declaration>
     <Declaration>
         <Class IRI="LifeSciences"/>
@@ -725,10 +734,10 @@
         <Class IRI="SignLanguageGeneration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Normalization"/>
+        <Class IRI="Html"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Html"/>
+        <Class IRI="Normalization"/>
     </Declaration>
     <Declaration>
         <Class IRI="Editor"/>
@@ -785,6 +794,9 @@
         <Class IRI="QuestionAnswering"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ChemicalEntity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Mimetype"/>
     </Declaration>
     <Declaration>
@@ -795,9 +807,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="WikipediaArticleInfo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ChemicalEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="Text"/>
@@ -839,10 +848,10 @@
         <Class IRI="WikipediaFormat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="deployedInDomain"/>
+        <Class IRI="AudioSegmentation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AudioSegmentation"/>
+        <ObjectProperty IRI="deployedInDomain"/>
     </Declaration>
     <Declaration>
         <Class IRI="Topic"/>
@@ -941,16 +950,16 @@
         <Class IRI="Validation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_msword"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="InlineXml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="StatisticalLearningMethod"/>
+        <NamedIndividual IRI="application_msword"/>
     </Declaration>
     <Declaration>
         <Class IRI="TrainingOfLanguageModels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StatisticalLearningMethod"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:DiscourseFeature"/>
@@ -1088,10 +1097,10 @@
         <Class IRI="ScholarlyCommunication"/>
     </Declaration>
     <Declaration>
-        <Class IRI="KeaCorpus"/>
+        <Class IRI="Parsing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Parsing"/>
+        <Class IRI="KeaCorpus"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="performsOperation"/>
@@ -1124,10 +1133,10 @@
         <Class IRI="AssociationRuleLearning"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
+        <Class IRI="DataCollection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DataCollection"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="text_tabSeparatedValues"/>
@@ -1151,10 +1160,10 @@
         <Class IRI="RdfFormats"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="text_html"/>
+        <Class IRI="MultilingualGeneration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MultilingualGeneration"/>
+        <NamedIndividual IRI="text_html"/>
     </Declaration>
     <Declaration>
         <Class IRI="Media"/>
@@ -1163,10 +1172,10 @@
         <Class IRI="MorphosyntacticTagging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CertaintyLevelLabelling"/>
+        <Class IRI="Owl_xml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Owl_xml"/>
+        <Class IRI="CertaintyLevelLabelling"/>
     </Declaration>
     <Declaration>
         <Class IRI="BinaryFormat"/>
@@ -1187,10 +1196,10 @@
         <Class IRI="TheoreticalFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="IonicChannel"/>
+        <Class IRI="SyntacticoSemanticLink"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SyntacticoSemanticLink"/>
+        <Class IRI="IonicChannel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_x_kaf_json"/>
@@ -1199,10 +1208,10 @@
         <Class IRI="WebAnnotationFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Lemma"/>
+        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
+        <Class IRI="Lemma"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
@@ -1211,10 +1220,10 @@
         <ObjectProperty IRI="hasMimetype"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Person"/>
+        <NamedIndividual IRI="application_xTmx_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xTmx_xml"/>
+        <Class IRI="Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiscourseAnnotationType"/>
@@ -1337,13 +1346,13 @@
         <Class IRI="Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="HandwritingRecognition"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="AnnotationOfMultiWordUnits"/>
     </Declaration>
     <Declaration>
         <Class IRI="TopicExtractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HandwritingRecognition"/>
     </Declaration>
     <Declaration>
         <Class IRI="NeuroscienceEntity"/>
@@ -1361,10 +1370,10 @@
         <Class IRI="Debugger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CoReferenceResolution"/>
+        <Class IRI="SemanticAnnotation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="SemanticAnnotation"/>
+        <Class IRI="CoReferenceResolution"/>
     </Declaration>
     <Declaration>
         <Class IRI="I2b2"/>
@@ -1427,13 +1436,13 @@
         <Class IRI="Jdbc"/>
     </Declaration>
     <Declaration>
+        <Class IRI="SoundToTextAlignment"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="oliatop:SemanticRole"/>
     </Declaration>
     <Declaration>
         <Class IRI="Rdf_xml"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SoundToTextAlignment"/>
     </Declaration>
     <Declaration>
         <Class IRI="Transliteration"/>
@@ -1520,10 +1529,10 @@
         <Class IRI="AnnotationOfDocumentStructure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Writing"/>
+        <Class IRI="Paragraph"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Paragraph"/>
+        <Class IRI="Writing"/>
     </Declaration>
     <Declaration>
         <Class IRI="ReadabilityAnnotator"/>
@@ -1544,19 +1553,19 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ComputationalArgumentation"/>
+        <Class IRI="AnnotationOfQuestionTopics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AnnotationOfQuestionTopics"/>
+        <Class IRI="ComputationalArgumentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="NaturalLanguageGeneration"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
+        <Class IRI="FeatureExtraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="FeatureExtraction"/>
+        <NamedIndividual IRI="application_x_org_dkpro_reuters21578_sgml"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Constituent"/>
@@ -1613,10 +1622,10 @@
         <Class IRI="Tex"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Chunker"/>
+        <Class IRI="KeywordExtraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="KeywordExtraction"/>
+        <Class IRI="Chunker"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
@@ -1652,13 +1661,13 @@
         <Class IRI="AgeBracketDetection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ContradictionDetection"/>
+        <Class IRI="CorpusViewing"/>
     </Declaration>
     <Declaration>
         <Class IRI="InstanceBasedLearning"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusViewing"/>
+        <Class IRI="ContradictionDetection"/>
     </Declaration>
     <Declaration>
         <Class IRI="Latex"/>
@@ -1808,10 +1817,10 @@
         <NamedIndividual IRI="text_x_org_dkpro_conll2009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MethodOfResearch"/>
+        <Class IRI="LanguageModelling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LanguageModelling"/>
+        <Class IRI="MethodOfResearch"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_ld_json"/>
@@ -1820,13 +1829,13 @@
         <Class IRI="AuthoringSupport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GazeteerBasedMatching"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Json"/>
     </Declaration>
     <Declaration>
         <Class IRI="AnnotationOfCompoundingFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GazeteerBasedMatching"/>
     </Declaration>
     <Declaration>
         <Class IRI="Parser"/>
@@ -1910,10 +1919,10 @@
         <Class IRI="Tuepp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="NamedEntity"/>
+        <Class IRI="OpenFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="OpenFormat"/>
+        <Class IRI="NamedEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="LinguisticEntity"/>
@@ -1937,22 +1946,22 @@
         <Class IRI="InformationFilteringByRecommenderSystems"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TemporalExpressionRecognition"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="BelowPosTagging"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TemporalExpressionRecognition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="SemanticFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpenOfficeDocument"/>
     </Declaration>
     <Declaration>
         <Class IRI="AnnotatorOfSemanticRoleLabels"/>
     </Declaration>
     <Declaration>
         <Class IRI="GeneFamily"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="OpenOfficeDocument"/>
     </Declaration>
     <Declaration>
         <Class IRI="StructuralAnnotation"/>
@@ -2015,22 +2024,22 @@
         <Class abbreviatedIRI="oliatop:Stem"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="lappsgrid:Paragraph"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Translation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Pml"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="lappsgrid:Paragraph"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="EventExtractor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="RecognizingTextualEntailment"/>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <Class IRI="RecognizingTextualEntailment"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScholarlyAnalyticsEntity"/>
@@ -2051,10 +2060,10 @@
         <Class IRI="TextCompression"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Stemming"/>
+        <NamedIndividual IRI="application_tika"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_tika"/>
+        <Class IRI="Stemming"/>
     </Declaration>
     <Declaration>
         <Class IRI="SemanticRelationLabelling"/>
@@ -2084,10 +2093,10 @@
         <Class IRI="Subjectivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ExploratorySearch"/>
+        <NamedIndividual IRI="application_postscript"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_postscript"/>
+        <Class IRI="ExploratorySearch"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Sentence"/>
@@ -2186,10 +2195,10 @@
         <Class IRI="FormatConversion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Sgml"/>
+        <Class IRI="Datasift_json"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Datasift_json"/>
+        <Class IRI="Sgml"/>
     </Declaration>
     <Declaration>
         <Class IRI="Contradiction"/>
@@ -7077,6 +7086,31 @@
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="mp3"/>
+        <Class IRI="AudioFormat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mp3"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_mpeg3"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mp3"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="hasMimetype"/>
+            <NamedIndividual IRI="audio_x_mpeg3"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mp3"/>
+        <DataHasValue>
+            <DataProperty IRI="hasFileExtension"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mp3</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="mpg"/>
         <Class IRI="AudioFormat"/>
     </SubClassOf>
@@ -7345,6 +7379,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="audio_mpeg3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
         <NamedIndividual IRI="audio_vnd_wave"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7354,6 +7392,10 @@
     <ClassAssertion>
         <Class IRI="Mimetype"/>
         <NamedIndividual IRI="audio_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mimetype"/>
+        <NamedIndividual IRI="audio_x_mpeg3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="Mimetype"/>
@@ -15323,6 +15365,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_mpeg3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/mpeg3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>audio_vnd_wave</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/vnd.wave</Literal>
     </AnnotationAssertion>
@@ -15335,6 +15382,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>audio_wave</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/wave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>audio_x_mpeg3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio/x-mpeg3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15405,6 +15457,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>hasMimetype</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has mimetype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>mp3</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio mp3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
