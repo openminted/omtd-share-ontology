@@ -152,6 +152,9 @@
         <Class IRI="Obo"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TextSimplification"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="text_x_org_dkpro_conll2000"/>
     </Declaration>
     <Declaration>
@@ -237,6 +240,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SpatialRoleLabelling"/>
     </Declaration>
     <Declaration>
         <Class IRI="OpenOfficePresentation"/>
@@ -524,19 +530,19 @@
         <Class abbreviatedIRI="lappsgrid:NamedEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TigerXml"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="audio_x_mpeg3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="mp3"/>
+        <Class IRI="TigerXml"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_xXml_alvis"/>
     </Declaration>
     <Declaration>
         <Class IRI="AclAnthologyCorpusFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="mp3"/>
     </Declaration>
     <Declaration>
         <Class IRI="CertaintyLevel"/>
@@ -767,10 +773,10 @@
         <Class IRI="NormalizationOfMeasurements"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="application_xTex"/>
+        <Class IRI="DiscourseAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DiscourseAnalysis"/>
+        <NamedIndividual IRI="application_xTex"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_anno_json"/>
@@ -857,6 +863,9 @@
         <Class IRI="Topic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TextSimilarityAssessment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Sentence"/>
     </Declaration>
     <Declaration>
@@ -882,6 +891,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="LexiconExtractorFromLexica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NewsGeneration"/>
     </Declaration>
     <Declaration>
         <Class IRI="DataSplitter"/>
@@ -930,6 +942,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="EvaluationOfBroadCoverageNaturalLanguageParsers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HateSpeechRecognition"/>
     </Declaration>
     <Declaration>
         <Class IRI="MalletLdaTopicProportions"/>
@@ -1022,6 +1037,9 @@
         <Class IRI="WikiFormats"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TruthLabelling"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Chemical"/>
     </Declaration>
     <Declaration>
@@ -1047,6 +1065,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="UnicodeConformTokenizing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="L2WritingSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="TerminologyMarkup"/>
@@ -1133,10 +1154,10 @@
         <Class IRI="AssociationRuleLearning"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DataCollection"/>
+        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="text_x_org_dkpro_conllU"/>
+        <Class IRI="DataCollection"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="text_tabSeparatedValues"/>
@@ -1152,6 +1173,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="SentenceAlignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IronyDetection"/>
     </Declaration>
     <Declaration>
         <Class IRI="Date"/>
@@ -1199,6 +1223,9 @@
         <Class IRI="SyntacticoSemanticLink"/>
     </Declaration>
     <Declaration>
+        <Class IRI="LexicalSimplification"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="IonicChannel"/>
     </Declaration>
     <Declaration>
@@ -1208,13 +1235,16 @@
         <Class IRI="WebAnnotationFormat"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Lemma"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="oliatop:PolarityFeature"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommentFiltering"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMimetype"/>
@@ -1355,6 +1385,9 @@
         <Class IRI="HandwritingRecognition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="LexicalSubstitution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="NeuroscienceEntity"/>
     </Declaration>
     <Declaration>
@@ -1467,6 +1500,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Xhtml"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WordSenseInduction"/>
     </Declaration>
     <Declaration>
         <Class IRI="Paraphrasing"/>
@@ -1598,10 +1634,16 @@
         <Class IRI="SpeechUnderstanding"/>
     </Declaration>
     <Declaration>
+        <Class IRI="HumourDetection"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="RegressionAnalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="TextGeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RumoursStanceClassification"/>
     </Declaration>
     <Declaration>
         <Class IRI="LanguageIdentification"/>
@@ -1656,6 +1698,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="BionlpSt2013A1_a2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FrameExtraction"/>
     </Declaration>
     <Declaration>
         <Class IRI="AgeBracketDetection"/>
@@ -1724,10 +1769,10 @@
         <Class IRI="Stem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PtbCombined"/>
+        <Class IRI="Graf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Graf"/>
+        <Class IRI="PtbCombined"/>
     </Declaration>
     <Declaration>
         <Class IRI="Emotion"/>
@@ -1838,13 +1883,16 @@
         <Class IRI="GazeteerBasedMatching"/>
     </Declaration>
     <Declaration>
+        <Class IRI="StanceDetection"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Parser"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="lappsgrid:Document"/>
+        <Class IRI="BuildingOfFiniteStateAutomata"/>
     </Declaration>
     <Declaration>
-        <Class IRI="BuildingOfFiniteStateAutomata"/>
+        <Class abbreviatedIRI="lappsgrid:Document"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpeechSynthesisEvaluation"/>
@@ -1910,6 +1958,9 @@
         <ObjectProperty IRI="hasDataFormat"/>
     </Declaration>
     <Declaration>
+        <Class IRI="FactChecking"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="WikipediaRevisionPair"/>
     </Declaration>
     <Declaration>
@@ -1955,13 +2006,13 @@
         <Class IRI="SemanticFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="OpenOfficeDocument"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="AnnotatorOfSemanticRoleLabels"/>
     </Declaration>
     <Declaration>
         <Class IRI="GeneFamily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpenOfficeDocument"/>
     </Declaration>
     <Declaration>
         <Class IRI="StructuralAnnotation"/>
@@ -1992,6 +2043,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ScientificUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FakeNewsDetection"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpectralData"/>
@@ -2817,6 +2871,10 @@
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://gate.ac.uk/sale/tao/splitch23.html#sec:creole:pubmed</Literal>
         </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommentFiltering"/>
+        <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ComponentType"/>
@@ -3692,6 +3750,10 @@
         <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="FactChecking"/>
+        <Class IRI="InformationExtraction"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="FactoredTagLemFormat"/>
         <Class IRI="AnnotationFormat"/>
     </SubClassOf>
@@ -3701,6 +3763,10 @@
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#_factored_tag_lem_1</Literal>
         </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FakeNewsDetection"/>
+        <Class IRI="InformationExtraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FastInfoset"/>
@@ -3780,6 +3846,10 @@
     <SubClassOf>
         <Class IRI="FormatConversion"/>
         <Class IRI="SupportOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FrameExtraction"/>
+        <Class IRI="InformationExtraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FrameSemanticParsing"/>
@@ -3915,6 +3985,10 @@
         <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="HateSpeechRecognition"/>
+        <Class IRI="InformationExtraction"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="HistoricalEvent"/>
         <Class IRI="NamedEntity"/>
     </SubClassOf>
@@ -3962,6 +4036,10 @@
     <SubClassOf>
         <Class IRI="HumanComputerInteraction"/>
         <Class IRI="OperationWithMultimediaInputOrOutput"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HumourDetection"/>
+        <Class IRI="InformationExtraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="I2b2"/>
@@ -4093,6 +4171,10 @@
         <Class IRI="NamedEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="IronyDetection"/>
+        <Class IRI="InformationExtraction"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Jdbc"/>
         <Class IRI="DatabaseFormat"/>
     </SubClassOf>
@@ -4210,6 +4292,10 @@
         <Class IRI="TextAndDataMining"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="L2WritingSupport"/>
+        <Class IRI="AuthoringSupport"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="LD_json"/>
         <Class IRI="DocumentFormat"/>
     </SubClassOf>
@@ -4324,6 +4410,14 @@
             <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
             <Class abbreviatedIRI="oliatop:LexicalRelation"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LexicalSimplification"/>
+        <Class IRI="NaturalLanguageGeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LexicalSubstitution"/>
+        <Class IRI="NaturalLanguageGeneration"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LexiconAccess"/>
@@ -4849,6 +4943,10 @@
     <SubClassOf>
         <Class IRI="NeuroscienceEntity"/>
         <Class IRI="DomainSpecificAnnotationType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NewsGeneration"/>
+        <Class IRI="NaturalLanguageGeneration"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Nif"/>
@@ -5623,6 +5721,10 @@
         <Class IRI="TdmMethod"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="RumoursStanceClassification"/>
+        <Class IRI="InformationExtraction"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ScholarlyAnalyticsEntity"/>
         <Class IRI="Domain-specificAnnotation"/>
     </SubClassOf>
@@ -5905,6 +6007,10 @@
         <Class IRI="SpeechAnnotation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="SpatialRoleLabelling"/>
+        <Class IRI="SemanticAnnotation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="SpeakerDiarization"/>
         <Class IRI="SpeechAnnotation"/>
     </SubClassOf>
@@ -5987,6 +6093,10 @@
     <SubClassOf>
         <Class IRI="SpokenLanguageUnderstanding"/>
         <Class IRI="SpeechRecognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StanceDetection"/>
+        <Class IRI="InformationExtraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="StatisticalLanguageModelling"/>
@@ -6323,6 +6433,14 @@
         <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="TextSimilarityAssessment"/>
+        <Class IRI="InformationExtraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TextSimplification"/>
+        <Class IRI="NaturalLanguageGeneration"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="TextToSpeechSynthesis"/>
         <Class IRI="NaturalLanguageGeneration"/>
     </SubClassOf>
@@ -6516,6 +6634,10 @@
     <SubClassOf>
         <Class IRI="Transliteration"/>
         <Class IRI="SpeechRecognition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TruthLabelling"/>
+        <Class IRI="InformationExtraction"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tsv"/>
@@ -6895,6 +7017,10 @@
             <ObjectProperty IRI="performsOperation"/>
             <Class IRI="WordSenseDisambiguation"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WordSenseInduction"/>
+        <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Writer"/>
@@ -8553,6 +8679,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CommentFiltering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The identification and removal of abusive, bullying, etc. comments from texts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CommentFiltering</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Comment filtering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ComponentType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of a component, in terms of the function/task it performs</Literal>
     </AnnotationAssertion>
@@ -10003,6 +10139,26 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Facial expression detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>FactChecking</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fact-checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FactChecking</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The act of checking factual assertions in non-fictional text in order to determine the veracity and correctness of the factual statements in the text [from Wikipedia]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FactChecking</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fact checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:related"/>
+        <IRI>FactChecking</IRI>
+        <IRI>FakeNewsDetection</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FactoredTagLemFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Factored tag lemma format</Literal>
@@ -10011,6 +10167,26 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>FactoredTagLemFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Factored tag lem format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>FakeNewsDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fake news assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>FakeNewsDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fake news evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FakeNewsDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of detecting whether a certain news item is fake (i.e. a type of news items of yellow journalism or propaganda that consists of deliberate disinformation or hoaxes spread via traditional news media or online social media) [adapted from wikipedia]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FakeNewsDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fake news detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10131,6 +10307,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>FormatConversion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">File conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FrameExtraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of recognizing words and phrases that evoke semantic frames as defined in the FrameNet project, and their semantic dependents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FrameExtraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frame extraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10318,6 +10504,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HateSpeechRecognition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hate speech detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HateSpeechRecognition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of automatically identifying hate speech, i.e. statements intended to demean and brutalize another, or the use of cruel and derogatory language on the basis of real or alleged membership in a social group [adapted from wikipedia]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HateSpeechRecognition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hate speech recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HistoricalEvent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Historical event</Literal>
@@ -10381,6 +10582,41 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>HumanComputerInteraction</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HCI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humor detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humor recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humor sensing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humour recognition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humour sensing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of identifying in a text structures and phrases of humour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HumourDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Humour detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10593,6 +10829,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ionic current</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IronyDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Irony detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IronyDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of identifying in a text segments expressing irony and classifying  them into types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Jdbc</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For JDBC databases</Literal>
@@ -10784,6 +11030,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>L2WritingSupport</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L2 writing assistant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>L2WritingSupport</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L2 writing support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>LD_json</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">JSON linked data</Literal>
     </AnnotationAssertion>
@@ -10971,6 +11227,36 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>LexicalSemanticRelation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Semantic relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LexicalSimplification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of replacing individual words of a text with words that are easier to understand, so that the text as a whole becomes easier to comprehend, e.g. by people with learning disabilities or by children who learn to read [from https://link.springer.com/chapter/10.1007/978-3-642-28601-8_36]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LexicalSimplification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lexical simplification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:related"/>
+        <IRI>LexicalSimplification</IRI>
+        <IRI>LexicalSubstitution</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LexicalSubstitution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of identifying a substitute for a word in the context of a clause [from Wikipedia]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LexicalSubstitution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lexical substitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:related"/>
+        <IRI>LexicalSubstitution</IRI>
+        <IRI>Paraphrasing</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11896,6 +12182,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>NeuroscienceEntity</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Neuroscience entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>NewsGeneration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">News generation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -12943,6 +13234,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rule-based Method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RumoursStanceClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of identifying the attitude of a person towards the truthfulness of a rumour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RumoursStanceClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rumours stance classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
         <IRI>ScholarlyAnalyticsEntity</IRI>
         <IRI>ScholarlyCommunicationAnnotation</IRI>
@@ -13393,6 +13694,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sound-to-Text alignment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>SpatialRoleLabelling</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spatial role labeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SpatialRoleLabelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Τhe task of identifying and classifying the spatial arguments of the spatial expressions mentioned in a sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SpatialRoleLabelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spatial role labelling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>SpeakerDiarization</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Partitioning of audio stream into homogeneous segments according to speaker properties and acoustic conditions</Literal>
@@ -13676,6 +13992,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>SpokenLanguageUnderstanding</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spoken language understanding is the task of assigning a semantic interpretation to a spoken input, by making use of syntactic and semantic knowledge, which is often specific to a particular application domain. Spoken language understanding can involve dealing with multiple recognition hypotheses from a speech recogniser, taking prosodic properties of utterances into account and having to deal with fragmentary and grammatically incorrect utterances. Commercial speech recognisers often are accompanied by analysis tools. In commercial applications such as dialogue systems and command and control, spoken language understanding generally involves the construction of a task and domain-specific interpretation of the utterance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StanceDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The extraction of a subject’s reaction to a claim made by a primary actor [http://nlpprogress.com/english/stance_detection.html]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>StanceDetection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stance detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14318,6 +14644,46 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text indexing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>TextSimilarityAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text similarity checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>TextSimilarityAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Textual similarity assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>TextSimilarityAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Textual similarity checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TextSimilarityAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of determining the degree of closeness between two pieces of text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TextSimilarityAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text similarity assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TextSimplification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of replacing textual segments (phrases, clauses, etc.) with other segments that have similar meaning but are easier to understand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TextSimplification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text simplification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:related"/>
+        <IRI>TextSimplification</IRI>
+        <IRI>LexicalSimplification</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TextToSpeechSynthesis</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task/process of converting speech into natural language text</Literal>
@@ -14626,6 +14992,26 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Transliteration</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>TruthLabelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Truth detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>TruthLabelling</IRI>
+        <Literal xml:lang="en_us" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Truth labeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TruthLabelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of assigning a true/false tag to a news item, headline, claim, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TruthLabelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Truth labelling</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -15017,6 +15403,26 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <AnnotationProperty abbreviatedIRI="skos:comment"/>
         <IRI>WordSenseDisambiguator</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">could also be an annotator and a support component (used in a lot of processes)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>WordSenseInduction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">WSI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>WordSenseInduction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task of automatically identifying the senses of a word</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>WordSenseInduction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Word sense induction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:related"/>
+        <IRI>WordSenseInduction</IRI>
+        <IRI>WordSenseDisambiguation</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
