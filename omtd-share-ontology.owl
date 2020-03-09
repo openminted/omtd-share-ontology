@@ -233,6 +233,9 @@
         <Class IRI="ScientificValue"/>
     </Declaration>
     <Declaration>
+        <Class IRI="NamedEntityDisambiguation"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="oliatop:LexicalRelation"/>
     </Declaration>
     <Declaration>
@@ -273,6 +276,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ScriptBasedAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SpeechAnalytics"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="lappsgrid:Constituent"/>
@@ -407,6 +413,9 @@
         <NamedIndividual IRI="application_rdf_xml"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ImageTranslation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Stemmer"/>
     </Declaration>
     <Declaration>
@@ -434,10 +443,10 @@
         <Class IRI="SyntacticStructureGeneration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Agriculture"/>
+        <Class IRI="PersuasiveExpressionMining"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PersuasiveExpressionMining"/>
+        <Class IRI="Agriculture"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_rtf"/>
@@ -800,6 +809,9 @@
         <Class IRI="QuestionAnswering"/>
     </Declaration>
     <Declaration>
+        <Class IRI="SpeechToTextTranslation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ChemicalEntity"/>
     </Declaration>
     <Declaration>
@@ -830,10 +842,10 @@
         <Class IRI="Imscwb"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Cadixe_json"/>
+        <Class IRI="Matcher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Matcher"/>
+        <Class IRI="Cadixe_json"/>
     </Declaration>
     <Declaration>
         <Class IRI="Regularisation"/>
@@ -854,16 +866,19 @@
         <Class IRI="WikipediaFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AudioSegmentation"/>
+        <ObjectProperty IRI="deployedInDomain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="deployedInDomain"/>
+        <Class IRI="AudioSegmentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Topic"/>
     </Declaration>
     <Declaration>
         <Class IRI="TextSimilarityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TerminologyManagement"/>
     </Declaration>
     <Declaration>
         <Class IRI="Sentence"/>
@@ -923,6 +938,9 @@
         <Class IRI="ComponentType"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Alignment1"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="MsWord"/>
     </Declaration>
     <Declaration>
@@ -942,6 +960,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="EvaluationOfBroadCoverageNaturalLanguageParsers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TextSpeechDataAnalytics"/>
     </Declaration>
     <Declaration>
         <Class IRI="HateSpeechRecognition"/>
@@ -1071,9 +1092,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="TerminologyMarkup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="NamedEntityDissambiguation"/>
     </Declaration>
     <Declaration>
         <Class IRI="Summarizer"/>
@@ -1269,6 +1287,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="AnaphoraAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TranslationMemoryManagement"/>
     </Declaration>
     <Declaration>
         <Class IRI="EntityLinking"/>
@@ -1526,6 +1547,9 @@
         <Class IRI="CrowdsourcingComponent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TranslationProjectManagement"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="HumanComputerInteraction"/>
     </Declaration>
     <Declaration>
@@ -1625,10 +1649,10 @@
         <Class IRI="Summarization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GateXml"/>
+        <Class IRI="Pls"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Pls"/>
+        <Class IRI="GateXml"/>
     </Declaration>
     <Declaration>
         <Class IRI="SpeechUnderstanding"/>
@@ -1706,13 +1730,13 @@
         <Class IRI="AgeBracketDetection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CorpusViewing"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="InstanceBasedLearning"/>
     </Declaration>
     <Declaration>
         <Class IRI="ContradictionDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CorpusViewing"/>
     </Declaration>
     <Declaration>
         <Class IRI="Latex"/>
@@ -1731,6 +1755,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="application_x_org_dkpro_graf_xml"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Facility"/>
     </Declaration>
     <Declaration>
         <Class IRI="PartOfSpeechTagger"/>
@@ -1769,6 +1796,9 @@
         <Class IRI="Stem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Geo-politicalEntity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Graf"/>
     </Declaration>
     <Declaration>
@@ -1794,6 +1824,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="SemanticAnnotator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConversationalSystemsBuilding"/>
     </Declaration>
     <Declaration>
         <Class IRI="FeatureExtractor"/>
@@ -2090,10 +2123,10 @@
         <Class IRI="EventExtractor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <Class IRI="RecognizingTextualEntailment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="RecognizingTextualEntailment"/>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScholarlyAnalyticsEntity"/>
@@ -2151,6 +2184,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="ExploratorySearch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Miscellaneous"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="oliatop:Sentence"/>
@@ -2372,6 +2408,10 @@
     <SubClassOf>
         <Class IRI="Alignment"/>
         <Class IRI="MachineTranslationSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Alignment1"/>
+        <Class IRI="AnnotationType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AllbusVariable"/>
@@ -3134,6 +3174,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="ConversationalSystemsBuilding"/>
+        <Class IRI="OperationWithMultimediaInputOrOutput"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Converter"/>
         <Class IRI="SupportComponent"/>
     </SubClassOf>
@@ -3750,6 +3794,10 @@
         <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Facility"/>
+        <Class IRI="NamedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="FactChecking"/>
         <Class IRI="InformationExtraction"/>
     </SubClassOf>
@@ -3940,6 +3988,10 @@
         <Class IRI="Processor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Geo-politicalEntity"/>
+        <Class IRI="NamedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Graf"/>
         <Class IRI="AnnotationFormat"/>
     </SubClassOf>
@@ -4058,6 +4110,10 @@
             <DataProperty IRI="documentationUrl"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php</Literal>
         </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ImageTranslation"/>
+        <Class IRI="Translation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ImageUnderstanding"/>
@@ -4689,6 +4745,10 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Miscellaneous"/>
+        <Class IRI="NamedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ModelOrganism_species"/>
         <Class IRI="BiologicalEnity"/>
     </SubClassOf>
@@ -4884,7 +4944,7 @@
         <Class IRI="SemanticAnnotationType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="NamedEntityDissambiguation"/>
+        <Class IRI="NamedEntityDisambiguation"/>
         <Class IRI="NamedEntityRecognition"/>
     </SubClassOf>
     <SubClassOf>
@@ -6043,6 +6103,10 @@
         <Class IRI="SpeechRecognition"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="SpeechAnalytics"/>
+        <Class IRI="TextSpeechDataAnalytics"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="SpeechAnnotation"/>
         <Class IRI="Annotation"/>
     </SubClassOf>
@@ -6072,6 +6136,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SpeechToSpeechTranslation"/>
+        <Class IRI="Translation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SpeechToTextTranslation"/>
         <Class IRI="Translation"/>
     </SubClassOf>
     <SubClassOf>
@@ -6342,6 +6410,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="TerminologyManagement"/>
+        <Class IRI="SupportOperation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="TerminologyMarkup"/>
         <Class IRI="SemanticAnnotation"/>
     </SubClassOf>
@@ -6391,7 +6463,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TextAndDataAnalytics"/>
-        <Class IRI="Operation"/>
+        <Class IRI="TextSpeechDataAnalytics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TextAndDataAnalytics"/>
@@ -6439,6 +6511,10 @@
     <SubClassOf>
         <Class IRI="TextSimplification"/>
         <Class IRI="NaturalLanguageGeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TextSpeechDataAnalytics"/>
+        <Class IRI="Operation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TextToSpeechSynthesis"/>
@@ -6630,6 +6706,14 @@
     <SubClassOf>
         <Class IRI="Translation"/>
         <Class IRI="Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TranslationMemoryManagement"/>
+        <Class IRI="SupportOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TranslationProjectManagement"/>
+        <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Transliteration"/>
@@ -7785,6 +7869,16 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Alignment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Alignment1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The translational equivalent between structural units (words, sentences etc.) of a text in a given language and a text with similar meaning in other language(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Alignment1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alignment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8983,6 +9077,46 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">could also be an annotator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chatbots building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conversational agents building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dialogue systems building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Embodied agents building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Virtual agents building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">All activities related to the creation of conversational/dialogue systems (i.e. computer systems intended to converse with humans, through one or more communication modalities, such as text, speech, graphics, haptics, gestures)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conversational systems building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <IRI>ConversationalSystemsBuilding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I have put all terms together as alternative labels, but maybe they should be distinguished at a later stage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Converter</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A component that performs conversion between formats of a resource</Literal>
@@ -10139,6 +10273,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Facial expression detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Facility</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A human-made artifact in the domains of architecture and civil engineering [source: https://www.nltk.org/book/ch07.html]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Facility</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>FactChecking</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fact-checking</Literal>
@@ -10434,6 +10578,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Generator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>Geo-politicalEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Geo-politicalEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A geographical area associated with some sort of political structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Geo-politicalEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geo-political entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Graf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GrAF (Graph Annotation Format) is an extension of the Linguistic Annotation Framework (LAF)</Literal>
@@ -10627,6 +10786,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>I2b2</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I2B2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ImageTranslation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The automatic extraction of text contained in an image (e.g. by OCR technology), its subsequent translation into another language, followed by a digital image processing step in order to reconstruct the original image with the translated text [adapted from https://en.wikipedia.org/wiki/Image_translation]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ImageTranslation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image translation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11709,6 +11878,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mimetype</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>Miscellaneous</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MISC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Miscellaneous</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A general label for named entities other than the usual ones recognized by a system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Miscellaneous</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Miscellaneous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ModelOrganism_species</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Model organism/species</Literal>
@@ -12020,17 +12204,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>NamedEntityDissambiguation</IRI>
+        <IRI>NamedEntityDisambiguation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The task/process of selecting among candidate entities from a knowledge base (or other information resource) the ones to which the named entities in a text refer to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>NamedEntityDissambiguation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Named Entity Dissambiguation</Literal>
+        <IRI>NamedEntityDisambiguation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Named Entity Disambiguation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <IRI>NamedEntityDissambiguation</IRI>
+        <IRI>NamedEntityDisambiguation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NED</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -12376,7 +12560,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>OptimalCharacterRecognition</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optimal Character Recognition</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optical Character Recognition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -13805,6 +13989,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SpeechAnalytics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speech analytics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SpeechAnnotation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speech annotation</Literal>
     </AnnotationAssertion>
@@ -13919,9 +14108,19 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evaluation of speech synthesis traditionally considers intelligibility and naturalness. More recently, expressivity has become an issue with the increasing demand for expressive voices. Due to the multitude of aspects involved, there is no agreed standard for evaluation of speech synthesis systems. Since 2005, the Blizzard Challenge is an annual joint event for comparing speech synthesis technologies with a common database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SpeechToSpeechTranslation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process by which spoken utterances in one language are automatically translated and spoken aloud in another language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SpeechToSpeechTranslation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speech-to-Speech translation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SpeechToTextTranslation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speech-to-Text translation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14450,6 +14649,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TerminologyManagement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Terminology management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TerminologyMarkup</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Terminology markup</Literal>
     </AnnotationAssertion>
@@ -14682,6 +14886,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:related"/>
         <IRI>TextSimplification</IRI>
         <IRI>LexicalSimplification</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TextSpeechDataAnalytics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text/Speech/Data analytics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <IRI>TextSpeechDataAnalytics</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">it could also be a composite concept created by three separate concepts, but for now ok</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14977,6 +15191,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Translation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TranslationMemoryManagement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Translation memory management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TranslationProjectManagement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Translation project management</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
