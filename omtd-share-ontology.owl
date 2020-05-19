@@ -700,7 +700,7 @@
         <rdfs:comment xml:lang="en">A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively.</rdfs:comment>
         <rdfs:comment xml:lang="en">The process/task of adding annotations to an item</rdfs:comment>
         <rdfs:label xml:lang="en">Annotation</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Labeling [en-US]</skos:altLabel>
         <skos:altLabel xml:lang="en">Labelling</skos:altLabel>
         <skos:altLabel xml:lang="en">Tagging</skos:altLabel>
     </owl:Class>
@@ -1303,7 +1303,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of adding to statements in a text annotations that indicate the level of certainty of the author vis-a-vis the statement</rdfs:comment>
         <rdfs:label xml:lang="en">Certainty level labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Certainty level labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Certainty level labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -2419,7 +2419,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/LanguageModelling"/>
         <rdfs:comment xml:lang="en">The task/process of building models of dialogues to be used in dialogue systems</rdfs:comment>
         <rdfs:label xml:lang="en">Dialogue modelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Dialog modeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Dialog modeling [en-US]</skos:altLabel>
         <skos:definition xml:lang="en">A Dialogue model is a system that simulates the behavior of dialogue participants. This includes formal models that instantiate linguistic theories of dialogue interaction and statistical models of dialogue behaviors.</skos:definition>
     </owl:Class>
     
@@ -2514,7 +2514,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DiscourseAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of building discourse models</rdfs:comment>
         <rdfs:label xml:lang="en">Discourse modelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Discourse modeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Discourse modeling [en-US]</skos:altLabel>
         <skos:definition xml:lang="en">Discourse modelling describes all aspects of the relations between groups of sentences in monologue (text), dialogue, or multiparty interactions, e.g. text coherence, rhetorical relations, intentional and attentional state, centering, dialogue moves, dialogue acts, argument structures and reference phenomena, to name just a few. Recently, with the growing interest in multimodal discourse processing, discourse models extend their reach beyond the modality speech/language to other modalities like gesture, gaze or haptics, and cover also cross-modal phenomena.</skos:definition>
     </owl:Class>
     
@@ -2743,7 +2743,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
         <rdfs:comment xml:lang="en">The process/task of identifying types of feelings (e.g. anger, fear, happiness, sadness, etc.) in the linguistic expression of texts or facial expressions</rdfs:comment>
         <rdfs:label xml:lang="en">Emotion labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Emotion labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Emotion labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -2792,7 +2792,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EntityMentionLabelling">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
         <rdfs:label xml:lang="en">Entity mention labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Entity mention labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Entity mention labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -2929,7 +2929,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The process/act of marking events and classifying them into types of events in a text</rdfs:comment>
         <rdfs:label xml:lang="en">Event labelling</rdfs:label>
         <skos:altLabel xml:lang="en">Annotation of events</skos:altLabel>
-        <skos:altLabel xml:lang="en_us">Event labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Event labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -3525,12 +3525,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/HumourDetection">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
-        <rdfs:altLabel xml:lang="en_us">Humor detection</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en_us">Humor recognition</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en_us">Humor sensing</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en-US">Humor detection</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en-US">Humor recognition</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en-US">Humor sensing</rdfs:altLabel>
         <rdfs:altLabel xml:lang="en">Humour recognition</rdfs:altLabel>
         <rdfs:altLabel xml:lang="en">Humour sensing</rdfs:altLabel>
-        <rdfs:comment xml:lang="en_us">The task of identifying in a text structures and phrases of humour</rdfs:comment>
+        <rdfs:comment xml:lang="en-US">The task of identifying in a text structures and phrases of humour</rdfs:comment>
         <rdfs:label xml:lang="en">Humour detection</rdfs:label>
     </owl:Class>
     
@@ -6446,7 +6446,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of classifying words in a text according to a set of semantic classes (types).</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic class labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Semantic class labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Semantic class labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -6491,7 +6491,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of attaching tags indicating the semantic relation that holds between units of a text.</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic relation labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Semantic relation labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Semantic relation labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -6530,7 +6530,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of attaching labels that correspond to the roles that the arguments of a predicate take in an event</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic role labelling</rdfs:label>
-        <skos:altLabel xml:lang="en_us">Semantic role labeling [en_us]</skos:altLabel>
+        <skos:altLabel xml:lang="en-US">Semantic role labeling [en-US]</skos:altLabel>
     </owl:Class>
     
 
@@ -6781,7 +6781,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpatialRoleLabelling">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
-        <rdfs:altLabel xml:lang="en_us">Spatial role labeling</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en-US">Spatial role labeling</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Τhe task of identifying and classifying the spatial arguments of the spatial expressions mentioned in a sentence</rdfs:comment>
         <rdfs:label xml:lang="en">Spatial role labelling</rdfs:label>
     </owl:Class>
@@ -8010,7 +8010,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TruthLabelling">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
         <rdfs:altLabel xml:lang="en">Truth detection</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en_us">Truth labeling</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en-US">Truth labeling</rdfs:altLabel>
         <rdfs:comment xml:lang="en">The task of assigning a true/false tag to a news item, headline, claim, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Truth labelling</rdfs:label>
     </owl:Class>
