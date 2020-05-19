@@ -97,8 +97,8 @@ node [shape = rectangle, color="orange"]; "omtd:FlowControl" "oliatop:Stem" "omt
 	"NULL" -> "omtd:text_x_org_dkpro_ptbCombined" [ label = "owl:hasValue" ];
 	"NULL" -> "oliatop:DiscourseFeature" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "omtd:text_tcf_xml" [ label = "owl:hasValue" ];
-	"NULL" -> "omtd:SupportOfCrowdsourcingTasks" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "omtd:application_x_org_dkpro_negra4" [ label = "owl:hasValue" ];
+	"NULL" -> "omtd:SupportOfCrowdsourcingTasks" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "omtd:application_x_json_twitter" [ label = "owl:hasValue" ];
 	"NULL" -> "omtd:Reading" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "omtd:application_postscript" [ label = "owl:hasValue" ];
