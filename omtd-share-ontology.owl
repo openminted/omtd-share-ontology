@@ -880,7 +880,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
         <rdfs:comment xml:lang="en">The task/process through which particular text segments or data units that allow the identification of a person are removed or replaced</rdfs:comment>
         <rdfs:label xml:lang="en">Anonymization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Anonymisation [en_uk]</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Anonymisation [en-UK]</skos:altLabel>
     </owl:Class>
     
 
@@ -1103,7 +1103,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ConceptNormalization"/>
         <rdfs:comment xml:lang="en">The task of mapping free-form expressions to medical terms [source: Medical concept normalization in social media posts with recurrent neural networks]</rdfs:comment>
         <rdfs:label xml:lang="en">Biomedical concept normalization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Biomedical concept normalisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Biomedical concept normalisation</skos:altLabel>
     </owl:Class>
     
 
@@ -1537,7 +1537,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Normalization"/>
         <rdfs:comment xml:lang="en">The task of mapping free-form expressions to the concepts of a specific domain</rdfs:comment>
         <rdfs:label xml:lang="en">Concept normalization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Concept normalisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Concept normalisation</skos:altLabel>
     </owl:Class>
     
 
@@ -4103,7 +4103,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Lemmatisation  (or lemmatization) in linguistics is the process of grouping together the inflected forms of a word so they can be analysed as a single item, identified by the word&apos;s lemma, or dictionary form. [Wikipedia]</rdfs:comment>
         <rdfs:label xml:lang="en">Lemmatization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Lemmatisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Lemmatisation</skos:altLabel>
     </owl:Class>
     
 
@@ -4304,7 +4304,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Visualization"/>
         <rdfs:comment xml:lang="en">The task/process of visualizing information (e.g. using diagrams, 3-d images, word clouds etc.) contained in lexical/conceptual resources</rdfs:comment>
         <rdfs:label xml:lang="en">Lexicon visualization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Lexicon visualisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Lexicon visualisation</skos:altLabel>
     </owl:Class>
     
 
@@ -4385,7 +4385,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Translation"/>
         <rdfs:comment xml:lang="en">The process of adapting a product or content to a specific locale or market, including translation of relevant language material but also converting to local measures and currency units, modifications necessary to adapt to cultural differences of the target audience, etc. [adapted from https://www.gala-global.org/industry/intro-language-industry/what-localization]</rdfs:comment>
         <rdfs:label xml:lang="en">Localization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Localisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Localisation</skos:altLabel>
         <skos:definition></skos:definition>
     </owl:Class>
     
@@ -6794,7 +6794,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotation"/>
         <rdfs:comment xml:lang="en">Partitioning of audio stream into homogeneous segments according to speaker properties and acoustic conditions</rdfs:comment>
         <rdfs:label xml:lang="en">Speaker diarization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Speaker diarisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Speaker diarisation</skos:altLabel>
     </owl:Class>
     
 
@@ -7162,13 +7162,13 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:altLabel xml:lang="en">ATS</rdfs:altLabel>
         <rdfs:comment xml:lang="en">The process/task of reducing one or more textual documents with a computer program in order to create a summary that retains the most important points of the original document(s).</rdfs:comment>
         <rdfs:label xml:lang="en">Summarization</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Automatic Summarisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Automatic Summarisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Automatic Summarization</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Automatic Text Summarisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Automatic Text Summarisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Automatic Text Summarization</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Summarisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Summarisation</skos:altLabel>
         <skos:altLabel xml:lang="en">TS</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Text Summarisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Text Summarisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Text Summarization</skos:altLabel>
         <skos:definition xml:lang="en">Text summarization is the process of distilling the most important information from a source (or sources) to produce an abridged version for a particular user (or users) and task (or tasks). Source: Mani, I. and Maybury, M. T., editors (1999), Advances in Automatic Text Summarization. MIT Press, Cambridge, Massachusetts.</skos:definition>
     </owl:Class>
@@ -7607,10 +7607,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of assigning documents into classes or categories</rdfs:comment>
         <rdfs:label xml:lang="en">Text categorization</rdfs:label>
         <skos:altLabel xml:lang="en">Document categorisation</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Document categorisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Document categorisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Document categorization</skos:altLabel>
         <skos:altLabel xml:lang="en">Document classification</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Text categorisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Text categorisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Text classification</skos:altLabel>
     </owl:Class>
     
@@ -7839,9 +7839,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of recognizing and tagging tokens (words, punctuation marks, digits etc.) in a text</rdfs:comment>
         <rdfs:label xml:lang="en">Tokenization</rdfs:label>
         <skos:altLabel xml:lang="en">Segmentation</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Segmentation and Tokenisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Segmentation and Tokenisation</skos:altLabel>
         <skos:altLabel xml:lang="en">Segmentation and Tokenization</skos:altLabel>
-        <skos:altLabel xml:lang="en_uk">Tokenisation</skos:altLabel>
+        <skos:altLabel xml:lang="en-UK">Tokenisation</skos:altLabel>
         <skos:definition xml:lang="en">Tokenization is commonly seen as an independent process of linguistic analysis, in which the input stream of characters is segmented into an ordered sequence of word-like units, usually called tokens, which function as input items for subsequent steps of linguistic processing. Tokens may correspond to words, numbers, punctuation marks or even proper names.The recognized tokens are usually classified according to their syntax. Since the notion of tokenization seems to have different meanings to different people, some tokenization tools fulfil additional tasks like for instance sentence boundary detection, handling of end-line hyphenations or conjoined clitics and contractions.</skos:definition>
     </owl:Class>
     
