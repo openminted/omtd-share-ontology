@@ -2937,6 +2937,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ExtractionOfQuantitativeInformation -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ExtractionOfQuantitativeInformation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:comment xml:lang="en">The task of computing and extracting quantitative properties (e.g. of strings, words, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Extraction of quantitative information</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/FaceDetection -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FaceDetection">
@@ -3179,6 +3189,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotation"/>
         <rdfs:comment xml:lang="en">The task/process of recognising and labelling in a text predicate argument structures and the semantic roles of the constituents, in accordance to the frame semantics theory.</rdfs:comment>
         <rdfs:label xml:lang="en">Frame-semantic parsing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/FrequencyCount -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FrequencyCount">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:comment xml:lang="en">The task of counting frequencies of entities (e.g. words, strings, sentences, specific tags, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Frequency count</rdfs:label>
+        <skos:altLabel xml:lang="en">Computation of frequencies</skos:altLabel>
     </owl:Class>
     
 
@@ -7932,9 +7953,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Transliteration">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechRecognition"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
+        <rdfs:comment xml:lang="en">Transliteration is the process of transferring a word from the alphabet of one language to another. [vocabulary.com]</rdfs:comment>
         <rdfs:label xml:lang="en">Transliteration</rdfs:label>
         <skos:altLabel xml:lang="en">Script conversion</skos:altLabel>
-        <skos:definition></skos:definition>
     </owl:Class>
     
 
