@@ -4029,7 +4029,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/LanguageTechnology">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operation"/>
-        <rdfs:comment xml:lang="en">Language technology (LT), also called &quot;Human Language Technology&quot; (HLT), is the cover term for all information technologies specialized for dealing with text and speech in human language.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Language technology, often called human language technology, studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. It consists of natural language processing and computational linguistics on the one hand, and speech technology on the other. [Wikipedia]</rdfs:comment>
         <rdfs:label xml:lang="en">Language Technology</rdfs:label>
         <skos:altLabel xml:lang="en">HLT</skos:altLabel>
         <skos:altLabel xml:lang="en">Human Language Technology</skos:altLabel>
