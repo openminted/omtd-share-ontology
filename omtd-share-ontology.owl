@@ -7289,6 +7289,22 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/Tbx -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Tbx">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Xml"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://www.tbxinfo.net/tbx-about/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TermBase eXchange (TBX) is an international standard (ISO 30042:2019) for the representation of structured concept-oriented terminological data, copublished by ISO and the Localization Industry Standards Association (LISA) [wikipedia]</rdfs:comment>
+        <rdfs:label xml:lang="en">tbx</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Tcf -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Tcf">
