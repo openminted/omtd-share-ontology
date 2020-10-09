@@ -2449,16 +2449,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/DiscourceRelation -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DiscourceRelation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType"/>
-        <rdfs:comment xml:lang="en">The relation that holds between two segments of discourse; e.g. causal, temporal etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">Discource relation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/DiscourseAnalysis -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DiscourseAnalysis">
@@ -2503,6 +2493,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:label xml:lang="en">Discourse modelling</rdfs:label>
         <skos:altLabel xml:lang="en-us">Discourse modeling [en-US]</skos:altLabel>
         <skos:definition xml:lang="en">Discourse modelling describes all aspects of the relations between groups of sentences in monologue (text), dialogue, or multiparty interactions, e.g. text coherence, rhetorical relations, intentional and attentional state, centering, dialogue moves, dialogue acts, argument structures and reference phenomena, to name just a few. Recently, with the growing interest in multimodal discourse processing, discourse models extend their reach beyond the modality speech/language to other modalities like gesture, gaze or haptics, and cover also cross-modal phenomena.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/DiscourseRelation -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DiscourseRelation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType"/>
+        <rdfs:comment xml:lang="en">The relation that holds between two segments of discourse; e.g. causal, temporal etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Discourse relation</rdfs:label>
     </owl:Class>
     
 
