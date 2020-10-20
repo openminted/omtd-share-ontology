@@ -7,8 +7,9 @@
 @base <http://w3id.org/meta-share/omtd-share/> .
 
 <http://w3id.org/meta-share/omtd-share/> rdf:type owl:Ontology ;
-                                          <http://purl.org/dc/elements/1.1/date> "2015-05-15" ;
-                                          <http://purl.org/dc/elements/1.1/description> "OMTD-SHARE ontology for resources related to Text and Data Mining initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/) and is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources)." ;
+                                          <http://purl.org/dc/elements/1.1/description> """OMTD-SHARE ontology for resources related to Language Technology (LT) and Text and Data Mining. 
+It was initiated in the framework of the OpenMinTeD project (https://www.openminted.eu) focusing on functions (tasks performed by software components), annotation types (types of information extracted or annotated by such software), methods (classification of the theoretical method used in the algorithm), and data formats of the resoures that can be processed by such software, based on metadata elements used in the META-SHARE metadata schema (http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
+Version 2 has been enriched with work done in the European Language Grid and other LT-related projects and has added LT-related terms in the ontology."""@en ;
                                           <http://purl.org/dc/elements/1.1/title> "OMTD-SHARE ontology" ;
                                           <http://purl.org/dc/terms/contributor> "Richard Eckart de Castilho" ;
                                           <http://purl.org/dc/terms/creator> "Claire Nedellec" ,
@@ -21,13 +22,9 @@
                                           <http://purl.org/dc/terms/issued> "2019-05-15" ;
                                           <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd" ;
-                                          rdfs:comment """The OMTD-SHARE ontology is intended for resources related to Text and Data Mining. 
-	It currently focuses on TDM functions (tasks performed by TDM software), annotation types (types of information extracted or annotated by TDM software), TDM methods (classification of the theoretical method used in the TDM algorithm), and data formats of the resoures that can be processed by TDM software. The ontology is deployed in the OMTD-SHARE metadata schema for the description of such resources (https://openminted.github.io/releases/omtd-share/). 
-	The ontology has been initiated in the framework of the OpenMinTeD project (https://www.openminted.eu). It is based on work done previously in the framework of the META-SHARE schema for language resources(http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
-	The ontology is still in a working status.""" ;
-                                          rdfs:label "OMTD-SHARE ontology"@en ;
                                           owl:priorVersion "1.1.0" ;
-                                          owl:versionInfo "pre-release 2.0.0" .
+                                          owl:versionInfo "pre-release 2.0.0" ;
+                                          <http://www.w3.org/2004/02/skos/core#comment> "This version is under development. It contains also definitions and comments from the LT-World portal in the \"skos:comment\" fields."@en .
 
 #################################################################
 #    Annotation properties
@@ -73,10 +70,6 @@
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2000/01/rdf-schema#altLabel
-rdfs:altLabel rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2004/02/skos/core#altLabel
 <http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
 
@@ -105,7 +98,6 @@ rdfs:altLabel rdf:type owl:AnnotationProperty .
 :deployedInDomain rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain :Operation ;
-                  rdfs:range :Domain ;
                   rdfs:comment "Concept A is used frequently in domain B"@en ;
                   rdfs:label "deployed in domain"@en .
 
@@ -350,13 +342,6 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
                     rdfs:label "Agricultural entity"@en .
 
 
-###  http://w3id.org/meta-share/omtd-share/Agriculture
-:Agriculture rdf:type owl:Class ;
-             rdfs:subClassOf :Domain ;
-             rdfs:comment "The science, art, or practice of cultivating the soil, producing crops, and raising livestock and in varying degrees the preparation and marketing of the resulting products [https://www.merriam-webster.com/dictionary/agriculture]"@en ;
-             rdfs:label "Agriculture"@en .
-
-
 ###  http://w3id.org/meta-share/omtd-share/AimedCorpusFormat
 :AimedCorpusFormat rdf:type owl:Class ;
                    rdfs:subClassOf :CorpusFormat ,
@@ -467,12 +452,12 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 ###  http://w3id.org/meta-share/omtd-share/Annotation
 :Annotation rdf:type owl:Class ;
             rdfs:subClassOf :Operation ;
-            rdfs:comment "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en ,
-                         "The process/task of adding annotations to an item"@en ;
+            rdfs:comment "The process/task of adding annotations (i.e. labels that act as notes, comments, explanations, etc.) to an item"@en ;
             rdfs:label "Annotation"@en ;
             <http://www.w3.org/2004/02/skos/core#altLabel> "Labeling [en-US]"@en-us ,
                                                            "Labelling"@en ,
-                                                           "Tagging"@en .
+                                                           "Tagging"@en ;
+            <http://www.w3.org/2004/02/skos/core#comment> "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/AnnotationFormat
@@ -569,11 +554,16 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 
 ###  http://w3id.org/meta-share/omtd-share/AnnotationType
 :AnnotationType rdf:type owl:Class ;
-                rdfs:subClassOf owl:Thing ;
+                rdfs:subClassOf owl:Thing ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#closeMatch> ;
+                                  owl:someValuesFrom <http://vocab.lappsgrid.org/Annotation>
+                                ] ;
                 rdfs:comment "Category/class of the annotations (metadata) that are added to the data/text that is processed"@en ;
                 rdfs:label "Annotation type"@en ;
                 <http://www.w3.org/2004/02/skos/core#altLabel> "Label"@en ,
-                                                               "Tag"@en .
+                                                               "Tag"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Annotator
@@ -1297,13 +1287,13 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
 ###  http://w3id.org/meta-share/omtd-share/ConversationalSystemsBuilding
 :ConversationalSystemsBuilding rdf:type owl:Class ;
                                rdfs:subClassOf :OperationWithMultimediaInputOrOutput ;
-                               rdfs:altLabel "Chatbots building"@en ,
-                                             "Conversational agents building"@en ,
-                                             "Dialogue systems building"@en ,
-                                             "Embodied agents building"@en ,
-                                             "Virtual agents building"@en ;
                                rdfs:comment "All activities related to the creation of conversational/dialogue systems (i.e. computer systems intended to converse with humans, through one or more communication modalities, such as text, speech, graphics, haptics, gestures)"@en ;
                                rdfs:label "Conversational systems building"@en ;
+                               <http://www.w3.org/2004/02/skos/core#altLabel> "Chatbots building"@en ,
+                                                                              "Conversational agents building"@en ,
+                                                                              "Dialogue systems building"@en ,
+                                                                              "Embodied agents building"@en ,
+                                                                              "Virtual agents building"@en ;
                                <http://www.w3.org/2004/02/skos/core#comment> "I have put all terms together as alternative labels, but maybe they should be distinguished at a later stage"@en .
 
 
@@ -1842,13 +1832,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                  rdfs:label "Document section"@en .
 
 
-###  http://w3id.org/meta-share/omtd-share/Domain
-:Domain rdf:type owl:Class ;
-        rdfs:subClassOf owl:Thing ;
-        rdfs:comment "Area of interest or activities"@en ;
-        rdfs:label "Domain"@en .
-
-
 ###  http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation
 :Domain-specificAnnotation rdf:type owl:Class ;
                            rdfs:subClassOf :AnnotationType ;
@@ -1860,7 +1843,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType
 :DomainSpecificAnnotationType rdf:type owl:Class ;
                               rdfs:subClassOf :AnnotationType ;
-                              <http://purl.org/dc/terms/replaces> :DomainSpecificAnnotationType ;
+                              <http://purl.org/dc/terms/replaces> :Domain-specificAnnotation ;
                               rdfs:comment "Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)"@en ;
                               rdfs:label "Domain-specific annotation type"@en .
 
@@ -1904,11 +1887,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/EmotionDetection
 :EmotionDetection rdf:type owl:Class ;
-                  rdfs:subClassOf :InformationExtraction ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :deployedInDomain ;
-                                    owl:someValuesFrom :SocialSciences
-                                  ] ;
+                  rdfs:subClassOf :InformationExtraction ;
                   rdfs:label "Emotion recognition"@en ;
                   <http://www.w3.org/2004/02/skos/core#altLabel> "Emotion detection"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "The recognition of emotions from text, speech, facial expressions, gestures and/or physiological measures. A key challenge is the appropriate representation of emotional states."@en .
@@ -2073,14 +2052,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/ExtractionOfFundingInformation
 :ExtractionOfFundingInformation rdf:type owl:Class ;
-                                rdfs:subClassOf :ExtractionOfDomainSpecificInformation ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :deployedInDomain ;
-                                                  owl:someValuesFrom :ScholarlyCommunication
-                                                ] ;
+                                rdfs:subClassOf :ExtractionOfDomainSpecificInformation ;
                                 rdfs:comment "The task/process of detecting in a text and extracting information relevant to funding (e.g. funding programme, award, funder etc.)"@en ;
                                 rdfs:label "Extraction of funding information"@en ;
                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Mining of funding information"@en .
+
+
+###  http://w3id.org/meta-share/omtd-share/ExtractionOfQuantitativeInformation
+:ExtractionOfQuantitativeInformation rdf:type owl:Class ;
+                                     rdfs:subClassOf :InformationExtraction ;
+                                     rdfs:comment "The task of computing and extracting quantitative properties (e.g. of strings, words, etc.)"@en ;
+                                     rdfs:label "Extraction of quantitative information"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/FaceDetection
@@ -2128,9 +2110,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/FactChecking
 :FactChecking rdf:type owl:Class ;
               rdfs:subClassOf :InformationExtraction ;
-              rdfs:altLabel "Fact-checking"@en ;
               rdfs:comment "The act of checking factual assertions in non-fictional text in order to determine the veracity and correctness of the factual statements in the text [from Wikipedia]"@en ;
               rdfs:label "Fact checking"@en ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Fact-checking"@en ;
               <http://www.w3.org/2004/02/skos/core#related> :FakeNewsDetection .
 
 
@@ -2148,10 +2130,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/FakeNewsDetection
 :FakeNewsDetection rdf:type owl:Class ;
                    rdfs:subClassOf :InformationExtraction ;
-                   rdfs:altLabel "Fake news assessment"@en ,
-                                 "Fake news evaluation"@en ;
                    rdfs:comment "The process of detecting whether a certain news item is fake (i.e. a type of news items of yellow journalism or propaganda that consists of deliberate disinformation or hoaxes spread via traditional news media or online social media) [adapted from wikipedia]"@en ;
-                   rdfs:label "Fake news detection"@en .
+                   rdfs:label "Fake news detection"@en ;
+                   <http://www.w3.org/2004/02/skos/core#altLabel> "Fake news assessment"@en ,
+                                                                  "Fake news evaluation"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/FastInfoset
@@ -2260,6 +2242,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       rdfs:label "Frame-semantic parsing"@en .
 
 
+###  http://w3id.org/meta-share/omtd-share/FrequencyCount
+:FrequencyCount rdf:type owl:Class ;
+                rdfs:subClassOf :InformationExtraction ;
+                rdfs:comment "The task of counting frequencies of entities (e.g. words, strings, sentences, specific tags, etc.)"@en ;
+                rdfs:label "Frequency count"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Computation of frequencies"@en .
+
+
 ###  http://w3id.org/meta-share/omtd-share/Funding
 :Funding rdf:type owl:Class ;
          rdfs:subClassOf :ScholarlyAnalyticsEntity ,
@@ -2353,9 +2343,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Geo-politicalEntity
 :Geo-politicalEntity rdf:type owl:Class ;
                      rdfs:subClassOf :NamedEntity ;
-                     rdfs:altLabel "GPE"@en ;
                      rdfs:comment "A geographical area associated with some sort of political structure"@en ;
-                     rdfs:label "Geo-political entity"@en .
+                     rdfs:label "Geo-political entity"@en ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "GPE"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Graf
@@ -2417,9 +2407,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/HateSpeechRecognition
 :HateSpeechRecognition rdf:type owl:Class ;
                        rdfs:subClassOf :InformationExtraction ;
-                       rdfs:altLabel "Hate speech detection"@en ;
                        rdfs:comment "The task of automatically identifying hate speech, i.e. statements intended to demean and brutalize another, or the use of cruel and derogatory language on the basis of real or alleged membership in a social group [adapted from wikipedia]"@en ;
-                       rdfs:label "Hate speech recognition"@en .
+                       rdfs:label "Hate speech recognition"@en ;
+                       <http://www.w3.org/2004/02/skos/core#altLabel> "Hate speech detection"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/HistoricalEvent
@@ -2477,13 +2467,13 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/HumourDetection
 :HumourDetection rdf:type owl:Class ;
                  rdfs:subClassOf :InformationExtraction ;
-                 rdfs:altLabel "Humor detection"@en-us ,
-                               "Humor recognition"@en-us ,
-                               "Humor sensing"@en-us ,
-                               "Humour recognition"@en ,
-                               "Humour sensing"@en ;
                  rdfs:comment "The task of identifying in a text structures and phrases of humour"@en-us ;
-                 rdfs:label "Humour detection"@en .
+                 rdfs:label "Humour detection"@en ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Humor detection"@en-us ,
+                                                                "Humor recognition"@en-us ,
+                                                                "Humor sensing"@en-us ,
+                                                                "Humour recognition"@en ,
+                                                                "Humour sensing"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/I2b2
@@ -2620,27 +2610,27 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 :IonicChannel rdf:type owl:Class ;
               rdfs:subClassOf :BiologicalEnity ,
                               :NamedEntity ;
-              rdfs:altLabel "Ion channel"@en ;
               rdfs:comment "A single protein or protein complex that traverses the lipid bilayer of cell membrane and form a channel to facilitate the movement of ions through the membrane according to their electrochemical gradient [http://www.biology-online.org/dictionary/Ion_channel]"@en ;
-              rdfs:label "Ionic channel"@en .
+              rdfs:label "Ionic channel"@en ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Ion channel"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/IonicConductance
 :IonicConductance rdf:type owl:Class ;
                   rdfs:subClassOf :BiologicalEnity ,
                                   :NamedEntity ;
-                  rdfs:altLabel "Ion conductance"@en ;
                   rdfs:comment "Ionic conductance"@en ;
-                  rdfs:label "Ionic conductance"@en .
+                  rdfs:label "Ionic conductance"@en ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Ion conductance"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/IonicCurrent
 :IonicCurrent rdf:type owl:Class ;
               rdfs:subClassOf :BiologicalEnity ,
                               :NamedEntity ;
-              rdfs:altLabel "Ion current"@en ;
               rdfs:comment "The influx and/or efflux of ions through an ion channel"@en ;
-              rdfs:label "Ionic current"@en .
+              rdfs:label "Ionic current"@en ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Ion current"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/IronyDetection
@@ -2784,8 +2774,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/L2WritingSupport
 :L2WritingSupport rdf:type owl:Class ;
                   rdfs:subClassOf :AuthoringSupport ;
-                  rdfs:altLabel "L2 writing assistant"@en ;
-                  rdfs:label "L2 writing support"@en .
+                  rdfs:label "L2 writing support"@en ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "L2 writing assistant"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/LD_json
@@ -2797,10 +2787,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                            owl:onProperty :hasMimetype ;
                            owl:hasValue :application_ld_json
                          ] ;
-         rdfs:altLabel "JSON linked data" ,
-                       "LD-Json" ;
          rdfs:comment "Data format encoding Linked Data using JSON"@en ;
-         rdfs:label "JSON/LD"@en .
+         rdfs:label "JSON/LD"@en ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "JSON linked data" ,
+                                                        "LD-Json" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/LanguageChecking
@@ -2852,12 +2842,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/LanguageTechnology
 :LanguageTechnology rdf:type owl:Class ;
                     rdfs:subClassOf :Operation ;
-                    rdfs:comment "Language technology, often called human language technology, studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. It consists of natural language processing and computational linguistics on the one hand, and speech technology on the other. (from Wikipedia)"@en ;
+                    rdfs:comment "Language technology (LT), also called \"Human Language Technology\" (HLT), is the cover term for all information technologies specialized for dealing with text and speech in human language."@en ;
                     rdfs:label "Language Technology"@en ;
                     <http://www.w3.org/2004/02/skos/core#altLabel> "HLT"@en ,
                                                                    "Human Language Technology"@en ,
-                                                                   "LT"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "Language technology (LT), also Human Language Technology (HLT), is the cover term for all information technologies specialized for dealing with text and speech in human language. It is also the field of engineering in which LT methods and applications are developed."@en .
+                                                                   "LT"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Latex
@@ -3041,13 +3030,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                       <http://www.w3.org/2004/02/skos/core#altLabel> "Lexicon visualisation"@en-uk .
 
 
-###  http://w3id.org/meta-share/omtd-share/LifeSciences
-:LifeSciences rdf:type owl:Class ;
-              rdfs:subClassOf :Domain ;
-              rdfs:comment "A branch of science (such as biology, medicine, and sometimes anthropology or sociology) that deals with living organisms and life processes —usually used in plural"@en ;
-              rdfs:label "Life sciences"@en .
-
-
 ###  http://w3id.org/meta-share/omtd-share/LinguisticAnalysis
 :LinguisticAnalysis rdf:type owl:Class ;
                     rdfs:subClassOf :SupportOperation ;
@@ -3121,7 +3103,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/MachineLearningMethod
 :MachineLearningMethod rdf:type owl:Class ;
                        rdfs:subClassOf :TdmMethod ;
-                       <http://purl.org/dc/elements/1.1/source> "adapted from https://www.sas.com/en_us/insights/analytics/machine-learning.html"@en ;
+                       <http://purl.org/dc/elements/1.1/source> "adapted from https://www.sas.com/en-US/insights/analytics/machine-learning.html"@en ;
                        rdfs:comment "A method of data analysis that automates model building. Using algorithms that iteratively learn from data, machine learning allows computers to find hidden insights without being explicitly programmed where to look."@en ;
                        rdfs:label "Machine Learning Method"@en .
 
@@ -3251,9 +3233,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 :MethodOfResearch rdf:type owl:Class ;
                   rdfs:subClassOf :NamedEntity ,
                                   :SocialSciencesEntity ;
-                  rdfs:altLabel "Research method"@en ;
                   rdfs:comment "Method of research"@en ;
-                  rdfs:label "Method of research"@en .
+                  rdfs:label "Method of research"@en ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Research method"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Mimetype
@@ -3266,9 +3248,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Miscellaneous
 :Miscellaneous rdf:type owl:Class ;
                rdfs:subClassOf :NamedEntity ;
-               rdfs:altLabel "MISC"@en ;
                rdfs:comment "A general label for named entities other than the usual ones recognized by a system"@en ;
-               rdfs:label "Miscellaneous"@en .
+               rdfs:label "Miscellaneous"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "MISC"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/ModelOrganism_species
@@ -3772,7 +3754,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Operation
 :Operation rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing ;
-           rdfs:comment "The action that a software program performs or is meant to perform"@en ;
+           rdfs:comment "The action that a software program performs or is meant to perform, and, in a broader sense, the application area where this software or relevant resources can be deployed"@en ;
            rdfs:label "Operation"@en ;
            <http://www.w3.org/2004/02/skos/core#altLabel> "Function"@en ,
                                                           "Task"@en .
@@ -4422,9 +4404,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Rna
 :Rna rdf:type owl:Class ;
      rdfs:subClassOf :AgriculturalEntity ;
-     rdfs:altLabel "Ribonucleic acid"@en ;
      rdfs:comment "Any of various nucleic acids that contain ribose and uracil as structural components and are associated with the control of cellular chemical activities"@en ;
-     rdfs:label "RNA"@en .
+     rdfs:label "RNA"@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Ribonucleic acid"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Rtf
@@ -4463,13 +4445,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                           <http://purl.org/dc/terms/replaces> :ScholarlyCommunicationAnnotation ;
                           rdfs:comment "Any type of annotation that is relevant to scholarly analtyics (e.g. citations, funding information etc.)"@en ;
                           rdfs:label "Scholarly analytics entity"@en .
-
-
-###  http://w3id.org/meta-share/omtd-share/ScholarlyCommunication
-:ScholarlyCommunication rdf:type owl:Class ;
-                        rdfs:subClassOf :Domain ;
-                        rdfs:comment "Scholarly communication can be defined as “the system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use. The system includes both formal means of communication, such as publication in peer-reviewed journals, and informal channels, such as electronic listservs.” (Association of College & Research Libraries, “Principles and Strategies for the Reform of Scholarly Communication 1,” 2003)"@en ;
-                        rdfs:label "Scholarly communication"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/ScholarlyCommunicationAnnotation
@@ -4751,13 +4726,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
             rdfs:label "Simplifier"@en .
 
 
-###  http://w3id.org/meta-share/omtd-share/SocialSciences
-:SocialSciences rdf:type owl:Class ;
-                rdfs:subClassOf :Domain ;
-                rdfs:comment "The social sciences are academic disciplines concerned with the study of the social life of human groups and individuals including anthropology, economics, geography, history, political science, psychology, social studies, and sociology. The social sciences consist of the scientific study of the human aspects of the world.[https://en.wikipedia.org/wiki/Category:Social_sciences]"@en ;
-                rdfs:label "Social sciences"@en .
-
-
 ###  http://w3id.org/meta-share/omtd-share/SocialSciencesEntity
 :SocialSciencesEntity rdf:type owl:Class ;
                       rdfs:subClassOf :Domain-specificAnnotation ,
@@ -4799,9 +4767,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/SpatialRoleLabelling
 :SpatialRoleLabelling rdf:type owl:Class ;
                       rdfs:subClassOf :SemanticAnnotation ;
-                      rdfs:altLabel "Spatial role labeling"@en-us ;
                       rdfs:comment "Τhe task of identifying and classifying the spatial arguments of the spatial expressions mentioned in a sentence"@en ;
-                      rdfs:label "Spatial role labelling"@en .
+                      rdfs:label "Spatial role labelling"@en ;
+                      <http://www.w3.org/2004/02/skos/core#altLabel> "Spatial role labeling"@en-us .
 
 
 ###  http://w3id.org/meta-share/omtd-share/SpeakerDiarization
@@ -5070,10 +5038,10 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Summarization
 :Summarization rdf:type owl:Class ;
                rdfs:subClassOf :NaturalLanguageGeneration ;
-               rdfs:altLabel "ATS"@en ;
                rdfs:comment "The process/task of reducing one or more textual documents with a computer program in order to create a summary that retains the most important points of the original document(s)."@en ;
                rdfs:label "Summarization"@en ;
-               <http://www.w3.org/2004/02/skos/core#altLabel> "Automatic Summarisation"@en-uk ,
+               <http://www.w3.org/2004/02/skos/core#altLabel> "ATS"@en ,
+                                                              "Automatic Summarisation"@en-uk ,
                                                               "Automatic Summarization"@en ,
                                                               "Automatic Text Summarisation"@en-uk ,
                                                               "Automatic Text Summarization"@en ,
@@ -5216,8 +5184,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/TdmMethod
 :TdmMethod rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing ;
-           rdfs:comment "The method used by a TDM algorithm"@en ;
-           rdfs:label "TDM Method"@en .
+           rdfs:comment "The method used by a TDM/LT algorithm"@en ;
+           rdfs:label "TDM/LT Method"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Tei
@@ -5236,9 +5204,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                        owl:onProperty :documentationUrl ;
                        owl:hasValue "https://www.iana.org/assignments/media-types/application/tei+xml"
                      ] ;
-     rdfs:altLabel "Text Encoding Initiative"@en ;
      rdfs:comment "Data format for TEI-encoded (Text Encoding Initiative) texts"@en ;
-     rdfs:label "TEI"@en .
+     rdfs:label "TEI"@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Text Encoding Initiative"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TemporalExpression
@@ -5340,9 +5308,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                         owl:onProperty :hasFileExtension ;
                         owl:hasValue "txt"
                       ] ;
-      rdfs:altLabel "plain text"@en ;
       rdfs:comment "Default value for the format of textual files; a textual file should be human-readable and must not contain binary data"@en ;
-      rdfs:label "text/plain"@en .
+      rdfs:label "text/plain"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "plain text"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TextAnalysis
@@ -5427,11 +5395,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/TextSimilarityAssessment
 :TextSimilarityAssessment rdf:type owl:Class ;
                           rdfs:subClassOf :InformationExtraction ;
-                          rdfs:altLabel "Text similarity checking"@en ,
-                                        "Textual similarity assessment"@en ,
-                                        "Textual similarity checking"@en ;
                           rdfs:comment "The task of determining the degree of closeness between two pieces of text"@en ;
-                          rdfs:label "Text similarity assessment"@en .
+                          rdfs:label "Text similarity assessment"@en ;
+                          <http://www.w3.org/2004/02/skos/core#altLabel> "Text similarity checking"@en ,
+                                                                         "Textual similarity assessment"@en ,
+                                                                         "Textual similarity checking"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TextSimplification
@@ -5671,19 +5639,20 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/Transliteration
 :Transliteration rdf:type owl:Class ;
-                 rdfs:subClassOf :SpeechRecognition ;
+                 rdfs:subClassOf :SpeechRecognition ,
+                                 :SupportOperation ;
+                 rdfs:comment "Transliteration is the process of transferring a word from the alphabet of one language to another. [vocabulary.com]"@en ;
                  rdfs:label "Transliteration"@en ;
-                 <http://www.w3.org/2004/02/skos/core#altLabel> "Script conversion"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "" .
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Script conversion"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TruthLabelling
 :TruthLabelling rdf:type owl:Class ;
                 rdfs:subClassOf :InformationExtraction ;
-                rdfs:altLabel "Truth detection"@en ,
-                              "Truth labeling"@en-us ;
                 rdfs:comment "The task of assigning a true/false tag to a news item, headline, claim, etc."@en ;
-                rdfs:label "Truth labelling"@en .
+                rdfs:label "Truth labelling"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Truth detection"@en ,
+                                                               "Truth labeling"@en-us .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Tsv
@@ -5793,9 +5762,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/VariablesDectector
 :VariablesDectector rdf:type owl:Class ;
                     rdfs:subClassOf :Analyzer ;
-                    rdfs:altLabel "Variables detection component"@en ;
                     rdfs:comment "A component that tries to identify variables (in social sciences) in a text"@en ;
-                    rdfs:label "Variables dectector"@en .
+                    rdfs:label "Variables dectector"@en ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "Variables detection component"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Viewer
@@ -6068,9 +6037,9 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 ###  http://w3id.org/meta-share/omtd-share/WordSenseInduction
 :WordSenseInduction rdf:type owl:Class ;
                     rdfs:subClassOf :SupportOperation ;
-                    rdfs:altLabel "WSI"@en ;
                     rdfs:comment "The task of automatically identifying the senses of a word"@en ;
                     rdfs:label "Word sense induction"@en ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "WSI"@en ;
                     <http://www.w3.org/2004/02/skos/core#related> :WordSenseDisambiguation .
 
 
@@ -6779,4 +6748,4 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
           rdfs:label "text/xml" .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

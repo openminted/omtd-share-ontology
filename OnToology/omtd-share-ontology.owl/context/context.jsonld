@@ -148,9 +148,6 @@
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
-    "LifeSciences" : {
-      "@id" : "http://w3id.org/meta-share/omtd-share/LifeSciences"
-    },
     "OpenFormat" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/OpenFormat"
     },
@@ -455,9 +452,6 @@
     "TranslationMemoryManagement" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/TranslationMemoryManagement"
     },
-    "SocialSciences" : {
-      "@id" : "http://w3id.org/meta-share/omtd-share/SocialSciences"
-    },
     "SpellingChecker" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/SpellingChecker"
     },
@@ -540,7 +534,7 @@
       "@id" : "http://w3id.org/meta-share/omtd-share/Paraphrasing"
     },
     "altLabel" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#altLabel"
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
     },
     "WikipediaDiscussion" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/WikipediaDiscussion"
@@ -556,9 +550,6 @@
     },
     "PhoneticTranscription" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/PhoneticTranscription"
-    },
-    "ScholarlyCommunication" : {
-      "@id" : "http://w3id.org/meta-share/omtd-share/ScholarlyCommunication"
     },
     "Blikiwikipedia" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Blikiwikipedia"
@@ -877,9 +868,6 @@
     "SemanticFeature" : {
       "@id" : "http://purl.org/olia/olia-top.owl#SemanticFeature"
     },
-    "Domain" : {
-      "@id" : "http://w3id.org/meta-share/omtd-share/Domain"
-    },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
@@ -1157,6 +1145,9 @@
     },
     "Crawler" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/Crawler"
+    },
+    "FrequencyCount" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/FrequencyCount"
     },
     "MachineAndStatisticalLearningMethod" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/MachineAndStatisticalLearningMethod"
@@ -1584,9 +1575,6 @@
     "MultimediaAnnotation" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/MultimediaAnnotation"
     },
-    "Agriculture" : {
-      "@id" : "http://w3id.org/meta-share/omtd-share/Agriculture"
-    },
     "TaskOrientedTextAnalysisEvaluation" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/TaskOrientedTextAnalysisEvaluation"
     },
@@ -1604,6 +1592,9 @@
     },
     "ParalanguageAnnotation" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/ParalanguageAnnotation"
+    },
+    "ExtractionOfQuantitativeInformation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/ExtractionOfQuantitativeInformation"
     },
     "deployedInDomain" : {
       "@id" : "http://w3id.org/meta-share/omtd-share/deployedInDomain",
