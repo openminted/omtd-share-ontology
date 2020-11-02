@@ -4382,6 +4382,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/MOSESFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MOSESFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/CorpusFormat"/>
+        <rdfs:comment xml:lang="en">MOSES format for aligned corpora (monolingual plain text files with language on file extension)</rdfs:comment>
+        <rdfs:label xml:lang="en">MOSES plain text format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/MachineAndStatisticalLearningMethod -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MachineAndStatisticalLearningMethod">
