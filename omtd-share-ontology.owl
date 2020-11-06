@@ -3418,7 +3418,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The ability of a computer to receive and interpret intelligible handwritten input from sources such as paper documents, photographs, touch-screens and other devices [from Wikipedia]</rdfs:comment>
         <rdfs:label xml:lang="en">Handwriting recognition</rdfs:label>
         <skos:altLabel xml:lang="en">HWR</skos:altLabel>
-        <skos:definition></skos:definition>
     </owl:Class>
     
 
@@ -3503,6 +3502,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A multi-disciplinary research area focusing on the design and use of computer technology deployed in interfaces between humans and computers</rdfs:comment>
         <rdfs:label xml:lang="en">Human Computer Interaction</rdfs:label>
         <skos:altLabel xml:lang="en">HCI</skos:altLabel>
+        <skos:altLabel xml:lang="en">Human Machine Interaction</skos:altLabel>
     </owl:Class>
     
 
@@ -3597,6 +3597,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:label xml:lang="en">Information Extraction</rdfs:label>
         <skos:altLabel xml:lang="en">IE &amp; Text Analysis</skos:altLabel>
         <skos:altLabel xml:lang="en">Information Discovery</skos:altLabel>
+        <skos:altLabel xml:lang="en">Information Retrieval</skos:altLabel>
         <skos:definition xml:lang="en">The goal of information extraction (IE) is to build systems that find and link relevant information from natural language text ignoring irrelevant information. The information of interest is typically pre-specified in form of uninstantiated frame-like structures also called templates. The templates are domain and task specific. The major task of an IE-system is then the identification of the relevant parts of the text which are used to fill a template&apos;s slots.</skos:definition>
     </owl:Class>
     
@@ -3969,7 +3970,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of identifying (and usually correcting) grammatical mistakes in a text</rdfs:comment>
         <rdfs:label xml:lang="en">Language checking</rdfs:label>
         <skos:altLabel xml:lang="en">Proofing</skos:altLabel>
-        <skos:definition xml:lang="en">Language Checking comprises technologies used to detect and/or correct erroneous or inconsistent language use in documents. The scope of language checking technology ranges from general error correction, as performed by spell checkers and grammar chec</skos:definition>
+        <skos:definition xml:lang="en">Language Checking comprises technologies used to detect and/or correct erroneous or inconsistent language use in documents. The scope of language checking technology ranges from general error correction, as performed by spell checkers and grammar checkers</skos:definition>
     </owl:Class>
     
 
@@ -3991,6 +3992,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of guessing what natural language a text or text segment is written in</rdfs:comment>
         <rdfs:label xml:lang="en">Language identification</rdfs:label>
         <skos:altLabel xml:lang="en">Automatic Language Identification</skos:altLabel>
+        <skos:altLabel xml:lang="en">Language recognition</skos:altLabel>
         <skos:definition xml:lang="en">Automatic Language Identification (LID) is the process of identifying the natural language of a sample of speech or written text by an unknown speaker. Several important applications exist for LID, viz., as a front-end to, e.g., a call router in a telephone-based application or a multi-lingual speech recognition system.</skos:definition>
     </owl:Class>
     
@@ -4361,7 +4363,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The process of adapting a product or content to a specific locale or market, including translation of relevant language material but also converting to local measures and currency units, modifications necessary to adapt to cultural differences of the target audience, etc. [adapted from https://www.gala-global.org/industry/intro-language-industry/what-localization]</rdfs:comment>
         <rdfs:label xml:lang="en">Localization</rdfs:label>
         <skos:altLabel xml:lang="en-uk">Localisation</skos:altLabel>
-        <skos:definition></skos:definition>
     </owl:Class>
     
 
@@ -4961,6 +4962,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:label xml:lang="en">Named Entity Recognition</rdfs:label>
         <skos:altLabel>Entity Extraction</skos:altLabel>
         <skos:altLabel>Entity Identification</skos:altLabel>
+        <skos:altLabel xml:lang="en">Entity Recognition</skos:altLabel>
         <skos:altLabel xml:lang="en">NER</skos:altLabel>
         <skos:altLabel xml:lang="en">NERC</skos:altLabel>
         <skos:comment xml:lang="en">can also be annotation</skos:comment>
