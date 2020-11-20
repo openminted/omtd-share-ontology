@@ -8677,6 +8677,12 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Xml">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/application_xml"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Superclass for grouping together XML formats</rdfs:comment>
         <rdfs:label xml:lang="en">XML</rdfs:label>
     </owl:Class>
