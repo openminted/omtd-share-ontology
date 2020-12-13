@@ -6285,6 +6285,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/SDL_tm_xliff -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SDL_tm_xliff">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Xml"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>http://sdl.com/FileTypes/SdlXliff/1.0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">SDL alignment format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ScholarlyAnalyticsEntity">
@@ -8216,6 +8231,27 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/WARC -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/WARC">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/CorpusFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>http://archive-access.sourceforge.net/warc/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://en.wikipedia.org/wiki/Web_ARChive</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Web ARChive format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Web1t -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Web1t">
@@ -8680,7 +8716,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
-                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/application_xml"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/application_x-SDL-TM"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Superclass for grouping together XML formats</rdfs:comment>
@@ -9109,6 +9145,15 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_xmi_xml">
         <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
         <rdfs:label>application/vnd.xmi+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/application_x-SDL-TM -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x-SDL-TM">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">application/x-SDL-TM</rdfs:label>
     </owl:NamedIndividual>
     
 
