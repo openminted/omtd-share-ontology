@@ -3746,8 +3746,8 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/IronyDetection">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:comment xml:lang="en">The task of identifying in a text segments expressing irony and classifying  them into types</rdfs:comment>
         <rdfs:label xml:lang="en">Irony detection</rdfs:label>
-        <rdfs:label xml:lang="en">The task of identifying in a text segments expressing irony and classifying  them into types</rdfs:label>
     </owl:Class>
     
 
