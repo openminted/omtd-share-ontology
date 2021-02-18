@@ -1251,6 +1251,29 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/CBOR -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/CBOR">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/BinaryFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://cbor.io/spec.html</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://www.rfc-editor.org/rfc/rfc8949.html</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Concise Binary Object Representation (CBOR) data format; defined as an ISO standard (RFC 8949, https://cbor.io/spec.html)</rdfs:comment>
+        <rdfs:label xml:lang="en">CBOR</rdfs:label>
+        <skos:altLabel xml:lang="en">Concise Binary Object Representation</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Cadixe_json -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Cadixe_json">
@@ -2625,7 +2648,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -2636,7 +2659,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
@@ -3927,7 +3950,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/TextAndDataMining"/>
         <rdfs:comment xml:lang="en">The task/process of representing information about entities in a form that machines are capable of understanding it</rdfs:comment>
         <rdfs:label xml:lang="en">Knowledge Representation</rdfs:label>
-        <skos:altLabel>KR</skos:altLabel>
+        <skos:altLabel xml:lang="en">KR</skos:altLabel>
         <skos:definition></skos:definition>
     </owl:Class>
     
@@ -4936,7 +4959,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/NamedEntity -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NamedEntity">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">A word or phrase referring to an entity, identified and annotated as such with a name (label); examples include organizations, persons, places etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Named entity</rdfs:label>
     </owl:Class>
@@ -6398,7 +6421,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/SemanticAnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment xml:lang="en">Any type of annotation pertaining to the semantic level</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic annotation type</rdfs:label>
     </owl:Class>
@@ -7089,7 +7112,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The task/process of cutting off the ends of words (mainly inflectional affixes but sometimes also derivational affixes) aiming to relate words to a base form.</rdfs:comment>
         <rdfs:label xml:lang="en">Stemming</rdfs:label>
-        <skos:altLabel></skos:altLabel>
     </owl:Class>
     
 
@@ -8823,6 +8845,28 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/flac -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/flac">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AudioFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/audio_flac"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>flac</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">flac</rdfs:label>
+        <skos:comment xml:lang="en">both mimetypes appeat at various pages (e.g. europeana supported mimetypes https://pro.europeana.eu/page/media-formats-mime-types) but none of them is found in IANA official pages</skos:comment>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/mp3 -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/mp3">
@@ -9352,6 +9396,16 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_basic">
         <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
         <rdfs:label>audio/basic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/audio_flac -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_flac">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">audio/flac</rdfs:label>
+        <skos:altLabel xml:lang="en">audio/x-flac</skos:altLabel>
     </owl:NamedIndividual>
     
 
