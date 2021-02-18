@@ -6421,7 +6421,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/SemanticAnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
         <rdfs:comment xml:lang="en">Any type of annotation pertaining to the semantic level</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic annotation type</rdfs:label>
     </owl:Class>
