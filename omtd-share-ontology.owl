@@ -8198,6 +8198,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/VideoFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/VideoFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:comment xml:lang="en">Any format used for video files</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Viewer -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Viewer">
@@ -8890,6 +8899,28 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">audio mp3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/mp4 -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/mp4">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/VideoFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/video_mp4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>mp4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">MPEG-4</rdfs:label>
+        <skos:altLabel xml:lang="en">MP4</skos:altLabel>
     </owl:Class>
     
 
@@ -9712,6 +9743,15 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_xml">
         <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
         <rdfs:label>text/xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/video_mp4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/video_mp4">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">video/mp4</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
