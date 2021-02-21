@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1613736716096" name="duplicate:http://w3id.org/meta-share/omtd-share/" uri="omtd-share-ontology%20-%20Copy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1613736716096" name="duplicate:http://w3id.org/meta-share/omtd-share/" uri="omtd-share-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613908701605" name="duplicate:http://w3id.org/meta-share/omtd-share/" uri="omtd-share-ontology%20-%20Copy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613908701605" name="duplicate:http://w3id.org/meta-share/omtd-share/" uri="omtd-share-ontology.owl"/>
     </group>
 </catalog>

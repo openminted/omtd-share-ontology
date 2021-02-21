@@ -3567,6 +3567,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ImageFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:comment xml:lang="en">Any format used for image files</rdfs:comment>
+        <rdfs:label xml:lang="en">Image format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/ImageTranslation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageTranslation">
@@ -8827,6 +8837,28 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/avi -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/avi">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/VideoFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/video_avi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>avi</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">AVI</rdfs:label>
+        <skos:altLabel xml:lang="en">Audio Video Interleave</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/basic -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/basic">
@@ -8854,6 +8886,28 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/bmp -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/bmp">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_bmp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>bmp</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">BMP</rdfs:label>
+        <skos:altLabel xml:lang="en">Bitmap Graphics</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/flac -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/flac">
@@ -8872,6 +8926,56 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">flac</rdfs:label>
         <skos:comment xml:lang="en">both mimetypes appeat at various pages (e.g. europeana supported mimetypes https://pro.europeana.eu/page/media-formats-mime-types) but none of them is found in IANA official pages</skos:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/gif -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/gif">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_gif"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>gif</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">GIF</rdfs:label>
+        <skos:altLabel xml:lang="en">Graphics Interchange Format</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/jpg -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/jpg">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_jpeg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>jpeg</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>jpg</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">JPEG</rdfs:label>
+        <skos:altLabel xml:lang="en">JPG</skos:altLabel>
     </owl:Class>
     
 
@@ -8954,6 +9058,78 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>audio mpg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/png -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/png">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_png"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>png</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">PNG</rdfs:label>
+        <skos:altLabel xml:lang="en">Portable Network Graphics</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/svg -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/svg">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_svg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>svg</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">SVG</rdfs:label>
+        <skos:altLabel xml:lang="en">Scalable Vector Graphics</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/tiff -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/tiff">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/image_tiff"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>tif</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasFileExtension"/>
+                <owl:hasValue>tiff</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">TIFF</rdfs:label>
+        <skos:altLabel xml:lang="en">Tagged Image File Format</skos:altLabel>
     </owl:Class>
     
 
@@ -9522,6 +9698,60 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/image_bmp -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_bmp">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">image/bmp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/image_gif -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_gif">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">image/gif</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/image_jpeg -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_jpeg">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">image/jpeg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/image_png -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_png">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">image/png</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/image_svg -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_svg">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">image/svg+xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/image_tiff -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_tiff">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label>image/tiff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/text_csv -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_csv">
@@ -9743,6 +9973,15 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_xml">
         <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
         <rdfs:label>text/xml</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/video_avi -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/video_avi">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">video/x-msvideo</rdfs:label>
     </owl:NamedIndividual>
     
 
