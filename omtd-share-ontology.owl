@@ -2659,7 +2659,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DomainSpecificAnnotationType">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
         <dct:replaces rdf:resource="http://w3id.org/meta-share/omtd-share/Domain-specificAnnotation"/>
         <rdfs:comment xml:lang="en">Any kind of annotation that is used for specific domains (e.g. genes and proteins from the biomedical domain, plants from agriculture etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Domain-specific annotation type</rdfs:label>
@@ -4969,7 +4969,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/NamedEntity -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/NamedEntity">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SemanticAnnotationType"/>
         <rdfs:comment xml:lang="en">A word or phrase referring to an entity, identified and annotated as such with a name (label); examples include organizations, persons, places etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Named entity</rdfs:label>
     </owl:Class>
