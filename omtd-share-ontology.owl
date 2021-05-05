@@ -2706,6 +2706,30 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/EAF -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/EAF">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationFormat"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Xml"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/text_x_eaf_xml"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://www.mpi.nl/corpus/html/elan_ug/ch01.html</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Format for annotations of video files with the ELAN annotator</rdfs:comment>
+        <rdfs:label xml:lang="en">EUDICO annotation format</rdfs:label>
+        <skos:altLabel xml:lang="en">eaf</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Editing -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Editing">
@@ -10038,6 +10062,15 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_brat">
         <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
         <rdfs:label>text/x-brat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/text_x_eaf_xml -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_eaf_xml">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:label xml:lang="en">text/x-eaf+xml</rdfs:label>
     </owl:NamedIndividual>
     
 
