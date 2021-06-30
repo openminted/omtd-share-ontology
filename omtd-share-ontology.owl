@@ -454,6 +454,24 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ANNIS -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ANNIS">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationFormat"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DatabaseFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>http://korpling.github.io/ANNIS/3.6/user-guide/import-and-config-convert.html</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Relational database format used in the ANNIS architecture (https://corpus-tools.org/annis/)</rdfs:comment>
+        <rdfs:label xml:lang="en">ANNIS</rdfs:label>
+        <skos:altLabel xml:lang="en">relANNIS</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/AccessComponent -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AccessComponent">
