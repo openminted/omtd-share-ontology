@@ -3938,6 +3938,22 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/JsonL -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/JsonL">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Json"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://jsonlines.org/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">JSON Lines</rdfs:label>
+        <skos:altLabel xml:lang="en">JSONL</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Json_genia -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Json_genia">
@@ -4565,6 +4581,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A word or group of words that denotes a geographical entity</rdfs:comment>
         <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/MLModelFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MLModelFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:comment xml:lang="en">Format used for ML models</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine Learning Model format</rdfs:label>
+        <skos:altLabel xml:lang="en">ML model format</skos:altLabel>
     </owl:Class>
     
 
@@ -5348,6 +5375,23 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Chunking"/>
         <rdfs:comment xml:lang="en">The task/process of identifying noun phrases in a sentence</rdfs:comment>
         <rdfs:label xml:lang="en">Noun phrase chunking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ONNX -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ONNX">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MLModelFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://onnx.ai/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Open format built to represent machine learning models</rdfs:comment>
+        <rdfs:label xml:lang="en">ONNX</rdfs:label>
+        <skos:altLabel xml:lang="en">Open Neural Network Exchange</skos:altLabel>
     </owl:Class>
     
 
@@ -7536,6 +7580,22 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
         <rdfs:comment xml:lang="en">A link between the syntactic unit and the semantic unit (sense) of a word</rdfs:comment>
         <rdfs:label xml:lang="en">Syntactico-semantic link</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/TFSavedModel -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TFSavedModel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MLModelFormat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/documentationUrl"/>
+                <owl:hasValue>https://www.tensorflow.org/guide/saved_model</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">TF SavedModel</rdfs:label>
+        <rdfs:label xml:lang="en">TensorFlow SavedModel</rdfs:label>
     </owl:Class>
     
 
