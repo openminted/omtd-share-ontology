@@ -5659,6 +5659,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/PackageFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PackageFormat">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:label xml:lang="en">Package format</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Paragraph -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Paragraph">
@@ -9105,6 +9114,15 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">XPath is a language for addressing parts of an XML document, designed to be used by both XSLT and XPointer.</rdfs:comment>
         <rdfs:label xml:lang="en">XPath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/Zip -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Zip">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
+        <rdfs:label xml:lang="en">zip</rdfs:label>
     </owl:Class>
     
 
