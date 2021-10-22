@@ -1059,6 +1059,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/MorphosyntacticTagging"/>
         <rdfs:comment xml:lang="en">The annotation of words with morphological information besides the part of speech and dependent upon it (e.g. for nouns: gender, number and case; for verbs: tense, number, person etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Below Part-of-Speech Tagging</rdfs:label>
+        <owl:deprecated></owl:deprecated>
         <skos:altLabel xml:lang="en">Annotation of morphological features</skos:altLabel>
         <skos:altLabel xml:lang="en">B-PoS Tagging</skos:altLabel>
         <skos:altLabel xml:lang="en">Below PoS Tagging</skos:altLabel>
