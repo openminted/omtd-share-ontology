@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://w3id.org/meta-share/omtd-share/"
      xml:base="http://w3id.org/meta-share/omtd-share/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
-     xmlns:lappsgrid="http://vocab.lappsgrid.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:oliatop="http://purl.org/olia/olia-top.owl#"
+     xmlns:lappsgrid="http://vocab.lappsgrid.org/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/omtd-share/">
-        <dc:title>OMTD-SHARE ontology</dc:title>
-        <dct:creator>Petr Knoth</dct:creator>
-        <skos:comment xml:lang="en">This version is under development. It contains also definitions and comments from the LT-World portal in the &quot;skos:comment&quot; fields.</skos:comment>
-        <dct:creator>Claire Nedellec</dct:creator>
-        <dct:creator>Dimitris Galanis</dct:creator>
-        <owl:priorVersion>1.1.0</owl:priorVersion>
-        <dct:contributor>Richard Eckart de Castilho</dct:contributor>
-        <dct:creator>Marta Villegas</dct:creator>
-        <dct:issued>2019-05-15</dct:issued>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dct:creator>Sophie Aubin</dct:creator>
-        <owl:versionInfo>pre-release 2.0.0</owl:versionInfo>
         <dc:description xml:lang="en">OMTD-SHARE ontology for resources related to Language Technology (LT) and Text and Data Mining. 
 It was initiated in the framework of the OpenMinTeD project (https://www.openminted.eu) focusing on functions (tasks performed by software components), annotation types (types of information extracted or annotated by such software), methods (classification of the theoretical method used in the algorithm), and data formats of the resoures that can be processed by such software, based on metadata elements used in the META-SHARE metadata schema (http://www.meta-share.org/knowledgebase/homePage) and the FOSTER taxonomy of TDM (https://www.fosteropenscience.eu/resources).
 Version 2 has been enriched with work done in the European Language Grid and other LT-related projects and has added LT-related terms in the ontology.</dc:description>
+        <dc:title>OMTD-SHARE ontology</dc:title>
+        <dct:contributor>Richard Eckart de Castilho</dct:contributor>
+        <dct:creator>Claire Nedellec</dct:creator>
+        <dct:creator>Dimitris Galanis</dct:creator>
         <dct:creator>Katerina Gkirtzou</dct:creator>
+        <dct:creator>Marta Villegas</dct:creator>
         <dct:creator>Penny Labropoulou</dct:creator>
+        <dct:creator>Petr Knoth</dct:creator>
+        <dct:creator>Sophie Aubin</dct:creator>
+        <dct:issued>2019-05-15</dct:issued>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <vann:preferredNamespacePrefix>omtd</vann:preferredNamespacePrefix>
+        <owl:priorVersion>1.1.0</owl:priorVersion>
+        <owl:versionInfo>pre-release 2.0.0</owl:versionInfo>
+        <skos:comment xml:lang="en">This version is under development. It contains also definitions and comments from the LT-World portal in the &quot;skos:comment&quot; fields.</skos:comment>
     </owl:Ontology>
     
 
@@ -194,7 +194,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/omtd-share/hasMimetype">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:comment xml:lang="en">Relates a data format to the IANA mimetype; it can be the exact or a broader mimetype; unofficial mimetypes are also used, but this relation will be revisited</rdfs:comment>
         <rdfs:label xml:lang="en">has mimetype</rdfs:label>
     </owl:ObjectProperty>
@@ -289,6 +289,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/MediaType -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/MediaType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The IANA mimetype that can be used for the data format; it can be the exact or a broader mimetype; unofficial mimetypes are also used, but this will be revisited</rdfs:comment>
+        <rdfs:label xml:lang="en">Mimetype</rdfs:label>
+    </owl:Class>
     
 
 
@@ -4809,16 +4819,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Mimetype -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Mimetype">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="en">The IANA mimetype that can be used for the data format; it can be the exact or a broader mimetype; unofficial mimetypes are also used, but this will be revisited</rdfs:comment>
-        <rdfs:label xml:lang="en">Mimetype</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Miscellaneous -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Miscellaneous">
@@ -5664,6 +5664,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PackageFormat">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+        <rdfs:comment xml:lang="en">The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.</rdfs:comment>
         <rdfs:label xml:lang="en">Package format</rdfs:label>
     </owl:Class>
     
@@ -9122,7 +9123,6 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/Zip -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Zip">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
         <rdfs:label xml:lang="en">zip</rdfs:label>
     </owl:Class>
     
@@ -9499,7 +9499,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_anno_json -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_anno_json">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/anno+json</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9508,7 +9508,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_emma_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_emma_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/emma+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9517,7 +9517,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_fastinfoset -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_fastinfoset">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/fastinfoset</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9526,7 +9526,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_json -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_json">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/json</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9535,7 +9535,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_ld_json -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_ld_json">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/ld+json</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9544,7 +9544,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_ld_json_profile_http_www_w3_org_ns_anno_jsonld -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_ld_json_profile_http_www_w3_org_ns_anno_jsonld">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/ld+json;profile=&quot;http://www.w3.org/ns/anno.jsonld&quot;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9553,7 +9553,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_msword -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_msword">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/msword</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9562,7 +9562,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_pdf -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_pdf">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/pdf</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9571,7 +9571,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_pls_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_pls_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/pls+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9580,7 +9580,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_postscript -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_postscript">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/postscript</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9589,7 +9589,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_rdf_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_rdf_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/rdf+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9598,7 +9598,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_rtf -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_rtf">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/rtf</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9607,7 +9607,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_tei_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_tei_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/tei+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9616,7 +9616,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_tika -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_tika">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/tika</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9625,7 +9625,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_msExcel -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_msExcel">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.msExcel</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9634,7 +9634,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_ms_powerpoint -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_ms_powerpoint">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.ms-powerpoint</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9643,7 +9643,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_msaccess -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_msaccess">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.msaccess</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9652,7 +9652,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_presentation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_presentation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.oasis.opendocument.presentation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9661,7 +9661,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_spreadsheet -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_spreadsheet">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.oasis.opendocument.spreadsheet</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9670,7 +9670,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_text -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_oasis_opendocument_text">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.oasis.opendocument.text</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9679,7 +9679,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_presentationml_presentation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_presentationml_presentation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.openxmlformats-officedocument.presentationml.presentation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9688,7 +9688,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9697,7 +9697,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.openxmlformats-officedocument.wordprocessingml.document</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9706,7 +9706,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_vnd_xmi_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_vnd_xmi_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/vnd.xmi+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9715,7 +9715,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x-SDL-TM -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x-SDL-TM">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">application/x-SDL-TM</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9724,7 +9724,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xLatex -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xLatex">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-latex</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9733,7 +9733,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xMsaccess -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xMsaccess">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-msaccess</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9742,7 +9742,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xTex -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xTex">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-tex</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9751,7 +9751,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xTmx_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xTmx_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-tmx+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9760,7 +9760,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xXces_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xXces_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-xces+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9769,7 +9769,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xXml_alvis -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xXml_alvis">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-xml+alvis</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9778,7 +9778,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_json_twitter -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_json_twitter">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-json-twitter</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9787,7 +9787,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_kaf_json -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_kaf_json">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x-kaf+json</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9796,7 +9796,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_graf_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_graf_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.graf+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9805,7 +9805,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_negra3 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_negra3">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.negra3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9814,7 +9814,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_negra4 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_negra4">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.negra4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9823,7 +9823,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_reuters21578_sgml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_reuters21578_sgml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.reuters21578+sgml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9832,7 +9832,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tgrep2 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tgrep2">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.tgrep2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9841,7 +9841,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tiger_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tiger_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.tiger+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9850,7 +9850,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tuepp_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_tuepp_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.tuepp+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9859,7 +9859,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_uima_binary -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_uima_binary">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.uima+binary</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9868,7 +9868,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_uima_json -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_x_org_dkpro_uima_json">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/x.org.dkpro.uima+json</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9877,7 +9877,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xhtml_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xhtml_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/xhtml+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9886,7 +9886,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9895,8 +9895,17 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/application_xml_alto -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_xml_alto">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>application/xml+alto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/application_zip -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/application_zip">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
+        <rdfs:label xml:lang="en">application/zip</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -9904,7 +9913,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_aiff -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_aiff">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/aiff</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9913,7 +9922,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_basic -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_basic">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/basic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9922,7 +9931,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_flac -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_flac">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">audio/flac</rdfs:label>
         <skos:altLabel xml:lang="en">audio/x-flac</skos:altLabel>
     </owl:NamedIndividual>
@@ -9932,7 +9941,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_mpa -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_mpa">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/MPA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9941,7 +9950,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_mpa_robust -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_mpa_robust">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/mpa-robust</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9950,7 +9959,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_mpeg -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_mpeg">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/mpeg</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9959,7 +9968,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_mpeg3 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_mpeg3">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/mpeg3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9968,7 +9977,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_vnd_wave -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_vnd_wave">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/vnd.wave</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9977,7 +9986,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_wav -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_wav">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/wav</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9986,7 +9995,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_wave -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_wave">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/wave</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9995,7 +10004,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_x_mpeg3 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_x_mpeg3">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/x-mpeg3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10004,7 +10013,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/audio_x_wav -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/audio_x_wav">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>audio/x-wav</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10013,7 +10022,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_bmp -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_bmp">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">image/bmp</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10022,7 +10031,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_gif -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_gif">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">image/gif</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10031,7 +10040,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_jpeg -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_jpeg">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">image/jpeg</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10040,7 +10049,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_png -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_png">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">image/png</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10049,7 +10058,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_svg -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_svg">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">image/svg+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10058,7 +10067,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/image_tiff -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/image_tiff">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>image/tiff</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10067,7 +10076,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_csv -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_csv">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/csv</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10076,7 +10085,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_html -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_html">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/html</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10085,7 +10094,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_plain -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_plain">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/plain</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10094,7 +10103,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_sgml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_sgml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/sgml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10103,7 +10112,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_tabSeparatedValues -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_tabSeparatedValues">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/tab-separated-values</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10112,7 +10121,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_tcf_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_tcf_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/tcf+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10121,7 +10130,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_turtle -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_turtle">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/turtle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10130,7 +10139,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_xCochrane -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_xCochrane">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x-cochrane</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10139,7 +10148,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_xPubmed -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_xPubmed">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x-pubmed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10148,7 +10157,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_anafora -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_anafora">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x-anafora</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10157,7 +10166,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_brat -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_brat">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x-brat</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10166,7 +10175,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_eaf_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_eaf_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">text/x-eaf+xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10175,7 +10184,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2000 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2000">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2000</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10184,7 +10193,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2002 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2002">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2002</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10193,7 +10202,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2003 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2003">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2003</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10202,7 +10211,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2006 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2006">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2006</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10211,7 +10220,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2008 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2008">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2008</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10220,7 +10229,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2009 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2009">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2009</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10229,7 +10238,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2012 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conll2012">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-2012</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10238,7 +10247,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conllU -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_conllU">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.conll-u</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10247,7 +10256,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_imscwb -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_imscwb">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.imscwb</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10256,7 +10265,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ngram -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ngram">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.ngram</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10265,7 +10274,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ptbChunked -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ptbChunked">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.ptb-chunked</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10274,7 +10283,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ptbCombined -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_ptbCombined">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.ptb-combined</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10283,7 +10292,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_reuters21578 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_x_org_dkpro_reuters21578">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/x.org.dkpro.reuters21578</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10292,7 +10301,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/text_xml -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/text_xml">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label>text/xml</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10301,7 +10310,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/video_avi -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/video_avi">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">video/x-msvideo</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10310,12 +10319,27 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <!-- http://w3id.org/meta-share/omtd-share/video_mp4 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/video_mp4">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/Mimetype"/>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/MediaType"/>
         <rdfs:label xml:lang="en">video/mp4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/zip -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/zip">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/meta-share/omtd-share/hasMimetype"/>
+                <owl:hasValue rdf:resource="http://w3id.org/meta-share/omtd-share/application_zip"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">zip</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
