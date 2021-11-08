@@ -704,6 +704,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <!-- http://w3id.org/meta-share/omtd-share/Annotation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Annotation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Operation"/>
         <rdfs:comment xml:lang="en">The process/task of adding annotations (i.e. labels that act as notes, comments, explanations, etc.) to an item</rdfs:comment>
         <rdfs:label xml:lang="en">Annotation</rdfs:label>
@@ -948,6 +949,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Any format used for audio files</rdfs:comment>
         <rdfs:label xml:lang="en">Audio format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/AudioProcessing -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/AudioProcessing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Audio processing</rdfs:label>
     </owl:Class>
     
 
@@ -2239,6 +2250,15 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/DataToTextGeneration -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DataToTextGeneration">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/TextGeneration"/>
+        <rdfs:label xml:lang="en">Data to Text Generation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/DatabaseFormat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DatabaseFormat">
@@ -2495,6 +2515,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DialogueModelling">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/LanguageModelling"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:comment xml:lang="en">The task/process of building models of dialogues to be used in dialogue systems</rdfs:comment>
         <rdfs:label xml:lang="en">Dialogue modelling</rdfs:label>
         <skos:altLabel xml:lang="en-us">Dialog modeling [en-US]</skos:altLabel>
@@ -3203,6 +3224,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/FeatureExtraction -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FeatureExtraction">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
         <dc:source rdf:resource="http://scikit-learn.org/stable/modules/feature_extraction.html"/>
         <rdfs:comment xml:lang="en">Feature extraction consists in transforming arbitrary data, such as text or images, into numerical features usable for machine learning</rdfs:comment>
@@ -3224,6 +3246,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">A component that is used for extracting features</rdfs:comment>
         <rdfs:label xml:lang="en">Feature extractor</rdfs:label>
         <skos:comment xml:lang="en">could also be under analyzer as a general term</skos:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/FillMask -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/FillMask">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
+        <rdfs:label xml:lang="en">Fill mask</rdfs:label>
     </owl:Class>
     
 
@@ -3704,12 +3736,51 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ImageClassification -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageClassification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Image classification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/ImageFormat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageFormat">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Any format used for image files</rdfs:comment>
         <rdfs:label xml:lang="en">Image format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ImageGeneration -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageGeneration">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Image generation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ImageProcessing -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageProcessing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Image processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ImageSegmentation -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ImageSegmentation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Image segmentation</rdfs:label>
     </owl:Class>
     
 
@@ -4658,6 +4729,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/MachineTranslation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MachineTranslation">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/Translation"/>
         <rdfs:comment xml:lang="en">The automatic translation of a text from one language into another performed by software without human involvement</rdfs:comment>
         <rdfs:label xml:lang="en">Machine Translation</rdfs:label>
@@ -4835,6 +4907,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ModalityAnnotationType">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
         <rdfs:label xml:lang="en">Modality annotation type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ModelFunction -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ModelFunction">
+        <rdfs:comment xml:lang="en">A subset of functions specific to models</rdfs:comment>
+        <rdfs:label xml:lang="en">Model function</rdfs:label>
     </owl:Class>
     
 
@@ -5442,6 +5523,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Oasis text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ObjectDetection -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ObjectDetection">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Object detection</rdfs:label>
     </owl:Class>
     
 
@@ -6272,13 +6362,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/QuestionAnswering">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/KnowledgeDiscovery"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:comment xml:lang="en">The task/process where computer systems try to automatically answer questions posed by users in the form of natural language.</rdfs:comment>
-        <rdfs:label xml:lang="en">Answer Extraction</rdfs:label>
+        <rdfs:label xml:lang="en">Question Answering</rdfs:label>
         <skos:altLabel xml:lang="en">AE</skos:altLabel>
+        <skos:altLabel xml:lang="en">Answer Extraction</skos:altLabel>
         <skos:altLabel xml:lang="en">QA</skos:altLabel>
-        <skos:altLabel xml:lang="en">Question Answering</skos:altLabel>
         <skos:altLabel xml:lang="en">Textual Question Answering</skos:altLabel>
-        <skos:definition>Answer extraction (AE) aims at retrieving those exact passages of a document that directly answer a given user question. AE is more ambitious than information retrieval and information extraction in that the retrieval results are short phrases, not entire documents, and in that the queries may be arbitrarily specific. It is less ambitious than full-fledged question answering in that the answers are not generated from a knowledge base but looked up in the text of documents.</skos:definition>
+        <skos:definition xml:lang="en">Question answering or Answer extraction (AE) aims at retrieving those exact passages of a document that directly answer a given user question. AE is more ambitious than information retrieval and information extraction in that the retrieval results are short phrases, not entire documents, and in that the queries may be arbitrarily specific. It is less ambitious than full-fledged question answering in that the answers are not generated from a knowledge base but looked up in the text of documents.</skos:definition>
     </owl:Class>
     
 
@@ -6877,6 +6968,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/SentenceSimilarityAssessment -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SentenceSimilarityAssessment">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/TextSimilarityAssessment"/>
+        <rdfs:label xml:lang="en">Sentence similarity assessment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/SentenceSplitter -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SentenceSplitter">
@@ -7456,6 +7556,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/Summarization -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Summarization">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
         <rdfs:comment xml:lang="en">The process/task of reducing one or more textual documents with a computer program in order to create a summary that retains the most important points of the original document(s).</rdfs:comment>
         <rdfs:label xml:lang="en">Summarization</rdfs:label>
@@ -7607,6 +7708,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">TF SavedModel</rdfs:label>
         <rdfs:label xml:lang="en">TensorFlow SavedModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/TableQuestionAnswering -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TableQuestionAnswering">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:label xml:lang="en">Table question answering</rdfs:label>
     </owl:Class>
     
 
@@ -7934,6 +8044,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextCategorization">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/KnowledgeDiscovery"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:comment xml:lang="en">The task/process of assigning documents into classes or categories</rdfs:comment>
         <rdfs:label xml:lang="en">Text categorization</rdfs:label>
         <skos:altLabel xml:lang="en">Document categorisation</skos:altLabel>
@@ -7969,6 +8080,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <!-- http://w3id.org/meta-share/omtd-share/TextGeneration -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextGeneration">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
         <rdfs:label xml:lang="en">Text generation</rdfs:label>
     </owl:Class>
@@ -7988,6 +8100,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextSimilarityAssessment">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:comment xml:lang="en">The task of determining the degree of closeness between two pieces of text</rdfs:comment>
         <rdfs:label xml:lang="en">Text similarity assessment</rdfs:label>
         <skos:altLabel xml:lang="en">Text similarity checking</skos:altLabel>
@@ -8018,9 +8131,19 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/TextToImageGeneration -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextToImageGeneration">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ImageGeneration"/>
+        <rdfs:label xml:lang="en">Text to Image generation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
         <rdfs:comment xml:lang="en">The task/process of converting speech into natural language text</rdfs:comment>
@@ -8028,6 +8151,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:altLabel xml:lang="en">TTS</skos:altLabel>
         <skos:altLabel xml:lang="en">Text to Speech Synthesis</skos:altLabel>
         <skos:definition xml:lang="en">The generation of synthetic speech from text. Typically, a text-to-speech synthesis system performs a text analysis using natural language processing techniques; determines the appropriate phonetic string and prosodic features; and generates a speech signal by employing a concatenative or rule-based synthesis method.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/TextToTextGeneration -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TextToTextGeneration">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/TextGeneration"/>
+        <rdfs:label xml:lang="en">Text to Text Generation</rdfs:label>
     </owl:Class>
     
 
@@ -9116,6 +9248,16 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">XPath is a language for addressing parts of an XML document, designed to be used by both XSLT and XPointer.</rdfs:comment>
         <rdfs:label xml:lang="en">XPath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/ZeroShotClassification -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ZeroShotClassification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
+        <rdfs:label xml:lang="en">Zero-Shot classification</rdfs:label>
     </owl:Class>
     
 
