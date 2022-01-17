@@ -901,6 +901,15 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ArgumentMining -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ArgumentMining">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:label xml:lang="en">Argument mining</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Argumentation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Argumentation">
@@ -1627,6 +1636,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <rdfs:comment xml:lang="en">The task of mapping free-form expressions to the concepts of a specific domain</rdfs:comment>
         <rdfs:label xml:lang="en">Concept normalization</rdfs:label>
         <skos:altLabel xml:lang="en-uk">Concept normalisation</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/Concordancing -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Concordancing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
+        <rdfs:label xml:lang="en">Concordancing</rdfs:label>
     </owl:Class>
     
 
@@ -5198,6 +5217,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/MultimodalSynthesis -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MultimodalSynthesis">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/OperationWithMultimediaInputOrOutput"/>
+        <rdfs:label xml:lang="en">Multimodal synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Naf -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Naf">
@@ -5666,9 +5694,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/OptimalCharacterRecognition -->
+    <!-- http://w3id.org/meta-share/omtd-share/OpticalCharacterRecognition -->
 
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/OptimalCharacterRecognition">
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/OpticalCharacterRecognition">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
         <rdfs:comment xml:lang="en">The task/process of converting handwritten or printed material into machine editable text</rdfs:comment>
         <rdfs:label xml:lang="en">Optical Character Recognition</rdfs:label>
@@ -6770,6 +6798,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <rdfs:comment xml:lang="en">The task/process of analysing a resource following a script</rdfs:comment>
         <rdfs:label xml:lang="en">Script-based analysis</rdfs:label>
         <skos:altLabel xml:lang="en">Script based analysis</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/Search -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Search">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/InformationExtraction"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SupportOperation"/>
+        <rdfs:label xml:lang="en">Search</rdfs:label>
     </owl:Class>
     
 
@@ -8433,6 +8471,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:altLabel xml:lang="en">Speech transcription</skos:altLabel>
         <skos:altLabel xml:lang="en">Speech-to-Text conversion</skos:altLabel>
         <skos:definition></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/Transcription1 -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Transcription1">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAnnotationType"/>
+        <rdfs:label xml:lang="en">Transcription</rdfs:label>
     </owl:Class>
     
 
