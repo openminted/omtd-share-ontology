@@ -5089,6 +5089,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LinguisticAnalysis"/>
+        <Class IRI="SupportOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LinguisticAnalysis"/>
         <Class IRI="http:/w3id.org/meta-share/omtd-share/TextProcessing"/>
     </SubClassOf>
     <SubClassOf>
@@ -5584,6 +5588,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     </SubClassOf>
     <SubClassOf>
         <Class IRI="NlpDevelopmentSupport"/>
+        <Class IRI="SupportOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Normalization"/>
         <Class IRI="SupportOperation"/>
     </SubClassOf>
     <SubClassOf>
