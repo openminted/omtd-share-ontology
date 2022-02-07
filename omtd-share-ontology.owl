@@ -74,10 +74,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>pre-release 2.0.0</Literal>
     </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <Literal xml:lang="en">This version is under development. It contains also definitions and comments from the LT-World portal in the &quot;skos:comment&quot; fields.</Literal>
-    </Annotation>
     <Declaration>
         <Class IRI="http://purl.org/dc/terms/MediaType"/>
     </Declaration>
@@ -2221,7 +2217,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#closeMatch"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedTo"/>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="documentationUrl"/>
@@ -2545,16 +2541,22 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.org/dc/terms/MediaType"/>
@@ -3788,14 +3790,14 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <SubClassOf>
         <Class IRI="DependencyConversion"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedTo"/>
+            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
             <Class IRI="ConstituencyParsing"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DependencyConversion"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedTo"/>
+            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
             <Class IRI="DependencyParsing"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -4088,7 +4090,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <SubClassOf>
         <Class IRI="EntityMentionRecognition"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedTo"/>
+            <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
             <Class IRI="NamedEntityRecognition"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -8828,6 +8830,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <NamedIndividual IRI="video_mp4"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
+        <NamedIndividual IRI="zip"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="PackageFormat"/>
         <NamedIndividual IRI="zip"/>
     </ClassAssertion>
@@ -8852,6 +8858,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="performsOperation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#related"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
@@ -9020,11 +9030,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Alignment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>AllbusVariable</IRI>
-        <Literal xml:lang="en">ALLBUS variable</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AllbusVariable</IRI>
         <Literal xml:lang="en">ALLBUS variable</Literal>
@@ -9120,7 +9125,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Tagging</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
         <IRI>Annotation</IRI>
         <Literal xml:lang="en">A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively.</Literal>
     </AnnotationAssertion>
@@ -9305,7 +9310,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Tag</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
         <IRI>AnnotationType</IRI>
         <Literal xml:lang="en">A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively.</Literal>
     </AnnotationAssertion>
@@ -9580,11 +9585,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Binary format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BiologicalActivity</IRI>
-        <Literal xml:lang="en">Biological activity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>BiologicalActivity</IRI>
         <Literal xml:lang="en">Biological activity</Literal>
@@ -9703,11 +9703,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>BotDetection</IRI>
         <Literal xml:lang="en">Bot detection</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BrainRegion</IRI>
-        <Literal xml:lang="en">Part of the brain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10255,7 +10250,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Contradiction detector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>ContradictionDetector</IRI>
         <Literal xml:lang="en">could also be an annotator</Literal>
     </AnnotationAssertion>
@@ -10295,7 +10290,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Virtual agents building</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>ConversationalSystemsBuilding</IRI>
         <Literal xml:lang="en">I have put all terms together as alternative labels, but maybe they should be distinguished at a later stage</Literal>
     </AnnotationAssertion>
@@ -10325,7 +10320,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <Literal xml:lang="en">Co-reference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>Coreference</IRI>
         <Literal xml:lang="en">As defined here it refers more to the phenomenon than the actual annotation types; referent and co-referent might be more appropriate</Literal>
     </AnnotationAssertion>
@@ -10403,6 +10398,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Crawler</IRI>
         <Literal xml:lang="en">Crawler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>Crawler</IRI>
+        <Literal xml:lang="en">web crawler</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11156,7 +11156,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Emotion detector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>EmotionRecognizer</IRI>
         <Literal xml:lang="en">could also be an annotator</Literal>
     </AnnotationAssertion>
@@ -11224,11 +11224,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>EntityMentionRecognition</IRI>
         <Literal xml:lang="en">Mention detection</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <IRI>EntityMentionRecognition</IRI>
-        <Literal xml:lang="en">unclear definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11331,7 +11326,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Event extractor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>EventExtractor</IRI>
         <Literal xml:lang="en">could also be an annotator</Literal>
     </AnnotationAssertion>
@@ -11581,7 +11576,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Feature extractor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>FeatureExtractor</IRI>
         <Literal xml:lang="en">could also be under analyzer as a general term</Literal>
     </AnnotationAssertion>
@@ -11924,11 +11919,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>HeadMovement</IRI>
         <Literal xml:lang="en">Head movement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>HistoricalEvent</IRI>
-        <Literal xml:lang="en">Historical event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13021,7 +13011,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Machine Learning predictor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>MachineLearningPredictor</IRI>
         <Literal xml:lang="en">maybe create another class for predictors, analytics</Literal>
     </AnnotationAssertion>
@@ -13116,11 +13106,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Monitoring of annotations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Marker</IRI>
-        <Literal xml:lang="en">Marker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Marker</IRI>
         <Literal xml:lang="en">Marker</Literal>
@@ -13176,11 +13161,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Metabolite</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>MethodOfResearch</IRI>
-        <Literal xml:lang="en">Method of research</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>MethodOfResearch</IRI>
         <Literal xml:lang="en">Method of research</Literal>
@@ -13219,11 +13199,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ModelFunction</IRI>
         <Literal xml:lang="en">Model function</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ModelOrganism_species</IRI>
-        <Literal xml:lang="en">Model organism/species</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13581,14 +13556,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">NERC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <IRI>NamedEntityRecognition</IRI>
-        <Literal xml:lang="en">can also be annotation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>NamedEntityRecognition</IRI>
         <Literal xml:lang="en">Named entity (NE) recognition is a form of information extraction in which the major task is to identify and classify from NL text every word or sequence of words as being a person-name, organizaton, location, date, time, monetary value, percentage expression. NE recognition has a high impact for a number of applications, like e.g., InterNet search engines, text data mining or answer extraction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+        <IRI>NamedEntityRecognition</IRI>
+        <Literal xml:lang="en">can also be annotation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13829,11 +13804,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Obo</IRI>
         <Literal xml:lang="en">OBO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>OfficialText</IRI>
-        <Literal xml:lang="en">Official text</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14181,7 +14151,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Persuasive expression miner</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>PersuasiveExpressionMiner</IRI>
         <Literal xml:lang="en">could also be an annotator</Literal>
     </AnnotationAssertion>
@@ -14359,11 +14329,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Prediction</IRI>
         <Literal xml:lang="en">Prediction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <IRI>Prediction</IRI>
-        <Literal xml:lang="en">needs better definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14726,14 +14691,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Relationship Extraction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <IRI>RelationExtraction</IRI>
-        <Literal xml:lang="en">can also be annotation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>RelationExtraction</IRI>
         <Literal xml:lang="en">Automated or human-assisted acquisition of relations between concepts from textual or other data, usu. within a selected domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+        <IRI>RelationExtraction</IRI>
+        <Literal xml:lang="en">can also be annotation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14856,19 +14821,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ScientificUnit</IRI>
-        <Literal xml:lang="en">Scientific unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ScientificUnit</IRI>
         <Literal xml:lang="en">Scientific unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ScientificValue</IRI>
-        <Literal xml:lang="en">Scientific value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14909,11 +14864,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Segmenter</IRI>
         <Literal xml:lang="en">Segmenter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
-        <IRI>Segmenter</IRI>
-        <Literal xml:lang="en">can also be a support tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15166,7 +15116,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Opinion mining tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>SentimentAnalyzer</IRI>
         <Literal xml:lang="en">could also be an annotator</Literal>
     </AnnotationAssertion>
@@ -16301,7 +16251,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Text/Speech/Data analytics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>TextSpeechDataAnalytics</IRI>
         <Literal xml:lang="en">it could also be a composite concept created by three separate concepts, but for now ok</Literal>
     </AnnotationAssertion>
@@ -16359,11 +16309,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Tgrep2</IRI>
         <Literal xml:lang="en">TGrep2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>TheoreticalFrame</IRI>
-        <Literal xml:lang="en">Theoretical frame</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16891,11 +16836,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</Literal>
         <Literal xml:lang="en">Web annotation format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>WheatRelatedSpecies</IRI>
-        <Literal xml:lang="en">Wheat-related species</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>WheatRelatedSpecies</IRI>
         <Literal xml:lang="en">Wheat-related species</Literal>
@@ -17102,7 +17042,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <Literal xml:lang="en">Word sense disambiguator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>WordSenseDisambiguator</IRI>
         <Literal xml:lang="en">could also be an annotator and a support component (used in a lot of processes)</Literal>
     </AnnotationAssertion>
@@ -17359,7 +17299,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>application_x-SDL-TM</IRI>
-        <Literal xml:lang="en">application/x-SDL-TM</Literal>
+        <Literal>application/x-SDL-TM</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17464,7 +17404,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>application_zip</IRI>
-        <Literal xml:lang="en">application/zip</Literal>
+        <Literal>application/zip</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17479,12 +17419,12 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>audio_flac</IRI>
-        <Literal xml:lang="en">audio/flac</Literal>
+        <Literal>audio/flac</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>audio_flac</IRI>
-        <Literal xml:lang="en">audio/x-flac</Literal>
+        <Literal>audio/x-flac</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17582,7 +17522,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <Literal xml:lang="en">flac</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#comment"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
         <IRI>flac</IRI>
         <Literal xml:lang="en">both mimetypes appeat at various pages (e.g. europeana supported mimetypes https://pro.europeana.eu/page/media-formats-mime-types) but none of them is found in IANA official pages</Literal>
     </AnnotationAssertion>
@@ -17639,27 +17579,27 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>image_bmp</IRI>
-        <Literal xml:lang="en">image/bmp</Literal>
+        <Literal>image/bmp</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>image_gif</IRI>
-        <Literal xml:lang="en">image/gif</Literal>
+        <Literal>image/gif</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>image_jpeg</IRI>
-        <Literal xml:lang="en">image/jpeg</Literal>
+        <Literal>image/jpeg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>image_png</IRI>
-        <Literal xml:lang="en">image/png</Literal>
+        <Literal>image/png</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>image_svg</IRI>
-        <Literal xml:lang="en">image/svg+xml</Literal>
+        <Literal>image/svg+xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17789,7 +17729,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>text_x_eaf_xml</IRI>
-        <Literal xml:lang="en">text/x-eaf+xml</Literal>
+        <Literal>text/x-eaf+xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17874,12 +17814,12 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>video_avi</IRI>
-        <Literal xml:lang="en">video/x-msvideo</Literal>
+        <Literal>video/x-msvideo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>video_mp4</IRI>
-        <Literal xml:lang="en">video/mp4</Literal>
+        <Literal>video/mp4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17889,7 +17829,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>zip</IRI>
-        <Literal xml:lang="en">zip</Literal>
+        <Literal>zip</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17966,6 +17906,18 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
         <IRI>http:/w3id.org/meta-share/omtd-share/TranslationTechnologies</IRI>
         <Literal xml:lang="en">Translation Technologies</Literal>
     </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
 </Ontology>
 
 
