@@ -124,12 +124,6 @@
     "@id" : "http://w3id.org/meta-share/omtd-share/Clause"
   } ]
 }, {
-  "@id" : "http://purl.org/olia/olia-top.owl#Constituent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/Constituent"
-  } ]
-}, {
   "@id" : "http://purl.org/olia/olia-top.owl#Date",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -152,18 +146,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation"
-  } ]
-}, {
-  "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/PartOfSpeech"
-  } ]
-}, {
-  "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticFeature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalFeature"
   } ]
 }, {
   "@id" : "http://purl.org/olia/olia-top.owl#Phrase",
@@ -190,18 +172,6 @@
     "@id" : "http://w3id.org/meta-share/omtd-share/Sentence"
   } ]
 }, {
-  "@id" : "http://purl.org/olia/olia-top.owl#Stem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/Stem"
-  } ]
-}, {
-  "@id" : "http://purl.org/olia/olia-top.owl#SyntacticCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"
-  } ]
-}, {
   "@id" : "http://purl.org/olia/olia-top.owl#Token",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -217,28 +187,10 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://vocab.lappsgrid.org/Constituent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/Constituent"
-  } ]
-}, {
   "@id" : "http://vocab.lappsgrid.org/Coreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://w3id.org/meta-share/omtd-share/Coreference"
-  } ]
-}, {
-  "@id" : "http://vocab.lappsgrid.org/Dependency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/Dependency"
-  } ]
-}, {
-  "@id" : "http://vocab.lappsgrid.org/Document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://w3id.org/meta-share/omtd-share/DocumentAnnotationType"
   } ]
 }, {
   "@id" : "http://vocab.lappsgrid.org/Paragraph",
@@ -3495,7 +3447,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/Constituent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"
   } ],
@@ -4651,7 +4603,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/Dependency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency"
   } ],
@@ -5184,7 +5136,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/DocumentAnnotationType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
@@ -10789,7 +10741,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalFeature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures"
   } ],
@@ -12893,7 +12845,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/PartOfSpeech",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS"
   } ],
@@ -16569,7 +16521,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/Stem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem"
   } ],
@@ -17300,7 +17252,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],

@@ -347,15 +347,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://purl.org/olia/olia-top.owl#Constituent -->
-
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Constituent">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/olia/olia-top.owl#Date -->
 
 
@@ -388,24 +379,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
     <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#LexicalRelation">
         <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticCategory -->
-
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticCategory">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/PartOfSpeech"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#MorphosyntacticFeature -->
-
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#MorphosyntacticFeature">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalFeature"/>
     </owl:Class>
     
 
@@ -446,24 +419,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://purl.org/olia/olia-top.owl#Stem -->
-
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Stem">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Stem"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/olia/olia-top.owl#SyntacticCategory -->
-
-
-    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#SyntacticCategory">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/olia/olia-top.owl#Token -->
 
 
@@ -482,38 +437,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://vocab.lappsgrid.org/Constituent -->
-
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Constituent">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
-    </owl:Class>
-    
-
-
     <!-- http://vocab.lappsgrid.org/Coreference -->
 
 
     <owl:Class rdf:about="http://vocab.lappsgrid.org/Coreference">
         <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Coreference"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Dependency -->
-
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Dependency">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Dependency"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.lappsgrid.org/Document -->
-
-
-    <owl:Class rdf:about="http://vocab.lappsgrid.org/Document">
-        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentAnnotationType"/>
     </owl:Class>
     
 
@@ -552,13 +480,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Constituent -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Constituent"/>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Coreference -->
 
 
@@ -573,24 +494,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/Dependency -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Dependency"/>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType -->
 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType"/>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/DocumentAnnotationType -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DocumentAnnotationType"/>
     
 
 
@@ -601,24 +508,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
-    <!-- http://w3id.org/meta-share/omtd-share/MorphologicalFeature -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/MorphologicalFeature"/>
-    
-
-
     <!-- http://w3id.org/meta-share/omtd-share/Paragraph -->
 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Paragraph"/>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/PartOfSpeech -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PartOfSpeech"/>
     
 
 
@@ -663,20 +556,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SpeechSynthesis">
         <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis"/>
     </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/Stem -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Stem"/>
-    
-
-
-    <!-- http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType -->
-
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
     
 
 
@@ -2470,6 +2349,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/Constituent">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</documentationUrl>
+        <rdfs:label xml:lang="en">Constituent</rdfs:label>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
+        <skos:definition xml:lang="en">A word or group of words that function as a single unit in a syntactic structure</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Constituent</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3077,6 +2961,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/Dependency">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency</documentationUrl>
+        <rdfs:label xml:lang="en">Dependency</rdfs:label>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
+        <skos:definition xml:lang="en">A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Dependency</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3356,6 +3245,13 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/DocumentAnnotationType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Document annotation type</rdfs:label>
+        <skos:altLabel xml:lang="en">Document information</skos:altLabel>
+        <skos:altLabel xml:lang="en">Document metadata</skos:altLabel>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <skos:definition xml:lang="en">Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Document annotation type</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -6413,6 +6309,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/MorphologicalFeature">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures</documentationUrl>
+        <rdfs:label xml:lang="en">Morphological feature</rdfs:label>
+        <skos:altLabel xml:lang="en">Grammatical category</skos:altLabel>
+        <skos:altLabel xml:lang="en">Grammatical feature</skos:altLabel>
+        <skos:altLabel xml:lang="en">Morphosyntactic feature</skos:altLabel>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType"/>
+        <skos:definition xml:lang="en">Property of a word that is expressed in its inflected form; examples include person, tense, gender, case etc.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Morphological feature</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -7555,6 +7459,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/PartOfSpeech">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS</documentationUrl>
+        <rdfs:label xml:lang="en">Part of Speech</rdfs:label>
+        <skos:altLabel xml:lang="en">Grammatical category</skos:altLabel>
+        <skos:altLabel xml:lang="en">Morphosyntactic category</skos:altLabel>
+        <skos:altLabel xml:lang="en">Word category</skos:altLabel>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <skos:definition xml:lang="en">A division of words based on common grammatical features</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Part of Speech</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -9537,6 +9449,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/Stem">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem</documentationUrl>
+        <rdfs:label xml:lang="en">Stem</rdfs:label>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType"/>
+        <skos:definition xml:lang="en">A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Stem</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -9915,6 +9832,18 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Syntactic annotation type</rdfs:label>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
+        <skos:definition xml:lang="en">Any type of annotation that pertains to the syntactic level</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Chunk"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/ConstituencyTree"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Dependency"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/DependencyTree"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/SubcategorizationFrame"/>
+        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticoSemanticLink"/>
+        <skos:prefLabel xml:lang="en">Syntactic annotation type</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -13315,13 +13244,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
         <skos:prefLabel xml:lang="en">Clause</skos:prefLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Constituent">
-        <rdfs:label xml:lang="en">Constituent</rdfs:label>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
-        <skos:definition xml:lang="en">A word or group of words that function as a single unit in a syntactic structure</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Constituent</skos:prefLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Coreference">
         <rdfs:label xml:lang="en">Coreference</rdfs:label>
         <skos:altLabel xml:lang="en">Co-reference</skos:altLabel>
@@ -13339,13 +13261,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
         <skos:prefLabel xml:lang="en">Date</skos:prefLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Dependency">
-        <rdfs:label xml:lang="en">Dependency</rdfs:label>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
-        <skos:definition xml:lang="en">A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Dependency</skos:prefLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType">
         <rdfs:label xml:lang="en">Discourse annotation type</rdfs:label>
         <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
@@ -13358,15 +13273,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/SpeechAct"/>
         <skos:prefLabel xml:lang="en">Discourse annotation type</skos:prefLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/DocumentAnnotationType">
-        <rdfs:label xml:lang="en">Document annotation type</rdfs:label>
-        <skos:altLabel xml:lang="en">Document information</skos:altLabel>
-        <skos:altLabel xml:lang="en">Document metadata</skos:altLabel>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
-        <skos:definition xml:lang="en">Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Document annotation type</skos:prefLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation">
         <rdfs:label xml:lang="en">Lexical semantic relation</rdfs:label>
         <skos:altLabel xml:lang="en">Semantic relation</skos:altLabel>
@@ -13375,32 +13281,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
         <skos:prefLabel xml:lang="en">Lexical semantic relation</skos:prefLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/MorphologicalFeature">
-        <rdfs:label xml:lang="en">Morphological feature</rdfs:label>
-        <skos:altLabel xml:lang="en">Grammatical category</skos:altLabel>
-        <skos:altLabel xml:lang="en">Grammatical feature</skos:altLabel>
-        <skos:altLabel xml:lang="en">Morphosyntactic feature</skos:altLabel>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType"/>
-        <skos:definition xml:lang="en">Property of a word that is expressed in its inflected form; examples include person, tense, gender, case etc.</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Morphological feature</skos:prefLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Paragraph">
         <rdfs:label xml:lang="en">Paragraph</rdfs:label>
         <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/StructuralAnnotationType"/>
         <skos:definition xml:lang="en">A division of a text, usually about a single theme, consisting of one or more sentences and marked by a new line, indentation or other conventions.</skos:definition>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
         <skos:prefLabel xml:lang="en">Paragraph</skos:prefLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/PartOfSpeech">
-        <rdfs:label xml:lang="en">Part of Speech</rdfs:label>
-        <skos:altLabel xml:lang="en">Grammatical category</skos:altLabel>
-        <skos:altLabel xml:lang="en">Morphosyntactic category</skos:altLabel>
-        <skos:altLabel xml:lang="en">Word category</skos:altLabel>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
-        <skos:definition xml:lang="en">A division of words based on common grammatical features</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Part of Speech</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Phrase">
         <rdfs:label xml:lang="en">Phrase</rdfs:label>
@@ -13445,27 +13331,6 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"/>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/OperationScheme"/>
         <skos:prefLabel xml:lang="en">Speech Synthesis</skos:prefLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Stem">
-        <rdfs:label xml:lang="en">Stem</rdfs:label>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType"/>
-        <skos:definition xml:lang="en">A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Stem</skos:prefLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType">
-        <rdfs:label xml:lang="en">Syntactic annotation type</rdfs:label>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationType"/>
-        <skos:definition xml:lang="en">Any type of annotation that pertains to the syntactic level</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Chunk"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/ConstituencyTree"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/Dependency"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/DependencyTree"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/SubcategorizationFrame"/>
-        <skos:narrower rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticoSemanticLink"/>
-        <skos:prefLabel xml:lang="en">Syntactic annotation type</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis">
         <rdfs:label xml:lang="en">Text-to-Speech Synthesis</rdfs:label>
