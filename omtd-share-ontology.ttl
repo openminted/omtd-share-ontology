@@ -1700,10 +1700,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
   dct:contributor "Richard Eckart de Castilho";
   dct:creator "Claire Nedellec", "Dimitris Galanis", "Katerina Gkirtzou", "Marta Villegas",
     "Penny Labropoulou", "Petr Knoth", "Sophie Aubin";
-  dct:issued "2019-05-15";
+  dct:issued "2022-05-27";
   dct:license <http://purl.org/NET/rdflicense/cc-by4.0>;
   <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd";
-  owl:priorVersion "pre-release 2.-.0";
+  owl:priorVersion "pre-release 2.0.0";
   owl:versionInfo "pre-release 2.0.0 beta" .
 
 :AccessComponent a skos:Concept;
