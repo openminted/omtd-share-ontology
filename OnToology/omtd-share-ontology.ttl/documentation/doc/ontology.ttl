@@ -226,6 +226,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
                                                     owl:equivalentClass :LexicalSemanticRelation .
 
 
+###  http://purl.org/olia/olia-top.owl#MorphosyntacticCategory
+<http://purl.org/olia/olia-top.owl#MorphosyntacticCategory> rdf:type owl:Class ;
+                                                            owl:equivalentClass :PartOfSpeech .
+
+
 ###  http://purl.org/olia/olia-top.owl#Phrase
 <http://purl.org/olia/olia-top.owl#Phrase> rdf:type owl:Class ;
                                            owl:equivalentClass :Phrase .
@@ -246,6 +251,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
                                              owl:equivalentClass :Sentence .
 
 
+###  http://purl.org/olia/olia-top.owl#Stem
+<http://purl.org/olia/olia-top.owl#Stem> rdf:type owl:Class ;
+                                         owl:equivalentClass :Stem .
+
+
+###  http://purl.org/olia/olia-top.owl#SyntacticCategory
+<http://purl.org/olia/olia-top.owl#SyntacticCategory> rdf:type owl:Class ;
+                                                      owl:equivalentClass :SyntacticAnnotationType .
+
+
 ###  http://purl.org/olia/olia-top.owl#Token
 <http://purl.org/olia/olia-top.owl#Token> rdf:type owl:Class ;
                                           owl:equivalentClass :Token .
@@ -259,6 +274,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 ###  http://vocab.lappsgrid.org/Coreference
 <http://vocab.lappsgrid.org/Coreference> rdf:type owl:Class ;
                                          owl:equivalentClass :Coreference .
+
+
+###  http://vocab.lappsgrid.org/Dependency
+<http://vocab.lappsgrid.org/Dependency> rdf:type owl:Class ;
+                                        owl:equivalentClass :Dependency .
+
+
+###  http://vocab.lappsgrid.org/Document
+<http://vocab.lappsgrid.org/Document> rdf:type owl:Class ;
+                                      owl:equivalentClass :DocumentAnnotationType .
 
 
 ###  http://vocab.lappsgrid.org/Paragraph
@@ -288,8 +313,16 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 :Date rdf:type owl:Class .
 
 
+###  http://w3id.org/meta-share/omtd-share/Dependency
+:Dependency rdf:type owl:Class .
+
+
 ###  http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType
 :DiscourseAnnotationType rdf:type owl:Class .
+
+
+###  http://w3id.org/meta-share/omtd-share/DocumentAnnotationType
+:DocumentAnnotationType rdf:type owl:Class .
 
 
 ###  http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation
@@ -298,6 +331,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 ###  http://w3id.org/meta-share/omtd-share/Paragraph
 :Paragraph rdf:type owl:Class .
+
+
+###  http://w3id.org/meta-share/omtd-share/PartOfSpeech
+:PartOfSpeech rdf:type owl:Class .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Phrase
@@ -323,6 +360,14 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 ###  http://w3id.org/meta-share/omtd-share/SpeechSynthesis
 :SpeechSynthesis rdf:type owl:Class ;
                  owl:equivalentClass :TextToSpeechSynthesis .
+
+
+###  http://w3id.org/meta-share/omtd-share/Stem
+:Stem rdf:type owl:Class .
+
+
+###  http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType
+:SyntacticAnnotationType rdf:type owl:Class .
 
 
 ###  http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis
@@ -2130,12 +2175,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Dependency
 :Dependency rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-            :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" ;
-            rdfs:label "Dependency"@en ;
-            <http://www.w3.org/2004/02/skos/core#broader> :SyntacticAnnotationType ;
-            <http://www.w3.org/2004/02/skos/core#definition> "A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents"@en ;
-            <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-            <http://www.w3.org/2004/02/skos/core#prefLabel> "Dependency"@en .
+            :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/DependencyConversion
@@ -2338,14 +2378,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/DocumentAnnotationType
 :DocumentAnnotationType rdf:type owl:NamedIndividual ,
-                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
-                        rdfs:label "Document annotation type"@en ;
-                        <http://www.w3.org/2004/02/skos/core#altLabel> "Document information"@en ,
-                                                                       "Document metadata"@en ;
-                        <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
-                        <http://www.w3.org/2004/02/skos/core#definition> "Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)"@en ;
-                        <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Document annotation type"@en .
+                                 <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
 ###  http://w3id.org/meta-share/omtd-share/DocumentClassifier
@@ -5540,15 +5573,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/PartOfSpeech
 :PartOfSpeech rdf:type owl:NamedIndividual ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-              :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" ;
-              rdfs:label "Part of Speech"@en ;
-              <http://www.w3.org/2004/02/skos/core#altLabel> "Grammatical category"@en ,
-                                                             "Morphosyntactic category"@en ,
-                                                             "Word category"@en ;
-              <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
-              <http://www.w3.org/2004/02/skos/core#definition> "A division of words based on common grammatical features"@en ;
-              <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-              <http://www.w3.org/2004/02/skos/core#prefLabel> "Part of Speech"@en .
+              :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/PartOfSpeechTagger
@@ -7026,12 +7051,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 ###  http://w3id.org/meta-share/omtd-share/Stem
 :Stem rdf:type owl:NamedIndividual ,
                <http://www.w3.org/2004/02/skos/core#Concept> ;
-      :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem" ;
-      rdfs:label "Stem"@en ;
-      <http://www.w3.org/2004/02/skos/core#broader> :MorphologicalAnnotationType ;
-      <http://www.w3.org/2004/02/skos/core#definition> "A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]"@en ;
-      <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stem"@en .
+      :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Stemmer
@@ -7345,19 +7365,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
 
 ###  http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType
 :SyntacticAnnotationType rdf:type owl:NamedIndividual ,
-                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
-                         rdfs:label "Syntactic annotation type"@en ;
-                         <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation that pertains to the syntactic level"@en ;
-                         <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-                         <http://www.w3.org/2004/02/skos/core#narrower> :Chunk ,
-                                                                        :ConstituencyTree ,
-                                                                        :Constituent ,
-                                                                        :Dependency ,
-                                                                        :DependencyTree ,
-                                                                        :SubcategorizationFrame ,
-                                                                        :SyntacticoSemanticLink ;
-                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Syntactic annotation type"@en .
+                                  <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
 ###  http://w3id.org/meta-share/omtd-share/SyntacticStructureGeneration
@@ -9880,6 +9888,13 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
       <http://www.w3.org/2004/02/skos/core#prefLabel> "Date"@en .
 
 
+:Dependency rdfs:label "Dependency"@en ;
+            <http://www.w3.org/2004/02/skos/core#broader> :SyntacticAnnotationType ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents"@en ;
+            <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Dependency"@en .
+
+
 :DiscourseAnnotationType rdfs:label "Discourse annotation type"@en ;
                          <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation relevant to discourse"@en ;
@@ -9890,6 +9905,15 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                                                                         :DiscourseRelation ,
                                                                         :SpeechAct ;
                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Discourse annotation type"@en .
+
+
+:DocumentAnnotationType rdfs:label "Document annotation type"@en ;
+                        <http://www.w3.org/2004/02/skos/core#altLabel> "Document information"@en ,
+                                                                       "Document metadata"@en ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)"@en ;
+                        <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Document annotation type"@en .
 
 
 :LexicalSemanticRelation rdfs:label "Lexical semantic relation"@en ;
@@ -9905,6 +9929,16 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A division of a text, usually about a single theme, consisting of one or more sentences and marked by a new line, indentation or other conventions."@en ;
            <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Paragraph"@en .
+
+
+:PartOfSpeech rdfs:label "Part of Speech"@en ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Grammatical category"@en ,
+                                                             "Morphosyntactic category"@en ,
+                                                             "Word category"@en ;
+              <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A division of words based on common grammatical features"@en ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Part of Speech"@en .
 
 
 :Phrase rdfs:label "Phrase"@en ;
@@ -9949,6 +9983,27 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
                  <http://www.w3.org/2004/02/skos/core#broader> :NaturalLanguageGeneration ;
                  <http://www.w3.org/2004/02/skos/core#inScheme> :OperationScheme ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Speech Synthesis"@en .
+
+
+:Stem rdfs:label "Stem"@en ;
+      <http://www.w3.org/2004/02/skos/core#broader> :MorphologicalAnnotationType ;
+      <http://www.w3.org/2004/02/skos/core#definition> "A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]"@en ;
+      <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Stem"@en .
+
+
+:SyntacticAnnotationType rdfs:label "Syntactic annotation type"@en ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :AnnotationType ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation that pertains to the syntactic level"@en ;
+                         <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+                         <http://www.w3.org/2004/02/skos/core#narrower> :Chunk ,
+                                                                        :ConstituencyTree ,
+                                                                        :Constituent ,
+                                                                        :Dependency ,
+                                                                        :DependencyTree ,
+                                                                        :SubcategorizationFrame ,
+                                                                        :SyntacticoSemanticLink ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Syntactic annotation type"@en .
 
 
 :TextToSpeechSynthesis rdfs:label "Text-to-Speech Synthesis"@en ;

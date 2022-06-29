@@ -233,6 +233,11 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/olia/olia-top.owl#LexicalRelation> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation> .
 <http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/olia/olia-top.owl#MorphosyntacticCategory
+<http://purl.org/olia/olia-top.owl#MorphosyntacticCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/olia/olia-top.owl#MorphosyntacticCategory> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/PartOfSpeech> .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/olia/olia-top.owl#Phrase
 <http://purl.org/olia/olia-top.owl#Phrase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/olia/olia-top.owl#Phrase> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Phrase> .
@@ -253,6 +258,16 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/olia/olia-top.owl#Sentence> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Sentence> .
 <http://w3id.org/meta-share/omtd-share/Sentence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/olia/olia-top.owl#Stem
+<http://purl.org/olia/olia-top.owl#Stem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/olia/olia-top.owl#Stem> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Stem> .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/olia/olia-top.owl#SyntacticCategory
+<http://purl.org/olia/olia-top.owl#SyntacticCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/olia/olia-top.owl#SyntacticCategory> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/olia/olia-top.owl#Token
 <http://purl.org/olia/olia-top.owl#Token> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/olia/olia-top.owl#Token> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Token> .
@@ -267,6 +282,16 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://vocab.lappsgrid.org/Coreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.lappsgrid.org/Coreference> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Coreference> .
 <http://w3id.org/meta-share/omtd-share/Coreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.lappsgrid.org/Dependency
+<http://vocab.lappsgrid.org/Dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.lappsgrid.org/Dependency> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Dependency> .
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.lappsgrid.org/Document
+<http://vocab.lappsgrid.org/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.lappsgrid.org/Document> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://vocab.lappsgrid.org/Paragraph
 <http://vocab.lappsgrid.org/Paragraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -287,11 +312,17 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # http://w3id.org/meta-share/omtd-share/Date
 # 
+# http://w3id.org/meta-share/omtd-share/Dependency
+# 
 # http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType
+# 
+# http://w3id.org/meta-share/omtd-share/DocumentAnnotationType
 # 
 # http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation
 # 
 # http://w3id.org/meta-share/omtd-share/Paragraph
+# 
+# http://w3id.org/meta-share/omtd-share/PartOfSpeech
 # 
 # http://w3id.org/meta-share/omtd-share/Phrase
 # 
@@ -307,6 +338,10 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/SpeechSynthesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/meta-share/omtd-share/SpeechSynthesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis> .
 <http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/meta-share/omtd-share/Stem
+# 
+# http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType
 # 
 # http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis
 # 
@@ -1984,11 +2019,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/Dependency> <http://w3id.org/meta-share/omtd-share/documentationUrl> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" .
-<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2000/01/rdf-schema#label> "Dependency"@en .
-<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#definition> "A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents"@en .
-<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dependency"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/DependencyConversion
 <http://w3id.org/meta-share/omtd-share/DependencyConversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2173,13 +2203,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://w3id.org/meta-share/omtd-share/DocumentAnnotationType
 <http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Document annotation type"@en .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#altLabel> "Document information"@en .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#altLabel> "Document metadata"@en .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#definition> "Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)"@en .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Document annotation type"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/DocumentClassifier
 <http://w3id.org/meta-share/omtd-share/DocumentClassifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5144,14 +5167,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://w3id.org/meta-share/omtd-share/documentationUrl> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2000/01/rdf-schema#label> "Part of Speech"@en .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Grammatical category"@en .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Morphosyntactic category"@en .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Word category"@en .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#definition> "A division of words based on common grammatical features"@en .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#prefLabel> "Part of Speech"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/PartOfSpeechTagger
 <http://w3id.org/meta-share/omtd-share/PartOfSpeechTagger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6514,11 +6529,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/Stem> <http://w3id.org/meta-share/omtd-share/documentationUrl> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Stem" .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#label> "Stem"@en .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#definition> "A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]"@en .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stem"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/Stemmer
 <http://w3id.org/meta-share/omtd-share/Stemmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6816,18 +6826,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Syntactic annotation type"@en .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation that pertains to the syntactic level"@en .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Chunk> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/ConstituencyTree> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Constituent> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Dependency> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/DependencyTree> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/SubcategorizationFrame> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/SyntacticoSemanticLink> .
-<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Syntactic annotation type"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/SyntacticStructureGeneration
 <http://w3id.org/meta-share/omtd-share/SyntacticStructureGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -9078,6 +9076,12 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Date> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
 <http://w3id.org/meta-share/omtd-share/Date> <http://www.w3.org/2004/02/skos/core#prefLabel> "Date"@en .
 # 
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2000/01/rdf-schema#label> "Dependency"@en .
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#definition> "A type of syntactic relation that holds between linguistic units, where we try to recognise the head (governor) and its dependents"@en .
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/Dependency> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dependency"@en .
+# 
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Discourse annotation type"@en .
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation relevant to discourse"@en .
@@ -9088,6 +9092,14 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/DiscourseRelation> .
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/SpeechAct> .
 <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Discourse annotation type"@en .
+# 
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Document annotation type"@en .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#altLabel> "Document information"@en .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#altLabel> "Document metadata"@en .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#definition> "Any kind of annotation that is used to describe a document (e.g. identifier, size, location, language etc.)"@en .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/DocumentAnnotationType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Document annotation type"@en .
 # 
 <http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Lexical semantic relation"@en .
 <http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation> <http://www.w3.org/2004/02/skos/core#altLabel> "Semantic relation"@en .
@@ -9101,6 +9113,15 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Paragraph> <http://www.w3.org/2004/02/skos/core#definition> "A division of a text, usually about a single theme, consisting of one or more sentences and marked by a new line, indentation or other conventions."@en .
 <http://w3id.org/meta-share/omtd-share/Paragraph> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
 <http://w3id.org/meta-share/omtd-share/Paragraph> <http://www.w3.org/2004/02/skos/core#prefLabel> "Paragraph"@en .
+# 
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2000/01/rdf-schema#label> "Part of Speech"@en .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Grammatical category"@en .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Morphosyntactic category"@en .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#altLabel> "Word category"@en .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#definition> "A division of words based on common grammatical features"@en .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/PartOfSpeech> <http://www.w3.org/2004/02/skos/core#prefLabel> "Part of Speech"@en .
 # 
 <http://w3id.org/meta-share/omtd-share/Phrase> <http://www.w3.org/2000/01/rdf-schema#label> "Phrase"@en .
 <http://w3id.org/meta-share/omtd-share/Phrase> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/StructuralAnnotationType> .
@@ -9139,6 +9160,25 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/SpeechSynthesis> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration> .
 <http://w3id.org/meta-share/omtd-share/SpeechSynthesis> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/OperationScheme> .
 <http://w3id.org/meta-share/omtd-share/SpeechSynthesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Speech Synthesis"@en .
+# 
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2000/01/rdf-schema#label> "Stem"@en .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/MorphologicalAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#definition> "A stem is the root or roots of a word, together with any derivational affixes, to which inflectional affixes are added. [http://www.glossary.sil.org/term/stem]"@en .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/Stem> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stem"@en .
+# 
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "Syntactic annotation type"@en .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationType> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#definition> "Any type of annotation that pertains to the syntactic level"@en .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Chunk> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/ConstituencyTree> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Constituent> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/Dependency> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/DependencyTree> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/SubcategorizationFrame> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/meta-share/omtd-share/SyntacticoSemanticLink> .
+<http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Syntactic annotation type"@en .
 # 
 <http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis> <http://www.w3.org/2000/01/rdf-schema#label> "Text-to-Speech Synthesis"@en .
 <http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TTS"@en .

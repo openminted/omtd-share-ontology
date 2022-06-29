@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "1d68a16a3aa5721cc419225917ba6451" "c26ec6c052707fbb86f6769ac46833cd" "f2193541c0d9965b5a4885eb5711b6af" "5e78227f666e259c63e830a2e47c60b9" "skos:Concept" "d62d89d7d0839360d61dd4723b729b9e" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "7ba9befc7d2294a71b48a12e101069a1" "6446ead4e324a44c4aded7e2e437578f" "5a9c2d01f6d949556d0cdec62cb0561f" "6832908ca70e5a9bab1daf3bdce52e4e" "skos:Concept" "58649d1ffa34c63e222217e9f8dcfb33" ; /*classes style*/
 	"omtd:HistoricalEvent" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:HistoricalEvent" -> "omtd:SocialSciencesEntity" [ label = "skos:broader" ];
 	"omtd:HistoricalEvent" -> "omtd:NamedEntity" [ label = "skos:broader" ];
@@ -1378,26 +1378,26 @@ node [shape = rectangle, color="orange"]; "1d68a16a3aa5721cc419225917ba6451" "c2
 	"omtd:Stem" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:Stem" -> "omtd:MorphologicalAnnotationType" [ label = "skos:broader" ];
 	"omtd:Stem" -> "http://purl.org/olia/olia-top.owl#Stem" [ label = "owl:equivalentClass" ];
-	"NULL" -> "5065a0ce530109ae727c30450c4bcf44" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:OperationScheme" [ label = "owl:hasValue" ];
-	"NULL" -> "c1539a9b7c7470645428fb0b9d6b8b8a" [ label = "owl:intersectionOf" ];
-	"NULL" -> "453c540d0004f9c563b2371fe0badf54" [ label = "owl:intersectionOf" ];
-	"NULL" -> "ad474b252f8514f462d411e4a4287397" [ label = "owl:intersectionOf" ];
+	"NULL" -> "076d0936f8f7948921f112dd0d8daf20" [ label = "owl:intersectionOf" ];
+	"NULL" -> "e6945ac299776a97d92c543a8ff9c098" [ label = "owl:intersectionOf" ];
+	"NULL" -> "9408fd7cec2f89766422a6f7e8ffc463" [ label = "owl:intersectionOf" ];
 	"NULL" -> "omtd:AnnotationTypeScheme" [ label = "owl:hasValue" ];
-	"NULL" -> "c7d94c768848da6b367a6c5d036dd4eb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "9b89ea03d6036c1e70bbb2abd5bdd152" [ label = "rdf:rest" ];
+	"NULL" -> "fbb81e9fcecaa15b93458e646d991759" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:hasMimetype" [ label = "owl:onProperty" ];
-	"NULL" -> "43c9319e8d609baf7b41dcc61374f95b" [ label = "rdf:rest" ];
-	"NULL" -> "omtd:DataFormatScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "dad8d5a3945c05eea2168ba9fbdb5471" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "e30932b8a18a429901b75ce5e06c6697" [ label = "rdf:rest" ];
-	"NULL" -> "3763cc24ca62023dc778adb1b95caf8b" [ label = "owl:intersectionOf" ];
-	"NULL" -> "c15bd823682a915e74f78b2c965ebc09" [ label = "rdf:rest" ];
+	"NULL" -> "omtd:DataFormatScheme" [ label = "owl:hasValue" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "9beb5bc7e70f2d6aa43db7e5fbe9df8e" [ label = "rdf:rest" ];
+	"NULL" -> "b29b495f11533d2c1ec76bdb7426b28d" [ label = "rdf:rest" ];
+	"NULL" -> "f731d746a14607ac69fe940f03995fa8" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:ComponentTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "f52941ac3c372adb355f648cfb287572" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:application_zip" [ label = "owl:hasValue" ];
 	"NULL" -> "omtd:TdmMethodScheme" [ label = "owl:hasValue" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
+	"NULL" -> "7814baf42796dc75fb8ae7975942da7c" [ label = "owl:intersectionOf" ];
 	"omtd:SpeechUnderstanding" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
 	"omtd:SpeechUnderstanding" -> "omtd:SpeechRecognition" [ label = "skos:broader" ];
 	"omtd:SpeechUnderstanding" -> "omtd:NaturalLanguageUnderstanding" [ label = "skos:broader" ];
@@ -3053,9 +3053,9 @@ node [shape = rectangle, color="orange"]; "1d68a16a3aa5721cc419225917ba6451" "c2
 	"omtd:PosTagging" -> "omtd:MorphosyntacticTagging" [ label = "skos:broader" ];
 	"omtd:ChemicalEntity" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:ChemicalEntity" -> "omtd:DomainSpecificAnnotationType" [ label = "skos:broader" ];
-	"5e78227f666e259c63e830a2e47c60b9" -> "d62d89d7d0839360d61dd4723b729b9e" [ label = "omtd:hasMimetype" ];
-	"f2193541c0d9965b5a4885eb5711b6af" -> "1d68a16a3aa5721cc419225917ba6451" [ label = "omtd:performsOperation" ];
-	"c26ec6c052707fbb86f6769ac46833cd" -> "xsd:string" [ label = "omtd:hasFileExtension" ];
+	"6832908ca70e5a9bab1daf3bdce52e4e" -> "58649d1ffa34c63e222217e9f8dcfb33" [ label = "omtd:hasMimetype" ];
+	"5a9c2d01f6d949556d0cdec62cb0561f" -> "7ba9befc7d2294a71b48a12e101069a1" [ label = "omtd:performsOperation" ];
+	"6446ead4e324a44c4aded7e2e437578f" -> "xsd:string" [ label = "omtd:hasFileExtension" ];
 	"owl:Thing" -> "xsd:anyURI" [ label = "omtd:documentationUrl" ];
 
 }
