@@ -154,15 +154,13 @@
     :DataCollection, :DataMerging, :DataSplitting, :Debugging, :Editing, :FeatureExtraction,
     :FillMask, :FlowControl, :FormatConversion, :InformationStorage, :LanguageModelling,
     :LinguisticAnalysis, :MachineTranslationSupport, :Matching, :NlpDevelopmentSupport,
-    :Normalization, :ResourceAccess, :ScriptBasedAnalysis, :SupportOfCrowdsourcingTasks,
+    :Normalization, :ResourceAccess, :ScriptBasedAnalysis, :Search, :SupportOfCrowdsourcingTasks,
     :SupportOperationForKnowledgeResources, :TagsetConversion, :TerminologyManagement,
     :TranslationMemoryManagement, :TranslationProjectManagement, :UnicodeConformTokenizing,
     :UserAuthentication, :Validation, :Viewing, :Visualization, :ZeroShotClassification;
   skos:prefLabel "Support operation"@en .
 
 :audio_flac rdfs:label "audio/flac" .
-
-:Search a skos:Concept .
 
 :OasisSpreadsheet a skos:Concept;
   :hasMimetype :application_vnd_oasis_opendocument_spreadsheet;
@@ -253,7 +251,7 @@
 
 :Localization a skos:Concept;
   rdfs:label "Localization"@en;
-  skos:altLabel "Localisation"@en-uk;
+  skos:altLabel "Localisation"@en-GB;
   skos:broader :Translation;
   skos:definition "The process of adapting a product or content to a specific locale or market, including translation of relevant language material but also converting to local measures and currency units, modifications necessary to adapt to cultural differences of the target audience, etc. [adapted from https://www.gala-global.org/industry/intro-language-industry/what-localization]"@en;
   skos:inScheme :OperationScheme;
@@ -279,9 +277,10 @@
   rdfs:label "NLP Development Support"@en;
   skos:altLabel "NLP Development Aid"@en;
   skos:broader :SupportOperation;
-  skos:definition "";
   skos:inScheme :OperationScheme;
   skos:prefLabel "NLP Development Support"@en .
+
+:ParalanguageAnnotation skos:inScheme :ModelFunctionScheme .
 
 :HandwritingRecognition a skos:Concept;
   rdfs:label "Handwriting recognition"@en;
@@ -347,8 +346,17 @@
 
 :KeaCorpus skos:prefLabel "KEA corpus"@en .
 
-:MultimodalSynthesis a skos:Concept;
-  rdfs:label "Multimodal synthesis"@en .
+:OperationWithMultimediaInputOrOutput a skos:Concept;
+  rdfs:label "Operation with multimedia input or output"@en;
+  skos:broader :Operation;
+  skos:inScheme :OperationScheme;
+  skos:narrower :AudioProcessing, :EmotionGeneration, :FaceDetection, :FaceRecognition,
+    :FaceVerification, :HumanComputerInteraction, :ImageClassification, :ImageGeneration,
+    :ImageProcessing, :ImageSegmentation, :MultimediaDevelopment, :MultimediaDocumentProcessing,
+    :MultimodalIntegration, :MultimodalSynthesis, :ObjectDetection, :PersonIdentification,
+    :SignLanguageGeneration, :SignLanguageRecognition, :SpeechAssistedVideoControl, :SpeechRecognition,
+    :TalkingHeadSynthesis;
+  skos:prefLabel "Operation with multimedia input or output"@en .
 
 :SupportComponent a skos:Concept;
   :performsOperation :SupportOperation;
@@ -371,19 +379,9 @@
   skos:inScheme :OperationScheme;
   skos:prefLabel "Annotation of dates"@en .
 
-:OperationWithMultimediaInputOrOutput a skos:Concept;
-  rdfs:label "Operation with multimedia input or output"@en;
-  skos:broader :Operation;
-  skos:inScheme :OperationScheme;
-  skos:narrower :AudioProcessing, :EmotionGeneration, :FaceDetection, :FaceRecognition,
-    :FaceVerification, :HumanComputerInteraction, :ImageClassification, :ImageGeneration,
-    :ImageProcessing, :ImageSegmentation, :MultimediaDevelopment, :MultimediaDocumentProcessing,
-    :MultimodalIntegration, :ObjectDetection, :PersonIdentification, :SignLanguageGeneration,
-    :SignLanguageRecognition, :SpeechAssistedVideoControl, :SpeechRecognition, :TalkingHeadSynthesis;
-  skos:prefLabel "Operation with multimedia input or output"@en .
+:application_rdf_xml skos:inScheme :MimeTypeScheme .
 
-:application_rdf_xml skos:inScheme :MimeTypeScheme;
-  a skos:Concept .
+:SpeechProcessingCollection skos:member :MultimodalSynthesis .
 
 :Tei a skos:Concept;
   :documentationUrl "http://www.tei-c.org/index.xml", "https://www.iana.org/assignments/media-types/application/tei+xml";
@@ -465,6 +463,8 @@
 :OfficialText skos:broader :SocialSciencesEntity .
 
 :FillMask skos:broader :ModelFunction .
+
+:application_rdf_xml a skos:Concept .
 
 :image_png skos:broader :Mimetype .
 
@@ -688,47 +688,47 @@
     :Viewing, :Visualization, :Writing, :ZeroShotClassification;
   skos:prefLabel "Support operation Collection"@en .
 
-:AudioProcessing skos:inScheme :ModelFunctionScheme .
-
-:DialogueModelling skos:inScheme :ModelFunctionScheme .
-
-:SemanticClassLabelling skos:inScheme :ModelFunctionScheme .
-
-:SoundToTextAlignment skos:inScheme :ModelFunctionScheme .
-
-:SpatialRoleLabelling skos:inScheme :ModelFunctionScheme .
-
-:Chunking skos:inScheme :ModelFunctionScheme .
-
-:PolarityLabelling skos:inScheme :ModelFunctionScheme .
-
-:CertaintyLevelLabelling skos:inScheme :ModelFunctionScheme .
-
-:Stemming skos:inScheme :ModelFunctionScheme .
-
-:ProsodicAnnotation skos:inScheme :ModelFunctionScheme .
-
-:SpeechAnnotation skos:inScheme :ModelFunctionScheme .
-
-:SyllableSegmentation skos:inScheme :ModelFunctionScheme .
-
-:WordSegmentation skos:inScheme :ModelFunctionScheme .
+:AnnotationOfQuestionTopics skos:inScheme :ModelFunctionScheme .
 
 :AnaphoraAnnotation skos:inScheme :ModelFunctionScheme .
 
-:DependencyParsing skos:inScheme :ModelFunctionScheme .
+:ProsodicAnnotation skos:inScheme :ModelFunctionScheme .
+
+:Chunking skos:inScheme :ModelFunctionScheme .
+
+:DialogueModelling skos:inScheme :ModelFunctionScheme .
+
+:SyllableSegmentation skos:inScheme :ModelFunctionScheme .
+
+:SoundToTextAlignment skos:inScheme :ModelFunctionScheme .
+
+:SpeakerDiarization skos:inScheme :ModelFunctionScheme .
+
+:CertaintyLevelLabelling skos:inScheme :ModelFunctionScheme .
 
 :DiscourseModelling skos:inScheme :ModelFunctionScheme .
 
+:AudioProcessing skos:inScheme :ModelFunctionScheme .
+
+:SemanticClassLabelling skos:inScheme :ModelFunctionScheme .
+
+:SpatialRoleLabelling skos:inScheme :ModelFunctionScheme .
+
+:PolarityLabelling skos:inScheme :ModelFunctionScheme .
+
+:Stemming skos:inScheme :ModelFunctionScheme .
+
+:SpeechAnnotation skos:inScheme :ModelFunctionScheme .
+
+:WordSegmentation skos:inScheme :ModelFunctionScheme .
+
+:DependencyParsing skos:inScheme :ModelFunctionScheme .
+
 :AnnotationOfDocumentStructure skos:inScheme :ModelFunctionScheme .
-
-:AnnotationOfQuestionTopics skos:inScheme :ModelFunctionScheme .
-
-:AnnotationOfDerivationalFeatures skos:inScheme :ModelFunctionScheme .
 
 :Concordancing a skos:Concept .
 
-:SpeakerDiarization skos:inScheme :ModelFunctionScheme .
+:AnnotationOfDerivationalFeatures skos:inScheme :ModelFunctionScheme .
 
 :ClusteringMethod a skos:Concept;
   dc:source "adapted from wikipedia (https://en.wikipedia.org/wiki/Cluster_analysis)"@en;
@@ -871,10 +871,12 @@
   skos:altLabel "LU"@en, "Language Understanding"@en, "Machine Understanding"@en, "NLU"@en,
     "Natural Language Understanding"@en;
   skos:broader :Operation;
-  skos:definition "", "The comprehension by computers of the structure and meaning of human languages, allowing users to interact with the computer using natural sentences. [adapted from https://www.gartner.com/it-glossary/nlu-natural-language-understanding]"@en;
+  skos:definition "The comprehension by computers of the structure and meaning of human languages, allowing users to interact with the computer using natural sentences. [adapted from https://www.gartner.com/it-glossary/nlu-natural-language-understanding]"@en;
   skos:inScheme :OperationScheme;
   skos:narrower :SpeechUnderstanding;
   skos:prefLabel "Natural Language Understanding"@en .
+
+:HumourDetection skos:definition "The task of identifying in a text structures and phrases of humour"@en .
 
 :TdmMethodScheme a skos:ConceptScheme;
   rdfs:label "TDM/LT Method Taxonomy"@en;
@@ -1266,14 +1268,14 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en;
   rdfs:label "Annotation type"@en;
   skos:altLabel "Label"@en, "Tag"@en;
   skos:closeMatch <http://vocab.lappsgrid.org/Annotation>;
-  skos:definition "Category/class of the annotations (metadata) that are added to the data/text that is processed"@en;
+  skos:definition "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively"@en,
+    "Category/class of the annotations (metadata) that are added to the data/text that is processed"@en;
   skos:inScheme :AnnotationTypeScheme;
   skos:narrower :Alignment1, :DiscourseAnnotationType, :DocumentAnnotationType, :DomainSpecificAnnotationType,
     :LanguageCode, :LanguageProficiencyLevel, :ModalityAnnotationType, :MorphologicalAnnotationType,
     :PartOfSpeech, :QuantititativeInformation, :SemanticAnnotationType, :SpeechAnnotationType,
     :StructuralAnnotationType, :SyntacticAnnotationType, :Term;
   skos:prefLabel "Annotation type"@en;
-  skos:scopeNote "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en;
   skos:topConceptOf :AnnotationTypeScheme .
 
 :DocumentReading a skos:Concept;
@@ -1305,7 +1307,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en;
     :MultimediaInformationExtraction, :MultimediaRetrieval, :NegationDetection, :OntologyAcquisition,
     :OntologyEnhancement, :PersuasiveExpressionMining, :PolarityDetection, :Prediction,
     :QuestionAnswering, :RecognizingTextualEntailment, :RelationExtraction, :RepresentationOfSpaceAndTime,
-    :RumoursStanceClassification, :SemanticReasoning, :SemanticSearch, :SpeechAnalytics,
+    :RumoursStanceClassification, :Search, :SemanticReasoning, :SemanticSearch, :SpeechAnalytics,
     :SpeechRetrieval, :StanceDetection, :TableQuestionAnswering, :TemporalExpressionRecognition,
     :TermExtraction, :TerminologySearch, :TextAnalysis, :TextAndDataAnalytics, :TextAndDataMining,
     :TruthLabelling, :VerbalAggressionAnalysis;
@@ -1313,9 +1315,7 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en;
 
 :text_x_anafora skos:broader :Mimetype .
 
-:ArgumentMining a skos:Concept .
-
-:Search rdfs:label "Search"@en .
+:ImageVideoProcessingCollection skos:member :MultimodalSynthesis .
 
 :SupportOperationForKnowledgeResources a skos:Concept;
   rdfs:label "Support operation for knowledge resources"@en;
@@ -1383,11 +1383,11 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en;
   rdfs:label "Annotation"@en;
   skos:altLabel "Labeling [en-US]"@en-us, "Labelling"@en, "Tagging"@en;
   skos:broader :ModelFunction, :Operation;
-  skos:definition "The process/task of adding annotations (i.e. labels that act as notes, comments, explanations, etc.) to an item"@en;
+  skos:definition "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en,
+    "The process/task of adding annotations (i.e. labels that act as notes, comments, explanations, etc.) to an item"@en;
   skos:inScheme :OperationScheme;
   skos:narrower :MultimediaAnnotation, :SpeechAnnotation, :TextAnnotation;
-  skos:prefLabel "Annotation"@en;
-  skos:scopeNote "A note by way of explanation or comment added to a text or diagram [OED, https://en.oxforddictionaries.com/definition/annotation]. Text or corpus annotation refers to the interpretative linguistic information grounded in a knowledge resource that is added manually or automatically to a text or corpus respectively."@en .
+  skos:prefLabel "Annotation"@en .
 
 :DerivationalAnalysis a skos:Concept;
   rdfs:label "Derivational analysis"@en;
@@ -1557,7 +1557,7 @@ _:node1fu4q14cjx30 a owl:Class .
 
 :FillMask skos:broader :SupportOperation .
 
-:MultimodalSynthesis skos:inScheme :OperationScheme .
+:ArgumentMining a skos:Concept .
 
 :TaskOrientedTextAnalysisEvaluation a skos:Concept;
   rdfs:label "Task-oriented text analysis evaluation"@en;
@@ -1700,11 +1700,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
   dct:contributor "Richard Eckart de Castilho";
   dct:creator "Claire Nedellec", "Dimitris Galanis", "Katerina Gkirtzou", "Marta Villegas",
     "Penny Labropoulou", "Petr Knoth", "Sophie Aubin";
-  dct:issued "2022-05-27";
+  dct:issued "2019-05-15";
   dct:license <http://purl.org/NET/rdflicense/cc-by4.0>;
   <http://purl.org/vocab/vann/preferredNamespacePrefix> "omtd";
-  owl:priorVersion "pre-release 2.0.0";
-  owl:versionInfo "pre-release 2.0.0 beta" .
+  owl:priorVersion "1.1.0";
+  owl:versionInfo "pre-release 2.0.0" .
 
 :AccessComponent a skos:Concept;
   :performsOperation :ResourceAccess;
@@ -2083,8 +2083,8 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 :TextCategorization a skos:Concept;
   rdfs:label "Text categorization"@en;
-  skos:altLabel "Document categorisation"@en, "Document categorisation"@en-uk, "Document categorization"@en,
-    "Document classification"@en, "Text categorisation"@en-uk, "Text classification"@en;
+  skos:altLabel "Document categorisation"@en, "Document categorisation"@en-GB, "Document categorization"@en,
+    "Document classification"@en, "Text categorisation"@en-GB, "Text classification"@en;
   skos:broader :InformationExtraction;
   skos:definition "The task/process of assigning documents into classes or categories"@en;
   skos:inScheme :OperationScheme;
@@ -2092,7 +2092,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 :ConceptNormalization a skos:Concept;
   rdfs:label "Concept normalization"@en;
-  skos:altLabel "Concept normalisation"@en-uk;
+  skos:altLabel "Concept normalisation"@en-GB;
   skos:broader :Normalization;
   skos:definition "The task of mapping free-form expressions to the concepts of a specific domain"@en;
   skos:inScheme :OperationScheme;
@@ -2109,8 +2109,8 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 :Tokenization a skos:Concept;
   rdfs:label "Tokenization"@en;
-  skos:altLabel "Segmentation"@en, "Segmentation and Tokenisation"@en-uk, "Segmentation and Tokenization"@en,
-    "Tokenisation"@en-uk;
+  skos:altLabel "Segmentation"@en, "Segmentation and Tokenisation"@en-GB, "Segmentation and Tokenization"@en,
+    "Tokenisation"@en-GB;
   skos:broader :StructuralAnnotation;
   skos:definition "The task/process of recognizing and tagging tokens (words, punctuation marks, digits etc.) in a text"@en,
     "Tokenization is commonly seen as an independent process of linguistic analysis, in which the input stream of characters is segmented into an ordered sequence of word-like units, usually called tokens, which function as input items for subsequent steps of linguistic processing. Tokens may correspond to words, numbers, punctuation marks or even proper names.The recognized tokens are usually classified according to their syntax. Since the notion of tokenization seems to have different meanings to different people, some tokenization tools fulfil additional tasks like for instance sentence boundary detection, handling of end-line hyphenations or conjoined clitics and contractions."@en;
@@ -2191,16 +2191,14 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     :TemporalExpression, :TextualEntailment, :Topic, :VerbalAggressionTarget, :WordSense;
   skos:prefLabel "Semantic annotation type"@en .
 
-:MultimodalSynthesis skos:broader :OperationWithMultimediaInputOrOutput;
-  skos:definition "The generation of a multimodal output resource"@en;
-  skos:prefLabel "Multimodal synthesis"@en;
-  skos:related :MultimodalIntegration .
-
-:ImageVideoProcessingCollection skos:member :MultimodalSynthesis .
+:ArgumentMining rdfs:label "Argument mining"@en;
+  skos:altLabel "Argumentation mining"@en;
+  skos:broader :ComputationalArgumentation;
+  skos:definition "The automatic extraction and identification of argumentative structures from natural language text"@en;
+  skos:inScheme :OperationScheme;
+  skos:prefLabel "Argument mining"@en .
 
 :LanguageIdentifier skos:inScheme :ComponentTypeScheme .
-
-:OperationWithMultimediaInputOrOutput skos:narrower :MultimodalSynthesis .
 
 :TextToTextGeneration skos:inScheme :ModelFunctionScheme .
 
@@ -2215,9 +2213,9 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 :Summarization a skos:Concept;
   rdfs:label "Summarization"@en;
-  skos:altLabel "ATS"@en, "Automatic Summarisation"@en-uk, "Automatic Summarization"@en,
-    "Automatic Text Summarisation"@en-uk, "Automatic Text Summarization"@en, "Summarisation"@en-uk,
-    "TS"@en, "Text Summarisation"@en-uk, "Text Summarization"@en;
+  skos:altLabel "ATS"@en, "Automatic Summarisation"@en-GB, "Automatic Summarization"@en,
+    "Automatic Text Summarisation"@en-GB, "Automatic Text Summarization"@en, "Summarisation"@en-GB,
+    "TS"@en, "Text Summarisation"@en-GB, "Text Summarization"@en;
   skos:broader :ModelFunction, :NaturalLanguageGeneration;
   skos:definition "Text summarization is the process of distilling the most important information from a source (or sources) to produce an abridged version for a particular user (or users) and task (or tasks). Source: Mani, I. and Maybury, M. T., editors (1999), Advances in Automatic Text Summarization. MIT Press, Cambridge, Massachusetts."@en,
     "The process/task of reducing one or more textual documents with a computer program in order to create a summary that retains the most important points of the original document(s)."@en;
@@ -2491,7 +2489,7 @@ skos:Concept a owl:Class .
 
 :LexiconVisualization a skos:Concept;
   rdfs:label "Lexicon visualization"@en;
-  skos:altLabel "Lexicon visualisation"@en-uk;
+  skos:altLabel "Lexicon visualisation"@en-GB;
   skos:broader :SupportOperationForKnowledgeResources, :Visualization;
   skos:definition "The task/process of visualizing information (e.g. using diagrams, 3-d images, word clouds etc.) contained in lexical/conceptual resources"@en;
   skos:inScheme :OperationScheme;
@@ -2521,7 +2519,7 @@ skos:Concept a owl:Class .
 
 :BiomedicalConceptNormalization a skos:Concept;
   rdfs:label "Biomedical concept normalization"@en;
-  skos:altLabel "Biomedical concept normalisation"@en-uk;
+  skos:altLabel "Biomedical concept normalisation"@en-GB;
   skos:broader :ConceptNormalization;
   skos:definition "The task of mapping free-form expressions to medical terms [source: Medical concept normalization in social media posts with recurrent neural networks]"@en;
   skos:inScheme :OperationScheme;
@@ -2582,14 +2580,15 @@ skos:Concept a owl:Class .
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Crawler"@en .
 
-:ArgumentMining rdfs:label "Argument mining"@en;
-  skos:altLabel "Argumentation mining"@en;
-  skos:broader :ComputationalArgumentation;
-  skos:definition "The automatic extraction and identification of argumentative structures from natural language text"@en;
-  skos:inScheme :OperationScheme;
-  skos:prefLabel "Argument mining"@en .
-
 :InformationExtractionAndInformationRetrievalCollection skos:member :ArgumentMining .
+
+:ComputationalArgumentation skos:narrower :ArgumentMining .
+
+:MultimodalSynthesis a skos:Concept;
+  rdfs:label "Multimodal synthesis"@en;
+  skos:definition "The generation of a multimodal output resource"@en;
+  skos:inScheme :OperationScheme;
+  skos:prefLabel "Multimodal synthesis"@en .
 
 :ProsodicInformationProcessing skos:broader :OperationWithMultimediaInputOrOutput .
 
@@ -2747,19 +2746,22 @@ skos:Concept a owl:Class .
 :Translation a skos:Concept;
   rdfs:label "Translation"@en;
   skos:broader :Operation;
-  skos:definition "", "The task/process of expressing the sense of a sequence of words in one language into another language"@en;
+  skos:definition "The task/process of expressing the sense of a sequence of words in one language into another language"@en;
   skos:inScheme :OperationScheme;
   skos:narrower :ImageTranslation, :Localization, :SpeechToSpeechTranslation;
   skos:prefLabel "Translation"@en .
+
+:DiscourseAnnotation skos:inScheme :ModelFunctionScheme .
 
 :SentenceAlignment skos:definition "Alignment at sentence level"@en .
 
 :UnicodeConformTokenizing a skos:Concept;
   rdfs:label "Unicode-conform tokenizing"@en;
   skos:broader :SupportOperation;
-  skos:definition "";
   skos:inScheme :OperationScheme;
   skos:prefLabel "Unicode-conform tokenizing"@en .
+
+:Argumentation skos:inScheme :ModelFunctionScheme .
 
 :TopicDetection skos:broader :KnowledgeDiscovery .
 
@@ -2848,7 +2850,7 @@ skos:Concept a owl:Class .
 
 :Anonymization a skos:Concept;
   rdfs:label "Anonymization"@en;
-  skos:altLabel "Anonymisation [en-UK]"@en-uk;
+  skos:altLabel "Anonymisation [en-UK]"@en-GB;
   skos:broader :Annotation;
   skos:definition "The task/process through which particular text segments or data units that allow the identification of a person are removed or replaced"@en;
   skos:inScheme :OperationScheme;
@@ -2880,9 +2882,11 @@ skos:Concept a owl:Class .
 :ImageUnderstanding a skos:Concept;
   rdfs:label "Image Understanding"@en;
   skos:broader :TextAndDataMining;
-  skos:definition "", "Advanced image processing in which artificial-intelligence techniques are used to interpret images by locating, characterizing, and recognizing objects and other features in the scene. [from https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/image-understanding]"@en;
+  skos:definition "Advanced image processing in which artificial-intelligence techniques are used to interpret images by locating, characterizing, and recognizing objects and other features in the scene. [from https://www.encyclopedia.com/computing/dictionaries-thesauruses-pictures-and-press-releases/image-understanding]"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Image Understanding"@en .
+
+:MultimediaAnnotation skos:inScheme :ModelFunctionScheme .
 
 :MachineLearningPredictor a skos:Concept;
   :performsOperation :Prediction;
@@ -3035,7 +3039,7 @@ skos:Concept a owl:Class .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Recognizing Textual Entailment"@en .
 
-:Pseudonymization skos:altLabel "pseudonymisation"@en-GB .
+:ProsodicSegmentation skos:inScheme :ModelFunctionScheme .
 
 :EvaluationOfBroadCoverageNaturalLanguageParsers a skos:Concept;
   rdfs:label "Evaluation of broad-coverage natural language parsers"@en;
@@ -3179,8 +3183,9 @@ skos:Concept a owl:Class .
   skos:narrower :PhraseAlignment, :SentenceAlignment, :WordAlignment;
   skos:prefLabel "Alignment"@en .
 
-:FillMask skos:definition "Masked Language Modeling is a fill-in-the-blank task, where a model uses the context words surrounding a mask token to try to predict what the masked word should be. [Source: https://keras.io/examples/nlp/masked_language_modeling/]";
-  skos:inScheme :OperationScheme .
+:Lemmatization skos:inScheme :ModelFunctionScheme .
+
+:FillMask skos:inScheme :OperationScheme .
 
 :Word a skos:Concept;
   rdfs:label "Word"@en;
@@ -3501,9 +3506,16 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   rdfs:label "Support of crowdsourcing tasks"@en;
   skos:broader :SupportOperation;
   skos:definition "Any operation that can support tasks that are accomplished through crowdsourcing"@en;
-  skos:example "Collection of data, their transformation and organization into crowdsourcing units; automatic generation of reusable crowdsourcing interfaces for specific tasks (e.g. annotation)"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Support of crowdsourcing tasks"@en .
+
+:SemanticRelationLabelling a skos:Concept;
+  rdfs:label "Semantic relation labelling"@en;
+  skos:altLabel "Semantic relation labeling [en-US]"@en-us;
+  skos:broader :SemanticAnnotation;
+  skos:definition "The task/process of attaching tags indicating the semantic relation that holds between units of a text."@en;
+  skos:inScheme :ModelFunctionScheme, :OperationScheme;
+  skos:prefLabel "Semantic relation labelling"@en .
 
 :Folia a skos:Concept;
   :documentationUrl "https://proycon.github.io/folia/";
@@ -3522,14 +3534,6 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:definition "The task/process of recognizing evidence and the target(s) of verbal aggression usually in social media texts"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Verbal aggression analysis"@en .
-
-:SemanticRelationLabelling a skos:Concept;
-  rdfs:label "Semantic relation labelling"@en;
-  skos:altLabel "Semantic relation labeling [en-US]"@en-us;
-  skos:broader :SemanticAnnotation;
-  skos:definition "The task/process of attaching tags indicating the semantic relation that holds between units of a text."@en;
-  skos:inScheme :OperationScheme;
-  skos:prefLabel "Semantic relation labelling"@en .
 
 :Html a skos:Concept;
   :hasMimetype :text_html;
@@ -3662,13 +3666,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 :Lemmatization a skos:Concept;
   rdfs:label "Lemmatization"@en;
-  skos:altLabel "Lemmatisation"@en-uk;
+  skos:altLabel "Lemmatisation"@en-GB;
   skos:broader :TextAnnotation;
   skos:definition "Lemmatisation  (or lemmatization) in linguistics is the process of grouping together the inflected forms of a word so they can be analysed as a single item, identified by the word's lemma, or dictionary form. [Wikipedia]"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Lemmatization"@en .
 
-:SpeechProcessingCollection skos:member :MultimodalSynthesis .
+:MultimodalSynthesis skos:broader :OperationWithMultimediaInputOrOutput .
 
 :InformationExtractor a skos:Concept;
   :performsOperation :InformationExtraction;
@@ -3788,9 +3792,10 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   rdfs:label "Information storage"@en;
   skos:altLabel "Data storage"@en;
   skos:broader :SupportOperation;
-  skos:definition "";
   skos:inScheme :OperationScheme;
   skos:prefLabel "Information storage"@en .
+
+:Pseudonymization skos:altLabel "Pseudonymisation"@en-GB .
 
 :EmotionRecognizer a skos:Concept;
   :performsOperation :EmotionDetection;
@@ -4218,9 +4223,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   rdfs:label "Knowledge Representation"@en;
   skos:altLabel "KR"@en;
   skos:broader :TextAndDataMining;
-  skos:definition "", "The task/process of representing information about entities in a form that machines are capable of understanding it"@en;
+  skos:definition "The task/process of representing information about entities in a form that machines are capable of understanding it"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Knowledge Representation"@en .
+
+:FillMask skos:definition "Masked Language Modeling is a fill-in-the-blank task, where a model uses the context words surrounding a mask token to try to predict what the masked word should be. [Source: https://keras.io/examples/nlp/masked_language_modeling/]"@en .
 
 :SoundEventAnnotation a skos:Concept;
   rdfs:label "Sound event annotation"@en;
@@ -4435,7 +4442,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 :SpeakerDiarization a skos:Concept;
   rdfs:label "Speaker diarization"@en;
-  skos:altLabel "Speaker diarisation"@en-uk;
+  skos:altLabel "Speaker diarisation"@en-GB;
   skos:broader :SpeechAnnotation;
   skos:definition "Partitioning of audio stream into homogeneous segments according to speaker properties and acoustic conditions"@en;
   skos:inScheme :OperationScheme;
@@ -4998,14 +5005,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 :Zip skos:inScheme :DataFormatScheme .
 
-:Search skos:broader :SupportOperation;
-  skos:definition "The act of looking for a unit of text in a dataset"@en;
+:Concordancing rdfs:label "Concordancing"@en;
+  skos:broader :Reading;
+  skos:definition "The automatic generation of concordances, i.e. formatted displays of all the occurrences of a particular types in a corpus"@en;
   skos:inScheme :OperationScheme;
-  skos:prefLabel "Search"@en .
+  skos:prefLabel "Concordancing"@en .
 
-:SupportOperation skos:narrower :Search .
-
-:InformationExtractionAndInformationRetrievalCollection skos:member :Search .
+:SupportOperationCollection skos:member :Concordancing .
 
 :Stemmer a skos:Concept;
   :performsOperation :Stemming;
@@ -5015,13 +5021,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Stemmer"@en .
 
-:Concordancing rdfs:label "Concordancing"@en;
-  skos:broader :Reading;
-  skos:definition "The automatic generation of concordances, i.e. formatted displays of all the occurrences of a particular types in a corpus"@en;
-  skos:inScheme :OperationScheme;
-  skos:prefLabel "Concordancing"@en .
+:Reading skos:narrower :Concordancing .
 
-:SupportOperationCollection skos:member :Concordancing .
+:Search a skos:Concept;
+  rdfs:label "Search"@en;
+  skos:definition "The act of looking for a unit of text in a dataset"@en;
+  skos:inScheme :OperationScheme;
+  skos:prefLabel "Search"@en .
 
 :SemanticReasoning a skos:Concept;
   rdfs:label "Semantic reasoning"@en;
@@ -5526,9 +5532,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   rdfs:label "Web crawling"@en;
   skos:altLabel "Crawling"@en, "Web Crawling and Spidering"@en;
   skos:broader :DataCollection;
-  skos:definition "", "The use of bots that crawl the web (crawlers) in order to spot content that matches user-set criteria and download them to create large datasets"@en;
+  skos:definition "The use of bots that crawl the web (crawlers) in order to spot content that matches user-set criteria and download them to create large datasets"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Web crawling"@en .
+
+:SupportOfCrowdsourcingTasks skos:definition "Collection of data, their transformation and organization into crowdsourcing units; automatic generation of reusable crowdsourcing interfaces for specific tasks (e.g. annotation)"@en .
 
 :Processor a skos:Concept;
   rdfs:label "Processor"@en;
@@ -5587,9 +5595,10 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 :SyntacticStructureGeneration a skos:Concept;
   rdfs:label "Syntactic Structure Generation"@en;
   skos:broader :NaturalLanguageGeneration;
-  skos:definition "";
   skos:inScheme :OperationScheme;
   skos:prefLabel "Syntactic Structure Generation"@en .
+
+:AnnotationOfCompounds skos:inScheme :ModelFunctionScheme .
 
 :GateXml a skos:Concept;
   :hasMimetype :application_xml;
@@ -5967,10 +5976,11 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:broader :InformationExtraction;
   skos:definition "The process/task of identifying and representing argumentation in text, so that systems have the ability to use them in tasks, such as automated logical reasoning"@en;
   skos:inScheme :OperationScheme;
-  skos:narrower :ArgumentMining;
   skos:prefLabel "Computational argumentation"@en .
 
 :KeaCorpus skos:inScheme :DataFormatScheme .
+
+:MultimodalSynthesis skos:related :MultimodalIntegration .
 
 :Debugging a skos:Concept;
   rdfs:label "Debugging"@en;
@@ -6052,8 +6062,9 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:broader :ResourceAccess;
   skos:definition "Getting access to the contents of an input resource"@en;
   skos:inScheme :OperationScheme;
-  skos:narrower :Concordancing;
   skos:prefLabel "Reading"@en .
+
+:Search skos:broader :SupportOperation .
 
 :audio_mpeg a skos:Concept;
   rdfs:label "audio/mpeg";
@@ -6604,22 +6615,6 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
 :EventLabelling skos:inScheme :ModelFunctionScheme .
 
 :PosTagging skos:inScheme :ModelFunctionScheme .
-
-:ParalanguageAnnotation skos:inScheme :ModelFunctionScheme .
-
-:SemanticRelationLabelling skos:inScheme :ModelFunctionScheme .
-
-:Argumentation skos:inScheme :ModelFunctionScheme .
-
-:Lemmatization skos:inScheme :ModelFunctionScheme .
-
-:DiscourseAnnotation skos:inScheme :ModelFunctionScheme .
-
-:MultimediaAnnotation skos:inScheme :ModelFunctionScheme .
-
-:ProsodicSegmentation skos:inScheme :ModelFunctionScheme .
-
-:AnnotationOfCompounds skos:inScheme :ModelFunctionScheme .
 
 _:node1fu7rlrd8x1 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
