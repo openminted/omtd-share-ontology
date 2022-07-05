@@ -13,7 +13,7 @@
 	 prov:wasAttributedTo :agent6;
 	 prov:wasAttributedTo :agent7;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasRevisionOf <pre-release 2.-.0>;
+	 prov:wasRevisionOf <1.1.0>;
 .
 :agent0 a prov:Agent; foaf:name "Claire Nedellec".
 :agent1 a prov:Agent; foaf:name "Dimitris Galanis".
