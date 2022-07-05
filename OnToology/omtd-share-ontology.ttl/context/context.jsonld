@@ -1,0 +1,214 @@
+{
+  "@context" : {
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "TextToSpeechSynthesis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TextToSpeechSynthesis"
+    },
+    "Clause" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Clause"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "LexicalSemanticRelation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/LexicalSemanticRelation"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "Phrase" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Phrase"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Polarity" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Polarity"
+    },
+    "related" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#related"
+    },
+    "SyntacticAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"
+    },
+    "Dependency" : {
+      "@id" : "http://vocab.lappsgrid.org/Dependency"
+    },
+    "hasMimetype" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/hasMimetype",
+      "@type" : "@id"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch"
+    },
+    "Date" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Date"
+    },
+    "DiscourseAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType"
+    },
+    "Sentence" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Sentence"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Constituent" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Constituent"
+    },
+    "performsOperation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/performsOperation",
+      "@type" : "@id"
+    },
+    "MorphosyntacticCategory" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticCategory"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "PartOfSpeech" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PartOfSpeech"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "Coreference" : {
+      "@id" : "http://vocab.lappsgrid.org/Coreference"
+    },
+    "documentationUrl" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/documentationUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "MorphologicalFeature" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/MorphologicalFeature"
+    },
+    "MorphosyntacticFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#MorphosyntacticFeature"
+    },
+    "SpeechSynthesis" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SpeechSynthesis"
+    },
+    "PolarityFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#PolarityFeature"
+    },
+    "Word" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Word"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf"
+    },
+    "LexicalRelation" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#LexicalRelation"
+    },
+    "Frame" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Frame"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces"
+    },
+    "SemanticRole" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticRole"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+    },
+    "Paragraph" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Paragraph"
+    },
+    "DocumentAnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/DocumentAnnotationType"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Document" : {
+      "@id" : "http://vocab.lappsgrid.org/Document"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "DiscourseFeature" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#DiscourseFeature"
+    },
+    "Token" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Token"
+    },
+    "SemanticFrame" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/SemanticFrame"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "hasFileExtension" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/hasFileExtension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Stem" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#Stem"
+    },
+    "SyntacticCategory" : {
+      "@id" : "http://purl.org/olia/olia-top.owl#SyntacticCategory"
+    },
+    "Collection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+    }
+  }
+}
