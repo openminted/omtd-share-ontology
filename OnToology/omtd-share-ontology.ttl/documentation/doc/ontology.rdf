@@ -347,6 +347,15 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://purl.org/olia/olia-top.owl#Constituent -->
+
+
+    <owl:Class rdf:about="http://purl.org/olia/olia-top.owl#Constituent">
+        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/olia/olia-top.owl#Date -->
 
 
@@ -473,6 +482,15 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     
 
 
+    <!-- http://vocab.lappsgrid.org/Constituent -->
+
+
+    <owl:Class rdf:about="http://vocab.lappsgrid.org/Constituent">
+        <owl:equivalentClass rdf:resource="http://w3id.org/meta-share/omtd-share/Constituent"/>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.lappsgrid.org/Coreference -->
 
 
@@ -531,6 +549,13 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Clause"/>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/Constituent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Constituent"/>
     
 
 
@@ -2344,10 +2369,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/Constituent">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <documentationUrl>http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent</documentationUrl>
-        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
-        <skos:definition xml:lang="en">A word or group of words that function as a single unit in a syntactic structure</skos:definition>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
-        <skos:prefLabel xml:lang="en">Constituent</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -6127,6 +6148,22 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/MsExcel_xlsx -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/MsExcel_xlsx">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <hasMimetype rdf:resource="http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet"/>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationFormat"/>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/TabularFormat"/>
+        <skos:definition xml:lang="en">Data format for Microsoft Excel documents (with file extension xlsx)</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormatScheme"/>
+        <skos:prefLabel xml:lang="en">MS-Excel (xlsx)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/MsPowerpoint -->
 
 
@@ -6152,6 +6189,21 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:definition xml:lang="en">Data format for Microsoft Word documents</skos:definition>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormatScheme"/>
         <skos:prefLabel xml:lang="en">MS-Word</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/omtd-share/MsWord_docx -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/MsWord_docx">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <hasMimetype rdf:resource="http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document"/>
+        <hasFileExtension>docx</hasFileExtension>
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/DocumentFormat"/>
+        <skos:definition xml:lang="en">Data format for Microsoft Word documents (with file extension .docx)</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormatScheme"/>
+        <skos:prefLabel xml:lang="en">Ms-Word (docx)</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -12544,6 +12596,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)</dc:source>
         <skos:definition xml:lang="en">A clause is a subdivision of a sentence containing a subject (argument) and predicate. It is possible to have a word that implies or refers to a predicate rather than one explicitly stated. [Pei &amp; Gaynor 1980: 40, http://linguistics-ontology.org/gold/2010/Clause]</skos:definition>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
         <skos:prefLabel xml:lang="en">Clause</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Constituent">
+        <skos:broader rdf:resource="http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType"/>
+        <skos:definition xml:lang="en">A word or group of words that function as a single unit in a syntactic structure</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme"/>
+        <skos:prefLabel xml:lang="en">Constituent</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/omtd-share/Coreference">
         <skos:altLabel xml:lang="en">Co-reference</skos:altLabel>

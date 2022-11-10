@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb29dd1c65a52ce5d5aa15712f4c474f" "d590b5b6c3ae729262eea9e60a7b101e" "e40d7c938df1188e1b8a530695c6c395" "skos:Concept" "7870dd7c9fed25fb62b6d1be2dc4aee3" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "e2ce177c3aa33c031abf8694409304b1" "71231dd1d5c8d4d7404a55707f033d93" "0d5500fb184ea7ceb99d61b9ab08e49c" "147ccc39ff90ecc2a32b1e78908ed8cb" "skos:Concept" "b98472b1392bdf9c84530db83d11cf03" ; /*classes style*/
 	"omtd:HistoricalEvent" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:HistoricalEvent" -> "omtd:SocialSciencesEntity" [ label = "skos:broader" ];
 	"omtd:HistoricalEvent" -> "omtd:NamedEntity" [ label = "skos:broader" ];
@@ -1379,24 +1379,24 @@ node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb
 	"omtd:Stem" -> "omtd:MorphologicalAnnotationType" [ label = "skos:broader" ];
 	"omtd:Stem" -> "http://purl.org/olia/olia-top.owl#Stem" [ label = "owl:equivalentClass" ];
 	"NULL" -> "omtd:OperationScheme" [ label = "owl:hasValue" ];
-	"NULL" -> "d593596f665e6425723bb288d1cf9a6b" [ label = "rdf:rest" ];
-	"NULL" -> "9f61c881d8f25aae4ebd7cb7c339b490" [ label = "owl:intersectionOf" ];
-	"NULL" -> "98723c1accf4dc5f82b387a2a7630fd4" [ label = "rdf:rest" ];
-	"NULL" -> "355f2ef461e171ac88d0fe587e0c0fa7" [ label = "rdf:rest" ];
-	"NULL" -> "693a889ba6539993cb9967676ec22a3f" [ label = "rdf:rest" ];
+	"NULL" -> "5288eb4816bae51b0a3203caa7a7a03e" [ label = "rdf:rest" ];
+	"NULL" -> "2a4820c4891c65601532d2cedfde914d" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:AnnotationTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "05288a13902bc0c0763afe71fdecbd09" [ label = "owl:intersectionOf" ];
+	"NULL" -> "73d2ef9fa0ea5550b972812018604393" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:hasMimetype" [ label = "owl:onProperty" ];
-	"NULL" -> "1892dc5b8446586fcc27fd8f6264b092" [ label = "owl:intersectionOf" ];
 	"NULL" -> "omtd:DataFormatScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "75b08fd088290323926714daec25dd0d" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
-	"NULL" -> "c803f5b59d036883c07b87a215f8d659" [ label = "rdf:rest" ];
+	"NULL" -> "7582fed58cce990cd0219f3931388e33" [ label = "owl:intersectionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "797f99a7af5b1741db617549fd7f547a" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:ComponentTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "5915a4b910b8f162719cb886579df1e0" [ label = "rdf:rest" ];
 	"NULL" -> "omtd:application_zip" [ label = "owl:hasValue" ];
 	"NULL" -> "omtd:TdmMethodScheme" [ label = "owl:hasValue" ];
-	"NULL" -> "91b276b85efb5c922a02e393a926be98" [ label = "owl:intersectionOf" ];
-	"NULL" -> "04f3e42081ca9e278e8bba6ea8ab4ea7" [ label = "owl:intersectionOf" ];
-	"NULL" -> "2628c2d4d7dd69eb1cf628b164679195" [ label = "owl:intersectionOf" ];
+	"NULL" -> "24805e3613d4ad6e9b42493b771b35e8" [ label = "owl:intersectionOf" ];
+	"NULL" -> "8283950a84f011016fc667a6d4f6bbaa" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
 	"omtd:SpeechUnderstanding" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
 	"omtd:SpeechUnderstanding" -> "omtd:SpeechRecognition" [ label = "skos:broader" ];
@@ -1999,6 +1999,11 @@ node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb
 	"omtd:FlowController" -> "omtd:FlowControl" [ label = "omtd:performsOperation" ];
 	"omtd:OrthographicTranscription" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
 	"omtd:OrthographicTranscription" -> "omtd:Transcription" [ label = "skos:broader" ];
+	"omtd:MsExcel_xlsx" -> "omtd:DataFormatScheme" [ label = "skos:inScheme" ];
+	"omtd:MsExcel_xlsx" -> "omtd:TabularFormat" [ label = "skos:broader" ];
+	"omtd:MsExcel_xlsx" -> "omtd:DocumentFormat" [ label = "skos:broader" ];
+	"omtd:MsExcel_xlsx" -> "omtd:AnnotationFormat" [ label = "skos:broader" ];
+	"omtd:MsExcel_xlsx" -> "omtd:application_vnd_openxmlformats_officedocument_spreadsheetml_sheet" [ label = "omtd:hasMimetype" ];
 	"omtd:text_x_org_dkpro_conll2006" -> "omtd:MimeTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:text_x_org_dkpro_conll2006" -> "omtd:Mimetype" [ label = "skos:broader" ];
 	"omtd:Generator" -> "omtd:Summarizer" [ label = "skos:narrower" ];
@@ -2479,15 +2484,15 @@ node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb
 	"omtd:Kaf" -> "omtd:application_x_kaf_json" [ label = "omtd:hasMimetype" ];
 	"omtd:ClusteringMethod" -> "omtd:TdmMethodScheme" [ label = "skos:inScheme" ];
 	"omtd:ClusteringMethod" -> "omtd:MachineAndStatisticalLearningMethod" [ label = "skos:broader" ];
-	"omtd:application_pdf" -> "omtd:MimeTypeScheme" [ label = "skos:inScheme" ];
-	"omtd:application_pdf" -> "omtd:Mimetype" [ label = "skos:broader" ];
 	"omtd:Debugging" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
 	"omtd:Debugging" -> "omtd:SupportOperation" [ label = "skos:broader" ];
-	"omtd:MalletLdaTopicProportions" -> "omtd:DataFormatScheme" [ label = "skos:inScheme" ];
-	"omtd:MalletLdaTopicProportions" -> "omtd:AnnotationFormat" [ label = "skos:broader" ];
 	"omtd:LinkedDataFormat" -> "omtd:LD_json" [ label = "skos:narrower" ];
 	"omtd:LinkedDataFormat" -> "omtd:DataFormatScheme" [ label = "skos:inScheme" ];
 	"omtd:LinkedDataFormat" -> "omtd:DataFormat" [ label = "skos:broader" ];
+	"omtd:MalletLdaTopicProportions" -> "omtd:DataFormatScheme" [ label = "skos:inScheme" ];
+	"omtd:MalletLdaTopicProportions" -> "omtd:AnnotationFormat" [ label = "skos:broader" ];
+	"omtd:application_pdf" -> "omtd:MimeTypeScheme" [ label = "skos:inScheme" ];
+	"omtd:application_pdf" -> "omtd:Mimetype" [ label = "skos:broader" ];
 	"omtd:OfficialText" -> "omtd:NamedEntity" [ label = "skos:broader" ];
 	"omtd:OfficialText" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:OfficialText" -> "omtd:SocialSciencesEntity" [ label = "skos:broader" ];
@@ -2523,6 +2528,9 @@ node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb
 	"omtd:Tokenizer" -> "omtd:Segmenter" [ label = "skos:broader" ];
 	"omtd:BiomedicalConceptNormalization" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
 	"omtd:BiomedicalConceptNormalization" -> "omtd:ConceptNormalization" [ label = "skos:broader" ];
+	"omtd:MsWord_docx" -> "omtd:DataFormatScheme" [ label = "skos:inScheme" ];
+	"omtd:MsWord_docx" -> "omtd:DocumentFormat" [ label = "skos:broader" ];
+	"omtd:MsWord_docx" -> "omtd:application_vnd_openxmlformats_officedocument_wordprocessingml_document" [ label = "omtd:hasMimetype" ];
 	"omtd:text_x_org_dkpro_ngram" -> "omtd:MimeTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:text_x_org_dkpro_ngram" -> "omtd:Mimetype" [ label = "skos:broader" ];
 	"omtd:SpellChecking" -> "omtd:OperationScheme" [ label = "skos:inScheme" ];
@@ -3053,9 +3061,9 @@ node [shape = rectangle, color="orange"]; "7bae3a9e63568ef826eeccc446dabaa3" "cb
 	"omtd:PosTagging" -> "omtd:MorphosyntacticTagging" [ label = "skos:broader" ];
 	"omtd:ChemicalEntity" -> "omtd:AnnotationTypeScheme" [ label = "skos:inScheme" ];
 	"omtd:ChemicalEntity" -> "omtd:DomainSpecificAnnotationType" [ label = "skos:broader" ];
-	"e40d7c938df1188e1b8a530695c6c395" -> "7870dd7c9fed25fb62b6d1be2dc4aee3" [ label = "omtd:hasMimetype" ];
-	"d590b5b6c3ae729262eea9e60a7b101e" -> "7bae3a9e63568ef826eeccc446dabaa3" [ label = "omtd:performsOperation" ];
-	"cb29dd1c65a52ce5d5aa15712f4c474f" -> "xsd:string" [ label = "omtd:hasFileExtension" ];
+	"147ccc39ff90ecc2a32b1e78908ed8cb" -> "b98472b1392bdf9c84530db83d11cf03" [ label = "omtd:hasMimetype" ];
+	"0d5500fb184ea7ceb99d61b9ab08e49c" -> "e2ce177c3aa33c031abf8694409304b1" [ label = "omtd:performsOperation" ];
+	"71231dd1d5c8d4d7404a55707f033d93" -> "xsd:string" [ label = "omtd:hasFileExtension" ];
 	"owl:Thing" -> "xsd:anyURI" [ label = "omtd:documentationUrl" ];
 
 }

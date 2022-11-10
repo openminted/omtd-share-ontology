@@ -213,6 +213,11 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/olia/olia-top.owl#Clause> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Clause> .
 <http://w3id.org/meta-share/omtd-share/Clause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/olia/olia-top.owl#Constituent
+<http://purl.org/olia/olia-top.owl#Constituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/olia/olia-top.owl#Constituent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Constituent> .
+<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://purl.org/olia/olia-top.owl#Date
 <http://purl.org/olia/olia-top.owl#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/olia/olia-top.owl#Date> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Date> .
@@ -283,6 +288,10 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/olia/olia-top.owl#Word> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Word> .
 <http://w3id.org/meta-share/omtd-share/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://vocab.lappsgrid.org/Constituent
+<http://vocab.lappsgrid.org/Constituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.lappsgrid.org/Constituent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Constituent> .
+# 
 # http://vocab.lappsgrid.org/Coreference
 <http://vocab.lappsgrid.org/Coreference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.lappsgrid.org/Coreference> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Coreference> .
@@ -312,6 +321,8 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://vocab.lappsgrid.org/Token> <http://www.w3.org/2002/07/owl#equivalentClass> <http://w3id.org/meta-share/omtd-share/Token> .
 # 
 # http://w3id.org/meta-share/omtd-share/Clause
+# 
+# http://w3id.org/meta-share/omtd-share/Constituent
 # 
 # http://w3id.org/meta-share/omtd-share/Coreference
 # 
@@ -1502,10 +1513,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/Constituent> <http://w3id.org/meta-share/omtd-share/documentationUrl> "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent" .
-<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> .
-<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#definition> "A word or group of words that function as a single unit in a syntactic structure"@en .
-<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
-<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constituent"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/ContentMining
 <http://w3id.org/meta-share/omtd-share/ContentMining> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4066,6 +4073,18 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/MsExcel> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/DataFormatScheme> .
 <http://w3id.org/meta-share/omtd-share/MsExcel> <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Excel"@en .
 # 
+# http://w3id.org/meta-share/omtd-share/MsExcel_xlsx
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://w3id.org/meta-share/omtd-share/hasMimetype> <http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet> .
+<http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/AnnotationFormat> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/TabularFormat> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Excel documents (with file extension xlsx)"@en .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/DataFormatScheme> .
+<http://w3id.org/meta-share/omtd-share/MsExcel_xlsx> <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Excel (xlsx)"@en .
+# 
 # http://w3id.org/meta-share/omtd-share/MsPowerpoint
 <http://w3id.org/meta-share/omtd-share/MsPowerpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/MsPowerpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -4086,6 +4105,17 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/MsWord> <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Word documents"@en .
 <http://w3id.org/meta-share/omtd-share/MsWord> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/DataFormatScheme> .
 <http://w3id.org/meta-share/omtd-share/MsWord> <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Word"@en .
+# 
+# http://w3id.org/meta-share/omtd-share/MsWord_docx
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://w3id.org/meta-share/omtd-share/hasMimetype> <http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document> .
+<http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://w3id.org/meta-share/omtd-share/hasFileExtension> "docx" .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Word documents (with file extension .docx)"@en .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/DataFormatScheme> .
+<http://w3id.org/meta-share/omtd-share/MsWord_docx> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ms-Word (docx)"@en .
 # 
 # http://w3id.org/meta-share/omtd-share/MultiWordUnit
 <http://w3id.org/meta-share/omtd-share/MultiWordUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4535,7 +4565,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://w3id.org/meta-share/omtd-share/hasMimetype> <http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document> .
-<http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/OpenFormat> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeDocument> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/Xml> .
@@ -4557,7 +4586,6 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://w3id.org/meta-share/omtd-share/hasMimetype> <http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet> .
-<http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/DocumentFormat> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/OpenFormat> .
 <http://w3id.org/meta-share/omtd-share/OpenOfficeSpreadsheet> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/TabularFormat> .
@@ -8309,6 +8337,11 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/omtd-share/Clause> <http://www.w3.org/2004/02/skos/core#definition> "A clause is a subdivision of a sentence containing a subject (argument) and predicate. It is possible to have a word that implies or refers to a predicate rather than one explicitly stated. [Pei & Gaynor 1980: 40, http://linguistics-ontology.org/gold/2010/Clause]"@en .
 <http://w3id.org/meta-share/omtd-share/Clause> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
 <http://w3id.org/meta-share/omtd-share/Clause> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clause"@en .
+# 
+<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/SyntacticAnnotationType> .
+<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#definition> "A word or group of words that function as a single unit in a syntactic structure"@en .
+<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/omtd-share/AnnotationTypeScheme> .
+<http://w3id.org/meta-share/omtd-share/Constituent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Constituent"@en .
 # 
 <http://w3id.org/meta-share/omtd-share/Coreference> <http://www.w3.org/2004/02/skos/core#altLabel> "Co-reference"@en .
 <http://w3id.org/meta-share/omtd-share/Coreference> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/omtd-share/DiscourseAnnotationType> .
