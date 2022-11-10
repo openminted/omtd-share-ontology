@@ -206,6 +206,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
                                            owl:equivalentClass :Clause .
 
 
+###  http://purl.org/olia/olia-top.owl#Constituent
+<http://purl.org/olia/olia-top.owl#Constituent> rdf:type owl:Class ;
+                                                owl:equivalentClass :Constituent .
+
+
 ###  http://purl.org/olia/olia-top.owl#Date
 <http://purl.org/olia/olia-top.owl#Date> rdf:type owl:Class ;
                                          owl:equivalentClass :Date .
@@ -276,6 +281,11 @@ Version 2 has been enriched with work done in the European Language Grid and oth
                                          owl:equivalentClass :Word .
 
 
+###  http://vocab.lappsgrid.org/Constituent
+<http://vocab.lappsgrid.org/Constituent> rdf:type owl:Class ;
+                                         owl:equivalentClass :Constituent .
+
+
 ###  http://vocab.lappsgrid.org/Coreference
 <http://vocab.lappsgrid.org/Coreference> rdf:type owl:Class ;
                                          owl:equivalentClass :Coreference .
@@ -308,6 +318,10 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 
 ###  http://w3id.org/meta-share/omtd-share/Clause
 :Clause rdf:type owl:Class .
+
+
+###  http://w3id.org/meta-share/omtd-share/Constituent
+:Constituent rdf:type owl:Class .
 
 
 ###  http://w3id.org/meta-share/omtd-share/Coreference
@@ -1623,11 +1637,7 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 ###  http://w3id.org/meta-share/omtd-share/Constituent
 :Constituent rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
-             :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent" ;
-             <http://www.w3.org/2004/02/skos/core#broader> :SyntacticAnnotationType ;
-             <http://www.w3.org/2004/02/skos/core#definition> "A word or group of words that function as a single unit in a syntactic structure"@en ;
-             <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "Constituent"@en .
+             :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent" .
 
 
 ###  http://w3id.org/meta-share/omtd-share/ContentMining
@@ -4421,6 +4431,18 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Excel"@en .
 
 
+###  http://w3id.org/meta-share/omtd-share/MsExcel_xlsx
+:MsExcel_xlsx rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+              :hasMimetype :application_vnd_openxmlformats_officedocument_spreadsheetml_sheet ;
+              <http://www.w3.org/2004/02/skos/core#broader> :AnnotationFormat ,
+                                                            :DocumentFormat ,
+                                                            :TabularFormat ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Excel documents (with file extension xlsx)"@en ;
+              <http://www.w3.org/2004/02/skos/core#inScheme> :DataFormatScheme ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Excel (xlsx)"@en .
+
+
 ###  http://w3id.org/meta-share/omtd-share/MsPowerpoint
 :MsPowerpoint rdf:type owl:NamedIndividual ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -4440,6 +4462,17 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Word documents"@en ;
         <http://www.w3.org/2004/02/skos/core#inScheme> :DataFormatScheme ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "MS-Word"@en .
+
+
+###  http://w3id.org/meta-share/omtd-share/MsWord_docx
+:MsWord_docx rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             :hasMimetype :application_vnd_openxmlformats_officedocument_wordprocessingml_document ;
+             :hasFileExtension "docx" ;
+             <http://www.w3.org/2004/02/skos/core#broader> :DocumentFormat ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Data format for Microsoft Word documents (with file extension .docx)"@en ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :DataFormatScheme ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Ms-Word (docx)"@en .
 
 
 ###  http://w3id.org/meta-share/omtd-share/MultiWordUnit
@@ -9120,6 +9153,12 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "A clause is a subdivision of a sentence containing a subject (argument) and predicate. It is possible to have a word that implies or refers to a predicate rather than one explicitly stated. [Pei & Gaynor 1980: 40, http://linguistics-ontology.org/gold/2010/Clause]"@en ;
         <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Clause"@en .
+
+
+:Constituent <http://www.w3.org/2004/02/skos/core#broader> :SyntacticAnnotationType ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A word or group of words that function as a single unit in a syntactic structure"@en ;
+             <http://www.w3.org/2004/02/skos/core#inScheme> :AnnotationTypeScheme ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Constituent"@en .
 
 
 :Coreference <http://www.w3.org/2004/02/skos/core#altLabel> "Co-reference"@en ;
