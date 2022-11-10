@@ -124,6 +124,12 @@
     "@id" : "http://w3id.org/meta-share/omtd-share/Clause"
   } ]
 }, {
+  "@id" : "http://purl.org/olia/olia-top.owl#Constituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/Constituent"
+  } ]
+}, {
   "@id" : "http://purl.org/olia/olia-top.owl#Date",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -210,6 +216,12 @@
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.lappsgrid.org/Constituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/Constituent"
+  } ]
 }, {
   "@id" : "http://vocab.lappsgrid.org/Coreference",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3077,7 +3089,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/Constituent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/documentationUrl" : [ {
     "@value" : "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"
   } ],
@@ -9575,6 +9587,33 @@
     "@value" : "MS-Excel"
   } ]
 }, {
+  "@id" : "http://w3id.org/meta-share/omtd-share/MsExcel_xlsx",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/omtd-share/hasMimetype" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_spreadsheetml_sheet"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationFormat"
+  }, {
+    "@id" : "http://w3id.org/meta-share/omtd-share/DocumentFormat"
+  }, {
+    "@id" : "http://w3id.org/meta-share/omtd-share/TabularFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data format for Microsoft Excel documents (with file extension xlsx)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/DataFormatScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "MS-Excel (xlsx)"
+  } ]
+}, {
   "@id" : "http://w3id.org/meta-share/omtd-share/MsPowerpoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/omtd-share/hasMimetype" : [ {
@@ -9621,6 +9660,32 @@
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "MS-Word"
+  } ]
+}, {
+  "@id" : "http://w3id.org/meta-share/omtd-share/MsWord_docx",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/omtd-share/hasFileExtension" : [ {
+    "@value" : "docx"
+  } ],
+  "http://w3id.org/meta-share/omtd-share/hasMimetype" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/application_vnd_openxmlformats_officedocument_wordprocessingml_document"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/DocumentFormat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data format for Microsoft Word documents (with file extension .docx)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/meta-share/omtd-share/DataFormatScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ms-Word (docx)"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/omtd-share/MultiWordUnit",
