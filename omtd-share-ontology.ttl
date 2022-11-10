@@ -5888,6 +5888,21 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
 
 :PosTagging skos:inScheme :ModelFunctionScheme .
 
+:MsWord_docx a skos:Concept;
+  :hasFileExtension "docx";
+  :hasMimetype :application_vnd_openxmlformats_officedocument_wordprocessingml_document;
+  skos:broader :DocumentFormat;
+  skos:definition "Data format for Microsoft Word documents (with file extension .docx)"@en;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "Ms-Word (docx)"@en .
+
+:MsExcel_xlsx a skos:Concept;
+  :hasMimetype :application_vnd_openxmlformats_officedocument_spreadsheetml_sheet;
+  skos:broader :AnnotationFormat, :DocumentFormat, :TabularFormat;
+  skos:definition "Data format for Microsoft Excel documents (with file extension xlsx)"@en;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "MS-Excel (xlsx)"@en .
+
 _:node1fu7rlrd8x1 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
   owl:onProperty skos:inScheme .
