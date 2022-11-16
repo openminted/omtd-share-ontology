@@ -5903,18 +5903,20 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "MS-Excel (xlsx)"@en .
 
-:c_e471e783 a skos:Concept;
+:TextXML a skos:Concept;
   :hasMimetype :text_xml;
   skos:broader :CorpusFormat, :Xml;
+  skos:definition "Data format for plain XML files"@en;
   skos:inScheme :DataFormatScheme;
-  skos:prefLabel "TextXML"@en .
+  skos:prefLabel "text/XML"@en .
 
-:Xml skos:narrower :c_e471e783 .
+:Xml skos:narrower :TextXML .
 
 :SQL a skos:Concept;
   :documentationUrl "https://www.iana.org/assignments/media-types/application/sql"^^xsd:anyURI;
   :hasMimetype :application_sql;
   skos:broader :DatabaseFormat;
+  skos:definition "Format for data in SQL database"@en;
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "SQL"@en .
 
@@ -5927,6 +5929,7 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
   :documentationUrl "https://www.iana.org/assignments/media-types/application/octet-stream"^^xsd:anyURI;
   :hasMimetype :application_octet_stream;
   skos:broader :BinaryFormat;
+  skos:definition "Value for format used for arbitrary binary data"@en;
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "octet-stream"@en .
 
@@ -5938,6 +5941,7 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
 :tar a skos:Concept;
   :hasMimetype :x_tar;
   skos:broader :PackageFormat;
+  skos:definition "Data format for compressed data files (Tape Archive, tar)"@en;
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "tar"@en .
 
