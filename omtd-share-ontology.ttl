@@ -4858,7 +4858,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:prefLabel "Co-reference resolution"@en;
   skos:related :AnaphoraResolution .
 
-:application_vnd_msExcel skos:prefLabel "application/vnd.msExcel" .
+:application_vnd_msExcel skos:prefLabel "application/vnd.ms-excel" .
 
 :AnaphoraAnnotation skos:definition "The task/process of marking all linguistic expressions that appear in a certain text or across texts as referring to the same entity and linking it to this entity"@en .
 
@@ -5902,6 +5902,50 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
   skos:definition "Data format for Microsoft Excel documents (with file extension xlsx)"@en;
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "MS-Excel (xlsx)"@en .
+
+:c_e471e783 a skos:Concept;
+  :hasMimetype :text_xml;
+  skos:broader :CorpusFormat, :Xml;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "TextXML"@en .
+
+:Xml skos:narrower :c_e471e783 .
+
+:SQL a skos:Concept;
+  :documentationUrl "https://www.iana.org/assignments/media-types/application/sql"^^xsd:anyURI;
+  :hasMimetype :application_sql;
+  skos:broader :DatabaseFormat;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "SQL"@en .
+
+:application_sql a skos:Concept;
+  skos:broader :Mimetype;
+  skos:inScheme :MimeTypeScheme;
+  skos:prefLabel "application/sql"@en .
+
+:octetStream a skos:Concept;
+  :documentationUrl "https://www.iana.org/assignments/media-types/application/octet-stream"^^xsd:anyURI;
+  :hasMimetype :application_octet_stream;
+  skos:broader :BinaryFormat;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "octet-stream"@en .
+
+:application_octet_stream a skos:Concept;
+  skos:broader :Mimetype;
+  skos:inScheme :MimeTypeScheme;
+  skos:prefLabel "application/octet-stream"@en .
+
+:tar a skos:Concept;
+  :hasMimetype :x_tar;
+  skos:broader :PackageFormat;
+  skos:inScheme :DataFormatScheme;
+  skos:prefLabel "tar"@en .
+
+:x_tar a skos:Concept;
+  skos:broader :Mimetype;
+  skos:editorialNote "Not an official IANA mimetype but commonly used"@en;
+  skos:inScheme :MimeTypeScheme;
+  skos:prefLabel "application/x-tar"@en .
 
 _:node1fu7rlrd8x1 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
