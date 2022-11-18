@@ -1,10 +1,12 @@
 @prefix : <http://w3id.org/meta-share/omtd-share/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix grddl: <http://www.w3.org/2003/g/data-view#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -508,7 +510,7 @@
     :EvaluationOfMachineTranslationAndTranslationTools, :SpeechSynthesisEvaluation, :TaskOrientedTextAnalysisEvaluation;
   skos:prefLabel "Evaluation"@en .
 
-:audio_flac skos:altLabel "audio/x-flac" .
+:audio_flac skos:altLabel "audio/x-flac"@en .
 
 :PackageFormat a skos:Concept;
   skos:broader :DataFormat;
@@ -1267,9 +1269,9 @@ and wikipedia (https://en.wikipedia.org/wiki/Decision_tree)"""@en;
 :hasMimetype a owl:ObjectProperty;
   rdfs:comment "Relates a data format to the IANA mimetype; it can be the exact or a broader mimetype; unofficial mimetypes are also used, but this relation will be revisited"@en;
   rdfs:label "has mimetype"@en;
-  rdfs:range _:node1fu4q14cjx30 .
+  rdfs:range _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx30 .
 
-_:node1fu4q14cjx30 a owl:Class .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx30 a owl:Class .
 
 :hasMimetype rdfs:subPropertyOf owl:topObjectProperty .
 
@@ -1499,7 +1501,7 @@ _:node1fu4q14cjx30 a owl:Class .
 
 :image_png a skos:Concept .
 
-:hasFileExtension rdfs:domain _:node1fu7rlrd8x2;
+:hasFileExtension rdfs:domain _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x2;
   rdfs:label "has file extension"@en;
   rdfs:range xsd:string .
 
@@ -1565,8 +1567,6 @@ Version 2 has been enriched with work done in the European Language Grid and oth
 :TextToImageGeneration skos:inScheme :ModelFunctionScheme .
 
 :TextGeneration skos:inScheme :ModelFunctionScheme .
-
-:zip :hasMimetype :zip .
 
 :PolarityDetection a skos:Concept;
   skos:broader :InformationExtraction;
@@ -3368,7 +3368,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 :performsOperation a owl:ObjectProperty;
   rdfs:comment "Component A performs Operation B"@en;
   rdfs:label "performs operation"@en;
-  rdfs:range _:node1fu4q14cjx42;
+  rdfs:range _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx42;
   rdfs:subPropertyOf owl:topObjectProperty;
   skos:altLabel "performs Task"@en .
 
@@ -4226,6 +4226,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:altLabel "Opinion extraction"@en, "Opinion mining"@en, "Polarity detection"@en,
     "Sentiment detection"@en;
   skos:broader :InformationExtraction;
+  skos:definition "The task/process of computationally identifying and categorizing opinions expressed in a piece of text, especially in order to determine whether the writer's attitude towards a particular topic, product, etc. is positive, negative, or neutral"@en;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Sentiment analysis"@en .
 
@@ -4324,8 +4325,6 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Anaphora resolution"@en;
   skos:related :CoReferenceResolution .
-
-:SentimentAnalysis skos:definition "The task/process of computationally identifying and categorizing opinions expressed in a piece of text, especially in order to determine whether the writer's attitude towards a particular topic, product, etc. is positive, negative, or neutral"@en .
 
 :DependencyParsing a skos:Concept;
   dc:source "adapted from https://nlp.stanford.edu/software/nndep.shtml"@en;
@@ -4664,7 +4663,8 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 :RelationExtraction skos:scopeNote "Automated or human-assisted acquisition of relations between concepts from textual or other data, usu. within a selected domain."@en .
 
-:image_jpeg skos:inScheme :MimeTypeScheme .
+:image_jpeg skos:inScheme :MimeTypeScheme;
+  skos:prefLabel "image/jpeg"@en .
 
 :Sentence a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence";
@@ -4753,13 +4753,11 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :TdmMethodScheme;
   skos:prefLabel "Artificial Neural Network"@en .
 
-:text_sgml skos:prefLabel "text/sgml" .
+:text_sgml skos:prefLabel "text/sgml"@en .
 
 :application_x_org_dkpro_tgrep2 a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
-
-:image_jpeg skos:prefLabel "image/jpeg" .
 
 :DependencyConverter a skos:Concept;
   :performsOperation :DependencyConversion;
@@ -4768,7 +4766,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Dependency converter"@en .
 
-:application_x_org_dkpro_negra3 skos:prefLabel "application/x.org.dkpro.negra3" .
+:application_x_org_dkpro_negra3 skos:prefLabel "application/x.org.dkpro.negra3"@en .
 
 :MsAccessDatabase a skos:Concept;
   :hasFileExtension "mdb";
@@ -4778,19 +4776,19 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "MS-Access database"@en .
 
-:audio_basic skos:prefLabel "audio/basic" .
+:audio_basic skos:prefLabel "audio/basic"@en .
 
 :application_xhtml_xml a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:application_vnd_oasis_opendocument_presentation skos:prefLabel "application/vnd.oasis.opendocument.presentation" .
+:application_vnd_oasis_opendocument_presentation skos:prefLabel "application/vnd.oasis.opendocument.presentation"@en .
 
 :application_xTmx_xml a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:application_fastinfoset skos:prefLabel "application/fastinfoset" .
+:application_fastinfoset skos:prefLabel "application/fastinfoset"@en .
 
 :ModelOrganism_species a skos:Concept;
   skos:broader :BiologicalEnity, :NamedEntity;
@@ -4798,7 +4796,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:prefLabel "Model organism/species"@en .
 
 :application_vnd_openxmlformats_officedocument_presentationml_presentation skos:prefLabel
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation" .
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation"@en .
 
 :SemanticSearch a skos:Concept;
   skos:broader :InformationRetrieval;
@@ -4806,7 +4804,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Semantic search"@en .
 
-:application_xml_alto skos:prefLabel "application/xml+alto" .
+:application_xml_alto skos:prefLabel "application/xml+alto"@en .
 
 :Neuron a skos:Concept;
   skos:broader :BiologicalEnity, :NamedEntity;
@@ -4814,13 +4812,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Neuron"@en .
 
-:application_xLatex skos:prefLabel "application/x-latex" .
+:application_xLatex skos:prefLabel "application/x-latex"@en .
 
 :text_tcf_xml a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:image_png skos:prefLabel "image/png" .
+:image_png skos:prefLabel "image/png"@en .
 
 :NeuroscienceEntity a skos:Concept;
   skos:broader :DomainSpecificAnnotationType;
@@ -4839,7 +4837,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Fake news detection"@en .
 
-:text_xPubmed skos:prefLabel "text/x-pubmed" .
+:text_xPubmed skos:prefLabel "text/x-pubmed"@en .
 
 :KeywordExtractor a skos:Concept;
   :performsOperation :KeywordExtraction;
@@ -4848,7 +4846,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Keyword extractor"@en .
 
-:application_x_org_dkpro_uima_json skos:prefLabel "application/x.org.dkpro.uima+json" .
+:application_x_org_dkpro_uima_json skos:prefLabel "application/x.org.dkpro.uima+json"@en .
 
 :CoReferenceResolution a skos:Concept;
   skos:altLabel "Coreference resolution"@en;
@@ -4858,7 +4856,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:prefLabel "Co-reference resolution"@en;
   skos:related :AnaphoraResolution .
 
-:application_vnd_msExcel skos:prefLabel "application/vnd.ms-excel" .
+:application_vnd_msExcel skos:prefLabel "application/vnd.ms-excel"@en .
 
 :AnaphoraAnnotation skos:definition "The task/process of marking all linguistic expressions that appear in a certain text or across texts as referring to the same entity and linking it to this entity"@en .
 
@@ -4871,7 +4869,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Lexicon extractor from lexica"@en .
 
-:text_x_org_dkpro_conllU skos:prefLabel "text/x.org.dkpro.conll-u" .
+:text_x_org_dkpro_conllU skos:prefLabel "text/x.org.dkpro.conll-u"@en .
 
 :WARC a skos:Concept;
   :documentationUrl "http://archive-access.sourceforge.net/warc/", "https://en.wikipedia.org/wiki/Web_ARChive";
@@ -4879,21 +4877,21 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Web ARChive format"@en .
 
-:text_x_org_dkpro_conll2008 skos:prefLabel "text/x.org.dkpro.conll-2008" .
+:text_x_org_dkpro_conll2008 skos:prefLabel "text/x.org.dkpro.conll-2008"@en .
 
 :TerminologyManagement a skos:Concept;
   skos:broader :SupportOperation;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Terminology management"@en .
 
-:application_postscript skos:prefLabel "application/postscript" .
+:application_postscript skos:prefLabel "application/postscript"@en .
 
 :TranslationMemoryManagement a skos:Concept;
   skos:broader :SupportOperation;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Translation memory management"@en .
 
-:text_x_org_dkpro_conll2009 skos:prefLabel "text/x.org.dkpro.conll-2009" .
+:text_x_org_dkpro_conll2009 skos:prefLabel "text/x.org.dkpro.conll-2009"@en .
 
 :SentenceAlignment skos:prefLabel "Sentence alignment"@en .
 
@@ -4905,7 +4903,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Word sense disambiguator"@en .
 
-:application_tei_xml skos:prefLabel "application/tei+xml" .
+:application_tei_xml skos:prefLabel "application/tei+xml"@en .
 
 :LexicalSimplification a skos:Concept;
   skos:broader :NaturalLanguageGeneration;
@@ -4914,7 +4912,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:prefLabel "Lexical simplification"@en;
   skos:related :LexicalSubstitution .
 
-:application_xml skos:prefLabel "application/xml" .
+:application_xml skos:prefLabel "application/xml"@en .
 
 :PreOrPostProcessor a skos:Concept;
   skos:broader :ComponentType;
@@ -4923,7 +4921,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:narrower :Filter, :GrammarChecker, :Normalizer, :SpellingChecker;
   skos:prefLabel "Pre- or Post-Processor"@en .
 
-:text_xCochrane skos:prefLabel "text/x-cochrane" .
+:text_xCochrane skos:prefLabel "text/x-cochrane"@en .
 
 :Summarizer a skos:Concept;
   :performsOperation :Summarization;
@@ -4932,13 +4930,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Summarizer"@en .
 
-:application_anno_json skos:prefLabel "application/anno+json" .
+:application_anno_json skos:prefLabel "application/anno+json"@en .
 
 :application_json a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:text_x_org_dkpro_imscwb skos:prefLabel "text/x.org.dkpro.imscwb" .
+:text_x_org_dkpro_imscwb skos:prefLabel "text/x.org.dkpro.imscwb"@en .
 
 :PolarityLabelling a skos:Concept;
   skos:broader :SemanticAnnotation;
@@ -4946,7 +4944,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Polarity labelling"@en .
 
-:application_xXml_alvis skos:prefLabel "application/x-xml+alvis" .
+:application_xXml_alvis skos:prefLabel "application/x-xml+alvis"@en .
 
 :Chunking a skos:Concept;
   skos:altLabel "Light parsing"@en, "Shallow Parsing"@en;
@@ -4956,7 +4954,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:narrower :NounPhraseChunking;
   skos:prefLabel "Chunking"@en .
 
-:audio_aiff skos:prefLabel "audio/aiff" .
+:audio_aiff skos:prefLabel "audio/aiff"@en .
 
 :ConstituencyParsing skos:scopeNote "Parsing (from Latin \"\"pars orationis\"\" = parts of speech) is the syntactic analysis of languages. Natural Language Parsing is the syntactic analysis of natural languages, such as Finnish or Chinese. The objective of Natural Language Parsing is to determine parts of sentences (such as verbs, noun phrases, or relative clauses), and the relationships between them (such as subject or object). Unlike parsing of formally defined artificial languages (such as Java or predicate logic), parsing of natural languages presents problems due to ambiguity, and the productive and creative use of language."@en .
 
@@ -4967,7 +4965,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Web crawling"@en .
 
-:text_x_org_dkpro_conll2012 skos:prefLabel "text/x.org.dkpro.conll-2012" .
+:text_x_org_dkpro_conll2012 skos:prefLabel "text/x.org.dkpro.conll-2012"@en .
 
 :SpeechEnhancement skos:scopeNote "The improvement of speech intelligibility by removing background noise from the speech signal"@en,
     "The improvement of speech intelligibility by removing background noise from the speech signal. Due to the complexity of speech acoustics and perception, no simple mathematical error criterion can be applied; instead, algorithms and measures need to be developed which accomodate human perception."@en .
@@ -4979,7 +4977,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:narrower :Annotator, :Generator;
   skos:prefLabel "Processor"@en .
 
-:text_turtle skos:prefLabel "text/turtle" .
+:text_turtle skos:prefLabel "text/turtle"@en .
 
 :FaceVerification a skos:Concept;
   skos:altLabel "Face authentication"@en;
@@ -4988,16 +4986,16 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Face verification"@en .
 
-:audio_x_wav skos:prefLabel "audio/x-wav" .
+:audio_x_wav skos:prefLabel "audio/x-wav"@en .
 
-:application_x_org_dkpro_uima_binary skos:prefLabel "application/x.org.dkpro.uima+binary" .
+:application_x_org_dkpro_uima_binary skos:prefLabel "application/x.org.dkpro.uima+binary"@en .
 
 :FacialExpression a skos:Concept;
   skos:broader :ModalityAnnotationType;
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Facial expression"@en .
 
-:text_xml skos:prefLabel "text/xml" .
+:text_xml skos:prefLabel "text/xml"@en .
 
 :HumourDetection a skos:Concept;
   skos:altLabel "Humor detection"@en-us, "Humor recognition"@en-us, "Humor sensing"@en-us,
@@ -5006,7 +5004,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Humour detection"@en .
 
-:application_xMsaccess skos:prefLabel "application/x-msaccess" .
+:application_xMsaccess skos:prefLabel "application/x-msaccess"@en .
 
 :SpatialRoleLabelling a skos:Concept;
   skos:altLabel "Spatial role labeling"@en-us;
@@ -5015,13 +5013,13 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Spatial role labelling"@en .
 
-:application_x_org_dkpro_reuters21578_sgml skos:prefLabel "application/x.org.dkpro.reuters21578+sgml" .
+:application_x_org_dkpro_reuters21578_sgml skos:prefLabel "application/x.org.dkpro.reuters21578+sgml"@en .
 
 :audio_mpa a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:application_msword skos:prefLabel "application/msword" .
+:application_msword skos:prefLabel "application/msword"@en .
 
 :IonicChannel a skos:Concept;
   skos:altLabel "Ion channel"@en;
@@ -5030,14 +5028,14 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Ionic channel"@en .
 
-:application_pdf skos:prefLabel "application/pdf" .
+:application_pdf skos:prefLabel "application/pdf"@en .
 
 :SyntacticStructureGeneration a skos:Concept;
   skos:broader :NaturalLanguageGeneration;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Syntactic Structure Generation"@en .
 
-:audio_mpeg3 skos:prefLabel "audio/mpeg3" .
+:audio_mpeg3 skos:prefLabel "audio/mpeg3"@en .
 
 :AnnotationOfCompounds skos:inScheme :ModelFunctionScheme .
 
@@ -5048,7 +5046,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "GATE XML"@en .
 
-:application_vnd_oasis_opendocument_text skos:prefLabel "application/vnd.oasis.opendocument.text" .
+:application_vnd_oasis_opendocument_text skos:prefLabel "application/vnd.oasis.opendocument.text"@en .
 
 :WordAlignment a skos:Concept;
   skos:broader :Alignment;
@@ -5056,7 +5054,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Word alignment"@en .
 
-:application_vnd_ms_powerpoint skos:prefLabel "application/vnd.ms-powerpoint" .
+:application_vnd_ms_powerpoint skos:prefLabel "application/vnd.ms-powerpoint"@en .
 
 :CorpusViewing a skos:Concept;
   skos:broader :Viewing;
@@ -5064,7 +5062,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :OperationScheme;
   skos:prefLabel "Corpus viewing"@en .
 
-:audio_vnd_wave skos:prefLabel "audio/vnd.wave" .
+:audio_vnd_wave skos:prefLabel "audio/vnd.wave"@en .
 
 :JsonL a skos:Concept;
   :documentationUrl "https://jsonlines.org/";
@@ -5073,7 +5071,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "JSON Lines"@en .
 
-:application_xTex skos:prefLabel "application/x-tex" .
+:application_xTex skos:prefLabel "application/x-tex"@en .
 
 :ResourceAccess a skos:Concept;
   skos:broader :SupportOperation;
@@ -5082,7 +5080,7 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:narrower :Reading, :Writing;
   skos:prefLabel "Resource access"@en .
 
-:image_gif skos:prefLabel "image/gif" .
+:image_gif skos:prefLabel "image/gif"@en .
 
 :Cadixe_json a skos:Concept;
   :documentationUrl "https://builds.openminted.eu/job/WP%205.2%20-%20Typesystem%20alignment/eu.openminted.interop$mapping-conversion/doclinks/1/components.html#ExportCadixeJSON";
@@ -5092,7 +5090,8 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Cadixe/JSON"@en .
 
-:Zip skos:prefLabel "zip"@en .
+:Zip skos:broader :PackageFormat;
+  skos:prefLabel "zip"@en .
 
 :FormatConversion a skos:Concept;
   skos:altLabel "Data conversion"@en, "File conversion"@en;
@@ -5104,22 +5103,23 @@ In annotation, words are often used as equivalent to tokens; thus, for instance,
 
 :OpenOfficePresentation skos:prefLabel "Open office presentation"@en .
 
-:hasMimetype rdfs:domain _:node1fu4q14cjx26 .
+:hasMimetype rdfs:domain _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx26 .
 
-_:node1fu4q14cjx26 a owl:Class;
-  owl:intersectionOf _:node1fu4q14cjx27 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx26 a owl:Class;
+  owl:intersectionOf _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx27 .
 
-_:node1fu4q14cjx27 a rdf:List;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx27 a rdf:List;
   rdf:first skos:Concept;
-  rdf:rest _:node1fu4q14cjx28 .
+  rdf:rest _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx28 .
 
-_:node1fu4q14cjx28 a rdf:List;
-  rdf:first _:node1fu4q14cjx25 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx28 a rdf:List;
+  rdf:first _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx25 .
 
-_:node1fu4q14cjx25 a owl:Restriction;
-  owl:hasValue :DataFormatScheme .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx25 a owl:Restriction;
+  owl:hasValue :DataFormatScheme;
+  owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx28 rdf:rest rdf:nil .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx28 rdf:rest rdf:nil .
 
 :TrainingOfMachineLearningModels a skos:Concept;
   dc:source "adapted from http://docs.aws.amazon.com/machine-learning/latest/dg/training-ml-models.html";
@@ -5128,14 +5128,14 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Training of Machine Learning models"@en .
 
-:text_x_eaf_xml skos:prefLabel "text/x-eaf+xml" .
+:text_x_eaf_xml skos:prefLabel "text/x-eaf+xml"@en .
 
 :OrthographicTranscription1 a skos:Concept;
   skos:broader :Transcription1;
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Orthographic transcription"@en .
 
-:application_vnd_xmi_xml skos:prefLabel "application/vnd.xmi+xml" .
+:application_vnd_xmi_xml skos:prefLabel "application/vnd.xmi+xml"@en .
 
 :Compound a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Compound";
@@ -5152,7 +5152,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Dependency tree"@en .
 
-:application_tika skos:prefLabel "application/tika" .
+:application_tika skos:prefLabel "application/tika"@en .
 
 :Csv a skos:Concept;
   :hasMimetype :text_csv;
@@ -5162,14 +5162,14 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "CSV"@en .
 
-:text_x_org_dkpro_ngram skos:prefLabel "text/x.org.dkpro.ngram" .
+:text_x_org_dkpro_ngram skos:prefLabel "text/x.org.dkpro.ngram"@en .
 
 :SoundToTextAlignment a skos:Concept;
   skos:broader :SpeechAnnotation;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Sound-to-Text alignment"@en .
 
-:application_vnd_oasis_opendocument_spreadsheet skos:prefLabel "application/vnd.oasis.opendocument.spreadsheet" .
+:application_vnd_oasis_opendocument_spreadsheet skos:prefLabel "application/vnd.oasis.opendocument.spreadsheet"@en .
 
 :SpeechToSpeechTranslation a skos:Concept;
   skos:broader :Translation;
@@ -5177,9 +5177,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Speech-to-Speech translation"@en .
 
-:application_zip skos:prefLabel "application/zip" .
-
-:Zip skos:broader :PackageFormat .
+:application_zip skos:prefLabel "application/zip"@en .
 
 :SubcategorizationFrame a skos:Concept;
   skos:altLabel "Argument structure"@en, "Subcategorisation frame"@en;
@@ -5188,7 +5186,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Subcategorization frame"@en .
 
-:video_mp4 skos:prefLabel "video/mp4" .
+:video_mp4 skos:prefLabel "video/mp4"@en .
 
 :WikipediaDiscussion a skos:Concept;
   :documentationUrl "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-WikipediaDiscussion";
@@ -5197,19 +5195,19 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Wikipedia discussion"@en .
 
-:application_x_org_dkpro_tiger_xml skos:prefLabel "application/x.org.dkpro.tiger+xml" .
+:application_x_org_dkpro_tiger_xml skos:prefLabel "application/x.org.dkpro.tiger+xml"@en .
 
 :text_x_org_dkpro_ptbChunked a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:text_x_org_dkpro_reuters21578 skos:prefLabel "text/x.org.dkpro.reuters21578" .
+:text_x_org_dkpro_reuters21578 skos:prefLabel "text/x.org.dkpro.reuters21578"@en .
 
 :application_x_org_dkpro_tuepp_xml a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:image_tiff skos:prefLabel "image/tiff" .
+:image_tiff skos:prefLabel "image/tiff"@en .
 
 :Xhtml a skos:Concept;
   :documentationUrl "https://www.w3.org/TR/xhtml1/";
@@ -5220,7 +5218,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "XHTML"@en .
 
-:audio_wav skos:prefLabel "audio/wav" .
+:audio_wav skos:prefLabel "audio/wav"@en .
 
 :MorphologicalFeature a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures";
@@ -5231,7 +5229,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Morphological feature"@en .
 
-:application_xXces_xml skos:prefLabel "application/x-xces+xml" .
+:application_xXces_xml skos:prefLabel "application/x-xces+xml"@en .
 
 :WordSense a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense";
@@ -5240,7 +5238,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Word sense"@en .
 
-:text_html skos:prefLabel "text/html" .
+:text_html skos:prefLabel "text/html"@en .
 
 :TextualEntailment a skos:Concept;
   skos:altLabel "Entailment"@en;
@@ -5248,7 +5246,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Textual entailment"@en .
 
-:application_rtf skos:prefLabel "application/rtf" .
+:application_rtf skos:prefLabel "application/rtf"@en .
 
 :BionlpFormat a skos:Concept;
   dct:replaces :BionlpFormats;
@@ -5258,7 +5256,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:narrower :Bionlp, :BionlpSt2013A1_a2, :Json_genia;
   skos:prefLabel "BioNLP format"@en .
 
-:audio_wave skos:prefLabel "audio/wave" .
+:audio_wave skos:prefLabel "audio/wave"@en .
 
 :CoReferenceAnnotator a skos:Concept;
   skos:broader :Annotator;
@@ -5266,7 +5264,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Co-reference annotator"@en .
 
-:application_x_json_twitter skos:prefLabel "application/x-json-twitter" .
+:application_x_json_twitter skos:prefLabel "application/x-json-twitter"@en .
 
 :BinaryCas a skos:Concept;
   :documentationUrl "https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl";
@@ -5277,7 +5275,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Binary CAS"@en .
 
-:application_x_kaf_json skos:prefLabel "application/x-kaf+json" .
+:application_x_kaf_json skos:prefLabel "application/x-kaf+json"@en .
 
 :Funding a skos:Concept;
   skos:broader :ScholarlyAnalyticsEntity;
@@ -5285,7 +5283,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Funding"@en .
 
-:application_x_org_dkpro_tgrep2 skos:prefLabel "application/x.org.dkpro.tgrep2" .
+:application_x_org_dkpro_tgrep2 skos:prefLabel "application/x.org.dkpro.tgrep2"@en .
 
 :AnnotationOfNumbers skos:inScheme :ModelFunctionScheme .
 
@@ -5294,7 +5292,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Text analysis"@en .
 
-:application_xhtml_xml skos:prefLabel "application/xhtml+xml" .
+:application_xhtml_xml skos:prefLabel "application/xhtml+xml"@en .
 
 :Keyword a skos:Concept;
   skos:broader :ScholarlyAnalyticsEntity, :SemanticAnnotationType;
@@ -5302,7 +5300,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Keyword"@en .
 
-:application_xTmx_xml skos:prefLabel "application/x-tmx+xml" .
+:application_xTmx_xml skos:prefLabel "application/x-tmx+xml"@en .
 
 :AudioSegmentation skos:inScheme :ModelFunctionScheme .
 
@@ -5312,21 +5310,21 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Avro"@en .
 
-:text_tcf_xml skos:prefLabel "text/tcf+xml" .
+:text_tcf_xml skos:prefLabel "text/tcf+xml"@en .
 
 :application_pls_xml a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme;
-  skos:prefLabel "application/pls+xml" .
+  skos:prefLabel "application/pls+xml"@en .
 
-:text_csv skos:prefLabel "text/csv" .
+:text_csv skos:prefLabel "text/csv"@en .
 
 :SpeechAnalysis a skos:Concept;
   skos:broader :SpeechRecognition;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Speech analysis"@en .
 
-:application_json skos:prefLabel "application/json" .
+:application_json skos:prefLabel "application/json"@en .
 
 :L2WritingSupport a skos:Concept;
   skos:altLabel "L2 writing assistant"@en;
@@ -5334,7 +5332,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "L2 writing support"@en .
 
-:audio_mpa skos:prefLabel "audio/MPA" .
+:audio_mpa skos:prefLabel "audio/MPA"@en .
 
 :BuildingOfFiniteStateAutomata a skos:Concept;
   skos:broader :SupportOperation;
@@ -5343,7 +5341,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:prefLabel "Building of finite state automata"@en;
   skos:related :FiniteStateTechnology .
 
-:text_x_org_dkpro_ptbChunked skos:prefLabel "text/x.org.dkpro.ptb-chunked" .
+:text_x_org_dkpro_ptbChunked skos:prefLabel "text/x.org.dkpro.ptb-chunked"@en .
 
 :OfficialText a skos:Concept .
 
@@ -5355,12 +5353,12 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:narrower :XcesIlspVariant;
   skos:prefLabel "XCES"@en .
 
-:application_x_org_dkpro_tuepp_xml skos:prefLabel "application/x.org.dkpro.tuepp+xml" .
+:application_x_org_dkpro_tuepp_xml skos:prefLabel "application/x.org.dkpro.tuepp+xml"@en .
 
 :application_x-SDL-TM a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme;
-  skos:prefLabel "application/x-SDL-TM" .
+  skos:prefLabel "application/x-SDL-TM"@en .
 
 :Editor a skos:Concept;
   :performsOperation :Editing;
@@ -5372,7 +5370,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
 :video_avi a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme;
-  skos:prefLabel "video/x-msvideo" .
+  skos:prefLabel "video/x-msvideo"@en .
 
 :FrequencyCount a skos:Concept;
   skos:altLabel "Computation of frequencies"@en;
@@ -5381,7 +5379,10 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Frequency count"@en .
 
-:text_plain skos:prefLabel "text/plain" .
+:text_plain a skos:Concept;
+  skos:broader :Mimetype;
+  skos:inScheme :MimeTypeScheme;
+  skos:prefLabel "text/plain"@en .
 
 :SpeechAct a skos:Concept;
   skos:broader :DiscourseAnnotationType;
@@ -5390,7 +5391,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:narrower :DialogueAct;
   skos:prefLabel "Speech act"@en .
 
-:text_x_org_dkpro_conll2000 skos:prefLabel "text/x.org.dkpro.conll-2000" .
+:text_x_org_dkpro_conll2000 skos:prefLabel "text/x.org.dkpro.conll-2000"@en .
 
 :TemporalExpressionRecognition a skos:Concept;
   skos:broader :InformationExtraction;
@@ -5399,7 +5400,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:prefLabel "Temporal expressions recognition"@en .
 
 :application_vnd_openxmlformats_officedocument_wordprocessingml_document skos:prefLabel
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" .
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"@en .
 
 :GeneFamily a skos:Concept;
   skos:broader :AgriculturalEntity;
@@ -5407,7 +5408,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Gene family"@en .
 
-:audio_mpeg skos:prefLabel "audio/mpeg" .
+:audio_mpeg skos:prefLabel "audio/mpeg"@en .
 
 :Viewer a skos:Concept;
   :performsOperation :Viewing;
@@ -5417,7 +5418,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:narrower :CorpusViewer, :LexiconViewer;
   skos:prefLabel "Viewer"@en .
 
-:application_ld_json skos:prefLabel "application/ld+json" .
+:application_ld_json skos:prefLabel "application/ld+json"@en .
 
 :Location a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location";
@@ -5426,7 +5427,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Location"@en .
 
-:text_tabSeparatedValues skos:prefLabel "text/tab-separated-values" .
+:text_tabSeparatedValues skos:prefLabel "text/tab-separated-values"@en .
 
 :Tbx a skos:Concept;
   :documentationUrl "https://www.tbxinfo.net/tbx-about/";
@@ -5435,7 +5436,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "tbx"@en .
 
-:text_x_org_dkpro_conll2006 skos:prefLabel "text/x.org.dkpro.conll-2006" .
+:text_x_org_dkpro_conll2006 skos:prefLabel "text/x.org.dkpro.conll-2006"@en .
 
 :SemanticClassLabelling a skos:Concept;
   skos:altLabel "Semantic class labeling [en-US]"@en-us;
@@ -5444,7 +5445,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Semantic class labelling"@en .
 
-:application_emma_xml skos:prefLabel "application/emma+xml" .
+:application_emma_xml skos:prefLabel "application/emma+xml"@en .
 
 :PersuasiveExpressionMiner a skos:Concept;
   :performsOperation :PersuasiveExpressionMining;
@@ -5454,14 +5455,14 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Persuasive expression miner"@en .
 
-:application_x_org_dkpro_negra4 skos:prefLabel "application/x.org.dkpro.negra4" .
+:application_x_org_dkpro_negra4 skos:prefLabel "application/x.org.dkpro.negra4"@en .
 
 :ComputationalArgumentation a skos:Concept;
   skos:broader :InformationExtraction;
   skos:inScheme :OperationScheme;
   skos:prefLabel "Computational argumentation"@en .
 
-:application_vnd_msaccess skos:prefLabel "application/vnd.msaccess" .
+:application_vnd_msaccess skos:prefLabel "application/vnd.msaccess"@en .
 
 :CoReferenceResolution skos:definition "The task/process of determining all linguistic expressions that refer to the same entity in a certain text or across texts."@en .
 
@@ -5475,13 +5476,9 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Debugging"@en .
 
-:application_ld_json_profile_http_www_w3_org_ns_anno_jsonld skos:prefLabel "application/ld+json;profile=\"http://www.w3.org/ns/anno.jsonld\"" .
+:application_ld_json_profile_http_www_w3_org_ns_anno_jsonld skos:prefLabel "application/ld+json;profile=\"http://www.w3.org/ns/anno.jsonld\""@en .
 
-:text_plain a skos:Concept;
-  skos:broader :Mimetype;
-  skos:inScheme :MimeTypeScheme .
-
-:image_bmp skos:prefLabel "image/bmp" .
+:image_bmp skos:prefLabel "image/bmp"@en .
 
 :CorpusManagement a skos:Concept;
   skos:broader :SupportOperation;
@@ -5490,7 +5487,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:narrower :ManagementOfAnnotations;
   skos:prefLabel "Corpus management"@en .
 
-:image_svg skos:prefLabel "image/svg+xml" .
+:image_svg skos:prefLabel "image/svg+xml"@en .
 
 :DocumentClassifier a skos:Concept;
   :performsOperation :TextCategorization;
@@ -5499,7 +5496,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Document classifier"@en .
 
-:audio_x_mpeg3 skos:prefLabel "audio/x-mpeg3" .
+:audio_x_mpeg3 skos:prefLabel "audio/x-mpeg3"@en .
 
 :EntityMentionPair a skos:Concept;
   skos:broader :Coreference;
@@ -5507,7 +5504,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Entity-Mention pair"@en .
 
-:audio_flac skos:prefLabel "audio/flac" .
+:audio_flac skos:prefLabel "audio/flac"@en .
 
 :Person a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.Person";
@@ -5516,7 +5513,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :AnnotationTypeScheme;
   skos:prefLabel "Person"@en .
 
-:application_x_org_dkpro_graf_xml skos:prefLabel "application/x.org.dkpro.graf+xml" .
+:application_x_org_dkpro_graf_xml skos:prefLabel "application/x.org.dkpro.graf+xml"@en .
 
 :SerializedCas a skos:Concept;
   :documentationUrl "http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-SerializedCas";
@@ -5525,7 +5522,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "Serialized CAS"@en .
 
-:application_rdf_xml skos:prefLabel "application/rdf+xml" .
+:application_rdf_xml skos:prefLabel "application/rdf+xml"@en .
 
 :Transliteration a skos:Concept;
   skos:altLabel "Script conversion"@en;
@@ -5542,19 +5539,19 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:prefLabel "Tagset conversion"@en .
 
 :application_vnd_openxmlformats_officedocument_spreadsheetml_sheet skos:prefLabel
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" .
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"@en .
 
 :text_x_org_dkpro_conll2000 a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:text_x_brat skos:prefLabel "text/x-brat" .
+:text_x_brat skos:prefLabel "text/x-brat"@en .
 
 :application_vnd_openxmlformats_officedocument_wordprocessingml_document a skos:Concept;
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:text_x_anafora skos:prefLabel "text/x-anafora" .
+:text_x_anafora skos:prefLabel "text/x-anafora"@en .
 
 :Reading a skos:Concept;
   skos:broader :ResourceAccess;
@@ -5562,7 +5559,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Reading"@en .
 
-:text_x_org_dkpro_conll2003 skos:prefLabel "text/x.org.dkpro.conll-2003" .
+:text_x_org_dkpro_conll2003 skos:prefLabel "text/x.org.dkpro.conll-2003"@en .
 
 :Search skos:broader :SupportOperation .
 
@@ -5570,7 +5567,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:broader :Mimetype;
   skos:inScheme :MimeTypeScheme .
 
-:text_x_org_dkpro_ptbCombined skos:prefLabel "text/x.org.dkpro.ptb-combined" .
+:text_x_org_dkpro_ptbCombined skos:prefLabel "text/x.org.dkpro.ptb-combined"@en .
 
 :mp3 a skos:Concept;
   :hasFileExtension "mp3";
@@ -5579,7 +5576,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :DataFormatScheme;
   skos:prefLabel "audio mp3"@en .
 
-:audio_mpa_robust skos:prefLabel "audio/mpa-robust" .
+:audio_mpa_robust skos:prefLabel "audio/mpa-robust"@en .
 
 :SpellingChecker a skos:Concept;
   skos:broader :PreOrPostProcessor;
@@ -5587,7 +5584,7 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :ComponentTypeScheme;
   skos:prefLabel "Spelling checker"@en .
 
-:text_x_org_dkpro_conll2002 skos:prefLabel "text/x.org.dkpro.conll-2002" .
+:text_x_org_dkpro_conll2002 skos:prefLabel "text/x.org.dkpro.conll-2002"@en .
 
 :application_ld_json a skos:Concept;
   skos:broader :Mimetype;
@@ -5607,23 +5604,23 @@ _:node1fu4q14cjx28 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Spoken Language Understanding"@en .
 
-:performsOperation rdfs:domain _:node1fu4q14cjx38 .
+:performsOperation rdfs:domain _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx38 .
 
-_:node1fu4q14cjx38 a owl:Class;
-  owl:intersectionOf _:node1fu4q14cjx39 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx38 a owl:Class;
+  owl:intersectionOf _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx39 .
 
-_:node1fu4q14cjx39 a rdf:List;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx39 a rdf:List;
   rdf:first skos:Concept;
-  rdf:rest _:node1fu4q14cjx40 .
+  rdf:rest _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx40 .
 
-_:node1fu4q14cjx40 a rdf:List;
-  rdf:first _:node1fu4q14cjx37 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx40 a rdf:List;
+  rdf:first _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx37 .
 
-_:node1fu4q14cjx37 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx37 a owl:Restriction;
   owl:hasValue :ComponentTypeScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx40 rdf:rest rdf:nil .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx40 rdf:rest rdf:nil .
 
 :Relation a skos:Concept;
   skos:broader :DomainSpecificAnnotationType;
@@ -5649,7 +5646,8 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
   skos:inScheme :OperationScheme;
   skos:prefLabel "Multimedia document processing"@en .
 
-:LanguageIdentifier skos:broader :Analyzer .
+:LanguageIdentifier skos:broader :Analyzer;
+  skos:definition "A component that identifies the language of a given text based on its contents"@en .
 
 :TextGeneration a skos:Concept;
   skos:broader :ModelFunction, :NaturalLanguageGeneration;
@@ -5771,11 +5769,10 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
 
 :MorphosyntacticTagging skos:inScheme :ModelFunctionScheme .
 
-:ComputerAidedTranslation skos:scopeNote "Techniques that help to increase the productivity of human translators via suitable computational infrastructure, including translation memories, terminology management, partial machine translation, online lexicons, or other techniques that automate parts of the translator's work, such as speech recognition or accelerated typing techniques applied to human translations."@en .
+:ComputerAidedTranslation skos:scopeNote "A form of translation performed by a human translator with the aid of software programmes"@en,
+    "Techniques that help to increase the productivity of human translators via suitable computational infrastructure, including translation memories, terminology management, partial machine translation, online lexicons, or other techniques that automate parts of the translator's work, such as speech recognition or accelerated typing techniques applied to human translations."@en .
 
 :CoReferenceResolution skos:definition "The task/process of identifying all linguistic expressions that appear in a certain text or across texts and refer to the same unique entity in the world"@en .
-
-:LanguageIdentifier skos:definition "A component that identifies the language of a given text based on its contents"@en .
 
 :BelowPosTagging owl:deprecated true;
   skos:inScheme :ModelFunctionScheme .
@@ -5868,8 +5865,6 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
 
 :TemporalExpressionsLabelling skos:inScheme :ModelFunctionScheme .
 
-:ComputerAidedTranslation skos:scopeNote "A form of translation performed by a human translator with the aid of software programmes"@en .
-
 :WordSenseDisambiguation skos:scopeNote "Word Sense Disambiguation is a subtask of semantic tagging, which consists of assigning a semantic class (sense) to a lexical item as specified by a semantic lexicon. If the semantic lexicon specifies more than one sense for a particular lexical item, a disambiguation procedure is needed to decide upon the most appropriate sense(s) for any given instance of the lexical item in text. WSD is not a self-contained application, but it may be included as an integrated part of a semantic processor."@en .
 
 :AudienceReaction a skos:Concept;
@@ -5951,68 +5946,66 @@ _:node1fu4q14cjx40 rdf:rest rdf:nil .
   skos:inScheme :MimeTypeScheme;
   skos:prefLabel "application/x-tar"@en .
 
-_:node1fu7rlrd8x1 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x1 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu7rlrd8x3 a rdf:List;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x3 a rdf:List;
   rdf:first skos:Concept;
-  rdf:rest _:node1fu7rlrd8x4 .
+  rdf:rest _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x4 .
 
-_:node1fu7rlrd8x4 a rdf:List;
-  rdf:first _:node1fu7rlrd8x1;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x4 a rdf:List;
+  rdf:first _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x1;
   rdf:rest rdf:nil .
 
-_:node1fu4q14cjx29 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx29 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx32 a rdf:List;
-  rdf:first _:node1fu4q14cjx29;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx32 a rdf:List;
+  rdf:first _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx29;
   rdf:rest rdf:nil .
 
-_:node1fu7rlrd8x2 a owl:Class;
-  owl:intersectionOf _:node1fu7rlrd8x3 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x2 a owl:Class;
+  owl:intersectionOf _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu7rlrd8x3 .
 
-_:node1fu4q14cjx31 a rdf:List;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx31 a rdf:List;
   rdf:first skos:Concept;
-  rdf:rest _:node1fu4q14cjx32 .
+  rdf:rest _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx32 .
 
-_:node1fu4q14cjx18 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx18 a owl:Restriction;
   owl:hasValue :application_zip;
   owl:onProperty :hasMimetype .
 
-_:node1fu4q14cjx21 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx21 a owl:Restriction;
   owl:hasValue :AnnotationTypeScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx30 owl:intersectionOf _:node1fu4q14cjx31 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx30 owl:intersectionOf _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx31 .
 
-_:node1fu4q14cjx22 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx22 a owl:Restriction;
   owl:hasValue :OperationScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx41 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx41 a owl:Restriction;
   owl:hasValue :OperationScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx23 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx23 a owl:Restriction;
   owl:hasValue :TdmMethodScheme;
   owl:onProperty skos:inScheme .
 
-_:node1fu4q14cjx42 a owl:Class;
-  owl:intersectionOf _:node1fu4q14cjx43 .
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx42 a owl:Class;
+  owl:intersectionOf _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx43 .
 
-_:node1fu4q14cjx43 a rdf:List;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx43 a rdf:List;
   rdf:first skos:Concept;
-  rdf:rest _:node1fu4q14cjx44 .
+  rdf:rest _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx44 .
 
-_:node1fu4q14cjx44 a rdf:List;
-  rdf:first _:node1fu4q14cjx41;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx44 a rdf:List;
+  rdf:first _:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx41;
   rdf:rest rdf:nil .
 
-_:node1fu4q14cjx24 a owl:Restriction;
+_:genid-c00891a00b1046f9af71ffdd445a8ed0-node1fu4q14cjx24 a owl:Restriction;
   owl:hasValue :DataFormatScheme;
   owl:onProperty skos:inScheme .
-
-_:node1fu4q14cjx25 owl:onProperty skos:inScheme .
